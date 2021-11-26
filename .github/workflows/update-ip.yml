@@ -1,0 +1,52 @@
+# github.com/vpei/Free-Node-Merge
+# Description: Automatically Build SSR for OpenWrt
+# Cron: min (0 - 59) / hour (0 - 23) / day of month (1 - 31) / month (1 - 12) / day of week (0 - 6)(Sunday - Saturday)
+# Source code repository: https://github.com/openwrt/openwrt / Branch: master
+#========================================================================================================================
+
+name: Update-Ip-To-Address-2021
+
+# Controls when the action will run. 
+on:
+  #push:
+  #  branches: [ main ]
+  schedule:
+    - cron: '25 5 * * 4'
+  workflow_dispatch:
+
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: 'Set up Python'
+        uses: actions/setup-python@v1
+        with:
+           python-version: 3.7
+
+      - name: 'Install requirements'
+        run: |
+          pip install requests
+          python -m pip install -U wheel
+          pip install qqwry-py3
+
+      - name: 'Set System Timezone'
+        run: 
+          sudo timedatectl set-timezone Asia/Shanghai
+
+      - name: 'Update Working'
+        id: update
+        run: |
+          python update.py newip
+          echo "::set-output name=status::success"
+
+      - name: Send telegram message on push
+        uses: appleboy/telegram-action@master
+        if: steps.update.outputs.status == 'success' && !cancelled()
+        with:
+          to: ${{ secrets.TELEGRAM_TO }}
+          token: ${{ secrets.TELEGRAM_TOKEN }}
+          message: |
+             IP-QQWry.dat已升级！
