@@ -196,7 +196,6 @@ class StrText():
         if(onenode.find('ws-headers:') > -1):
             onenode = onenode.replace('ws-headers:{Host:','Host:')
             onenode = onenode.replace('}}',',}')
-
         if(onenode.find('alterId:')>-1):
             #onenode = onenode.replace('name:', 'ps:')
             onenode = onenode.replace('server:', 'add:')
