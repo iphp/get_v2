@@ -21,26 +21,6 @@ from cls import StrText
 from cls import PingIP
 from ping3 import ping, verbose_ping
 
-print(PingIP.get_ping_time('github.com'))
-print('0000')
-print(ping('127.0.0.1', unit='ms'))
-print('1111')
-print(ping('5.181.234.254', unit='ms'))
-print('Working on it.')
-print(ping('1.1.1.1', unit='ms'))
-print('2222')
-print(ping('github.com', unit='ms'))
-print('3333')
-# Print the return code (status=0 mean ping success)
-status = subprocess.call(['tcping', '-c', '1', '-t', '1', 'github.com'], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-print(status)
-print('1111')
-# OR print the full message
-status = subprocess.run(['tcping', '-c', '1', '-t', '1', 'github.com'], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-print(status)
-print('2222')
-print(ping('www.baidu.com', unit='ms'))
-print('3333')
 # 配置信息
 # resurl = 'https://ipfs.io/ipns/k2k4r8n10q07nqe02zysssxw1b9qboab0dd3ooljd32i9ro3edry6hv6/'
 resurl = 'https://cf-ipfs.com/ipns/k2k4r8n10q07nqe02zysssxw1b9qboab0dd3ooljd32i9ro3edry6hv6/'
