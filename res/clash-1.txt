@@ -1,0 +1,194 @@
+---
+allow-lan: true
+external-controller: 0.0.0.0:9090
+log-level: silent
+mode: rule
+port: 7890
+socks-port: 7891
+proxies:
+clash-url.txt
+proxy-groups:
+- name: "\U0001F530 节点选择"
+  type: select
+  proxies:
+  - "♻️ 自动选择"
+  - "\U0001F3AF 全球直连"
+clash-name.txt
+- name: "♻️ 自动选择"
+  type: url-test
+  proxies:
+clash-name.txt
+  url: http://www.gstatic.com/generate_204
+  interval: '300'
+- name: "\U0001F30D 国外媒体"
+  type: select
+  proxies:
+  - "\U0001F530 节点选择"
+  - "♻️ 自动选择"
+  - "\U0001F3AF 全球直连"
+clash-name.txt
+- name: "\U0001F30F 国内媒体"
+  type: select
+  proxies:
+  - "\U0001F3AF 全球直连"
+  - "\U0001F530 节点选择"
+clash-name.txt
+- name: Ⓜ️ 微软服务
+  type: select
+  proxies:
+clash-name.txt
+- name: "\U0001F4F2 电报信息"
+  type: select
+  proxies:
+  - "\U0001F530 节点选择"
+  - "\U0001F3AF 全球直连"
+tele-name.txt
+- name: "\U0001F34E 苹果服务"
+  type: select
+  proxies:
+  - "\U0001F530 节点选择"
+  - "\U0001F3AF 全球直连"
+  - "♻️ 自动选择"
+clash-name.txt
+- name: "\U0001F3AF 全球直连"
+  type: select
+  proxies:
+  - DIRECT
+- name: "\U0001F6D1 全球拦截"
+  type: select
+  proxies:
+  - REJECT
+  - DIRECT
+- name: "\U0001F41F 漏网之鱼"
+  type: select
+  proxies:
+  - "\U0001F530 节点选择"
+  - "\U0001F3AF 全球直连"
+  - "♻️ 自动选择"
+clash-name.txt
+rules:
+clash-2.txt
+dns:
+  enable: true
+  ipv6: true
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  listen: 0.0.0.0:7874
+  fake-ip-filter:
+  - "*.lan"
+  - "*.localdomain"
+  - "*.example"
+  - "*.invalid"
+  - "*.localhost"
+  - "*.test"
+  - "*.local"
+  - "*.home.arpa"
+  - time.*.com
+  - time.*.gov
+  - time.*.edu.cn
+  - time.*.apple.com
+  - time1.*.com
+  - time2.*.com
+  - time3.*.com
+  - time4.*.com
+  - time5.*.com
+  - time6.*.com
+  - time7.*.com
+  - ntp.*.com
+  - ntp1.*.com
+  - ntp2.*.com
+  - ntp3.*.com
+  - ntp4.*.com
+  - ntp5.*.com
+  - ntp6.*.com
+  - ntp7.*.com
+  - "*.time.edu.cn"
+  - "*.ntp.org.cn"
+  - "+.pool.ntp.org"
+  - time1.cloud.tencent.com
+  - music.163.com
+  - "*.music.163.com"
+  - "*.126.net"
+  - musicapi.taihe.com
+  - music.taihe.com
+  - songsearch.kugou.com
+  - trackercdn.kugou.com
+  - "*.kuwo.cn"
+  - api-jooxtt.sanook.com
+  - api.joox.com
+  - joox.com
+  - y.qq.com
+  - "*.y.qq.com"
+  - streamoc.music.tc.qq.com
+  - mobileoc.music.tc.qq.com
+  - isure.stream.qqmusic.qq.com
+  - dl.stream.qqmusic.qq.com
+  - aqqmusic.tc.qq.com
+  - amobile.music.tc.qq.com
+  - "*.xiami.com"
+  - "*.music.migu.cn"
+  - music.migu.cn
+  - "*.msftconnecttest.com"
+  - "*.msftncsi.com"
+  - msftconnecttest.com
+  - msftncsi.com
+  - localhost.ptlogin2.qq.com
+  - localhost.sec.qq.com
+  - "+.srv.nintendo.net"
+  - "+.stun.playstation.net"
+  - xbox.*.microsoft.com
+  - xnotify.xboxlive.com
+  - "+.battlenet.com.cn"
+  - "+.wotgame.cn"
+  - "+.wggames.cn"
+  - "+.wowsgame.cn"
+  - "+.wargaming.net"
+  - proxy.golang.org
+  - stun.*.*
+  - stun.*.*.*
+  - "+.stun.*.*"
+  - "+.stun.*.*.*"
+  - "+.stun.*.*.*.*"
+  - heartbeat.belkin.com
+  - "*.linksys.com"
+  - "*.linksyssmartwifi.com"
+  - "*.router.asus.com"
+  - mesu.apple.com
+  - swscan.apple.com
+  - swquery.apple.com
+  - swdownload.apple.com
+  - swcdn.apple.com
+  - swdist.apple.com
+  - lens.l.google.com
+  - stun.l.google.com
+  default-nameserver:
+  - 100.102.0.1
+  - "[fe80::727b:e8ff:fe84:1a8d]:53"
+  - 1.1.1.1
+  - 8.8.8.8
+  - 80.80.80.80
+  - 223.5.5.5
+  - 100.81.0.1
+  nameserver:
+  - 100.81.0.1
+  - "[fe80::727b:e8ff:fe84:1a8d]:53"
+  - dhcp://"pppoe-wan"
+  - 1.1.1.1
+  - 8.8.8.8
+  - 80.80.80.80
+  - 223.5.5.5
+  fallback:
+  - https://cloudflare-dns.com/dns-query
+  - https://8.8.8.8/dns-query
+  - https://223.5.5.5/dns-query
+  - https://doh.dns.sb/dns-query
+redir-port: 7892
+tproxy-port: 7895
+mixed-port: 7893
+secret: '123456'
+bind-address: "*"
+external-ui: "/usr/share/openclash/dashboard"
+ipv6: true
+profile:
+  store-selected: true
+  store-fakeip: true
