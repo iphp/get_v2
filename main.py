@@ -174,7 +174,8 @@ if(len(expire) > 0):
                                 for clashnode in clashnodes.split('\n'):
                                     try:
                                         iii += 1
-                                        clashnode = StrText.all_to_vmess(clashnode)
+                                        if(clashnode.find('vmess') > -1):
+                                            clashnode = StrText.all_to_vmess(clashnode)
                                         wnode = json.loads(clashnode)
                                         if (wnode['type'] == 'ss'):
                                             onenode = 'ss://' +  base64.b64encode((wnode['cipher'] + ':' + wnode['password'] + '@' + wnode['server'] + ':' + wnode['port']).encode("utf-8")).decode("utf-8") + '#' + wnode['name']
@@ -185,7 +186,7 @@ if(len(expire) > 0):
                                         else:
                                             continue
                                         if (onenode != '' and expire.find(onenode) == -1 and allonenode.find(onenode) == -1):
-                                            print('Line-188-已添加(clash-node-url-id:' + str(ii)+ ')-onenode-id-' + str(iii) + '\n' + onenode)
+                                            print('Line-188-已添加(clash-node-url-id:' + str(ii)+ ')-onenode-id-' + str(iii) + '-onenode-url:\n' + clashnode)
                                             allonenode = allonenode + onenode + '\n'
                                         else:
                                             print('Line-188-已过滤(clash-node-url-id:' + str(ii)+ ')-onenode-id-' + str(iii) + '-Find-Index-Allonenode:' + str(allonenode.find(onenode)) + '\n' + onenode)
@@ -231,6 +232,7 @@ datecont = time.strftime('%m-%d',time.localtime(time.time()))
 #datecont = now.strftime("%Y-%m-%d %H:%M:%S")
 ii = 0
 iii = 0
+iiii = 0
 if(len(sub_link)>0):
     for i in sub_link:
         #for j in i.split():
@@ -351,8 +353,9 @@ if(len(sub_link)>0):
                             print('Rename node ' + oldname.strip('\n') + ' to ' + newname)
                             allnode = allnode + '\n' + onenode   #新旧节点信息都加入作对比。
                             if(len(allnode) > 102400000):
-                                #res = base64.b64encode(allnode.strip('\n').encode("utf-8")).decode("utf-8")
-                                LocalFile.write_LocalFile('./res/node' + ii + '.txt', allnode.strip('\n'))
+                                allnode = base64.b64encode(allnode.strip('\n').encode("utf-8")).decode("utf-8")
+                                LocalFile.write_LocalFile('./res/node-' + iiii + '.txt', allnode)
+								iiii += 1
                                 allnode = ''
                             if(newname.find(u'中国') > -1 or newname.find(u'省') > -1 or newname.find(u'上海') > -1 or newname.find(u'北京') > -1 or newname.find(u'重庆') > -1 or newname.find(u'内蒙') > -1):
                                 cnnode = cnnode + '\n' + onenode
@@ -385,10 +388,10 @@ if(len(sub_link)>0):
         print('[' + str(ii) + '][Sub merged success]')
     print(merged_link)
     # 合并整理完成的节点，生成Clash配置文件
-    res = base64.b64encode(cnnode.strip('\n').encode("utf-8")).decode("utf-8")
-    LocalFile.write_LocalFile('./out/nodecn.txt', res)
-    #res = base64.b64encode(allnode.strip('\n').encode("utf-8")).decode("utf-8")
-    LocalFile.write_LocalFile('./res/node.txt', allnode.strip('\n'))
+    cnnode = base64.b64encode(cnnode.strip('\n').encode("utf-8")).decode("utf-8")
+    LocalFile.write_LocalFile('./out/nodecn.txt', cnnode)
+    allnode = base64.b64encode(allnode.strip('\n').encode("utf-8")).decode("utf-8")
+    LocalFile.write_LocalFile('./res/node.txt', allnode)
 else:
     print('Line-421:sub_link:' + str(sub_link))
 
