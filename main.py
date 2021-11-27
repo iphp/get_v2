@@ -170,9 +170,11 @@ if(len(expire) > 0):
                                 #print('Url-All-Nodes-Clash-New1:\n' + clashnodes)
                                 onenode = ""
                                 iii = 0
+                                print('Line-194-clashnodes:\n' + clashnodes)
                                 for clashnode in clashnodes.split('\n'):
                                     try:
                                         iii += 1
+                                        clashnode = StrText.all_to_vmess(clashnode)
                                         wnode = json.loads(clashnode)
                                         if (wnode['type'] == 'ss'):
                                             onenode = 'ss://' +  base64.b64encode((wnode['cipher'] + ':' + wnode['password'] + '@' + wnode['server'] + ':' + wnode['port']).encode("utf-8")).decode("utf-8") + '#' + wnode['name']
@@ -188,7 +190,7 @@ if(len(expire) > 0):
                                         else:
                                             print('Line-188-已过滤(clash-node-url-id:' + str(ii)+ ')-onenode-id-' + str(iii) + '-Find-Index-Allonenode:' + str(allonenode.find(onenode)) + '\n' + onenode)
                                     except Exception as ex:
-                                        print('Line-193:' + str(ex) + '\nonenode:\n' + onenode + '\nallonenode:\n' + allonenode)
+                                        print('Line-193:' + str(ex) + '\nclashnode:\n' + clashnode + '\nclashnode:\n' + onenode)
                                 #sub_link.append(base64.b64decode(allonenode).decode("utf-8"))
                             except Exception as ex:
                                 print('Line-268:\n' + str(ex) +'\n' + clashnodes)
@@ -205,7 +207,7 @@ if(len(expire) > 0):
     LocalFile.write_LocalFile('./res/vpei.txt', res)
 
     # 将节点更新时间等写入配置文件
-    if (len(nodeurl)>1000):
+    if (len(nodeurl) > 1000):
         LocalFile.write_LocalFile('./res/node.json', nodeurl.strip('\n'))
 else:
     print('Line-198:过滤名单读取失败，暂停运行。expire-' + expire)
@@ -348,6 +350,10 @@ if(len(sub_link)>0):
                         if (onenode != '' and expire.find(onenode) == -1 and IsValid.isIPorDomain(ipdomain) and tmpnode.find(onenode) == -1 and (onenode.find("vmess://") == 0 or onenode.find("ss://") == 0 or onenode.find("trojan://") == 0 or onenode.find("vless://") == 0)):
                             print('Rename node ' + oldname.strip('\n') + ' to ' + newname)
                             allnode = allnode + '\n' + onenode   #新旧节点信息都加入作对比。
+                            if(ii > 800):
+                                #res = base64.b64encode(allnode.strip('\n').encode("utf-8")).decode("utf-8")
+                                LocalFile.write_LocalFile('./res/node' + ii + '.txt', allnode.strip('\n'))
+                                allnode = ''
                             if(newname.find(u'中国') > -1 or newname.find(u'省') > -1 or newname.find(u'上海') > -1 or newname.find(u'北京') > -1 or newname.find(u'重庆') > -1 or newname.find(u'内蒙') > -1):
                                 cnnode = cnnode + '\n' + onenode
                             else:
@@ -381,8 +387,8 @@ if(len(sub_link)>0):
     # 合并整理完成的节点，生成Clash配置文件
     res = base64.b64encode(cnnode.strip('\n').encode("utf-8")).decode("utf-8")
     LocalFile.write_LocalFile('./out/nodecn.txt', res)
-    res = base64.b64encode(allnode.strip('\n').encode("utf-8")).decode("utf-8")
-    LocalFile.write_LocalFile('./res/node.txt', res)
+    #res = base64.b64encode(allnode.strip('\n').encode("utf-8")).decode("utf-8")
+    LocalFile.write_LocalFile('./res/node.txt', allnode.strip('\n'))
 else:
     print('Line-421:sub_link:' + str(sub_link))
 
