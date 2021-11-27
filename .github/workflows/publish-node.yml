@@ -197,7 +197,7 @@ jobs:
           echo 关闭进程 ipfs #kill ipfs
           ps -A
           ipfs shutdown 
-          sleep 10
+          sleep 60
           ps -A
           file1=./ipfs/tmp/003.out
           nohup ipfs daemon >$file1 &
