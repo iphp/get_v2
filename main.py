@@ -355,7 +355,7 @@ if(len(sub_link)>0):
                             if(len(allnode) > 102400000):
                                 allnode = base64.b64encode(allnode.strip('\n').encode("utf-8")).decode("utf-8")
                                 LocalFile.write_LocalFile('./res/node-' + iiii + '.txt', allnode)
-								iiii += 1
+                                iiii += 1
                                 allnode = ''
                             if(newname.find(u'中国') > -1 or newname.find(u'省') > -1 or newname.find(u'上海') > -1 or newname.find(u'北京') > -1 or newname.find(u'重庆') > -1 or newname.find(u'内蒙') > -1):
                                 cnnode = cnnode + '\n' + onenode
