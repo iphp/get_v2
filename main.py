@@ -350,7 +350,7 @@ if(len(sub_link)>0):
                         if (onenode != '' and expire.find(onenode) == -1 and IsValid.isIPorDomain(ipdomain) and tmpnode.find(onenode) == -1 and (onenode.find("vmess://") == 0 or onenode.find("ss://") == 0 or onenode.find("trojan://") == 0 or onenode.find("vless://") == 0)):
                             print('Rename node ' + oldname.strip('\n') + ' to ' + newname)
                             allnode = allnode + '\n' + onenode   #新旧节点信息都加入作对比。
-                            if(ii > 800):
+                            if(len(allnode) > 102400000):
                                 #res = base64.b64encode(allnode.strip('\n').encode("utf-8")).decode("utf-8")
                                 LocalFile.write_LocalFile('./res/node' + ii + '.txt', allnode.strip('\n'))
                                 allnode = ''
