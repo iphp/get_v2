@@ -90,18 +90,20 @@ if(menu == 'update' and len(expire) > 0):
             try:
                 print('Get node link on sub ' + onode_upurl)
                 rq = requests.get(onode_upurl, timeout=(240, 120)) #连接超时 和 读取超时
+                #rq.encoding = 'utf-8'
                 if (rq.status_code != 200):
                     print('[GET Code {}] Download sub error on link: '.format(rq.status_code) + onode_upurl)
                     nodeurl = nodeurl + "\n" + i
                     continue
-                clashnodes = rq.content
-                if (clashnodes != '' and onode_upmd5 != hashlib.md5(clashnodes).hexdigest() and linecount < 50):
+                #clashnodes = rq.content
+                clashnodes = rq.text.encode(rq.encoding).decode('utf-8')
+                if (clashnodes != '' and onode_upmd5 != hashlib.md5(clashnodes.encode('utf-8')).hexdigest() and linecount < 50):
                     if (onode_upurl.find('vpei') == -1):
                         linecount += 1
                     #60行后，只执行一行
                     if (ii > 70):  
                         linecount = 50
-                    onode['upmd5'] = hashlib.md5(clashnodes).hexdigest()
+                    onode['upmd5'] = hashlib.md5(clashnodes.encode('utf-8')).hexdigest()
                     #onode['uptime'] = time.asctime( time.localtime(time.time()) )
                     #onode['uptime'] = (datetime.datetime.now() + datetime.timedelta(days=7)).strftime("%Y-%m-%d %H:%M:%S")
                     #onode['uptime'] = time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(datetime.datetime.now() - datetime.timedelta(days=7)))
