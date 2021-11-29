@@ -75,9 +75,9 @@ if(menu == 'update' and len(expire) > 0):
     list1 = get_list_sort(list1)
     linecount = 0
     ii = 0
+    iii = 0
     for i in list1:
         ii += 1
-        iii = 0
         print('\nNodes-List-OneNodeList:\n' + i)
         if(i == ''):
             continue
@@ -122,24 +122,16 @@ if(menu == 'update' and len(expire) > 0):
                     print('UpdateTime:' + onode['uptime'])
                     if (onode['type'] == 'mixed'):
                         try:
-                            #LocalFile.write_LocalFile('./ipfs/tmp/err.log', '\n' + clashnodes)
-                            if(IsValid.isBase64(clashnodes)):
-                                print('Url-All-Nodes-is-Base64:\n' + clashnodes)
-                                #sub_link.append(base64.b64decode(clashnodes).decode("utf-8"))
+                            clashnodes = clashnodes.strip('\n')
+                            if(IsValid.isBase64(clashnodes) or clashnodes.find('\n') == -1):
                                 clashnodes = base64.b64decode(clashnodes).decode("utf-8")
+                                print('Url-All-Nodes-is-Base64:\n' + clashnodes)
                             else:
                                 print('Url-All-Nodes-no-Base64:\n' + clashnodes)
-                                #sub_link.append(clashnodes)
-                            try:
-                                clashnodes = clashnodes.strip('\n')
-                                if(clashnodes.find('\n') == -1):
-                                    clashnodes = base64.b64decode(clashnodes).decode("utf-8")
-                            except Exception as ex:
-                                print('Line-146:' + str(ex) + 'clashnodes:\n' + clashnodes)
                             for onenode in clashnodes.split('\n'):
                                 try:
-                                    iii += 1
                                     if (onenode != '' and onenode.find('://') > -1 and expire.find(onenode) == -1 and allonenode.find(onenode) == -1):
+                                        iii += 1
                                         print('Line-127-已添加(clash-node-url-id:' + str(ii)+ ')-onenode-id-' + str(iii) + '-onenode-url:\n' + onenode)
                                         allonenode = allonenode + onenode + '\n'
                                     else:
@@ -201,11 +193,9 @@ if(menu == 'update' and len(expire) > 0):
                             clashnodes = clashnodes.replace('"}", ', '}", ')
                             #print('Url-All-Nodes-Clash-New1:\n' + clashnodes)
                             onenode = ""
-                            iii = 0
                             print('Line-194-clashnodes:\n' + clashnodes)
                             for clashnode in clashnodes.split('\n'):
                                 try:
-                                    iii += 1
                                     if(clashnode.find('vmess') > -1):
                                         clashnode = StrText.all_to_vmess(clashnode)
                                     wnode = json.loads(clashnode)
@@ -218,6 +208,7 @@ if(menu == 'update' and len(expire) > 0):
                                     else:
                                         continue
                                     if (onenode != '' and expire.find(onenode) == -1 and allonenode.find(onenode) == -1):
+                                        iii += 1
                                         print('Line-188-已添加(clash-node-url-id:' + str(ii)+ ')-onenode-id-' + str(iii) + '-onenode-url:\n' + clashnode)
                                         allonenode = allonenode + onenode + '\n'
                                     else:
@@ -236,17 +227,17 @@ if(menu == 'update' and len(expire) > 0):
     clashnodes = base64.b64decode(clashnodes).decode("utf-8")
     if(len(clashnodes) > -1):
         for onenode in clashnodes.split('\n'):
-            try:
-                if (onenode != '' and onenode.find('://') > -1 and expire.find(onenode) == -1 and allonenode.find(onenode) == -1):
-                    allonenode = allonenode + onenode + '\n'
-            except Exception as ex:
-                print('Line-193:' + str(ex) + '\nclashnode:\n' + clashnode + '\nclashnode:\n' + onenode)
+            if (onenode != '' and onenode.find('://') > -1 and expire.find(onenode) == -1 and allonenode.find(onenode) == -1):
+                iii += 1
+                allonenode = allonenode + onenode + '\n'
     allonenode = base64.b64encode(allonenode.strip('\n').encode("utf-8")).decode("utf-8")
     LocalFile.write_LocalFile('./res/vpei-new.txt', allonenode)
+    print('Line-235:Url-Node获取成功。记录数：' + str(iii))
 
     # 将节点更新时间等写入配置文件
     if (nodeurl.find('uptime') > -1):
         LocalFile.write_LocalFile('./res/node.json', nodeurl.strip('\n'))
+    print('Line-238:node.json已更新。')
 #else:
 #    print('Line-246:过滤名单读取失败，暂停运行。expire-' + expire)
 

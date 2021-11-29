@@ -16,7 +16,8 @@ class NetFile(): # 将订阅链接中YAML，Base64等内容转换为 Url 链接�
             if (rq.status_code != 200):
                 print("NetFile-Line-18: Download File error.][" + str(rq.status_code) + "]-Url: " + r_url)
             else:
-                retxt = rq.content.decode("utf-8")
+                #retxt = rq.content.decode("utf-8")
+                retxt = rq.text.encode(rq.encoding).decode('utf-8')
         except Exception as ex:
             print('NetFile-Line-34: down res file err: ' + str(ex) + '\n' +  r_url)
         return retxt
@@ -38,7 +39,8 @@ class NetFile(): # 将订阅链接中YAML，Base64等内容转换为 Url 链接�
                 #print(ret)          # 返回值:<Response [200]>
                 #print(ret.text)     # 输出文本信息
                 #print(ret.content)  # 以二进制输出
-                retxt = rq.content.decode("utf-8")
+                #retxt = rq.content.decode("utf-8")
+                retxt = rq.text.encode(rq.encoding).decode('utf-8')
                 LocalFile.write_LocalFile('./res/' + fname, retxt)
         except Exception as ex:
             retxt = LocalFile.read_LocalFile("./res/" + fname)

@@ -50,7 +50,7 @@ jobs:
         env:
           RESURL: ${{ secrets.RESURL }}
         run: 
-          #python main.py ipdomain
+          python main.py ipdomain
           echo "::set-output name=status::success"
 
       - name: 'Compare new file with old file MD5'
