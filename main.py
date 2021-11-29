@@ -116,7 +116,6 @@ if(menu == 'update' and len(expire) > 0):
                     else:
                         onode['uptime'] = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
                     i = json.dumps(onode)
-                    nodeurl = nodeurl + "\n" + i
                     clashnodes = (rq.content).decode('utf-8' ,"ignore")
                     print('UpdateTime:' + onode['uptime'])
                     if (onode['type'] == 'mixed'):
@@ -225,6 +224,7 @@ if(menu == 'update' and len(expire) > 0):
                             print('Line-268:\n' + str(ex) +'\n' + clashnodes)
             except Exception as ex:
                 print('Line-262:' + str(ex))
+            nodeurl = nodeurl + "\n" + i
     print('Url-All-Clash-To-Mixed-Nodes:\n' + allonenode)
 
     # 追加vpei.txt的记录到新记录后面。
