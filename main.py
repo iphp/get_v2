@@ -269,7 +269,6 @@ if(menu == 'ipdomain' and len(expire) > 0):
     ii = 0
     iii = 0
     iiii = 0
-    print('Get-allonenode.txt: \n' + str(len(allonenode)))
     if(len(allonenode) > 0):
         for j in allonenode.split('\n'):
             #print('deal site url id:' + str(ii))
@@ -373,7 +372,7 @@ if(menu == 'ipdomain' and len(expire) > 0):
                                 cnnode = cnnode + '\n' + onenode
                             else:
                                 expire = expire + ',' + j + ',' + onenode   #新旧节点信息都加入作对比。
-                                if(iii < 200):
+                                if(iii < 300):
                                     try:
                                         iii += 1
                                         #print('ipdomain:' + ipdomain + '-ipdomain-ping:' + str(ping(ipdomain, unit='ms')))

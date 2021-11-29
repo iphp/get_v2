@@ -41,7 +41,7 @@ jobs:
         id: update
         env:
           RESURL: ${{ secrets.RESURL }}
-        run: 
+        run: |
           python main.py update
           echo "::set-output name=status::success"
 
@@ -49,7 +49,7 @@ jobs:
         id: ipdomain
         env:
           RESURL: ${{ secrets.RESURL }}
-        run: 
+        run: |
           python main.py ipdomain
           echo "::set-output name=status::success"
 
@@ -73,7 +73,6 @@ jobs:
             echo "Both file are different"
             echo "::set-output name=status::success"
           fi
-          echo "::set-output name=status::success"
 
       - name: 'Send telegram message on push'
         env:
