@@ -229,6 +229,7 @@ if(menu == 'update' and len(expire) > 0):
 
     # 追加vpei.txt的记录到新记录后面。
     clashnodes = LocalFile.read_LocalFile("./res/vpei.txt")
+    #clashnodes = base64.b64decode(clashnodes).decode("utf-8")
     if(len(clashnodes) > -1):
         for onenode in clashnodes.split('\n'):
             try:
@@ -236,8 +237,8 @@ if(menu == 'update' and len(expire) > 0):
                     allonenode = allonenode + onenode + '\n'
             except Exception as ex:
                 print('Line-193:' + str(ex) + '\nclashnode:\n' + clashnode + '\nclashnode:\n' + onenode)
-    #res = base64.b64encode(allonenode.strip('\n').encode("utf-8")).decode("utf-8")
-    LocalFile.write_LocalFile('./res/vpei-new.txt', allonenode.strip('\n'))
+    allonenode = base64.b64encode(allonenode.strip('\n').encode("utf-8")).decode("utf-8")
+    LocalFile.write_LocalFile('./res/vpei-new.txt', allonenode)
 
     # 将节点更新时间等写入配置文件
     if (nodeurl.find('uptime') > -1):
@@ -248,6 +249,7 @@ else:
 if(menu == 'ipdomain'):
     # 下载代理节点过滤信息
     allonenode = LocalFile.read_LocalFile("./res/vpei-new.txt")
+    allonenode = base64.b64decode(allonenode).decode("utf-8")
     print('Get-expire.txt: \n' + expire)
     # 逐条读取链接，并进行测试
     onenode = ''
@@ -397,7 +399,7 @@ if(menu == 'ipdomain'):
         cnnode = base64.b64encode(cnnode.strip('\n').encode("utf-8")).decode("utf-8")
         LocalFile.write_LocalFile('./out/nodecn.txt', cnnode)
 
-        #allnode = base64.b64encode(allnode.strip('\n').encode("utf-8")).decode("utf-8")
+        allnode = base64.b64encode(allnode.strip('\n').encode("utf-8")).decode("utf-8")
         LocalFile.write_LocalFile('./res/vpei-new.txt', allnode.strip('\n'))
     else:
         print('Line-421-allonenode:' + allonenode)
