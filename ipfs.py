@@ -92,7 +92,7 @@ else:
                 iii += 1
             else:
                 print('hashlib.md5-False-' + resurl)
-            if(ii > 20):
+            if(ii > 50):
                 break
         except Exception as ex:
             print("Line-44:" + str(ex))
