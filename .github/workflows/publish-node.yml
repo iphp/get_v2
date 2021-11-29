@@ -173,10 +173,15 @@ jobs:
           # 对网络文件进行循环加载
           python ./ipfs.py ipfs $CID
 
+          ipfs id
+          ipfs files cp /ipfs/$CID "/clash"
+          sleep 5
+
           #echo 关闭进程 ipfs #kill ipfs
           ps -A
           ipfs shutdown 
           sleep 60
+          #echo 将要打开进程 ipfs #kill ipfs
           ps -A
 
           ipfs name publish /ipfs/$CID --allow-offline=true --lifetime=24h
@@ -185,22 +190,12 @@ jobs:
           echo $dataline1
           sleep 10
 
-          ipfs id
-          ipfs files cp /ipfs/$CID "/clash"
-          sleep 10
-
-          file1=./ipfs/tmp/001.out
-          nohup ipfs daemon >$file1 &
-          dataline1=$(< $file1)
-          echo $dataline1
           # cp -r -f /home/runner/.ipfs ./config2
           echo "::set-output name=status::success"
 
       - name: 'Publish Files To Ipfs Network'
         id: publish
-        env:
-          PUBLISHID: ${{ secrets.PUBLISHID }}
-        if: steps.ipfs.outputs.status == 'success' && env.PUBLISHID != '' && !cancelled()
+        if: steps.ipfs.outputs.status == 'success' && !cancelled()
         run: |
           # sudo rm -rf ./install1 ./install2 ./install3
           # sudo cp -f ./res/README.md ./README.md
@@ -211,6 +206,7 @@ jobs:
           ps -A
           ipfs shutdown 
           sleep 60
+          #echo 将要打开进程 ipfs #kill ipfs
           ps -A
           file1=./ipfs/tmp/003.out
           nohup ipfs daemon >$file1 &
@@ -282,9 +278,7 @@ jobs:
              Publish files To ipfs network is finished.
 
       - name: 'Waiting for ipfs release'
-        env:
-          PUBLISHID: ${{ secrets.PUBLISHID }}
-        if: steps.publish.outputs.status == 'success' && env.PUBLISHID != '' && !cancelled()
+        if: steps.publish.outputs.status == 'success' && !cancelled()
         run: |
           sleep 10
           echo First

@@ -369,7 +369,8 @@ if(menu == 'ipdomain' and len(expire) > 0):
                             #    LocalFile.write_LocalFile('./res/node-' + str(iiii) + '.txt', allnode)
                             #    allnode = ''
                             if(newname.find(u'中国') > -1 or newname.find(u'省') > -1 or newname.find(u'上海') > -1 or newname.find(u'北京') > -1 or newname.find(u'重庆') > -1 or newname.find(u'内蒙') > -1):
-                                cnnode = cnnode + '\n' + onenode
+                                if(iii < 100):
+                                    cnnode = cnnode + '\n' + onenode
                             else:
                                 expire = expire + ',' + j + ',' + onenode   #新旧节点信息都加入作对比。
                                 if(iii < 300):

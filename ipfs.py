@@ -75,7 +75,7 @@ else:
     for j in nodes.split('\n'):
         ii += 1
         try:
-            resurl = j + '/ipns/' + os.environ["PUBLISHID"] + '/'
+            resurl = j + '/ipns/k51qzi5uqu5dlfnig6lej7l7aes2d5oed6a4435s08ccftne1hq09ac1bulz2f/'
             print('\n' + str(ii) + '-' +resurl)
             expire = NetFile.url_to_str(resurl + '?file=name.html', 150, 25)
             expire = NetFile.url_to_str(resurl + 'node.txt', 150, 25)
