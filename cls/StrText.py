@@ -197,10 +197,10 @@ class StrText():
                 onenode = "ss://"+(base64.b64decode(jjs[0][5:].encode("utf-8")).decode("utf-8"))+"@"+jjs[1]
             #ss://aes-256-gcm:n8w4StnbVD9dmXYn4Ajt87EA@212.102.54.163:31572#title
             oldname = onenode.split("#", 1)[1]
-            onenode = "ss://" + base64.b64encode(onenode.split("#", 1)[0][5:].encode("utf-8")).decode("utf-8") + "#" + oldname
+            onenode = 'ss://' + base64.b64encode(onenode.split("#", 1)[0][5:].encode("utf-8")).decode("utf-8") + '#' + oldname
         except Exception as ex:
             print('Line-199-StrText: ' + str(ex) + '\n' + onenode)
-            LocalFile.write_LocalFile('./ipfs/tmp/err.log', '\nLine-199-StrText: ' + str(ex) + '\n' + onenode)
+            #LocalFile.write_LocalFile('./ipfs/tmp/err.log', '\nLine-199-StrText: ' + str(ex) + '\n' + onenode)
             return ''
 
     # 非标准格式的vmess明文地址转化为标准格式的vmess明文

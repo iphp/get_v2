@@ -309,13 +309,16 @@ if(menu == 'ipdomain'):
                             newname = ''
                     elif (j.find("ss://") == 0):
                         onenode = StrText.all_to_ss(j)
-                        nodes = onenode.split("#", 1) # 第二个参数为 1，返回两个参数列表
-                        oldname = onenode.split("#", 1)[1]
-                        onenode = "ss://"+(base64.b64decode(nodes[0][5:].encode("utf-8")).decode("utf-8")) + "#" + oldname
-                        ipdomain = StrText.get_str_btw(onenode, "@", ":")
-                        ip_country = StrText.get_country(ipdomain)
-                        newname = '[' + datecont + ']-' + ip_country + '-'+ str(ii).zfill(3) + '-' + ipdomain
-                        onenode = nodes[0] + "#" + newname
+                        if(onenode != ''):
+                            nodes = onenode.split("#", 1) # 第二个参数为 1，返回两个参数列表
+                            oldname = onenode.split("#", 1)[1]
+                            onenode = "ss://"+(base64.b64decode(nodes[0][5:].encode("utf-8")).decode("utf-8")) + "#" + oldname
+                            ipdomain = StrText.get_str_btw(onenode, "@", ":")
+                            ip_country = StrText.get_country(ipdomain)
+                            newname = '[' + datecont + ']-' + ip_country + '-'+ str(ii).zfill(3) + '-' + ipdomain
+                            onenode = nodes[0] + "#" + newname
+                        else:
+                            newname = ''
                     elif (j.find("trojan://") == 0):
                         #trojan://28d98f761aca9d636f44db62544628eb@45.66.134.219:443#%f0%9f%87%af%f0%9f%87%b5+%e6%97%a5%e6%9c%ac-45.66.134.219
                         #trojan://28d98f761aca9d636f44db62544628eb@45.66.134.219:443?sni=123#%f0%9f%87%af%f0%9f%87%b5+%e6%97%a5%e6%9c%ac-45.66.134.219
