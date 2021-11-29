@@ -42,7 +42,7 @@ resurl = 'https://cf-ipfs.com/ipns/k2k4r8n10q07nqe02zysssxw1b9qboab0dd3ooljd32i9
 filename = 'ipfs|expire.txt'
 for i in filename.split('|'):
     try:
-        File = NetFile.down_net_file(resurl, i, 240, 120)
+        File = NetFile.url_to_str(resurl + '' + i, 240, 120)
         if(len(File) > 1000):
             LocalFile.write_LocalFile('./res/' + i, File.strip('\n')) 
             print('Get-File-is-True:' + resurl + '' + i + ' FileSize:' + str(len(File)))
@@ -59,12 +59,12 @@ def get_list_sort(s):
 
 
 # 下载订阅链接将其合并
-nodes = LocalFile.read_LocalFile("./res/node.json")
-print('Get-node.json: \n' + str(len(nodes)))
 
 expire = LocalFile.read_LocalFile("./res/expire.txt")
 print('Get-expire.txt: \n' + str(len(expire)))
 if(menu == 'update' and len(expire) > 0):
+    nodes = LocalFile.read_LocalFile("./res/node.json")
+    print('Get-node.json: \n' + str(len(nodes)))
     #sub_link = []
     #for i in range(len(sub_url)):
     #    s_url = sub_url[i]
@@ -128,14 +128,16 @@ if(menu == 'update' and len(expire) > 0):
                             else:
                                 print('Url-All-Nodes-no-Base64:\n' + clashnodes)
                                 #sub_link.append(clashnodes)
-                            #try:
-                            #    clashnodes = base64.b64decode(clashnodes).decode("utf-8")
-                            #except Exception as ex:
-                            #    print('Line-146:' + str(ex) + 'clashnodes:\n' + clashnodes)
+                            try:
+                                clashnodes = clashnodes.strip('\n')
+                                if(clashnodes.find('\n') == -1):
+                                    clashnodes = base64.b64decode(clashnodes).decode("utf-8")
+                            except Exception as ex:
+                                print('Line-146:' + str(ex) + 'clashnodes:\n' + clashnodes)
                             for onenode in clashnodes.split('\n'):
                                 try:
                                     iii += 1
-                                    if (onenode != '' and expire.find(onenode) == -1 and allonenode.find(onenode) == -1):
+                                    if (onenode != '' and onenode.find('://') > -1 and expire.find(onenode) == -1 and allonenode.find(onenode) == -1):
                                         print('Line-127-已添加(clash-node-url-id:' + str(ii)+ ')-onenode-id-' + str(iii) + '-onenode-url:\n' + onenode)
                                         allonenode = allonenode + onenode + '\n'
                                     else:
@@ -229,11 +231,11 @@ if(menu == 'update' and len(expire) > 0):
 
     # 追加vpei.txt的记录到新记录后面。
     clashnodes = LocalFile.read_LocalFile("./res/vpei.txt")
-    #clashnodes = base64.b64decode(clashnodes).decode("utf-8")
+    clashnodes = base64.b64decode(clashnodes).decode("utf-8")
     if(len(clashnodes) > -1):
         for onenode in clashnodes.split('\n'):
             try:
-                if (onenode != '' and expire.find(onenode) == -1 and allonenode.find(onenode) == -1):
+                if (onenode != '' and onenode.find('://') > -1 and expire.find(onenode) == -1 and allonenode.find(onenode) == -1):
                     allonenode = allonenode + onenode + '\n'
             except Exception as ex:
                 print('Line-193:' + str(ex) + '\nclashnode:\n' + clashnode + '\nclashnode:\n' + onenode)
@@ -243,14 +245,18 @@ if(menu == 'update' and len(expire) > 0):
     # 将节点更新时间等写入配置文件
     if (nodeurl.find('uptime') > -1):
         LocalFile.write_LocalFile('./res/node.json', nodeurl.strip('\n'))
-else:
-    print('Line-246:过滤名单读取失败，暂停运行。expire-' + expire)
+#else:
+#    print('Line-246:过滤名单读取失败，暂停运行。expire-' + expire)
 
-if(menu == 'ipdomain'):
+if(menu == 'ipdomain' and len(expire) > 0):
     # 下载代理节点过滤信息
-    allonenode = LocalFile.read_LocalFile("./res/vpei-new.txt")
+    if(os.path.exists('./res/vpei-new.txt')):
+        allonenode = LocalFile.read_LocalFile("./res/vpei-new.txt")
+    else:
+        allonenode = LocalFile.read_LocalFile("./res/vpei.txt")
     allonenode = base64.b64decode(allonenode).decode("utf-8")
-    print('Get-expire.txt: \n' + expire)
+    print('Get-allonenode.txt: \n' + str(len(allonenode)))
+    #print('Get-expire.txt: \n' + expire)
     # 逐条读取链接，并进行测试
     onenode = ''
     allnode = ''
@@ -270,6 +276,7 @@ if(menu == 'ipdomain'):
     ii = 0
     iii = 0
     iiii = 0
+    print('Get-allonenode.txt: \n' + str(len(allonenode)))
     if(len(allonenode) > 0):
         for j in allonenode.split('\n'):
             #print('deal site url id:' + str(ii))
@@ -373,7 +380,7 @@ if(menu == 'ipdomain'):
                                 cnnode = cnnode + '\n' + onenode
                             else:
                                 expire = expire + ',' + j + ',' + onenode   #新旧节点信息都加入作对比。
-                                if(iii < 300):
+                                if(iii < 200):
                                     try:
                                         iii += 1
                                         #print('ipdomain:' + ipdomain + '-ipdomain-ping:' + str(ping(ipdomain, unit='ms')))

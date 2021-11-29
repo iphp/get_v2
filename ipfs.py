@@ -50,13 +50,13 @@ if(ipfs == 'ipfs'):
             try:
                 resurl = j + '/ipfs/' + cid + '/'
                 print('\n' + str(ii) + '-' +resurl)
-                expire = NetFile.down_net_file(resurl, '?file=name.html', 25, 25)
-                expire = NetFile.down_net_file(resurl, 'node.txt', 25, 25)
-                expire = NetFile.down_net_file(resurl, 'nodecn.txt', 25, 25)
-                expire = NetFile.down_net_file(resurl, 'clash.yaml', 25, 25)
-                expire = NetFile.down_net_file(resurl, 'clashnode.txt', 25, 25)
-                expire = NetFile.down_net_file(resurl, 'openclash.yaml', 25, 25)
-                expire = NetFile.down_net_file(resurl, 'readme.txt', 25, 25)
+                expire = NetFile.url_to_str(resurl + '?file=name.html', 25, 25)
+                expire = NetFile.url_to_str(resurl + 'node.txt', 25, 25)
+                expire = NetFile.url_to_str(resurl + 'nodecn.txt', 25, 25)
+                expire = NetFile.url_to_str(resurl + 'clash.yaml', 25, 25)
+                expire = NetFile.url_to_str(resurl + 'clashnode.txt', 25, 25)
+                expire = NetFile.url_to_str(resurl + 'openclash.yaml', 25, 25)
+                expire = NetFile.url_to_str(resurl + 'readme.txt', 25, 25)
                 readme = LocalFile.read_LocalFile("./out/readme.txt")
                 #print('ipfs:\nlocal-readme\n' + readme + '\nnet-readme\n' + expire)
                 if (hashlib.md5(readme.encode("utf-8")).hexdigest() == hashlib.md5(expire.encode("utf-8")).hexdigest()):
@@ -77,13 +77,13 @@ else:
         try:
             resurl = j + '/ipns/' + os.environ["PUBLISHID"] + '/'
             print('\n' + str(ii) + '-' +resurl)
-            expire = NetFile.down_net_file(resurl, '?file=name.html', 150, 25)
-            expire = NetFile.down_net_file(resurl, 'node.txt', 150, 25)
-            expire = NetFile.down_net_file(resurl, 'nodecn.txt', 150, 25)
-            expire = NetFile.down_net_file(resurl, 'clash.yaml', 150, 25)
-            expire = NetFile.down_net_file(resurl, 'clashnode.txt', 150, 25)
-            expire = NetFile.down_net_file(resurl, 'openclash.yaml', 150, 25)
-            expire = NetFile.down_net_file(resurl, 'readme.txt', 150, 25)
+            expire = NetFile.url_to_str(resurl + '?file=name.html', 150, 25)
+            expire = NetFile.url_to_str(resurl + 'node.txt', 150, 25)
+            expire = NetFile.url_to_str(resurl + 'nodecn.txt', 150, 25)
+            expire = NetFile.url_to_str(resurl + 'clash.yaml', 150, 25)
+            expire = NetFile.url_to_str(resurl + 'clashnode.txt', 150, 25)
+            expire = NetFile.url_to_str(resurl + 'openclash.yaml', 150, 25)
+            expire = NetFile.url_to_str(resurl + 'readme.txt', 150, 25)
             readme = LocalFile.read_LocalFile("./out/readme.txt")
             #print('ipns:\nlocal-readme\n' + readme + '\nnet-readme\n' + expire)
             if (hashlib.md5(readme.encode("utf-8")).hexdigest() == hashlib.md5(expire.encode("utf-8")).hexdigest() and iii < 5):

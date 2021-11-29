@@ -7,24 +7,8 @@ import urllib.request as urllib2
 from cls.LocalFile import LocalFile
 
 class NetFile(): # 将订阅链接中YAML，Base64等内容转换为 Url 链接内容
-
     # 从网络下载文件，返回文本信息
-    def down_net_file(r_url, fname, linktime, readtime):
-        retxt = ''
-        try:
-            r_url = r_url + '' + fname
-            rq = requests.get(r_url, timeout=(linktime, readtime))
-            #rq = requests.get(url, timeout=(30, 60)) #连接超时 和 读取超时
-            if (rq.status_code != 200):
-                print("NetFile-Line-18: Download File error.][" + str(rq.status_code) + "]-Url: " + r_url)
-            else:
-                retxt = rq.content.decode("utf-8")
-        except Exception as ex:
-            print('NetFile-Line-34: down res file err: ' + str(ex) + '\n' +  r_url)
-        return retxt
-
-    # 从网络下载文件，返回文本信息
-    def down_net_file(r_url, linktime, readtime):
+    def url_to_str(r_url, linktime, readtime):
         retxt = ''
         try:
             rq = requests.get(r_url, timeout=(linktime, readtime))
