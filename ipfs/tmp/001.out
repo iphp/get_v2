@@ -3,8 +3,8 @@ go-ipfs version: 0.10.0
 Repo version: 11
 System version: amd64/linux
 Golang version: go1.16.8
-Swarm listening on /ip4/10.1.1.83/tcp/4001
-Swarm listening on /ip4/10.1.1.83/udp/4001/quic
+Swarm listening on /ip4/10.1.0.63/tcp/4001
+Swarm listening on /ip4/10.1.0.63/udp/4001/quic
 Swarm listening on /ip4/127.0.0.1/tcp/4001
 Swarm listening on /ip4/127.0.0.1/udp/4001/quic
 Swarm listening on /ip4/172.17.0.1/tcp/4001
@@ -12,12 +12,12 @@ Swarm listening on /ip4/172.17.0.1/udp/4001/quic
 Swarm listening on /ip6/::1/tcp/4001
 Swarm listening on /ip6/::1/udp/4001/quic
 Swarm listening on /p2p-circuit
-Swarm announcing /ip4/10.1.1.83/tcp/4001
-Swarm announcing /ip4/10.1.1.83/udp/4001/quic
+Swarm announcing /ip4/10.1.0.63/tcp/4001
+Swarm announcing /ip4/10.1.0.63/udp/4001/quic
 Swarm announcing /ip4/127.0.0.1/tcp/4001
 Swarm announcing /ip4/127.0.0.1/udp/4001/quic
-Swarm announcing /ip4/20.112.102.5/tcp/1024
-Swarm announcing /ip4/20.112.102.5/udp/1985/quic
+Swarm announcing /ip4/20.112.101.150/tcp/1024
+Swarm announcing /ip4/20.112.101.150/udp/1985/quic
 Swarm announcing /ip6/::1/tcp/4001
 Swarm announcing /ip6/::1/udp/4001/quic
 API server listening on /ip4/127.0.0.1/tcp/5001

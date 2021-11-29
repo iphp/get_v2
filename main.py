@@ -60,10 +60,10 @@ def get_list_sort(s):
 
 # 下载订阅链接将其合并
 nodes = LocalFile.read_LocalFile("./res/node.json")
-print('Get-node.json: \n' + nodes)
+print('Get-node.json: \n' + str(len(nodes)))
 
 expire = LocalFile.read_LocalFile("./res/expire.txt")
-print('Get-expire.txt: \n' + expire)
+print('Get-expire.txt: \n' + str(len(expire)))
 if(menu == 'update' and len(expire) > 0):
     #sub_link = []
     #for i in range(len(sub_url)):
@@ -92,6 +92,7 @@ if(menu == 'update' and len(expire) > 0):
                 rq = requests.get(onode_upurl, timeout=(240, 120)) #连接超时 和 读取超时
                 if (rq.status_code != 200):
                     print('[GET Code {}] Download sub error on link: '.format(rq.status_code) + onode_upurl)
+                    nodeurl = nodeurl + "\n" + i
                     continue
                 clashnodes = rq.content
                 if (clashnodes != '' and onode_upmd5 != hashlib.md5(clashnodes).hexdigest() and linecount < 50):
@@ -115,6 +116,7 @@ if(menu == 'update' and len(expire) > 0):
                     else:
                         onode['uptime'] = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
                     i = json.dumps(onode)
+                    nodeurl = nodeurl + "\n" + i
                     clashnodes = (rq.content).decode('utf-8' ,"ignore")
                     print('UpdateTime:' + onode['uptime'])
                     if (onode['type'] == 'mixed'):
@@ -223,27 +225,25 @@ if(menu == 'update' and len(expire) > 0):
                             print('Line-268:\n' + str(ex) +'\n' + clashnodes)
             except Exception as ex:
                 print('Line-262:' + str(ex))
-            nodeurl = nodeurl + "\n" + i
-        #转换Clash节点为正常混合节点并保存至本地vpei.txt
-        print('Url-All-Clash-To-Mixed-Nodes:\n' + allonenode)
+    print('Url-All-Clash-To-Mixed-Nodes:\n' + allonenode)
 
-        # 追加vpei.txt的记录到新记录后面。
-        clashnodes = LocalFile.read_LocalFile("./res/vpei.txt")
-        if(len(clashnodes) > -1):
-            for onenode in clashnodes.split('\n'):
-                try:
-                    if (onenode != '' and expire.find(onenode) == -1 and allonenode.find(onenode) == -1):
-                        allonenode = allonenode + onenode + '\n'
-                except Exception as ex:
-                    print('Line-193:' + str(ex) + '\nclashnode:\n' + clashnode + '\nclashnode:\n' + onenode)
-        #res = base64.b64encode(allonenode.strip('\n').encode("utf-8")).decode("utf-8")
-        LocalFile.write_LocalFile('./res/vpei-new.txt', allonenode.strip('\n'))
+    # 追加vpei.txt的记录到新记录后面。
+    clashnodes = LocalFile.read_LocalFile("./res/vpei.txt")
+    if(len(clashnodes) > -1):
+        for onenode in clashnodes.split('\n'):
+            try:
+                if (onenode != '' and expire.find(onenode) == -1 and allonenode.find(onenode) == -1):
+                    allonenode = allonenode + onenode + '\n'
+            except Exception as ex:
+                print('Line-193:' + str(ex) + '\nclashnode:\n' + clashnode + '\nclashnode:\n' + onenode)
+    #res = base64.b64encode(allonenode.strip('\n').encode("utf-8")).decode("utf-8")
+    LocalFile.write_LocalFile('./res/vpei-new.txt', allonenode.strip('\n'))
 
-        # 将节点更新时间等写入配置文件
-        if (nodeurl.find('uptime') > -1):
-            LocalFile.write_LocalFile('./res/node.json', nodeurl.strip('\n'))
-    else:
-        print('Line-198:过滤名单读取失败，暂停运行。expire-' + expire)
+    # 将节点更新时间等写入配置文件
+    if (nodeurl.find('uptime') > -1):
+        LocalFile.write_LocalFile('./res/node.json', nodeurl.strip('\n'))
+else:
+    print('Line-246:过滤名单读取失败，暂停运行。expire-' + expire)
 
 if(menu == 'ipdomain'):
     # 下载代理节点过滤信息
