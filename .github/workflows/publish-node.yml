@@ -180,7 +180,7 @@ jobs:
           #echo 关闭进程 ipfs #kill ipfs
           ps -A
           ipfs shutdown 
-          sleep 60
+          sleep 80
           #echo 将要打开进程 ipfs #kill ipfs
           ps -A
 
@@ -205,7 +205,7 @@ jobs:
           echo 关闭进程 ipfs #kill ipfs
           ps -A
           ipfs shutdown 
-          sleep 60
+          sleep 80
           #echo 将要打开进程 ipfs #kill ipfs
           ps -A
           file1=./ipfs/tmp/003.out
