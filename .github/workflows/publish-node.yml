@@ -37,102 +37,27 @@ jobs:
           #pip install qqwry-py3
           pip install -r ./res/requirements.txt
 
-      - name: 'Working'
+      - name: 'Update and merge node from url'
+        id: update
         env:
           RESURL: ${{ secrets.RESURL }}
         run: 
-          python main.py
+          python main.py update
+          echo "::set-output name=status::success"
 
-      - name: 'Upload Files To Ipfs Network'
+      - name: 'Update node ip-address info'
+        id: ipdomain
         env:
-          PEERID: ${{ secrets.PEERID }}
-          PRIVKEY: ${{ secrets.PRIVKEY }}
-          CID: cid
-        if: env.PEERID != '' && env.PRIVKEY != '' && !cancelled()
-        run: |
-          #git clone https://github.com/letseeqiji/oneinstall.git
-          #cd oneinstall/golang
-          #sh goinstall.sh
-          go version
-          #git clone https://github.com/ipfs/go-ipfs.git
-          #cd go-ipfs
-          #make install
-          # wget http://dweb.link/ipfs/QmZWbdDNEMGpTYNA9LhtyA2E5Z6weVCcAqKpWYddzUUfru/go-ipfs/ipfs -O ./ipfs/ipfs
-          chmod 7777 ./ipfs/ipfs
-          #wget http://dweb.link/ipfs/QmZWbdDNEMGpTYNA9LhtyA2E5Z6weVCcAqKpWYddzUUfru/go-ipfs/install.sh -O install.sh
-          chmod 7777 ./ipfs/install.sh
-          sh ./ipfs/install.sh
-          #ipfs init
-          mkdir /home/runner/.ipfs
-          cp -r ./ipfs/config/* /home/runner/.ipfs
-          sed -i 's/vpeiPEERID/${{ secrets.PEERID }}/g' /home/runner/.ipfs/config
-          sed -i 's/vpeiPRIVKEY/${{ env.PRIVKEY }}/g' /home/runner/.ipfs/config
-          #cp -r /home/runner/.ipfs config
-          #cp -f /home/runner/.ipfs/config ./config
-          #cd /home/runner/.ipfs
-          #ls
-
-          ipfs id
-          file1=./ipfs/tmp/001.out
-          nohup ipfs add -r ./out >$file1 &
-          sleep 5
-          dataline1=$(< $file1)
-          echo $dataline1
-
-          echo  下行数字50需要根据文件发布的目录调整./out，目录长度增长，50数字增加。
-          #echo ${dataline1: -50}
-          CID=${dataline1: -50}
-          echo $CID
-          echo
-          CID=${CID% *}
-          echo ID:$CID
-          # ipfs pin add $CID
-          
-          # 运行ipfs软件
-          nohup ipfs daemon >$file1 &
-          sleep 10
-          file1=./ipfs/tmp/tmp.out
-          # 对发布的文件进行加载, CID从001.out文件获取或直接传递
-          nohup sudo wget http://127.0.0.1:8080/ipfs/$CID/ -O $file1 >$file1 &
-          sleep 2
-          nohup sudo wget http://127.0.0.1:8080/ipfs/$CID/node.txt -O $file1 >$file1 &
-          sleep 2
-          nohup sudo wget http://127.0.0.1:8080/ipfs/$CID/nodecn.txt -O $file1 >$file1 &
-          sleep 2
-          nohup sudo wget http://127.0.0.1:8080/ipfs/$CID/clash.yaml -O $file1 >$file1 &
-          sleep 2
-          nohup sudo wget http://127.0.0.1:8080/ipfs/$CID/openclash.yaml -O $file1 >$file1 &
-          sleep 2
-          # 对网络文件进行循环加载
-          python ./ipfs.py ipfs $CID
-
-          #echo 关闭进程 ipfs #kill ipfs
-          ps -A
-          ipfs shutdown 
-          sleep 10
-          ps -A
-
-          ipfs name publish /ipfs/$CID --allow-offline=true --lifetime=24h
-          file1=./ipfs/tmp/002.out
-          dataline1=$(< $file1)
-          echo $dataline1
-          sleep 10
-
-          ipfs id
-          ipfs files cp /ipfs/$CID "/clash"
-          sleep 10
-
-          file1=./ipfs/tmp/001.out
-          nohup ipfs daemon >$file1 &
-          dataline1=$(< $file1)
-          echo $dataline1
-          # cp -r -f /home/runner/.ipfs ./config2
+          RESURL: ${{ secrets.RESURL }}
+        run: 
+          python main.py ipdomain
+          echo "::set-output name=status::success"
 
       - name: 'Compare new file with old file MD5'
         id: diff
         run: |
-          file1=./ipfs/tmp/new-node.txt
-          file2=./out/node.txt
+          file1=./res/vpei-new.txt
+          file2=./res/vpei.txt
           #dataline1=$(< $file1)
           dataline1=$(md5sum $file1|cut -d ' ' -f1)
           echo $dataline1
@@ -183,11 +108,99 @@ jobs:
           branch: main
           #branch: ${{ github.ref }}
 
+      - name: 'Upload Files To Ipfs Network'
+        id: ipfs
+        env:
+          PEERID: ${{ secrets.PEERID }}
+          PRIVKEY: ${{ secrets.PRIVKEY }}
+          CID: cid
+        if: steps.ipdomain.outputs.status == 'success' && env.PEERID != '' && env.PRIVKEY != ''
+        run: |
+          #git clone https://github.com/letseeqiji/oneinstall.git
+          #cd oneinstall/golang
+          #sh goinstall.sh
+          go version
+          #git clone https://github.com/ipfs/go-ipfs.git
+          #cd go-ipfs
+          #make install
+          # wget http://dweb.link/ipfs/QmZWbdDNEMGpTYNA9LhtyA2E5Z6weVCcAqKpWYddzUUfru/go-ipfs/ipfs -O ./ipfs/ipfs
+          chmod 7777 ./ipfs/ipfs
+          #wget http://dweb.link/ipfs/QmZWbdDNEMGpTYNA9LhtyA2E5Z6weVCcAqKpWYddzUUfru/go-ipfs/install.sh -O install.sh
+          chmod 7777 ./ipfs/install.sh
+          sh ./ipfs/install.sh
+          #ipfs init
+          mkdir /home/runner/.ipfs
+          cp -r ./ipfs/config/* /home/runner/.ipfs
+          sed -i 's/vpeiPEERID/${{ secrets.PEERID }}/g' /home/runner/.ipfs/config
+          sed -i 's/vpeiPRIVKEY/${{ env.PRIVKEY }}/g' /home/runner/.ipfs/config
+          #cp -r /home/runner/.ipfs config
+          #cp -f /home/runner/.ipfs/config ./config
+          #cd /home/runner/.ipfs
+          #ls
+
+          ipfs id
+          file1=./ipfs/tmp/001.out
+          nohup ipfs add -r ./out >$file1 &
+          sleep 5
+          dataline1=$(< $file1)
+          echo $dataline1
+
+          echo  下行数字50需要根据文件发布的目录调整./out，目录长度增长，50数字增加。
+          #echo ${dataline1: -50}
+          CID=${dataline1: -50}
+          echo $CID
+          echo
+          CID=${CID% *}
+          echo ID:$CID
+          # ipfs pin add $CID
+          
+          # 运行ipfs软件
+          nohup ipfs daemon >$file1 &
+          sleep 60
+          file1=./ipfs/tmp/tmp.out
+          # 对发布的文件进行加载, CID从001.out文件获取或直接传递
+          nohup sudo wget http://127.0.0.1:8080/ipfs/$CID/ -O $file1 >$file1 &
+          sleep 2
+          nohup sudo wget http://127.0.0.1:8080/ipfs/$CID/node.txt -O $file1 >$file1 &
+          sleep 2
+          nohup sudo wget http://127.0.0.1:8080/ipfs/$CID/nodecn.txt -O $file1 >$file1 &
+          sleep 2
+          nohup sudo wget http://127.0.0.1:8080/ipfs/$CID/clash.yaml -O $file1 >$file1 &
+          sleep 2
+          nohup sudo wget http://127.0.0.1:8080/ipfs/$CID/openclash.yaml -O $file1 >$file1 &
+
+          sleep 60
+          # 对网络文件进行循环加载
+          python ./ipfs.py ipfs $CID
+
+          #echo 关闭进程 ipfs #kill ipfs
+          ps -A
+          ipfs shutdown 
+          sleep 60
+          ps -A
+
+          ipfs name publish /ipfs/$CID --allow-offline=true --lifetime=24h
+          file1=./ipfs/tmp/002.out
+          dataline1=$(< $file1)
+          echo $dataline1
+          sleep 10
+
+          ipfs id
+          ipfs files cp /ipfs/$CID "/clash"
+          sleep 10
+
+          file1=./ipfs/tmp/001.out
+          nohup ipfs daemon >$file1 &
+          dataline1=$(< $file1)
+          echo $dataline1
+          # cp -r -f /home/runner/.ipfs ./config2
+          echo "::set-output name=status::success"
+
       - name: 'Publish Files To Ipfs Network'
         id: publish
         env:
           PUBLISHID: ${{ secrets.PUBLISHID }}
-        if: steps.diff.outputs.status == 'success' && env.PUBLISHID != '' && !cancelled()
+        if: steps.ipfs.outputs.status == 'success' && env.PUBLISHID != '' && !cancelled()
         run: |
           # sudo rm -rf ./install1 ./install2 ./install3
           # sudo cp -f ./res/README.md ./README.md
@@ -201,7 +214,7 @@ jobs:
           ps -A
           file1=./ipfs/tmp/003.out
           nohup ipfs daemon >$file1 &
-          sleep 10
+          sleep 60
           
           # 说明：nohup加在一个命令的最前面，表示不挂断的运行命令
           # -u 表示实时输出到.out
@@ -253,18 +266,8 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           repository: ${{ github.repository }}
-          retain_days: 2
+          retain_days: 7
           keep_minimum_runs: 20
-
-      - name: 'Waiting for ipfs release'
-        env:
-          PUBLISHID: ${{ secrets.PUBLISHID }}
-        if: steps.publish.outputs.status == 'success' && env.PUBLISHID != '' && !cancelled()
-        run: |
-          sleep 10
-          echo First
-          sleep 10
-          echo Second
 
       - name: 'Send telegram message on push'
         env:
@@ -277,3 +280,13 @@ jobs:
           token: ${{ secrets.TELEGRAM_TOKEN }}
           message: |
              Publish files To ipfs network is finished.
+
+      - name: 'Waiting for ipfs release'
+        env:
+          PUBLISHID: ${{ secrets.PUBLISHID }}
+        if: steps.publish.outputs.status == 'success' && env.PUBLISHID != '' && !cancelled()
+        run: |
+          sleep 10
+          echo First
+          sleep 10
+          echo Second

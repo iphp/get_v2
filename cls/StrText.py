@@ -3,8 +3,12 @@
 import requests
 import os
 import time
+import datetime
 import socket
 import json
+import base64
+import re
+import hashlib
 from ip import QQwry
 from cls.IsValid import IsValid
 from cls.LocalFile import LocalFile
@@ -117,6 +121,24 @@ class StrText():
     # 非标准格式的vmess明文地址转化为标准格式的vmess明文
     def all_to_vmess(onenode):
         try:
+            #{alterId: 2,  cipher: auto,  name: '[11-07]|oslook|_2',  network: ws,  port: 80,  server: 7.yyds123.com,  tls: false,  type: vmess,  uuid: bac18e70-9964-3f99-805a-d809c4bdc6cb,  ws-path: /ny}
+            #  - {name: 🇨🇦 @SSRSUB-加拿大ss01-付费推荐:dlj.tf/ssrsub, server: ss1.ssrsub.com, port: 10443, type: ss, cipher: aes-128-gcm, password: suo.yt/ssrsub, plugin: obfs, plugin-opts: {mode: tls, host: n46hm52773.wns.windows.com}, udp: true}
+            #{
+            #  "v": "2",
+            #  "ps": "name-1.1.1.1",
+            #  "add": "1.1.1.1",
+            #  "port": "443",
+            #  "id": "892ebb75-7055-3007-8d16-356e65c6a49a",
+            #  "aid": "32",
+            #  "scy": "auto",
+            #  "net": "tcp",
+            #  "type": "http",
+            #  "host": "domain.com",
+            #  "path": "/v112EtCE3uAcU",
+            #  "tls": "tls",
+            #  "sni": "sni123"
+            #}
+            #- {name: US-107.173.157.168, server: 107.173.157.168, port: 443, type: vmess, uuid: 4f6aa0c3-7be1-4eaa-a64c-a23418070422, alterId: 6, cipher: auto, skip-cert-vertify: false, network: ws, ws-path: /b06fde1/, tls: True, ws-headers: {Host: www.shunxin.ml}}
             # onenode = '{"add":"104.255.66.87","v":"2","ps":"CA_940:001","port":38922,"id":"f3e846c1-d8e4-42df-86d4-f4e5028630d8","aid":"8","net":"tcp","type":"","host":"","path":"/:011","tls":""}'
             # onenode = '{"add": "v7.ssrsub.com", "v": "2", "ps": "\'v7.ssrsub.com\'", "port": "168", "id": "e54a480c-77e3-41ca-8f8b-17ffb50dbd08", "aid": "0", "net": "ws", "type": "", "host": "", "path": "/ssrsub", "tls": "tls"}'
             # onenode = '{name: 🇯🇵JP-35.77.5.55, server: 034.ap.pop.bigairport.net, port: 12356, type: vmess, uuid: a6f82e7d-6e99-4a4e-8981-8e91453c13f7, alterId: 1, cipher: auto, skip-cert-vertify: false, network: ws, ws-path: /, tls: True, ws-headers: {Host: t.me/vpnhat}}'
@@ -159,6 +181,28 @@ class StrText():
             LocalFile.write_LocalFile('./ipfs/tmp/err.log', 'Line-167-StrText: ' + str(ex) + '\n' + onenode)
             return ''
             
+    def all_to_ss(onenode):
+        try:
+            if (onenode.find("#") == -1):
+                onenode= onenode + "#0"
+            #j = "ss://YWVzLTI1Ni1nY206bjh3NFN0bmJWRDlkbVhZbjRBanQ4N0VBQDIxMi4xMDIuNTQuMTYzOjMxNTcy#title"
+            #j = "ss://YWVzLTI1Ni1nY206bjh3NFN0bmJWRDlkbVhZbjRBanQ4N0VB@212.102.54.163:31572#title"
+            #j = "ss://YWVzLTEyOC1nY206c3VvLnl0L3NzcnN1Yg==@212.102.54.163:10443/?plugin=obfs-123
+            onenode = onenode.replace("/?", "#")
+            if (onenode.find("@") == -1):
+                jjs = onenode.split("#", 1) # 第二个参数为 1，返回两个参数列表
+                onenode = "ss://"+(base64.b64decode(jjs[0][5:].encode("utf-8")).decode("utf-8"))+"#"+jjs[1]
+            else:
+                jjs = onenode.split("@", 1) # 第二个参数为 1，返回两个参数列表
+                onenode = "ss://"+(base64.b64decode(jjs[0][5:].encode("utf-8")).decode("utf-8"))+"@"+jjs[1]
+            #ss://aes-256-gcm:n8w4StnbVD9dmXYn4Ajt87EA@212.102.54.163:31572#title
+            oldname = onenode.split("#", 1)[1]
+            onenode = "ss://" + base64.b64encode(onenode.split("#", 1)[0][5:].encode("utf-8")).decode("utf-8") + "#" + oldname
+        except Exception as ex:
+            print('Line-199-StrText: ' + str(ex) + '\n' + onenode)
+            LocalFile.write_LocalFile('./ipfs/tmp/err.log', '\nLine-199-StrText: ' + str(ex) + '\n' + onenode)
+            return ''
+
     # 非标准格式的vmess明文地址转化为标准格式的vmess明文
     def all_to_vmess2(ipdomain):
         print('NewNode1:\n' + onenode)

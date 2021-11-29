@@ -11,40 +11,29 @@
 
 ## 🚀 每3小时更新一次
 
-- v2ray 订阅，适用于 v2rayN, Qv2ray 等 (base64)
+- v2ray 订阅，适用于 v2rayN, Qv2ray 等 (base64),Clash 订阅，适用于 Clash .NET 等。openclash.yaml支持udp：true参数。
 
 ```
-混合节点(全部)：https://raw.fastgit.org/vpei/Free-Node-Merge/main/out/node.txt
-
-混合节点(国内)：https://raw.fastgit.org/vpei/Free-Node-Merge/main/out/nodecn.txt
-```
-
-- Clash 订阅，适用于 Clash .NET 等。openclash.yaml支持udp：true参数。
-
-```
-https://raw.fastgit.org/vpei/Free-Node-Merge/main/out/clash.yaml
-
-https://raw.fastgit.org/vpei/Free-Node-Merge/main/out/openclash.yaml
-```
-
-- 以上订阅节点的精简稳定版（过滤不能访问和不稳定节点，稳定但更新慢）
-
-```
+混合节点(全部)：
 https://dweb.link/ipns/k51qzi5uqu5dlfnig6lej7l7aes2d5oed6a4435s08ccftne1hq09ac1bulz2f/node.txt
 
+混合节点(国内)：
 https://dweb.link/ipns/k51qzi5uqu5dlfnig6lej7l7aes2d5oed6a4435s08ccftne1hq09ac1bulz2f/nodecn.txt
 
+Clash节点：
 https://dweb.link/ipns/k51qzi5uqu5dlfnig6lej7l7aes2d5oed6a4435s08ccftne1hq09ac1bulz2f/clash.yaml
 
+OpenClash节点：
 https://dweb.link/ipns/k51qzi5uqu5dlfnig6lej7l7aes2d5oed6a4435s08ccftne1hq09ac1bulz2f/openclash.yaml
+
+Clash纯节点：
+https://dweb.link/ipns/k51qzi5uqu5dlfnig6lej7l7aes2d5oed6a4435s08ccftne1hq09ac1bulz2f/clashnode.yaml
 ```
+
 - 国外IPFS节点，不稳定，如果上面打不开，可以使用下面节点替换。
 
-- https://ipfs.io/ipns/k51qzi5uqu5dlfnig6lej7l7aes2d5oed6a4435s08ccftne1hq09ac1bulz2f/
-- https://gateway.ipfs.io/ipns/k51qzi5uqu5dlfnig6lej7l7aes2d5oed6a4435s08ccftne1hq09ac1bulz2f/
-- http://15.237.96.141:8080/ipns/k51qzi5uqu5dlfnig6lej7l7aes2d5oed6a4435s08ccftne1hq09ac1bulz2f
-- https://gateway.ipfs.io/ipns/k51qzi5uqu5dlfnig6lej7l7aes2d5oed6a4435s08ccftne1hq09ac1bulz2f
-
+- http://15.237.96.141:8080/ipns/k51qzi5uqu5dlfnig6lej7l7aes2d5oed6a4435s08ccftne1hq09ac1bulz2f/
+- https://dweb.link/ipns/k51qzi5uqu5dlfnig6lej7l7aes2d5oed6a4435s08ccftne1hq09ac1bulz2f/
 
 ## 📧 更新推送
 
