@@ -101,7 +101,7 @@ if(menu == 'update' and len(expire) > 0):
                     if (onode_upurl.find('vpei') == -1):
                         linecount += 1
                     #60行后，只执行一行
-                    if (ii > 70):  
+                    if (ii > 65):  
                         linecount = 50
                     onode['upmd5'] = hashlib.md5(clashnodes.encode('utf-8')).hexdigest()
                     #onode['uptime'] = time.asctime( time.localtime(time.time()) )
@@ -113,7 +113,7 @@ if(menu == 'update' and len(expire) > 0):
                         onode['uptime'] = (datetime.datetime.now() - datetime.timedelta(days=730)).strftime("%Y-%m-%d %H:%M:%S")
                     elif (onode_upurl.find('vpei') > -1 or onode_upurl.find('k2k4r8n10q07nqe02zysssxw1b9qboab0dd3ooljd32i9ro3edry6hv6') > -1):
                         onode['uptime'] = (datetime.datetime.now() - datetime.timedelta(days=365)).strftime("%Y-%m-%d %H:%M:%S")
-                    elif (ii > 70):
+                    elif (ii > 65):
                         onode['uptime'] = (datetime.datetime.now() + datetime.timedelta(days=365)).strftime("%Y-%m-%d %H:%M:%S")
                     else:
                         onode['uptime'] = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
