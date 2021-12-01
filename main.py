@@ -101,19 +101,19 @@ if(menu == 'update' and len(expire) > 0):
                     if (onode_upurl.find('vpei') == -1):
                         linecount += 1
                     #60行后，只执行一行
-                    if (ii > 65):  
+                    if (ii > 70):  
                         linecount = 50
                     onode['upmd5'] = hashlib.md5(clashnodes.encode('utf-8')).hexdigest()
                     #onode['uptime'] = time.asctime( time.localtime(time.time()) )
                     #onode['uptime'] = (datetime.datetime.now() + datetime.timedelta(days=7)).strftime("%Y-%m-%d %H:%M:%S")
                     #onode['uptime'] = time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(datetime.datetime.now() - datetime.timedelta(days=7)))
                     if (onode_upurl.find('k2k4r8n10q07nqe02zysssxw1b9qboab0dd3ooljd32i9ro3edry6hv6/index') > -1):
-                        onode['uptime'] = (datetime.datetime.now() - datetime.timedelta(days=1095)).strftime("%Y-%m-%d %H:%M:%S")
+                        onode['uptime'] = (datetime.datetime.now() - datetime.timedelta(days=1094)).strftime("%Y-%m-%d %H:%M:%S")
                     elif (onode_upurl.find('out/node') > -1):
-                        onode['uptime'] = (datetime.datetime.now() - datetime.timedelta(days=730)).strftime("%Y-%m-%d %H:%M:%S")
+                        onode['uptime'] = (datetime.datetime.now() - datetime.timedelta(days=729)).strftime("%Y-%m-%d %H:%M:%S")
                     elif (onode_upurl.find('vpei') > -1 or onode_upurl.find('k2k4r8n10q07nqe02zysssxw1b9qboab0dd3ooljd32i9ro3edry6hv6') > -1):
                         onode['uptime'] = (datetime.datetime.now() - datetime.timedelta(days=365)).strftime("%Y-%m-%d %H:%M:%S")
-                    elif (ii > 65):
+                    elif (ii > 70):
                         onode['uptime'] = (datetime.datetime.now() + datetime.timedelta(days=365)).strftime("%Y-%m-%d %H:%M:%S")
                     else:
                         onode['uptime'] = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -362,7 +362,6 @@ if(menu == 'ipdomain' and len(expire) > 0):
                     try:
                         if (onenode != '' and IsValid.isIPorDomain(ipdomain) and expire.find(onenode) == -1 and allnode.find(onenode) == -1 and (onenode.find("vmess://") == 0 or onenode.find("ss://") == 0 or onenode.find("trojan://") == 0 or onenode.find("vless://") == 0)):
                             print('Rename node ' + oldname.strip('\n') + ' to ' + newname)
-                            allnode = allnode + '\n' + onenode
                             #if(len(allnode) > 204800):
                             #    allnode = base64.b64encode(allnode.strip('\n').encode("utf-8")).decode("utf-8")
                             #    iiii += 1
@@ -371,9 +370,11 @@ if(menu == 'ipdomain' and len(expire) > 0):
                             if(newname.find(u'中国') > -1 or newname.find(u'省') > -1 or newname.find(u'上海') > -1 or newname.find(u'北京') > -1 or newname.find(u'重庆') > -1 or newname.find(u'内蒙') > -1):
                                 if(iii < 100):
                                     cnnode = cnnode + '\n' + onenode
+                                else:
+                                    allnode = allnode + '\n' + onenode
                             else:
                                 expire = expire + ',' + j + ',' + onenode   #新旧节点信息都加入作对比。
-                                if(iii < 300):
+                                if(iii < 400):
                                     try:
                                         iii += 1
                                         #print('ipdomain:' + ipdomain + '-ipdomain-ping:' + str(ping(ipdomain, unit='ms')))
@@ -386,15 +387,15 @@ if(menu == 'ipdomain' and len(expire) > 0):
                                     except Exception as ex:
                                         print('Line-363:' + str(ex) + '\nipdomain:' + ipdomain + '\nonenode:' + onenode)
                                 else:
+                                    allnode = allnode + '\n' + onenode
                                     print('Line-366-已忽略(' + str(ii)+ '-Expire-Len:' + str(len(expire)) + ')-FindIndex:' + str(expire.find(onenode)) + '):\n' + onenode)
-                            # print(newname + '---------' + newname.find('省')+ '*' + newname.find(u'省'))
-                            #print('Line-401:onenode-' + onenode)                            
+                            print('Line-390:onenode-' + onenode)
                         else:
-                            print('Line-425-已过滤(' + str(ii)+ '-Expire-Len:' + str(len(expire))+ ')-FindIndex:' + str(expire.find(onenode)) ) #+ ' onenode:' + onenode + ' expire.find(onenode):' +  str(expire.find(onenode)) + '\nIsValid.isIP(ipdomain):' +  str(IsValid.isIP(ipdomain)) + ' IsValid.isIPorDomain(ipdomain):' +  str(IsValid.isIPorDomain(ipdomain)) + ' allnode.find(onenode):' +  str(allnode.find(onenode)) + ' allnode:\n' + allnode)
+                            print('Line-392-已过滤(' + str(ii)+ '-Expire-Len:' + str(len(expire))+ ')-FindIndex:' + str(expire.find(onenode)) ) #+ ' onenode:' + onenode + ' expire.find(onenode):' +  str(expire.find(onenode)) + '\nIsValid.isIP(ipdomain):' +  str(IsValid.isIP(ipdomain)) + ' IsValid.isIPorDomain(ipdomain):' +  str(IsValid.isIPorDomain(ipdomain)) + ' allnode.find(onenode):' +  str(allnode.find(onenode)) + ' allnode:\n' + allnode)
                     except Exception as ex:
                         print('Line-524:' + str(ex) + '\nConT:' + j)
             except Exception as ex:
-                print('Line-444:' + str(ex) + '\noldnode:' + j)
+                print('Line-396:' + str(ex) + '\noldnode:' + j)
         # 合并整理完成的节点，生成Clash配置文件
         cnnode = base64.b64encode(cnnode.strip('\n').encode("utf-8")).decode("utf-8")
         LocalFile.write_LocalFile('./out/nodecn.txt', cnnode)
@@ -456,25 +457,10 @@ if(menu == 'ipdomain' and len(expire) > 0):
                         j = base64.b64decode(j[8:].encode("utf-8")).decode("utf-8")
                         j = j.replace('\'', '')
                         #newname = StrText.get_str_btw(j, "ps: \"","\"");- server:139.155.22.227
-                        #v:2
-                        #name: | 2.14Mb
-                        #port:49110
-                        #uuid:f7675b7e-59bf-435c-ac03-dc2482f27e5d
-                        #alterId:64
-                        #network:tcp
-                        #type:
-                        #host:
-                        #path:/
-                        #tls:
-                        #  name: 🇨🇳-中国-139.155.22.227
-                        #  cipher: auto
                         node = json.loads(j)
                         node['ps'] = '\'' + node['ps'] + '\''
                         j = json.dumps(node, ensure_ascii = False)
                         
-                        #print('newname:' + newname)
-                        #print('onenode:' + j)
-                        #{"tls": "false", "type": "none", "scy": "auto", "ps": "\ud83c\uddef\ud83c\uddf5-\u65e5\u672c-54.238.161.11", "aid": "4", "path": "/v2ray", "net": "ws", "port": "80", "id": "261aeb5f-b6f7-359c-a321-9794bf344e12", "add": "54.238.161.11"}
                         if(j.find('ps":')>-1 or j.find('"v":') > -1 or j.find('"aid":') > -1):
                             j = j.replace(' ', '').replace('"', '') #.replace('\'', '')
                             j = j.replace(',', '\n').replace('\n\n', '\n')
@@ -494,7 +480,6 @@ if(menu == 'ipdomain' and len(expire) > 0):
                             #j = j.replace('path:', 'ws-path:')
                             j = j.replace('\n', '\n  ').replace(':', ': ')
 
-                            #newname = StrText.get_str_btw(j, 'name: ', '\n')
                             #pdb.set_trace()
                             #if(j.find(newname) > -1):
                             #    j = j.replace('name: ' + newname + '\n', 'name: \'' + newname + '\'\n')
@@ -507,7 +492,6 @@ if(menu == 'ipdomain' and len(expire) > 0):
                             j = j.replace('tls: none\n', 'tls: false\n') #类型type为空时，则填入vmess
                             j = j.replace('tls: \n', 'tls: false\n') #类型type为空时，则填入vmess
                             j = j.strip(' ').strip('{').strip('}')
-
                             if(j.find('cipher') == -1):
                                 j = j + '\n  cipher: auto'
                         #elif(j.find('"v":')>-1):
@@ -556,17 +540,14 @@ if(menu == 'ipdomain' and len(expire) > 0):
                     print('\n[保留96条节点，忽略多余节点]:\n' + j)
             except Exception as ex:
                 print('Line-578:' + str(ex))
-        clashname = clashname.rstrip('\n')
-        clashname = clashname.replace('\n\n', '\n')
+        clashname = clashname.replace('\n\n', '\n').rstrip('\n')
+        telename = telename.replace('\n\n', '\n').rstrip('\n')
+
+        clashurl = clashurl.replace('\n\n', '\n').rstrip('\n')
+        openclashurl = openclashurl.replace('\n\n', '\n').rstrip('\n')
+        clash_node_url = clash_node_url.replace('\n\n', '\n').rstrip('\n')
+
         print('clashname:\n' + clashname)
-
-        telename = telename.rstrip('\n')
-
-        clashurl = clashurl.rstrip('\n')
-        clashurl = clashurl.replace('\n\n', '\n')
-
-        openclashurl = openclashurl.rstrip('\n')
-        openclashurl = openclashurl.replace('\n\n', '\n')
         print('clashurl:\n' + clashurl)
 
         # 合并替换Clash节点信息，下载后回车行丢失
@@ -576,9 +557,9 @@ if(menu == 'ipdomain' and len(expire) > 0):
         if(clashname != ''):
             with open("./res/clash-1.txt", "r", encoding='utf-8') as f:  # 打开文件
                 clash_1 = f.read()  # 读取文件
-
             with open("./res/clash-2.txt", "r", encoding='utf-8') as f:  # 打开文件
                 clash_2 = f.read()  # 读取文件
+
             tmp = clash_1.replace("clash-url.txt", clashurl)
             tmp = tmp.replace("clash-name.txt", clashname)
             tmp = tmp.replace("tele-name.txt", telename)
@@ -593,17 +574,13 @@ if(menu == 'ipdomain' and len(expire) > 0):
             tmp = tmp.replace("clash-name.txt", clashname)
             tmp = tmp.replace("tele-name.txt", telename)
             tmp = tmp.replace("clash-2.txt", clash_2)
-            # 写入节点文件到本地Clash文件
-            #LocalFile.write_LocalFile('./out/openclash.yaml', tmp + '\nexternal-ui: "/usr/share/openclash/dashboard"')
+            # 写入节点文件到本地OpenClash文件
             LocalFile.write_LocalFile('./out/openclash.yaml', tmp)
-            #print(tmp)
             print('OpenClash文件成功写入。(添加UDP为True的参数)')
 
-            #with open("./res/clash-pc.yaml", "r", encoding='utf-8') as f:  # 打开文件
-            #    clash_pc = f.read()  # 读取文件
             tmp = 'proxies:' + clash_node_url
+            # 写入节点文件到本地ClashNode文件
             LocalFile.write_LocalFile('./out/clashnode.txt', tmp)
-            #print(tmp)
             print('ClashNode文件成功写入。(纯节点)')
     else:
         print('Line-625:数据获取失败，暂停生成CLASH等链接。\nallnodetxt:' + allnodetxt)

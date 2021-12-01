@@ -109,7 +109,7 @@ jobs:
           #branch: ${{ github.ref }}
 
       - name: 'Upload Files To Ipfs Network'
-        id: ipfs
+        id: publish
         env:
           PEERID: ${{ secrets.PEERID }}
           PRIVKEY: ${{ secrets.PRIVKEY }}
@@ -138,26 +138,66 @@ jobs:
           #cd /home/runner/.ipfs
           #ls
 
+          #echo 正在执行ipfs name publish %val%
+          #For /F "tokens=1,1" %%i In ('ipfs add -r ./out') Do (
+          #    Set xresult=%%i
+          #    Goto :Next
+          #)
+          #:Next
+          #echo %xresult%
+          
+          #echo 正在执行ipfs add -r ./out
+          #for /f "delims=" %%i in ('ipfs add -r ./out') do set val=%%i
+          #FOR / F" delims =" %% A IN（'％COMMAND％'）DO set val=%%A
+          #for /f "tokens=2" %%i in ('ipfs add -r ./out') do set val=%%i
+          #echo 正在执行ipfs files cp /ipfs/%val% "/openclash"
+
+
           ipfs id
-          file1=./ipfs/tmp/001.out
-          nohup ipfs add -r ./out >$file1 &
-          sleep 5
-          dataline1=$(< $file1)
+          #file1=./ipfs/tmp/001.out
+          # 说明：nohup加在一个命令的最前面，表示不挂断的运行命令
+          # -u 表示实时输出到.out
+          #&加在一个命令的最后面，表示这个命令放在后台执行
+          #nohup ipfs add -r ./out >$file1 &
+          #sleep 5
+          #dataline1=$(< $file1)
+          #echo $dataline1
+
+          
+          dataline1=$(ipfs add -r ./out)
           echo $dataline1
 
           echo  下行数字50需要根据文件发布的目录调整./out，目录长度增长，50数字增加。
-          #echo ${dataline1: -50}
           CID=${dataline1: -50}
           echo $CID
           echo
           CID=${CID% *}
           echo ID:$CID
           # ipfs pin add $CID
-          
-          # 运行ipfs软件
+
+          ipfs id
+          ipfs files cp /ipfs/$CID "/clash"
+          sleep 5
+
+          echo 离线发布
+          ipfs name publish /ipfs/$CID --allow-offline=true --lifetime=24h
+          file1=./ipfs/tmp/002.out
+          dataline1=$(< $file1)
+          echo $dataline1
+          sleep 60
+
+          echo 关闭进程 ipfs #kill ipfs
+          ps -A
+          #ipfs shutdown 
+          sleep 60
+          # cp -r -f /home/runner/.ipfs ./config2
+
+          echo 将要打开进程 ipfs #kill ipfs
+          ps -A
+          file1=./ipfs/tmp/003.out
           nohup ipfs daemon >$file1 &
           sleep 60
-          file1=./ipfs/tmp/tmp.out
+          
           # 对发布的文件进行加载, CID从001.out文件获取或直接传递
           nohup sudo wget http://127.0.0.1:8080/ipfs/$CID/ -O $file1 >$file1 &
           sleep 2
@@ -173,67 +213,14 @@ jobs:
           # 对网络文件进行循环加载
           python ./ipfs.py ipfs $CID
 
-          ipfs id
-          ipfs files cp /ipfs/$CID "/clash"
-          sleep 5
+          sleep 60
+          python ./ipfs.py ipns
 
-          #echo 关闭进程 ipfs #kill ipfs
-          ps -A
-          ipfs shutdown 
-          sleep 80
-          #echo 将要打开进程 ipfs #kill ipfs
-          ps -A
-
-          ipfs name publish /ipfs/$CID --allow-offline=true --lifetime=24h
-          file1=./ipfs/tmp/002.out
-          dataline1=$(< $file1)
-          echo $dataline1
-          sleep 10
-
-          # cp -r -f /home/runner/.ipfs ./config2
-          echo "::set-output name=status::success"
-
-      - name: 'Publish Files To Ipfs Network'
-        id: publish
-        if: steps.ipfs.outputs.status == 'success' && !cancelled()
-        run: |
           # sudo rm -rf ./install1 ./install2 ./install3
           # sudo cp -f ./res/README.md ./README.md
           # 需要安装sed 软件
           # sudo sed -i 's/ipfs_auto_url/${{ secrets.RESURL }}code.txt\n\n${{ secrets.RESURL }}clash\n\n${{ secrets.RESURL }}openclash/g' ./README.md
 
-          echo 关闭进程 ipfs #kill ipfs
-          ps -A
-          ipfs shutdown 
-          sleep 80
-          #echo 将要打开进程 ipfs #kill ipfs
-          ps -A
-          file1=./ipfs/tmp/003.out
-          nohup ipfs daemon >$file1 &
-          sleep 60
-          
-          # 说明：nohup加在一个命令的最前面，表示不挂断的运行命令
-          # -u 表示实时输出到.out
-          #&加在一个命令的最后面，表示这个命令放在后台执行
-          #echo 正在执行ipfs add -r ./ipfs
-          #for /f "tokens=2" %%i in ('ipfs add -r ./ipfs') do set val=%%i
-          #echo 正在执行ipfs files cp /ipfs/%val% "/openclash"
-          #chmod 7777 ./ipfs/ipfs.service
-          #cd /lib/systemd/system
-          #ls
-          #chmod 7777 /lib/systemd/system
-          #cp ./ipfs.service /lib/systemd/system/
-          #ipfs id
-          #sudo systemctl enable ipfs.service
-          #ipfs id
-          #开启ipfs服务
-          #sudo systemctl start ipfs.service
-          #ipfs id
-          #停止服务
-          #sudo systemctl stop ipfs.service
-          # ipfs id
-
-          python ./ipfs.py ipns
           echo "::set-output name=status::success"
 
       - name: 'Commit files Second for readMe file'
