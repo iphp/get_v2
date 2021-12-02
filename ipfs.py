@@ -45,36 +45,36 @@ if(ipfs == 'ipfs'):
         cid = StrText.get_str_btw(last_line, 'added ', ' ')
     print("Get-Nodes-Info-1: \n" + nodes)
     for j in nodes.split('\n'):
-        ii += 1
-        if(new_ipfs_node.find(j) == -1 and old_ipfs_node.find(j) == -1):
-            try:
-                resurl = j + '/ipfs/' + cid + '/'
-                print('\n' + str(ii) + '-' +resurl)
-                expire = NetFile.url_to_str(resurl + '?file=name.html', 25, 25)
-                expire = NetFile.url_to_str(resurl + 'node.txt', 25, 25)
-                expire = NetFile.url_to_str(resurl + 'nodecn.txt', 25, 25)
-                expire = NetFile.url_to_str(resurl + 'clash.yaml', 25, 25)
-                expire = NetFile.url_to_str(resurl + 'clashnode.txt', 25, 25)
-                expire = NetFile.url_to_str(resurl + 'openclash.yaml', 25, 25)
-                expire = NetFile.url_to_str(resurl + 'readme.txt', 25, 25)
-                readme = LocalFile.read_LocalFile("./out/readme.txt")
-                #print('ipfs:\nlocal-readme\n' + readme + '\nnet-readme\n' + expire)
-                if (hashlib.md5(readme.encode("utf-8")).hexdigest() == hashlib.md5(expire.encode("utf-8")).hexdigest()):
-                    print('hashlib.md5-True-' + resurl)
-                    new_ipfs_node = new_ipfs_node + '\n' + j
-                else:
-                    print('hashlib.md5-False-' + j)
-                    old_ipfs_node = old_ipfs_node + '\n' + j
-            except Exception as ex:
-                print("Line-44:" + str(ex))
-                old_ipfs_node = old_ipfs_node + '\n' + j
+         try:
+            ii += 1
+            if(new_ipfs_node.find(j) == -1 and old_ipfs_node.find(j) == -1):
+                    resurl = j + '/ipfs/' + cid + '/'
+                    print('\n' + str(ii) + '-' +resurl)
+                    expire = NetFile.url_to_str(resurl + '?file=name.html', 25, 25)
+                    expire = NetFile.url_to_str(resurl + 'node.txt', 25, 25)
+                    expire = NetFile.url_to_str(resurl + 'nodecn.txt', 25, 25)
+                    expire = NetFile.url_to_str(resurl + 'clash.yaml', 25, 25)
+                    expire = NetFile.url_to_str(resurl + 'clashnode.txt', 25, 25)
+                    expire = NetFile.url_to_str(resurl + 'openclash.yaml', 25, 25)
+                    expire = NetFile.url_to_str(resurl + 'readme.txt', 25, 25)
+                    readme = LocalFile.read_LocalFile("./out/readme.txt")
+                    #print('ipfs:\nlocal-readme\n' + readme + '\nnet-readme\n' + expire)
+                    if (hashlib.md5(readme.encode("utf-8")).hexdigest() == hashlib.md5(expire.encode("utf-8")).hexdigest()):
+                        print('hashlib.md5-True-' + resurl)
+                        new_ipfs_node = new_ipfs_node + '\n' + j
+                    else:
+                        print('hashlib.md5-False-' + j)
+                        old_ipfs_node = old_ipfs_node + '\n' + j
+        except Exception as ex:
+            print("Line-69:" + str(ex))
+            old_ipfs_node = old_ipfs_node + '\n' + j
     #LocalFile.write_LocalFile('./res/ipfs', new_ipfs_node.strip('\n') + '\n\n' + old_ipfs_node.strip('\n'))       
 #elif(ipfs == 'ipns'):
 else:
     print("Get-Nodes-Info-2: \n" + nodes)
     for j in nodes.split('\n'):
-        ii += 1
         try:
+            ii += 1
             resurl = j + '/ipns/k51qzi5uqu5dlfnig6lej7l7aes2d5oed6a4435s08ccftne1hq09ac1bulz2f/'
             print('\n' + str(ii) + '-' +resurl)
             expire = NetFile.url_to_str(resurl + '?file=name.html', 150, 25)
@@ -94,8 +94,8 @@ else:
                 print('hashlib.md5-False-' + resurl)
             if(ii > 50):
                 break
-        except Exception as ex:
-            print("Line-44:" + str(ex))
+        except:
+            print("Line-98-ipfs.py:" + j)
     #print(tmp)
     # 打开本地ReadMe文件
     readme = ''

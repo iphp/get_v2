@@ -395,13 +395,12 @@ if(menu == 'ipdomain' and len(expire) > 0):
                                         if(stime <= 0):
                                             stime = 9999
                                         merged_link_ping.append(Department(stime, onenode, '1'))
-                                        print('Line-398-已添加(' + str(ii)+ '-Expire-Len:' + str(len(expire)) + '):\n' + onenode)
+                                        print('Line-398-已添加(' + str(ii)+ '-Expire-Len:' + str(len(expire)) + ')-onenode:\n' + onenode)
                                     except Exception as ex:
                                         print('Line-400:' + str(ex) + '\nipdomain:' + ipdomain + '\nonenode:' + onenode)
                                 else:
                                     allnode = allnode + '\n' + onenode
-                                    print('Line-403-已忽略(' + str(ii) + '-Expire-Len:' + str(len(expire)) + '-FindIndex:' + str(expire.find(onenode)) + ') onenode:\n' + onenode)
-                            print('Line-390:onenode-' + onenode)
+                                    print('Line-403-已忽略(iii:' + str(iii) + '-ii-' + str(ii) + ')-onenode:\n' + onenode)
                         else:
                             print('Line-392-已过滤(' + str(ii)+ '-Expire-Len:' + str(len(expire))+ ')-FindIndex:' + str(expire.find(onenode)) ) #+ ' onenode:' + onenode + ' expire.find(onenode):' +  str(expire.find(onenode)) + '\nIsValid.isIP(ipdomain):' +  str(IsValid.isIP(ipdomain)) + ' IsValid.isIPorDomain(ipdomain):' +  str(IsValid.isIPorDomain(ipdomain)) + ' allnode.find(onenode):' +  str(allnode.find(onenode)) + ' allnode:\n' + allnode)
                     except Exception as ex:
