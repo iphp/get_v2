@@ -133,7 +133,6 @@ if(menu == 'update' and len(expire) > 0):
                                     if (onenode != '' and onenode.find('://') > -1 and expire.find(onenode) == -1 and allonenode.find(onenode) == -1):
                                         iii += 1
                                         print('Line-127-已添加(clash-node-url-id:' + str(ii)+ ')-onenode-id-' + str(iii) + '-onenode-url:\n' + onenode)
-                                        onenode = onenode.replace(')', '')
                                         allonenode = allonenode + onenode + '\n'
                                     else:
                                         print('Line-127-已过滤(clash-node-url-id:' + str(ii)+ ')-onenode-id-' + str(iii) + '-Find-Index-Allonenode:' + str(allonenode.find(onenode)) + '\n' + onenode)
@@ -192,7 +191,6 @@ if(menu == 'update' and len(expire) > 0):
                             clashnodes = clashnodes.replace('{""}', '{}')
                             clashnodes = clashnodes.replace('{"HOST": "', '{HOST: ')
                             clashnodes = clashnodes.replace('"}", ', '}", ')
-                            clashnodes = clashnodes.replace(')', '')
                             #print('Url-All-Nodes-Clash-New1:\n' + clashnodes)
                             onenode = ""
                             print('Line-194-clashnodes:\n' + clashnodes)
@@ -321,7 +319,7 @@ if(menu == 'ipdomain' and len(expire) > 0):
                             newname = ''
                     elif (j.find("ss://") == 0):
                         onenode = StrText.all_to_ss(j)
-                        if(len(onenode) > 0):
+                        if(onenode != ''):
                             nodes = onenode.split("#", 1) # 第二个参数为 1，返回两个参数列表
                             oldname = nodes[1]
                             #onenode = "ss://"+(base64.b64decode(nodes[0][5:].encode("utf-8")).decode("utf-8")) + "#" + oldname
@@ -334,7 +332,7 @@ if(menu == 'ipdomain' and len(expire) > 0):
                     elif (j.find("trojan://") == 0):
                         #trojan://28d98f761aca9d636f44db62544628eb@45.66.134.219:443#%f0%9f%87%af%f0%9f%87%b5+%e6%97%a5%e6%9c%ac-45.66.134.219
                         #trojan://28d98f761aca9d636f44db62544628eb@45.66.134.219:443?sni=123#%f0%9f%87%af%f0%9f%87%b5+%e6%97%a5%e6%9c%ac-45.66.134.219
-                        if (j.find("#")==-1):
+                        if (j.find("#") == -1):
                             j = j + "#0"
                         onenode = j
                         nodes = onenode.split("#", 1)
@@ -397,12 +395,12 @@ if(menu == 'ipdomain' and len(expire) > 0):
                                         if(stime <= 0):
                                             stime = 9999
                                         merged_link_ping.append(Department(stime, onenode, '1'))
-                                        print('Line-366-已添加(' + str(ii)+ '-Expire-Len:' + str(len(expire)) + '):\n' + onenode)
+                                        print('Line-398-已添加(' + str(ii)+ '-Expire-Len:' + str(len(expire)) + '):\n' + onenode)
                                     except Exception as ex:
-                                        print('Line-363:' + str(ex) + '\nipdomain:' + ipdomain + '\nonenode:' + onenode)
+                                        print('Line-400:' + str(ex) + '\nipdomain:' + ipdomain + '\nonenode:' + onenode)
                                 else:
                                     allnode = allnode + '\n' + onenode
-                                    print('Line-366-已忽略(' + str(ii)+ '-Expire-Len:' + str(len(expire)) + ')-FindIndex:' + str(expire.find(onenode)) + '):\n' + onenode)
+                                    print('Line-403-已忽略(' + str(ii) + '-Expire-Len:' + str(len(expire)) + '-FindIndex:' + str(expire.find(onenode)) + ') onenode:\n' + onenode)
                             print('Line-390:onenode-' + onenode)
                         else:
                             print('Line-392-已过滤(' + str(ii)+ '-Expire-Len:' + str(len(expire))+ ')-FindIndex:' + str(expire.find(onenode)) ) #+ ' onenode:' + onenode + ' expire.find(onenode):' +  str(expire.find(onenode)) + '\nIsValid.isIP(ipdomain):' +  str(IsValid.isIP(ipdomain)) + ' IsValid.isIPorDomain(ipdomain):' +  str(IsValid.isIPorDomain(ipdomain)) + ' allnode.find(onenode):' +  str(allnode.find(onenode)) + ' allnode:\n' + allnode)
@@ -440,12 +438,12 @@ if(menu == 'ipdomain' and len(expire) > 0):
                 #else:
                 #    bs = i
                 onenodeurl = depart.name
-                print('onenodeurl:\n' + onenodeurl)
+                print('onenodeurl-' + str(depart.id) + ':\n' + onenodeurl)
                 if (allnodetxt.find(onenodeurl) == -1):
                     allnodetxt = allnodetxt + onenodeurl + '\n'
             res = base64.b64encode(allnodetxt.encode("utf-8")).decode("utf-8")
             LocalFile.write_LocalFile('./out/node.txt', res)
-            print('allnodetxt:\n' + allnodetxt)
+            #print('allnodetxt:\n' + allnodetxt)
             #print(res)
             print('混合节点已生成，下一步将生成Clash节点。')
         except Exception as ex:
@@ -466,7 +464,7 @@ if(menu == 'ipdomain' and len(expire) > 0):
                 #如果已经添加则跳过
                 if (nodecount > 0):
                     onenode = ''
-                    print('Line-457-j:\n' + j)
+                    print('Line-457-j-' + str(nodecount) + ':\n' + j)
                     if (j.find("vmess://") == 0):
                         j = base64.b64decode(j[8:].encode("utf-8")).decode("utf-8")
                         j = j.replace('\'', '')
@@ -541,6 +539,7 @@ if(menu == 'ipdomain' and len(expire) > 0):
                     else:
                         #continue
                         onenode = ''
+                        newname = ''
                     if (onenode != '' and newname != '' and clashurl.find(onenode) == -1 and clashname.find(newname) == -1):
                         nodecount = nodecount - 1
                         clashurl = clashurl + onenode + '\n'
