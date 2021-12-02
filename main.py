@@ -537,6 +537,7 @@ if(menu == 'ipdomain' and len(expire) > 0):
                         onenode = '- cipher: ' + cipher + '\n  name: \'' + newname + '\'\n  password: ' + password + '\n  server: ' + server + '\n  port: ' + port + '\n  type: ss'
                     else:
                         #continue
+                        print('Line-558-已跳过-onenode:\n' + j)
                         onenode = ''
                         newname = ''
                     if (onenode != '' and newname != '' and clashurl.find(onenode) == -1 and clashname.find(newname) == -1):
