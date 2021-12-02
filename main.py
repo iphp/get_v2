@@ -133,6 +133,7 @@ if(menu == 'update' and len(expire) > 0):
                                     if (onenode != '' and onenode.find('://') > -1 and expire.find(onenode) == -1 and allonenode.find(onenode) == -1):
                                         iii += 1
                                         print('Line-127-已添加(clash-node-url-id:' + str(ii)+ ')-onenode-id-' + str(iii) + '-onenode-url:\n' + onenode)
+                                        onenode = onenode.replace(')', '')
                                         allonenode = allonenode + onenode + '\n'
                                     else:
                                         print('Line-127-已过滤(clash-node-url-id:' + str(ii)+ ')-onenode-id-' + str(iii) + '-Find-Index-Allonenode:' + str(allonenode.find(onenode)) + '\n' + onenode)
@@ -191,6 +192,7 @@ if(menu == 'update' and len(expire) > 0):
                             clashnodes = clashnodes.replace('{""}', '{}')
                             clashnodes = clashnodes.replace('{"HOST": "', '{HOST: ')
                             clashnodes = clashnodes.replace('"}", ', '}", ')
+                            clashnodes = clashnodes.replace(')', '')
                             #print('Url-All-Nodes-Clash-New1:\n' + clashnodes)
                             onenode = ""
                             print('Line-194-clashnodes:\n' + clashnodes)
@@ -366,6 +368,7 @@ if(menu == 'ipdomain' and len(expire) > 0):
                     else:
                         ii = ii - 1
                         continue
+
                     try:
                         if(onenode.find('#') > -1):
                             oldnode = onenode.split('#', 1)[0]
