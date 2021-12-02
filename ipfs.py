@@ -65,8 +65,8 @@ if(ipfs == 'ipfs'):
                     else:
                         print('hashlib.md5-False-' + j)
                         old_ipfs_node = old_ipfs_node + '\n' + j
-        except Exception as ex:
-            print("Line-69:" + str(ex))
+         except Exception as ex:
+             print("Line-69:" + str(ex))
             old_ipfs_node = old_ipfs_node + '\n' + j
     #LocalFile.write_LocalFile('./res/ipfs', new_ipfs_node.strip('\n') + '\n\n' + old_ipfs_node.strip('\n'))       
 #elif(ipfs == 'ipns'):
