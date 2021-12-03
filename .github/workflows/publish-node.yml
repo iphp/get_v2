@@ -188,8 +188,8 @@ jobs:
           ipfs shutdown 
           sleep 60
           echo 离线发布ipfs name publish /ipfs/$CID --allow-offline=true --lifetime=24h
-          #ipfs name publish /ipfs/$CID --allow-offline=true --lifetime=24h
-          ipfs name publish /ipfs/$CID --lifetime=24h
+          ipfs name publish /ipfs/$CID --allow-offline=true --lifetime=24h
+          #ipfs name publish /ipfs/$CID --lifetime=24h
 
           echo 将要打开进程 ipfs #kill ipfs
           ps -A
