@@ -60,9 +60,10 @@ def get_list_sort(s):
 expire = ''
 oldexpire = LocalFile.read_LocalFile("./res/expires.txt") + '\n' + LocalFile.read_LocalFile("./res/expire.txt")
 ii = 0
+print('Get-oldexpire.txt: \n' + str(len(oldexpire)))
 for i in oldexpire.split('\n'):
+    ii += 1
     if(i != '' and expire.find(i) == -1 and ii > int(len(oldexpire)/1000)):
-        ii += 1
         expire = expire + i + '\n'
 LocalFile.write_LocalFile('./res/expires.txt', expire.strip('\n')) 
 print('Get-expire.txt: \n' + str(len(expire)))
@@ -107,7 +108,7 @@ if(menu == 'update' and len(expire) > 0):
                     if (onode_upurl.find('vpei') == -1):
                         linecount += 1
                     #60行后，只执行一行
-                    if (ii > 78):  
+                    if (ii > 80):  
                         linecount = 50
                     onode['upmd5'] = hashlib.md5(clashnodes.encode('utf-8')).hexdigest()
                     #onode['uptime'] = time.asctime( time.localtime(time.time()) )
@@ -119,7 +120,7 @@ if(menu == 'update' and len(expire) > 0):
                         onode['uptime'] = (datetime.datetime.now() - datetime.timedelta(days=729)).strftime("%Y-%m-%d %H:%M:%S")
                     elif (onode_upurl.find('vpei') > -1 or onode_upurl.find('k2k4r8n10q07nqe02zysssxw1b9qboab0dd3ooljd32i9ro3edry6hv6') > -1):
                         onode['uptime'] = (datetime.datetime.now() - datetime.timedelta(days=365)).strftime("%Y-%m-%d %H:%M:%S")
-                    elif (ii > 78):
+                    elif (ii > 80):
                         onode['uptime'] = (datetime.datetime.now() + datetime.timedelta(days=365)).strftime("%Y-%m-%d %H:%M:%S")
                     else:
                         onode['uptime'] = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -136,7 +137,7 @@ if(menu == 'update' and len(expire) > 0):
                                 print('Url-All-Nodes-no-Base64:\n' + clashnodes)
                             for onenode in clashnodes.split('\n'):
                                 try:
-                                    if (onenode != '' and onenode.find('://') > -1 and expire.find(onenode) == -1 and allonenode.find(onenode) == -1):
+                                    if (onenode != '' and expire.find(onenode) == -1 and allonenode.find(onenode) == -1 and (onenode.find("vmess://") == 0 or onenode.find("ss://") == 0 or onenode.find("trojan://") == 0 or onenode.find("vless://") == 0)):
                                         iii += 1
                                         print('Line-127-已添加(clash-node-url-id:' + str(ii)+ ')-onenode-id-' + str(iii) + '-onenode-url:\n' + onenode)
                                         allonenode = allonenode + onenode + '\n'
@@ -212,13 +213,14 @@ if(menu == 'update' and len(expire) > 0):
                                     elif (wnode['type'] == 'vmess'):
                                         onenode = 'vmess://' + base64.b64encode((clashnode.replace('type": "vmess"','type": "none"')).encode("utf-8")).decode("utf-8")
                                     else:
+                                        # 非以上类型全部忽略
                                         continue
 
                                     if(onenode.find('#') > -1):
                                         oldnode = onenode.split('#', 1)[0]
                                     else:
                                         oldnode = onenode
-                                    if (onenode != '' and onenode.find('://') > -1 and expire.find(oldnode) == -1 and allonenode.find(oldnode) == -1):
+                                    if (onenode != '' and expire.find(oldnode) == -1 and allonenode.find(oldnode) == -1):
                                         iii += 1
                                         print('Line-188-已添加(clash-node-url-id:' + str(ii)+ ')-onenode-id-' + str(iii) + '-onenode-url:\n' + clashnode)
                                         allonenode = allonenode + onenode + '\n'

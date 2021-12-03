@@ -138,21 +138,6 @@ jobs:
           #cd /home/runner/.ipfs
           #ls
 
-          #echo 正在执行ipfs name publish %val%
-          #For /F "tokens=1,1" %%i In ('ipfs add -r ./out') Do (
-          #    Set xresult=%%i
-          #    Goto :Next
-          #)
-          #:Next
-          #echo %xresult%
-          
-          #echo 正在执行ipfs add -r ./out
-          #for /f "delims=" %%i in ('ipfs add -r ./out') do set val=%%i
-          #FOR / F" delims =" %% A IN（'％COMMAND％'）DO set val=%%A
-          #for /f "tokens=2" %%i in ('ipfs add -r ./out') do set val=%%i
-          #echo 正在执行ipfs files cp /ipfs/%val% "/openclash"
-
-
           ipfs id
           #file1=./ipfs/tmp/001.out
           # 说明：nohup加在一个命令的最前面，表示不挂断的运行命令
@@ -163,41 +148,26 @@ jobs:
           #dataline1=$(< $file1)
           #echo $dataline1
 
-          
           dataline1=$(ipfs add -r ./out)
           echo $dataline1
-
-          echo  下行数字50需要根据文件发布的目录调整./out，目录长度增长，50数字增加。
+          echo 下行数字50需要根据文件发布的目录调整./out，目录长度增长，50数字增加。
           CID=${dataline1: -50}
           echo $CID
           echo
           CID=${CID% *}
           echo ID:$CID
-          # ipfs pin add $CID
 
           ipfs id
           ipfs files cp /ipfs/$CID "/clash"
           sleep 5
-
-          echo 离线发布
-          ipfs name publish /ipfs/$CID --allow-offline=true --lifetime=24h
-          file1=./ipfs/tmp/002.out
-          dataline1=$(< $file1)
-          echo $dataline1
-          sleep 60
-
-          echo 关闭进程 ipfs #kill ipfs
-          ps -A
-          #ipfs shutdown 
-          sleep 60
-          # cp -r -f /home/runner/.ipfs ./config2
+          ipfs pin add $CID
 
           echo 将要打开进程 ipfs #kill ipfs
           ps -A
           file1=./ipfs/tmp/003.out
           nohup ipfs daemon >$file1 &
           sleep 60
-          
+
           # 对发布的文件进行加载, CID从001.out文件获取或直接传递
           nohup sudo wget http://127.0.0.1:8080/ipfs/$CID/ -O $file1 >$file1 &
           sleep 2
@@ -212,6 +182,20 @@ jobs:
           sleep 60
           # 对网络文件进行循环加载
           python ./ipfs.py ipfs $CID
+
+          echo 关闭进程 ipfs #kill ipfs
+          ps -A
+          #ipfs shutdown 
+          sleep 60
+          echo 离线发布
+          #ipfs name publish /ipfs/$CID --allow-offline=true --lifetime=24h
+          ipfs name publish /ipfs/$CID --lifetime=24h
+
+          echo 将要打开进程 ipfs #kill ipfs
+          ps -A
+          #file1=./ipfs/tmp/003.out
+          #nohup ipfs daemon >$file1 &
+          #sleep 60
 
           sleep 60
           python ./ipfs.py ipns
