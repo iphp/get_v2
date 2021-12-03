@@ -57,11 +57,17 @@ def get_list_sort(s):
     list.sort()
     return list
 
+expire = ''
+oldexpire = LocalFile.read_LocalFile("./res/expires.txt") + '\n' + LocalFile.read_LocalFile("./res/expire.txt")
+ii = 0
+for i in oldexpire.split('\n'):
+    if(i != '' and expire.find(i) == -1 and ii > int(len(oldexpire)/1000)):
+        ii += 1
+        expire = expire + i + '\n'
+LocalFile.write_LocalFile('./res/expires.txt', expire.strip('\n')) 
+print('Get-expire.txt: \n' + str(len(expire)))
 
 # 下载订阅链接将其合并
-
-expire = LocalFile.read_LocalFile("./res/expire.txt")
-print('Get-expire.txt: \n' + str(len(expire)))
 if(menu == 'update' and len(expire) > 0):
     nodes = LocalFile.read_LocalFile("./res/node.json")
     print('Get-node.json: \n' + str(len(nodes)))
@@ -101,7 +107,7 @@ if(menu == 'update' and len(expire) > 0):
                     if (onode_upurl.find('vpei') == -1):
                         linecount += 1
                     #60行后，只执行一行
-                    if (ii > 70):  
+                    if (ii > 78):  
                         linecount = 50
                     onode['upmd5'] = hashlib.md5(clashnodes.encode('utf-8')).hexdigest()
                     #onode['uptime'] = time.asctime( time.localtime(time.time()) )
@@ -113,7 +119,7 @@ if(menu == 'update' and len(expire) > 0):
                         onode['uptime'] = (datetime.datetime.now() - datetime.timedelta(days=729)).strftime("%Y-%m-%d %H:%M:%S")
                     elif (onode_upurl.find('vpei') > -1 or onode_upurl.find('k2k4r8n10q07nqe02zysssxw1b9qboab0dd3ooljd32i9ro3edry6hv6') > -1):
                         onode['uptime'] = (datetime.datetime.now() - datetime.timedelta(days=365)).strftime("%Y-%m-%d %H:%M:%S")
-                    elif (ii > 70):
+                    elif (ii > 78):
                         onode['uptime'] = (datetime.datetime.now() + datetime.timedelta(days=365)).strftime("%Y-%m-%d %H:%M:%S")
                     else:
                         onode['uptime'] = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
