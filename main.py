@@ -63,6 +63,8 @@ ii = 0
 print('Get-oldexpire.txt: \n' + str(len(oldexpire)))
 for i in oldexpire.split('\n'):
     ii += 1
+    if(i.find('#') > -1):
+        i = i.split('#', 1)[0]
     if(i != '' and expire.find(i) == -1 and ii > int(len(oldexpire)/1000)):
         expire = expire + i + '\n'
 LocalFile.write_LocalFile('./res/expires.txt', expire.strip('\n')) 
@@ -550,6 +552,7 @@ if(menu == 'ipdomain' and len(expire) > 0):
                         newname = ''
                     if (onenode != '' and newname != '' and clashurl.find(onenode) == -1 and clashname.find(newname) == -1):
                         nodecount = nodecount - 1
+
                         clashurl = clashurl + onenode + '\n'
                         openclashurl = openclashurl + onenode + '\n  udp: true\n'
                         clash_node_url = clash_node_url + '\n' + onenode.replace('- ', '- {"').replace('\'', '').replace(': ', '": "').replace('\n  ', '", "') + '"}'
@@ -559,7 +562,7 @@ if(menu == 'ipdomain' and len(expire) > 0):
                             telename = telename + '  - "' + newname + '"\n'
                         print('Line-558-已添加-onenode:\n' + onenode)
                     else:
-                        print('Line-538-已过滤-onenode:' + onenode + ' newname:' + newname + ' clashurl.find(onenode) ' + str(clashurl.find(onenode)) + ' clashname.find(newname) ' + str(clashname.find(newname)))
+                        print('Line-563-已过滤-onenode:' + onenode + ' newname:' + newname + ' clashurl.find(onenode) ' + str(clashurl.find(onenode)) + ' clashname.find(newname) ' + str(clashname.find(newname)))
                 else:
                     print('\n[保留192条节点，忽略多余节点]:\n' + j)
             except Exception as ex:

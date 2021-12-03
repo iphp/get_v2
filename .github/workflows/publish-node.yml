@@ -185,16 +185,16 @@ jobs:
 
           echo 关闭进程 ipfs #kill ipfs
           ps -A
-          #ipfs shutdown 
+          ipfs shutdown 
           sleep 60
-          echo 离线发布
+          echo 离线发布ipfs name publish /ipfs/$CID --allow-offline=true --lifetime=24h
           #ipfs name publish /ipfs/$CID --allow-offline=true --lifetime=24h
           ipfs name publish /ipfs/$CID --lifetime=24h
 
           echo 将要打开进程 ipfs #kill ipfs
           ps -A
-          #file1=./ipfs/tmp/003.out
-          #nohup ipfs daemon >$file1 &
+          file1=./ipfs/tmp/003.out
+          nohup ipfs daemon >$file1 &
           #sleep 60
 
           sleep 60

@@ -6,35 +6,35 @@ mode: rule
 port: 7890
 socks-port: 7891
 proxies:
-- name: '[12-03]-🇺🇸-美国-091-silver-hk06.straycloud.xyz'
+- name: '[12-03]-🇺🇸-美国-008-silver-hk06.straycloud.xyz'
   server: silver-hk06.straycloud.xyz
   port: 205
   type: trojan
   password: 0ac65136-5962-49d6-91f0-138957f6dec9
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇺🇸-美国-092-us01.straycloud.icu'
+- name: '[12-03]-🇺🇸-美国-009-us01.straycloud.icu'
   server: us01.straycloud.icu
   port: 442
   type: trojan
   password: 0ac65136-5962-49d6-91f0-138957f6dec9
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇺🇸-美国-093-v.9051246.xyz'
+- name: '[12-03]-🇺🇸-美国-010-v.9051246.xyz'
   server: v.9051246.xyz
   port: 443
   type: trojan
   password: 18825786
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇯🇵-日本-094-153.122.102.160'
+- name: '[12-03]-🇯🇵-日本-011-153.122.102.160'
   server: 153.122.102.160
   port: 443
   type: trojan
   password: 18e513fe-f7f4-353d-84ca-bc9646fb2528mielink
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇺🇸-美国-095-174.139.126.233'
+- name: '[12-03]-🇺🇸-美国-012-174.139.126.233'
   server: 174.139.126.233
   port: 443
   type: trojan
@@ -42,7 +42,7 @@ proxies:
   sni: t.me%2fvpnhat
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇰🇷-韩国-096-52.231.176.18'
+- name: '[12-03]-🇰🇷-韩国-013-52.231.176.18'
   server: 52.231.176.18
   port: 443
   type: trojan
@@ -50,14 +50,14 @@ proxies:
   sni: t.me%2fvpnhat
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇺🇸-美国-097-kaizen-hk-2.cn0.me'
+- name: '[12-03]-🇺🇸-美国-014-kaizen-hk-2.cn0.me'
   server: kaizen-hk-2.cn0.me
   port: 443
   type: trojan
   password: 18e513fe-f7f4-353d-84ca-bc9646fb2528mielink
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇺🇸-美国-098-t5.ssrsub.com'
+- name: '[12-03]-🇺🇸-美国-015-t5.ssrsub.com'
   server: t5.ssrsub.com
   port: 21033
   type: trojan
@@ -65,7 +65,7 @@ proxies:
   sni: t5.ssrsub.com
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇺🇸-美国-099-sg-cn-hk-relay-1-767f45.dukou.info'
+- name: '[12-03]-🇺🇸-美国-016-sg-cn-hk-relay-1-767f45.dukou.info'
   server: sg-cn-hk-relay-1-767f45.dukou.info
   port: 9301
   type: trojan
@@ -73,7 +73,7 @@ proxies:
   sni: sgp-1-546.dukouplan3.dev
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇺🇸-美国-100-sg-cn-hk-relay-2-54bc52.dukou.info'
+- name: '[12-03]-🇺🇸-美国-017-sg-cn-hk-relay-2-54bc52.dukou.info'
   server: sg-cn-hk-relay-2-54bc52.dukou.info
   port: 9302
   type: trojan
@@ -81,7 +81,7 @@ proxies:
   sni: sgp-2-547.dukouplan3.dev
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇺🇸-美国-101-sg-cn-hk-relay-3-dd4440.dukou.info'
+- name: '[12-03]-🇺🇸-美国-018-sg-cn-hk-relay-3-dd4440.dukou.info'
   server: sg-cn-hk-relay-3-dd4440.dukou.info
   port: 9303
   type: trojan
@@ -89,7 +89,7 @@ proxies:
   sni: sgp-3-548.dukouplan3.dev
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇺🇸-美国-102-sg-cn-hk-relay-4-40e978.dukou.info'
+- name: '[12-03]-🇺🇸-美国-019-sg-cn-hk-relay-4-40e978.dukou.info'
   server: sg-cn-hk-relay-4-40e978.dukou.info
   port: 9304
   type: trojan
@@ -97,7 +97,7 @@ proxies:
   sni: sgp-4-549.dukouplan3.dev
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇺🇸-美国-103-sg-cn-hk-relay-5-51f087.dukou.info'
+- name: '[12-03]-🇺🇸-美国-020-sg-cn-hk-relay-5-51f087.dukou.info'
   server: sg-cn-hk-relay-5-51f087.dukou.info
   port: 9305
   type: trojan
@@ -105,7 +105,7 @@ proxies:
   sni: sgp-5-550.dukouplan3.dev
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇺🇸-美国-104-tw-cn-hk-relay-1-97861a.dukou.info'
+- name: '[12-03]-🇺🇸-美国-021-tw-cn-hk-relay-1-97861a.dukou.info'
   server: tw-cn-hk-relay-1-97861a.dukou.info
   port: 5301
   type: trojan
@@ -113,7 +113,7 @@ proxies:
   sni: tw-1-544.dukouplan3.dev
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇺🇸-美国-105-tw-cn-hk-relay-2-184a76.dukou.info'
+- name: '[12-03]-🇺🇸-美国-022-tw-cn-hk-relay-2-184a76.dukou.info'
   server: tw-cn-hk-relay-2-184a76.dukou.info
   port: 5302
   type: trojan
@@ -121,7 +121,7 @@ proxies:
   sni: tw-2-545.dukouplan3.dev
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇺🇸-美国-106-tw3-5412.dukouplan3.dev'
+- name: '[12-03]-🇺🇸-美国-023-tw3-5412.dukouplan3.dev'
   server: tw3-5412.dukouplan3.dev
   port: 5303
   type: trojan
@@ -129,7 +129,7 @@ proxies:
   sni: tw-03-505.dukouplan3.dev
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇺🇸-美国-107-tw7-5756.dukouplan3.dev'
+- name: '[12-03]-🇺🇸-美国-024-tw7-5756.dukouplan3.dev'
   server: tw7-5756.dukouplan3.dev
   port: 5307
   type: trojan
@@ -137,14 +137,14 @@ proxies:
   sni: tw-07-593.dukouplan3.dev
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇷🇴-罗马尼亚-108-185.105.191.92'
+- name: '[12-03]-🇷🇴-罗马尼亚-025-185.105.191.92'
   server: 185.105.191.92
   port: 443
   type: trojan
   password: 28d98f761aca9d636f44db62544628eb
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇷🇴-罗马尼亚-109-185.126.116.235'
+- name: '[12-03]-🇷🇴-罗马尼亚-026-185.126.116.235'
   server: 185.126.116.235
   port: 443
   type: trojan
@@ -152,28 +152,35 @@ proxies:
   sni: t.me%2fvpnhat
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇺🇦-乌克兰-110-5.183.179.138'
+- name: '[12-03]-🇺🇦-乌克兰-027-5.183.179.138'
   server: 5.183.179.138
   port: 443
   type: trojan
   password: 28d98f761aca9d636f44db62544628eb
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇺🇸-美国-111-72.167.45.6'
+- name: '[12-03]-🇺🇸-美国-028-72.167.45.6'
   server: 72.167.45.6
   port: 443
   type: trojan
   password: 28d98f761aca9d636f44db62544628eb
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇸🇬-新加坡-112-81.90.189.85'
+- name: '[12-03]-🇸🇬-新加坡-029-81.90.189.85'
   server: 81.90.189.85
   port: 443
   type: trojan
   password: 28d98f761aca9d636f44db62544628eb
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇺🇸-美国-113-t5.ssrsub.com'
+- name: '[12-03]-🇺🇸-美国-030-t3.ssrsub.com'
+  server: t3.ssrsub.com
+  port: 21033
+  type: trojan
+  password: 2b19f253-5da2-4ca2-a950-8b4e7b3ddadb
+  skip-cert-verify: true
+  udp: true
+- name: '[12-03]-🇺🇸-美国-031-t5.ssrsub.com'
   server: t5.ssrsub.com
   port: 21033
   type: trojan
@@ -181,21 +188,36 @@ proxies:
   sni: t5.ssrsub.com
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇺🇸-美国-114-t7.ssrsub.com'
+- name: '[12-03]-🇺🇸-美国-032-t7.ssrsub.com'
   server: t7.ssrsub.com
   port: 21033
   type: trojan
   password: 2b19f253-5da2-4ca2-a950-8b4e7b3ddadb
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇪🇸-欧洲-115-185.44.76.188'
+- name: '[12-03]-🇪🇸-欧洲-033-185.44.76.188'
   server: 185.44.76.188
   port: 443
   type: trojan
   password: 2e240YWVzLTI1Ni1nY206WWd1c0gyTVdBOFBXYzNwMlZEc1I3QVZ2
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇺🇸-美国-062-72.167.45.6'
+- name: '[12-03]-🇷🇴-罗马尼亚-034-185.126.116.235'
+  server: 185.126.116.235
+  port: 443
+  type: trojan
+  password: 36ebef7d1b1d6205fd0c55f28800e674
+  sni: t.me%2fvpnhat
+  skip-cert-verify: true
+  udp: true
+- name: '[12-03]-🇬🇧-英国-035-185.171.120.144'
+  server: 185.171.120.144
+  port: 443
+  type: trojan
+  password: 36ebef7d1b1d6205fd0c55f28800e674
+  skip-cert-verify: true
+  udp: true
+- name: '[12-03]-🇺🇸-美国-036-72.167.45.6'
   server: 72.167.45.6
   port: 443
   type: trojan
@@ -203,7 +225,7 @@ proxies:
   sni: t.me%2fvpnhat
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇨🇭-瑞士-064-89.31.127.151'
+- name: '[12-03]-🇨🇭-瑞士-037-89.31.127.151'
   server: 89.31.127.151
   port: 443
   type: trojan
@@ -211,7 +233,7 @@ proxies:
   sni: t.me%2fvpnhat
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇺🇸-美国-116-jp-server-02.pndnav.cc'
+- name: '[12-03]-🇺🇸-美国-038-jp-server-02.pndnav.cc'
   server: jp-server-02.pndnav.cc
   port: 443
   type: trojan
@@ -219,7 +241,7 @@ proxies:
   sni: t.me%2fvpnhat
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇺🇸-美国-117-ned-server-01.selfupay.com'
+- name: '[12-03]-🇺🇸-美国-039-ned-server-01.selfupay.com'
   server: ned-server-01.selfupay.com
   port: 443
   type: trojan
@@ -227,21 +249,21 @@ proxies:
   sni: ned-server-01.selfupay.com
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇦🇶-欧盟-118-45.12.221.163'
+- name: '[12-03]-🇦🇶-欧盟-040-45.12.221.163'
   server: 45.12.221.163
   port: 443
   type: trojan
   password: 38237ce4-cf78-4b26YWVzLTI1Ni1nY206WWd1c0gyTVdBOFBXYzNwMlZEc1I3QVZ2
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇦🇶-欧盟-119-45.12.221.163'
+- name: '[12-03]-🇦🇶-欧盟-041-45.12.221.163'
   server: 45.12.221.163
   port: 443
   type: trojan
   password: 38237ce4-cf78-4b2YWVzLTI1Ni1nY206WWd1c0gyTVdBOFBXYzNwMlZEc1I3QVZ2
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇺🇸-美国-120-gg.piyun.team'
+- name: '[12-03]-🇺🇸-美国-042-gg.piyun.team'
   server: gg.piyun.team
   port: 45045
   type: trojan
@@ -249,126 +271,126 @@ proxies:
   sni: de.piyun.team
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇺🇸-美国-121-91.220.202.248'
+- name: '[12-03]-🇺🇸-美国-043-91.220.202.248'
   server: 91.220.202.248
   port: 443
   type: trojan
   password: 3zOdub
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇺🇸-美国-122-jp-aws.proxypoolv2.tk'
+- name: '[12-03]-🇺🇸-美国-044-jp-aws.proxypoolv2.tk'
   server: jp-aws.proxypoolv2.tk
   port: 443
   type: trojan
   password: 4c5d43ef-9226-4c01-8e75-5f095ba77a97
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇺🇸-美国-123-198.147.22.87'
+- name: '[12-03]-🇺🇸-美国-045-198.147.22.87'
   server: 198.147.22.87
   port: 443
   type: trojan
   password: 530e1YWVzLTI1Ni1nY206Q1VuZFNabllzUEtjdTZLajhUSFZNQkhE
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇺🇸-美国-124-sg1-trojan.bonds.id'
+- name: '[12-03]-🇺🇸-美国-046-sg1-trojan.bonds.id'
   server: sg1-trojan.bonds.id
   port: 443
   type: trojan
   password: 5c5ceb40-902b-11eb-945a-1239d0255272
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇺🇸-美国-125-2.jp.zz.xxxxx.x-t-fuckword.network'
+- name: '[12-03]-🇺🇸-美国-047-2.jp.zz.xxxxx.x-t-fuckword.network'
   server: 2.jp.zz.xxxxx.x-t-fuckword.network
   port: 36671
   type: trojan
   password: 5f97472b-b910-32fd-bbd2-403f0c6c5ae0
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇺🇸-美国-126-3.sg.zz.xxxxx.x-t-fuckword.network'
+- name: '[12-03]-🇺🇸-美国-048-3.sg.zz.xxxxx.x-t-fuckword.network'
   server: 3.sg.zz.xxxxx.x-t-fuckword.network
   port: 36679
   type: trojan
   password: 5f97472b-b910-32fd-bbd2-403f0c6c5ae0
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇺🇸-美国-127-gb1.v2.zz.cn.fuckword.club'
+- name: '[12-03]-🇺🇸-美国-049-gb1.v2.zz.cn.fuckword.club'
   server: gb1.v2.zz.cn.fuckword.club
   port: 47836
   type: trojan
   password: 5f97472b-b910-32fd-bbd2-403f0c6c5ae0
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇺🇸-美国-128-hk1.v3.zz.cn.fuckword.club'
+- name: '[12-03]-🇺🇸-美国-050-hk1.v3.zz.cn.fuckword.club'
   server: hk1.v3.zz.cn.fuckword.club
   port: 47605
   type: trojan
   password: 5f97472b-b910-32fd-bbd2-403f0c6c5ae0
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇺🇸-美国-129-hkt01.hk.zz.xxxxx.x-t-fuckword.network'
+- name: '[12-03]-🇺🇸-美国-051-hkt01.hk.zz.xxxxx.x-t-fuckword.network'
   server: hkt01.hk.zz.xxxxx.x-t-fuckword.network
   port: 56812
   type: trojan
   password: 5f97472b-b910-32fd-bbd2-403f0c6c5ae0
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇺🇸-美国-130-jpjs6o.zhs.company'
+- name: '[12-03]-🇺🇸-美国-052-jpjs6o.zhs.company'
   server: jpjs6o.zhs.company
   port: 443
   type: trojan
   password: 60665a07-09d5-3505-9bd4-c09d02fe46b8
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇺🇸-美国-131-sglmz9.zhs.company'
+- name: '[12-03]-🇺🇸-美国-053-sglmz9.zhs.company'
   server: sglmz9.zhs.company
   port: 8443
   type: trojan
   password: 60665a07-09d5-3505-9bd4-c09d02fe46b8
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇺🇸-美国-132-h63956.droplet.today'
+- name: '[12-03]-🇺🇸-美国-054-h63956.droplet.today'
   server: h63956.droplet.today
   port: 13343
   type: trojan
   password: 64c300d59e
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇺🇸-美国-133-h63956.droplet.today'
+- name: '[12-03]-🇺🇸-美国-055-h63956.droplet.today'
   server: h63956.droplet.today
   port: 13443
   type: trojan
   password: 64c300d59e
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇺🇸-美国-134-h738106.droplet.today'
+- name: '[12-03]-🇺🇸-美国-056-h738106.droplet.today'
   server: h738106.droplet.today
   port: 13745
   type: trojan
   password: 64c300d59e
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇺🇸-美国-135-h890361.droplet.today'
+- name: '[12-03]-🇺🇸-美国-057-h890361.droplet.today'
   server: h890361.droplet.today
   port: 13445
   type: trojan
   password: 64c300d59e
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇺🇸-美国-136-h890361.droplet.today'
+- name: '[12-03]-🇺🇸-美国-058-h890361.droplet.today'
   server: h890361.droplet.today
   port: 13545
   type: trojan
   password: 64c300d59e
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇺🇸-美国-137-azhk.alink123.com'
+- name: '[12-03]-🇺🇸-美国-059-azhk.alink123.com'
   server: azhk.alink123.com
   port: 11045
   type: trojan
   password: 765040cb-15f4-43da-9e07-4b92c767d222
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇺🇸-美国-138-jm.mg-nb.com'
+- name: '[12-03]-🇺🇸-美国-060-jm.mg-nb.com'
   server: jm.mg-nb.com
   port: 25077
   type: trojan
@@ -376,112 +398,105 @@ proxies:
   sni: hm.sjebo.com.cn
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇺🇸-美国-139-sg3-trojan.bonds.id'
+- name: '[12-03]-🇺🇸-美国-061-sg3-trojan.bonds.id'
   server: sg3-trojan.bonds.id
   port: 443
   type: trojan
   password: 97fdf760-7bbf-11eb-8e14-1239d0255272
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇺🇸-美国-140-www.zx07.top'
+- name: '[12-03]-🇺🇸-美国-062-www.zx07.top'
   server: www.zx07.top
   port: 443
   type: trojan
   password: L1qNeGrY58ApwrRA
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇺🇸-美国-141-os1-1.sstr-api.xyz'
+- name: '[12-03]-🇺🇸-美国-063-os1-1.sstr-api.xyz'
   server: os1-1.sstr-api.xyz
   port: 443
   type: trojan
   password: MhPG7g9x2Etb4Hspsb
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇺🇸-美国-142-os1-2.sstr-api.xyz'
+- name: '[12-03]-🇺🇸-美国-064-os1-2.sstr-api.xyz'
   server: os1-2.sstr-api.xyz
   port: 443
   type: trojan
   password: MhPG7g9x2Etb4Hspsb
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇺🇸-美国-143-os1-5.sstr-api.xyz'
+- name: '[12-03]-🇺🇸-美国-065-os1-5.sstr-api.xyz'
   server: os1-5.sstr-api.xyz
   port: 443
   type: trojan
   password: MhPG7g9x2Etb4Hspsb
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇺🇸-美国-144-os2-5.sstr-api.xyz'
+- name: '[12-03]-🇺🇸-美国-066-os2-5.sstr-api.xyz'
   server: os2-5.sstr-api.xyz
   port: 443
   type: trojan
   password: MhPG7g9x2Etb4Hspsb
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇺🇸-美国-145-198.147.22.87'
+- name: '[12-03]-🇺🇸-美国-067-198.147.22.87'
   server: 198.147.22.87
   port: 443
   type: trojan
   password: TZLajhUSFZNQkhE
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇺🇸-美国-146-sh-hk-01-tr.cdn.savoy.click'
+- name: '[12-03]-🇺🇸-美国-068-sh-hk-01-tr.cdn.savoy.click'
   server: sh-hk-01-tr.cdn.savoy.click
   port: 12443
   type: trojan
   password: UiLPqefVfielqkDjEwBV
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇺🇸-美国-147-198.147.22.87'
+- name: '[12-03]-🇺🇸-美国-069-198.147.22.87'
   server: 198.147.22.87
   port: 443
   type: trojan
   password: Y206Q1VuZFNabllzUEtjdTZLajhUSFZNQkhE
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇮🇹-意大利-148-212.102.44.66'
+- name: '[12-03]-🇮🇹-意大利-070-212.102.44.66'
   server: 212.102.44.66
   port: 443
   type: trojan
   password: YWVzLTI1Ni1nY206OG42cHdBY3JydjJwajZ0RlkycDNUYlE2
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇺🇸-美国-149-143.244.42.76'
+- name: '[12-03]-🇺🇸-美国-071-143.244.42.76'
   server: 143.244.42.76
   port: 443
   type: trojan
   password: YWVzLTI1Ni1nY206Q1VuZFNabllzUEtjdTZLajhUSFZNQkhE
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇺🇸-美国-150-198.147.22.87'
+- name: '[12-03]-🇺🇸-美国-072-198.147.22.87'
   server: 198.147.22.87
   port: 443
   type: trojan
   password: YWVzLTI1Ni1nY206Q1VuZFNabllzUEtjdTZLajhUSFZNQkhE
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇦🇶-欧盟-151-45.12.221.163'
+- name: '[12-03]-🇦🇶-欧盟-073-45.12.221.163'
   server: 45.12.221.163
   port: 443
   type: trojan
   password: YWVzLTI1Ni1nY206WWd1c0gyTVdBOFBXYzNwMlZEc1I3QVZ2
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇺🇸-美国-152-198.147.22.87'
+- name: '[12-03]-🇺🇸-美国-074-198.147.22.87'
   server: 198.147.22.87
   port: 443
   type: trojan
   password: ZLajhUSFZNQkhE
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇬🇧-英国-153-185.171.120.144'
-  server: 185.171.120.144
-  port: 443
-  type: trojan
-  password: a3fa58b581353bb375d2ddad0f327938
-  skip-cert-verify: true
-  udp: true
-- name: '[12-03]-🇬🇧-英国-154-185.171.120.144'
+- name: '[12-03]-🇬🇧-英国-075-185.171.120.144'
   server: 185.171.120.144
   port: 443
   type: trojan
@@ -489,7 +504,7 @@ proxies:
   sni: t.me%2fvpnhat
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇯🇵-日本-155-5.183.177.111'
+- name: '[12-03]-🇯🇵-日本-076-5.183.177.111'
   server: 5.183.177.111
   port: 443
   type: trojan
@@ -497,7 +512,7 @@ proxies:
   sni: t.me%2fvpnhat
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇷🇴-罗马尼亚-156-62.216.92.179'
+- name: '[12-03]-🇷🇴-罗马尼亚-077-62.216.92.179'
   server: 62.216.92.179
   port: 443
   type: trojan
@@ -505,7 +520,7 @@ proxies:
   sni: t.me%2fvpnhat
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇷🇴-罗马尼亚-157-62.216.92.180'
+- name: '[12-03]-🇷🇴-罗马尼亚-078-62.216.92.180'
   server: 62.216.92.180
   port: 443
   type: trojan
@@ -513,7 +528,7 @@ proxies:
   sni: t.me%2fvpnhat
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇺🇸-美国-158-72.167.33.106'
+- name: '[12-03]-🇺🇸-美国-079-72.167.33.106'
   server: 72.167.33.106
   port: 443
   type: trojan
@@ -521,7 +536,7 @@ proxies:
   sni: t.me%2fvpnhat
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇺🇸-美国-159-72.167.45.6'
+- name: '[12-03]-🇺🇸-美国-080-72.167.45.6'
   server: 72.167.45.6
   port: 443
   type: trojan
@@ -529,77 +544,77 @@ proxies:
   sni: t.me%2fvpnhat
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇺🇸-美国-160-jp-server-02.selfupay.com'
+- name: '[12-03]-🇺🇸-美国-081-jp-server-02.selfupay.com'
   server: jp-server-02.selfupay.com
   port: 443
   type: trojan
   password: a3fa58b581353bb375d2ddad0f327938
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇹🇼-台湾-161-60.249.3.125'
+- name: '[12-03]-🇹🇼-台湾-082-60.249.3.125'
   server: 60.249.3.125
   port: 3389
   type: trojan
   password: ba4fedf8c217c146
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇺🇸-美国-162-198.147.22.87'
+- name: '[12-03]-🇺🇸-美国-083-198.147.22.87'
   server: 198.147.22.87
   port: 443
   type: trojan
   password: bc7593fe-0604-4fbe-a70YWVzLTI1Ni1nY206Q1VuZFNabllzUEtjdTZLajhUSFZNQkhE
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇺🇸-美国-163-198.147.22.87'
+- name: '[12-03]-🇺🇸-美国-084-198.147.22.87'
   server: 198.147.22.87
   port: 443
   type: trojan
   password: bc7593fe-0604-4fbe-a70b-5YWVzLTI1Ni1nY206Q1VuZFNabllzUEtjdTZLajhUSFZNQkhE
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇺🇸-美国-164-198.147.22.87'
+- name: '[12-03]-🇺🇸-美国-085-198.147.22.87'
   server: 198.147.22.87
   port: 443
   type: trojan
   password: bc7593fe-0604-4fbe-a70b-5e2YWVzLTI1Ni1nY206Q1VuZFNabllzUEtjdTZLajhUSFZNQkhE
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇺🇸-美国-165-198.147.22.87'
+- name: '[12-03]-🇺🇸-美国-086-198.147.22.87'
   server: 198.147.22.87
   port: 443
   type: trojan
   password: bc7593fe-0604-4fbe-a70b-5e2aYWVzLTI1Ni1nY206Q1VuZFNabllzUEtjdTZLajhUSFZNQkhE
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇺🇸-美国-166-198.147.22.87'
+- name: '[12-03]-🇺🇸-美国-087-198.147.22.87'
   server: 198.147.22.87
   port: 443
   type: trojan
   password: bc7593fe-0604-4fbe-a70b-5eYWVzLTI1Ni1nY206Q1VuZFNabllzUEtjdTZLajhUSFZNQkhE
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇮🇹-意大利-167-212.102.44.66'
+- name: '[12-03]-🇮🇹-意大利-088-212.102.44.66'
   server: 212.102.44.66
   port: 443
   type: trojan
   password: bd9a998e-56f1-4db3-9952-868bYWVzLTI1Ni1nY206OG42cHdBY3JydjJwajZ0RlkycDNUYlE2
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇮🇹-意大利-168-212.102.44.66'
+- name: '[12-03]-🇮🇹-意大利-089-212.102.44.66'
   server: 212.102.44.66
   port: 443
   type: trojan
   password: bd9a998e-56f1-4db3-9952-86YWVzLTI1Ni1nY206OG42cHdBY3JydjJwajZ0RlkycDNUYlE2
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇮🇹-意大利-169-212.102.44.66'
+- name: '[12-03]-🇮🇹-意大利-090-212.102.44.66'
   server: 212.102.44.66
   port: 443
   type: trojan
   password: bd9a998e-56f1-4dbYWVzLTI1Ni1nY206OG42cHdBY3JydjJwajZ0RlkycDNUYlE2
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇺🇸-美国-170-hk-cnrelay-13-138465.dukou.info'
+- name: '[12-03]-🇺🇸-美国-091-hk-cnrelay-13-138465.dukou.info'
   server: hk-cnrelay-13-138465.dukou.info
   port: 8313
   type: trojan
@@ -607,7 +622,7 @@ proxies:
   sni: hk-13-568.dukouplan3.dev
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇺🇸-美国-171-hk-route-12369-1.dukou.info'
+- name: '[12-03]-🇺🇸-美国-092-hk-route-12369-1.dukou.info'
   server: hk-route-12369-1.dukou.info
   port: 8301
   type: trojan
@@ -615,7 +630,7 @@ proxies:
   sni: hk-1-560.dukouplan3.dev
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇺🇸-美国-172-hk11-5423.dukouplan3.dev'
+- name: '[12-03]-🇺🇸-美国-093-hk11-5423.dukouplan3.dev'
   server: hk11-5423.dukouplan3.dev
   port: 8011
   type: trojan
@@ -623,7 +638,7 @@ proxies:
   sni: hk-11-497.dukouplan3.dev
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇺🇸-美国-173-sg-cn-hk-relay-4-40e978.dukou.info'
+- name: '[12-03]-🇺🇸-美国-094-sg-cn-hk-relay-4-40e978.dukou.info'
   server: sg-cn-hk-relay-4-40e978.dukou.info
   port: 9304
   type: trojan
@@ -631,7 +646,7 @@ proxies:
   sni: sgp-4-549.dukouplan3.dev
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇺🇸-美国-174-sg-cn-relay-8-14852.dukou.info'
+- name: '[12-03]-🇺🇸-美国-095-sg-cn-relay-8-14852.dukou.info'
   server: sg-cn-relay-8-14852.dukou.info
   port: 9308
   type: trojan
@@ -639,7 +654,7 @@ proxies:
   sni: sgp-8-553.dukouplan3.dev
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇺🇸-美国-175-shanghai-router2-hk4-5478.dukou.info'
+- name: '[12-03]-🇺🇸-美国-096-shanghai-router2-hk4-5478.dukou.info'
   server: shanghai-router2-hk4-5478.dukou.info
   port: 8304
   type: trojan
@@ -647,7 +662,7 @@ proxies:
   sni: hk04-01-azure-24567.dukou.info
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇺🇸-美国-176-tw4-5545.dukouplan3.dev'
+- name: '[12-03]-🇺🇸-美国-097-tw4-5545.dukouplan3.dev'
   server: tw4-5545.dukouplan3.dev
   port: 5304
   type: trojan
@@ -655,14 +670,14 @@ proxies:
   sni: tw-04-590.dukouplan3.dev
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇺🇸-美国-177-agals01.cloudddns.icu'
+- name: '[12-03]-🇺🇸-美国-098-agals01.cloudddns.icu'
   server: agals01.cloudddns.icu
   port: 1123
   type: trojan
   password: f45d308f-d9bc-3954-982f-40883392fb8e
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇺🇸-美国-178-sg1.vless.co'
+- name: '[12-03]-🇺🇸-美国-099-sg1.vless.co'
   server: sg1.vless.co
   port: 443
   type: trojan
@@ -670,28 +685,28 @@ proxies:
   sni: sg1.vless.co
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇮🇹-意大利-179-212.102.44.66'
+- name: '[12-03]-🇮🇹-意大利-100-212.102.44.66'
   server: 212.102.44.66
   port: 443
   type: trojan
   password: fc2db962-679d-47d2-bfYWVzLTI1Ni1nY206OG42cHdBY3JydjJwajZ0RlkycDNUYlE2
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇮🇹-意大利-180-212.102.44.66'
+- name: '[12-03]-🇮🇹-意大利-101-212.102.44.66'
   server: 212.102.44.66
   port: 443
   type: trojan
   password: fc2db962-679d-47d2-bfdYWVzLTI1Ni1nY206OG42cHdBY3JydjJwajZ0RlkycDNUYlE2
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇺🇸-美国-181-198.147.22.87'
+- name: '[12-03]-🇺🇸-美国-102-198.147.22.87'
   server: 198.147.22.87
   port: 443
   type: trojan
   password: jhUSFZNQkhE
   skip-cert-verify: true
   udp: true
-- name: '[12-03]-🇺🇸-美国-182-nlt-1.opensvr.net'
+- name: '[12-03]-🇺🇸-美国-103-nlt-1.opensvr.net'
   server: nlt-1.opensvr.net
   port: 443
   type: trojan
@@ -704,197 +719,201 @@ proxy-groups:
   proxies:
   - "♻️ 自动选择"
   - "\U0001F3AF 全球直连"
-  - "[12-03]-🇺🇸-美国-091-silver-hk06.straycloud.xyz"
-  - "[12-03]-🇺🇸-美国-092-us01.straycloud.icu"
-  - "[12-03]-🇺🇸-美国-093-v.9051246.xyz"
-  - "[12-03]-🇯🇵-日本-094-153.122.102.160"
-  - "[12-03]-🇺🇸-美国-095-174.139.126.233"
-  - "[12-03]-🇰🇷-韩国-096-52.231.176.18"
-  - "[12-03]-🇺🇸-美国-097-kaizen-hk-2.cn0.me"
-  - "[12-03]-🇺🇸-美国-098-t5.ssrsub.com"
-  - "[12-03]-🇺🇸-美国-099-sg-cn-hk-relay-1-767f45.dukou.info"
-  - "[12-03]-🇺🇸-美国-100-sg-cn-hk-relay-2-54bc52.dukou.info"
-  - "[12-03]-🇺🇸-美国-101-sg-cn-hk-relay-3-dd4440.dukou.info"
-  - "[12-03]-🇺🇸-美国-102-sg-cn-hk-relay-4-40e978.dukou.info"
-  - "[12-03]-🇺🇸-美国-103-sg-cn-hk-relay-5-51f087.dukou.info"
-  - "[12-03]-🇺🇸-美国-104-tw-cn-hk-relay-1-97861a.dukou.info"
-  - "[12-03]-🇺🇸-美国-105-tw-cn-hk-relay-2-184a76.dukou.info"
-  - "[12-03]-🇺🇸-美国-106-tw3-5412.dukouplan3.dev"
-  - "[12-03]-🇺🇸-美国-107-tw7-5756.dukouplan3.dev"
-  - "[12-03]-🇷🇴-罗马尼亚-108-185.105.191.92"
-  - "[12-03]-🇷🇴-罗马尼亚-109-185.126.116.235"
-  - "[12-03]-🇺🇦-乌克兰-110-5.183.179.138"
-  - "[12-03]-🇺🇸-美国-111-72.167.45.6"
-  - "[12-03]-🇸🇬-新加坡-112-81.90.189.85"
-  - "[12-03]-🇺🇸-美国-113-t5.ssrsub.com"
-  - "[12-03]-🇺🇸-美国-114-t7.ssrsub.com"
-  - "[12-03]-🇪🇸-欧洲-115-185.44.76.188"
-  - "[12-03]-🇺🇸-美国-062-72.167.45.6"
-  - "[12-03]-🇨🇭-瑞士-064-89.31.127.151"
-  - "[12-03]-🇺🇸-美国-116-jp-server-02.pndnav.cc"
-  - "[12-03]-🇺🇸-美国-117-ned-server-01.selfupay.com"
-  - "[12-03]-🇦🇶-欧盟-118-45.12.221.163"
-  - "[12-03]-🇦🇶-欧盟-119-45.12.221.163"
-  - "[12-03]-🇺🇸-美国-120-gg.piyun.team"
-  - "[12-03]-🇺🇸-美国-121-91.220.202.248"
-  - "[12-03]-🇺🇸-美国-122-jp-aws.proxypoolv2.tk"
-  - "[12-03]-🇺🇸-美国-123-198.147.22.87"
-  - "[12-03]-🇺🇸-美国-124-sg1-trojan.bonds.id"
-  - "[12-03]-🇺🇸-美国-125-2.jp.zz.xxxxx.x-t-fuckword.network"
-  - "[12-03]-🇺🇸-美国-126-3.sg.zz.xxxxx.x-t-fuckword.network"
-  - "[12-03]-🇺🇸-美国-127-gb1.v2.zz.cn.fuckword.club"
-  - "[12-03]-🇺🇸-美国-128-hk1.v3.zz.cn.fuckword.club"
-  - "[12-03]-🇺🇸-美国-129-hkt01.hk.zz.xxxxx.x-t-fuckword.network"
-  - "[12-03]-🇺🇸-美国-130-jpjs6o.zhs.company"
-  - "[12-03]-🇺🇸-美国-131-sglmz9.zhs.company"
-  - "[12-03]-🇺🇸-美国-132-h63956.droplet.today"
-  - "[12-03]-🇺🇸-美国-133-h63956.droplet.today"
-  - "[12-03]-🇺🇸-美国-134-h738106.droplet.today"
-  - "[12-03]-🇺🇸-美国-135-h890361.droplet.today"
-  - "[12-03]-🇺🇸-美国-136-h890361.droplet.today"
-  - "[12-03]-🇺🇸-美国-137-azhk.alink123.com"
-  - "[12-03]-🇺🇸-美国-138-jm.mg-nb.com"
-  - "[12-03]-🇺🇸-美国-139-sg3-trojan.bonds.id"
-  - "[12-03]-🇺🇸-美国-140-www.zx07.top"
-  - "[12-03]-🇺🇸-美国-141-os1-1.sstr-api.xyz"
-  - "[12-03]-🇺🇸-美国-142-os1-2.sstr-api.xyz"
-  - "[12-03]-🇺🇸-美国-143-os1-5.sstr-api.xyz"
-  - "[12-03]-🇺🇸-美国-144-os2-5.sstr-api.xyz"
-  - "[12-03]-🇺🇸-美国-145-198.147.22.87"
-  - "[12-03]-🇺🇸-美国-146-sh-hk-01-tr.cdn.savoy.click"
-  - "[12-03]-🇺🇸-美国-147-198.147.22.87"
-  - "[12-03]-🇮🇹-意大利-148-212.102.44.66"
-  - "[12-03]-🇺🇸-美国-149-143.244.42.76"
-  - "[12-03]-🇺🇸-美国-150-198.147.22.87"
-  - "[12-03]-🇦🇶-欧盟-151-45.12.221.163"
-  - "[12-03]-🇺🇸-美国-152-198.147.22.87"
-  - "[12-03]-🇬🇧-英国-153-185.171.120.144"
-  - "[12-03]-🇬🇧-英国-154-185.171.120.144"
-  - "[12-03]-🇯🇵-日本-155-5.183.177.111"
-  - "[12-03]-🇷🇴-罗马尼亚-156-62.216.92.179"
-  - "[12-03]-🇷🇴-罗马尼亚-157-62.216.92.180"
-  - "[12-03]-🇺🇸-美国-158-72.167.33.106"
-  - "[12-03]-🇺🇸-美国-159-72.167.45.6"
-  - "[12-03]-🇺🇸-美国-160-jp-server-02.selfupay.com"
-  - "[12-03]-🇹🇼-台湾-161-60.249.3.125"
-  - "[12-03]-🇺🇸-美国-162-198.147.22.87"
-  - "[12-03]-🇺🇸-美国-163-198.147.22.87"
-  - "[12-03]-🇺🇸-美国-164-198.147.22.87"
-  - "[12-03]-🇺🇸-美国-165-198.147.22.87"
-  - "[12-03]-🇺🇸-美国-166-198.147.22.87"
-  - "[12-03]-🇮🇹-意大利-167-212.102.44.66"
-  - "[12-03]-🇮🇹-意大利-168-212.102.44.66"
-  - "[12-03]-🇮🇹-意大利-169-212.102.44.66"
-  - "[12-03]-🇺🇸-美国-170-hk-cnrelay-13-138465.dukou.info"
-  - "[12-03]-🇺🇸-美国-171-hk-route-12369-1.dukou.info"
-  - "[12-03]-🇺🇸-美国-172-hk11-5423.dukouplan3.dev"
-  - "[12-03]-🇺🇸-美国-173-sg-cn-hk-relay-4-40e978.dukou.info"
-  - "[12-03]-🇺🇸-美国-174-sg-cn-relay-8-14852.dukou.info"
-  - "[12-03]-🇺🇸-美国-175-shanghai-router2-hk4-5478.dukou.info"
-  - "[12-03]-🇺🇸-美国-176-tw4-5545.dukouplan3.dev"
-  - "[12-03]-🇺🇸-美国-177-agals01.cloudddns.icu"
-  - "[12-03]-🇺🇸-美国-178-sg1.vless.co"
-  - "[12-03]-🇮🇹-意大利-179-212.102.44.66"
-  - "[12-03]-🇮🇹-意大利-180-212.102.44.66"
-  - "[12-03]-🇺🇸-美国-181-198.147.22.87"
-  - "[12-03]-🇺🇸-美国-182-nlt-1.opensvr.net"
+  - "[12-03]-🇺🇸-美国-008-silver-hk06.straycloud.xyz"
+  - "[12-03]-🇺🇸-美国-009-us01.straycloud.icu"
+  - "[12-03]-🇺🇸-美国-010-v.9051246.xyz"
+  - "[12-03]-🇯🇵-日本-011-153.122.102.160"
+  - "[12-03]-🇺🇸-美国-012-174.139.126.233"
+  - "[12-03]-🇰🇷-韩国-013-52.231.176.18"
+  - "[12-03]-🇺🇸-美国-014-kaizen-hk-2.cn0.me"
+  - "[12-03]-🇺🇸-美国-015-t5.ssrsub.com"
+  - "[12-03]-🇺🇸-美国-016-sg-cn-hk-relay-1-767f45.dukou.info"
+  - "[12-03]-🇺🇸-美国-017-sg-cn-hk-relay-2-54bc52.dukou.info"
+  - "[12-03]-🇺🇸-美国-018-sg-cn-hk-relay-3-dd4440.dukou.info"
+  - "[12-03]-🇺🇸-美国-019-sg-cn-hk-relay-4-40e978.dukou.info"
+  - "[12-03]-🇺🇸-美国-020-sg-cn-hk-relay-5-51f087.dukou.info"
+  - "[12-03]-🇺🇸-美国-021-tw-cn-hk-relay-1-97861a.dukou.info"
+  - "[12-03]-🇺🇸-美国-022-tw-cn-hk-relay-2-184a76.dukou.info"
+  - "[12-03]-🇺🇸-美国-023-tw3-5412.dukouplan3.dev"
+  - "[12-03]-🇺🇸-美国-024-tw7-5756.dukouplan3.dev"
+  - "[12-03]-🇷🇴-罗马尼亚-025-185.105.191.92"
+  - "[12-03]-🇷🇴-罗马尼亚-026-185.126.116.235"
+  - "[12-03]-🇺🇦-乌克兰-027-5.183.179.138"
+  - "[12-03]-🇺🇸-美国-028-72.167.45.6"
+  - "[12-03]-🇸🇬-新加坡-029-81.90.189.85"
+  - "[12-03]-🇺🇸-美国-030-t3.ssrsub.com"
+  - "[12-03]-🇺🇸-美国-031-t5.ssrsub.com"
+  - "[12-03]-🇺🇸-美国-032-t7.ssrsub.com"
+  - "[12-03]-🇪🇸-欧洲-033-185.44.76.188"
+  - "[12-03]-🇷🇴-罗马尼亚-034-185.126.116.235"
+  - "[12-03]-🇬🇧-英国-035-185.171.120.144"
+  - "[12-03]-🇺🇸-美国-036-72.167.45.6"
+  - "[12-03]-🇨🇭-瑞士-037-89.31.127.151"
+  - "[12-03]-🇺🇸-美国-038-jp-server-02.pndnav.cc"
+  - "[12-03]-🇺🇸-美国-039-ned-server-01.selfupay.com"
+  - "[12-03]-🇦🇶-欧盟-040-45.12.221.163"
+  - "[12-03]-🇦🇶-欧盟-041-45.12.221.163"
+  - "[12-03]-🇺🇸-美国-042-gg.piyun.team"
+  - "[12-03]-🇺🇸-美国-043-91.220.202.248"
+  - "[12-03]-🇺🇸-美国-044-jp-aws.proxypoolv2.tk"
+  - "[12-03]-🇺🇸-美国-045-198.147.22.87"
+  - "[12-03]-🇺🇸-美国-046-sg1-trojan.bonds.id"
+  - "[12-03]-🇺🇸-美国-047-2.jp.zz.xxxxx.x-t-fuckword.network"
+  - "[12-03]-🇺🇸-美国-048-3.sg.zz.xxxxx.x-t-fuckword.network"
+  - "[12-03]-🇺🇸-美国-049-gb1.v2.zz.cn.fuckword.club"
+  - "[12-03]-🇺🇸-美国-050-hk1.v3.zz.cn.fuckword.club"
+  - "[12-03]-🇺🇸-美国-051-hkt01.hk.zz.xxxxx.x-t-fuckword.network"
+  - "[12-03]-🇺🇸-美国-052-jpjs6o.zhs.company"
+  - "[12-03]-🇺🇸-美国-053-sglmz9.zhs.company"
+  - "[12-03]-🇺🇸-美国-054-h63956.droplet.today"
+  - "[12-03]-🇺🇸-美国-055-h63956.droplet.today"
+  - "[12-03]-🇺🇸-美国-056-h738106.droplet.today"
+  - "[12-03]-🇺🇸-美国-057-h890361.droplet.today"
+  - "[12-03]-🇺🇸-美国-058-h890361.droplet.today"
+  - "[12-03]-🇺🇸-美国-059-azhk.alink123.com"
+  - "[12-03]-🇺🇸-美国-060-jm.mg-nb.com"
+  - "[12-03]-🇺🇸-美国-061-sg3-trojan.bonds.id"
+  - "[12-03]-🇺🇸-美国-062-www.zx07.top"
+  - "[12-03]-🇺🇸-美国-063-os1-1.sstr-api.xyz"
+  - "[12-03]-🇺🇸-美国-064-os1-2.sstr-api.xyz"
+  - "[12-03]-🇺🇸-美国-065-os1-5.sstr-api.xyz"
+  - "[12-03]-🇺🇸-美国-066-os2-5.sstr-api.xyz"
+  - "[12-03]-🇺🇸-美国-067-198.147.22.87"
+  - "[12-03]-🇺🇸-美国-068-sh-hk-01-tr.cdn.savoy.click"
+  - "[12-03]-🇺🇸-美国-069-198.147.22.87"
+  - "[12-03]-🇮🇹-意大利-070-212.102.44.66"
+  - "[12-03]-🇺🇸-美国-071-143.244.42.76"
+  - "[12-03]-🇺🇸-美国-072-198.147.22.87"
+  - "[12-03]-🇦🇶-欧盟-073-45.12.221.163"
+  - "[12-03]-🇺🇸-美国-074-198.147.22.87"
+  - "[12-03]-🇬🇧-英国-075-185.171.120.144"
+  - "[12-03]-🇯🇵-日本-076-5.183.177.111"
+  - "[12-03]-🇷🇴-罗马尼亚-077-62.216.92.179"
+  - "[12-03]-🇷🇴-罗马尼亚-078-62.216.92.180"
+  - "[12-03]-🇺🇸-美国-079-72.167.33.106"
+  - "[12-03]-🇺🇸-美国-080-72.167.45.6"
+  - "[12-03]-🇺🇸-美国-081-jp-server-02.selfupay.com"
+  - "[12-03]-🇹🇼-台湾-082-60.249.3.125"
+  - "[12-03]-🇺🇸-美国-083-198.147.22.87"
+  - "[12-03]-🇺🇸-美国-084-198.147.22.87"
+  - "[12-03]-🇺🇸-美国-085-198.147.22.87"
+  - "[12-03]-🇺🇸-美国-086-198.147.22.87"
+  - "[12-03]-🇺🇸-美国-087-198.147.22.87"
+  - "[12-03]-🇮🇹-意大利-088-212.102.44.66"
+  - "[12-03]-🇮🇹-意大利-089-212.102.44.66"
+  - "[12-03]-🇮🇹-意大利-090-212.102.44.66"
+  - "[12-03]-🇺🇸-美国-091-hk-cnrelay-13-138465.dukou.info"
+  - "[12-03]-🇺🇸-美国-092-hk-route-12369-1.dukou.info"
+  - "[12-03]-🇺🇸-美国-093-hk11-5423.dukouplan3.dev"
+  - "[12-03]-🇺🇸-美国-094-sg-cn-hk-relay-4-40e978.dukou.info"
+  - "[12-03]-🇺🇸-美国-095-sg-cn-relay-8-14852.dukou.info"
+  - "[12-03]-🇺🇸-美国-096-shanghai-router2-hk4-5478.dukou.info"
+  - "[12-03]-🇺🇸-美国-097-tw4-5545.dukouplan3.dev"
+  - "[12-03]-🇺🇸-美国-098-agals01.cloudddns.icu"
+  - "[12-03]-🇺🇸-美国-099-sg1.vless.co"
+  - "[12-03]-🇮🇹-意大利-100-212.102.44.66"
+  - "[12-03]-🇮🇹-意大利-101-212.102.44.66"
+  - "[12-03]-🇺🇸-美国-102-198.147.22.87"
+  - "[12-03]-🇺🇸-美国-103-nlt-1.opensvr.net"
 - name: "♻️ 自动选择"
   type: url-test
   proxies:
-  - "[12-03]-🇺🇸-美国-091-silver-hk06.straycloud.xyz"
-  - "[12-03]-🇺🇸-美国-092-us01.straycloud.icu"
-  - "[12-03]-🇺🇸-美国-093-v.9051246.xyz"
-  - "[12-03]-🇯🇵-日本-094-153.122.102.160"
-  - "[12-03]-🇺🇸-美国-095-174.139.126.233"
-  - "[12-03]-🇰🇷-韩国-096-52.231.176.18"
-  - "[12-03]-🇺🇸-美国-097-kaizen-hk-2.cn0.me"
-  - "[12-03]-🇺🇸-美国-098-t5.ssrsub.com"
-  - "[12-03]-🇺🇸-美国-099-sg-cn-hk-relay-1-767f45.dukou.info"
-  - "[12-03]-🇺🇸-美国-100-sg-cn-hk-relay-2-54bc52.dukou.info"
-  - "[12-03]-🇺🇸-美国-101-sg-cn-hk-relay-3-dd4440.dukou.info"
-  - "[12-03]-🇺🇸-美国-102-sg-cn-hk-relay-4-40e978.dukou.info"
-  - "[12-03]-🇺🇸-美国-103-sg-cn-hk-relay-5-51f087.dukou.info"
-  - "[12-03]-🇺🇸-美国-104-tw-cn-hk-relay-1-97861a.dukou.info"
-  - "[12-03]-🇺🇸-美国-105-tw-cn-hk-relay-2-184a76.dukou.info"
-  - "[12-03]-🇺🇸-美国-106-tw3-5412.dukouplan3.dev"
-  - "[12-03]-🇺🇸-美国-107-tw7-5756.dukouplan3.dev"
-  - "[12-03]-🇷🇴-罗马尼亚-108-185.105.191.92"
-  - "[12-03]-🇷🇴-罗马尼亚-109-185.126.116.235"
-  - "[12-03]-🇺🇦-乌克兰-110-5.183.179.138"
-  - "[12-03]-🇺🇸-美国-111-72.167.45.6"
-  - "[12-03]-🇸🇬-新加坡-112-81.90.189.85"
-  - "[12-03]-🇺🇸-美国-113-t5.ssrsub.com"
-  - "[12-03]-🇺🇸-美国-114-t7.ssrsub.com"
-  - "[12-03]-🇪🇸-欧洲-115-185.44.76.188"
-  - "[12-03]-🇺🇸-美国-062-72.167.45.6"
-  - "[12-03]-🇨🇭-瑞士-064-89.31.127.151"
-  - "[12-03]-🇺🇸-美国-116-jp-server-02.pndnav.cc"
-  - "[12-03]-🇺🇸-美国-117-ned-server-01.selfupay.com"
-  - "[12-03]-🇦🇶-欧盟-118-45.12.221.163"
-  - "[12-03]-🇦🇶-欧盟-119-45.12.221.163"
-  - "[12-03]-🇺🇸-美国-120-gg.piyun.team"
-  - "[12-03]-🇺🇸-美国-121-91.220.202.248"
-  - "[12-03]-🇺🇸-美国-122-jp-aws.proxypoolv2.tk"
-  - "[12-03]-🇺🇸-美国-123-198.147.22.87"
-  - "[12-03]-🇺🇸-美国-124-sg1-trojan.bonds.id"
-  - "[12-03]-🇺🇸-美国-125-2.jp.zz.xxxxx.x-t-fuckword.network"
-  - "[12-03]-🇺🇸-美国-126-3.sg.zz.xxxxx.x-t-fuckword.network"
-  - "[12-03]-🇺🇸-美国-127-gb1.v2.zz.cn.fuckword.club"
-  - "[12-03]-🇺🇸-美国-128-hk1.v3.zz.cn.fuckword.club"
-  - "[12-03]-🇺🇸-美国-129-hkt01.hk.zz.xxxxx.x-t-fuckword.network"
-  - "[12-03]-🇺🇸-美国-130-jpjs6o.zhs.company"
-  - "[12-03]-🇺🇸-美国-131-sglmz9.zhs.company"
-  - "[12-03]-🇺🇸-美国-132-h63956.droplet.today"
-  - "[12-03]-🇺🇸-美国-133-h63956.droplet.today"
-  - "[12-03]-🇺🇸-美国-134-h738106.droplet.today"
-  - "[12-03]-🇺🇸-美国-135-h890361.droplet.today"
-  - "[12-03]-🇺🇸-美国-136-h890361.droplet.today"
-  - "[12-03]-🇺🇸-美国-137-azhk.alink123.com"
-  - "[12-03]-🇺🇸-美国-138-jm.mg-nb.com"
-  - "[12-03]-🇺🇸-美国-139-sg3-trojan.bonds.id"
-  - "[12-03]-🇺🇸-美国-140-www.zx07.top"
-  - "[12-03]-🇺🇸-美国-141-os1-1.sstr-api.xyz"
-  - "[12-03]-🇺🇸-美国-142-os1-2.sstr-api.xyz"
-  - "[12-03]-🇺🇸-美国-143-os1-5.sstr-api.xyz"
-  - "[12-03]-🇺🇸-美国-144-os2-5.sstr-api.xyz"
-  - "[12-03]-🇺🇸-美国-145-198.147.22.87"
-  - "[12-03]-🇺🇸-美国-146-sh-hk-01-tr.cdn.savoy.click"
-  - "[12-03]-🇺🇸-美国-147-198.147.22.87"
-  - "[12-03]-🇮🇹-意大利-148-212.102.44.66"
-  - "[12-03]-🇺🇸-美国-149-143.244.42.76"
-  - "[12-03]-🇺🇸-美国-150-198.147.22.87"
-  - "[12-03]-🇦🇶-欧盟-151-45.12.221.163"
-  - "[12-03]-🇺🇸-美国-152-198.147.22.87"
-  - "[12-03]-🇬🇧-英国-153-185.171.120.144"
-  - "[12-03]-🇬🇧-英国-154-185.171.120.144"
-  - "[12-03]-🇯🇵-日本-155-5.183.177.111"
-  - "[12-03]-🇷🇴-罗马尼亚-156-62.216.92.179"
-  - "[12-03]-🇷🇴-罗马尼亚-157-62.216.92.180"
-  - "[12-03]-🇺🇸-美国-158-72.167.33.106"
-  - "[12-03]-🇺🇸-美国-159-72.167.45.6"
-  - "[12-03]-🇺🇸-美国-160-jp-server-02.selfupay.com"
-  - "[12-03]-🇹🇼-台湾-161-60.249.3.125"
-  - "[12-03]-🇺🇸-美国-162-198.147.22.87"
-  - "[12-03]-🇺🇸-美国-163-198.147.22.87"
-  - "[12-03]-🇺🇸-美国-164-198.147.22.87"
-  - "[12-03]-🇺🇸-美国-165-198.147.22.87"
-  - "[12-03]-🇺🇸-美国-166-198.147.22.87"
-  - "[12-03]-🇮🇹-意大利-167-212.102.44.66"
-  - "[12-03]-🇮🇹-意大利-168-212.102.44.66"
-  - "[12-03]-🇮🇹-意大利-169-212.102.44.66"
-  - "[12-03]-🇺🇸-美国-170-hk-cnrelay-13-138465.dukou.info"
-  - "[12-03]-🇺🇸-美国-171-hk-route-12369-1.dukou.info"
-  - "[12-03]-🇺🇸-美国-172-hk11-5423.dukouplan3.dev"
-  - "[12-03]-🇺🇸-美国-173-sg-cn-hk-relay-4-40e978.dukou.info"
-  - "[12-03]-🇺🇸-美国-174-sg-cn-relay-8-14852.dukou.info"
-  - "[12-03]-🇺🇸-美国-175-shanghai-router2-hk4-5478.dukou.info"
-  - "[12-03]-🇺🇸-美国-176-tw4-5545.dukouplan3.dev"
-  - "[12-03]-🇺🇸-美国-177-agals01.cloudddns.icu"
-  - "[12-03]-🇺🇸-美国-178-sg1.vless.co"
-  - "[12-03]-🇮🇹-意大利-179-212.102.44.66"
-  - "[12-03]-🇮🇹-意大利-180-212.102.44.66"
-  - "[12-03]-🇺🇸-美国-181-198.147.22.87"
-  - "[12-03]-🇺🇸-美国-182-nlt-1.opensvr.net"
+  - "[12-03]-🇺🇸-美国-008-silver-hk06.straycloud.xyz"
+  - "[12-03]-🇺🇸-美国-009-us01.straycloud.icu"
+  - "[12-03]-🇺🇸-美国-010-v.9051246.xyz"
+  - "[12-03]-🇯🇵-日本-011-153.122.102.160"
+  - "[12-03]-🇺🇸-美国-012-174.139.126.233"
+  - "[12-03]-🇰🇷-韩国-013-52.231.176.18"
+  - "[12-03]-🇺🇸-美国-014-kaizen-hk-2.cn0.me"
+  - "[12-03]-🇺🇸-美国-015-t5.ssrsub.com"
+  - "[12-03]-🇺🇸-美国-016-sg-cn-hk-relay-1-767f45.dukou.info"
+  - "[12-03]-🇺🇸-美国-017-sg-cn-hk-relay-2-54bc52.dukou.info"
+  - "[12-03]-🇺🇸-美国-018-sg-cn-hk-relay-3-dd4440.dukou.info"
+  - "[12-03]-🇺🇸-美国-019-sg-cn-hk-relay-4-40e978.dukou.info"
+  - "[12-03]-🇺🇸-美国-020-sg-cn-hk-relay-5-51f087.dukou.info"
+  - "[12-03]-🇺🇸-美国-021-tw-cn-hk-relay-1-97861a.dukou.info"
+  - "[12-03]-🇺🇸-美国-022-tw-cn-hk-relay-2-184a76.dukou.info"
+  - "[12-03]-🇺🇸-美国-023-tw3-5412.dukouplan3.dev"
+  - "[12-03]-🇺🇸-美国-024-tw7-5756.dukouplan3.dev"
+  - "[12-03]-🇷🇴-罗马尼亚-025-185.105.191.92"
+  - "[12-03]-🇷🇴-罗马尼亚-026-185.126.116.235"
+  - "[12-03]-🇺🇦-乌克兰-027-5.183.179.138"
+  - "[12-03]-🇺🇸-美国-028-72.167.45.6"
+  - "[12-03]-🇸🇬-新加坡-029-81.90.189.85"
+  - "[12-03]-🇺🇸-美国-030-t3.ssrsub.com"
+  - "[12-03]-🇺🇸-美国-031-t5.ssrsub.com"
+  - "[12-03]-🇺🇸-美国-032-t7.ssrsub.com"
+  - "[12-03]-🇪🇸-欧洲-033-185.44.76.188"
+  - "[12-03]-🇷🇴-罗马尼亚-034-185.126.116.235"
+  - "[12-03]-🇬🇧-英国-035-185.171.120.144"
+  - "[12-03]-🇺🇸-美国-036-72.167.45.6"
+  - "[12-03]-🇨🇭-瑞士-037-89.31.127.151"
+  - "[12-03]-🇺🇸-美国-038-jp-server-02.pndnav.cc"
+  - "[12-03]-🇺🇸-美国-039-ned-server-01.selfupay.com"
+  - "[12-03]-🇦🇶-欧盟-040-45.12.221.163"
+  - "[12-03]-🇦🇶-欧盟-041-45.12.221.163"
+  - "[12-03]-🇺🇸-美国-042-gg.piyun.team"
+  - "[12-03]-🇺🇸-美国-043-91.220.202.248"
+  - "[12-03]-🇺🇸-美国-044-jp-aws.proxypoolv2.tk"
+  - "[12-03]-🇺🇸-美国-045-198.147.22.87"
+  - "[12-03]-🇺🇸-美国-046-sg1-trojan.bonds.id"
+  - "[12-03]-🇺🇸-美国-047-2.jp.zz.xxxxx.x-t-fuckword.network"
+  - "[12-03]-🇺🇸-美国-048-3.sg.zz.xxxxx.x-t-fuckword.network"
+  - "[12-03]-🇺🇸-美国-049-gb1.v2.zz.cn.fuckword.club"
+  - "[12-03]-🇺🇸-美国-050-hk1.v3.zz.cn.fuckword.club"
+  - "[12-03]-🇺🇸-美国-051-hkt01.hk.zz.xxxxx.x-t-fuckword.network"
+  - "[12-03]-🇺🇸-美国-052-jpjs6o.zhs.company"
+  - "[12-03]-🇺🇸-美国-053-sglmz9.zhs.company"
+  - "[12-03]-🇺🇸-美国-054-h63956.droplet.today"
+  - "[12-03]-🇺🇸-美国-055-h63956.droplet.today"
+  - "[12-03]-🇺🇸-美国-056-h738106.droplet.today"
+  - "[12-03]-🇺🇸-美国-057-h890361.droplet.today"
+  - "[12-03]-🇺🇸-美国-058-h890361.droplet.today"
+  - "[12-03]-🇺🇸-美国-059-azhk.alink123.com"
+  - "[12-03]-🇺🇸-美国-060-jm.mg-nb.com"
+  - "[12-03]-🇺🇸-美国-061-sg3-trojan.bonds.id"
+  - "[12-03]-🇺🇸-美国-062-www.zx07.top"
+  - "[12-03]-🇺🇸-美国-063-os1-1.sstr-api.xyz"
+  - "[12-03]-🇺🇸-美国-064-os1-2.sstr-api.xyz"
+  - "[12-03]-🇺🇸-美国-065-os1-5.sstr-api.xyz"
+  - "[12-03]-🇺🇸-美国-066-os2-5.sstr-api.xyz"
+  - "[12-03]-🇺🇸-美国-067-198.147.22.87"
+  - "[12-03]-🇺🇸-美国-068-sh-hk-01-tr.cdn.savoy.click"
+  - "[12-03]-🇺🇸-美国-069-198.147.22.87"
+  - "[12-03]-🇮🇹-意大利-070-212.102.44.66"
+  - "[12-03]-🇺🇸-美国-071-143.244.42.76"
+  - "[12-03]-🇺🇸-美国-072-198.147.22.87"
+  - "[12-03]-🇦🇶-欧盟-073-45.12.221.163"
+  - "[12-03]-🇺🇸-美国-074-198.147.22.87"
+  - "[12-03]-🇬🇧-英国-075-185.171.120.144"
+  - "[12-03]-🇯🇵-日本-076-5.183.177.111"
+  - "[12-03]-🇷🇴-罗马尼亚-077-62.216.92.179"
+  - "[12-03]-🇷🇴-罗马尼亚-078-62.216.92.180"
+  - "[12-03]-🇺🇸-美国-079-72.167.33.106"
+  - "[12-03]-🇺🇸-美国-080-72.167.45.6"
+  - "[12-03]-🇺🇸-美国-081-jp-server-02.selfupay.com"
+  - "[12-03]-🇹🇼-台湾-082-60.249.3.125"
+  - "[12-03]-🇺🇸-美国-083-198.147.22.87"
+  - "[12-03]-🇺🇸-美国-084-198.147.22.87"
+  - "[12-03]-🇺🇸-美国-085-198.147.22.87"
+  - "[12-03]-🇺🇸-美国-086-198.147.22.87"
+  - "[12-03]-🇺🇸-美国-087-198.147.22.87"
+  - "[12-03]-🇮🇹-意大利-088-212.102.44.66"
+  - "[12-03]-🇮🇹-意大利-089-212.102.44.66"
+  - "[12-03]-🇮🇹-意大利-090-212.102.44.66"
+  - "[12-03]-🇺🇸-美国-091-hk-cnrelay-13-138465.dukou.info"
+  - "[12-03]-🇺🇸-美国-092-hk-route-12369-1.dukou.info"
+  - "[12-03]-🇺🇸-美国-093-hk11-5423.dukouplan3.dev"
+  - "[12-03]-🇺🇸-美国-094-sg-cn-hk-relay-4-40e978.dukou.info"
+  - "[12-03]-🇺🇸-美国-095-sg-cn-relay-8-14852.dukou.info"
+  - "[12-03]-🇺🇸-美国-096-shanghai-router2-hk4-5478.dukou.info"
+  - "[12-03]-🇺🇸-美国-097-tw4-5545.dukouplan3.dev"
+  - "[12-03]-🇺🇸-美国-098-agals01.cloudddns.icu"
+  - "[12-03]-🇺🇸-美国-099-sg1.vless.co"
+  - "[12-03]-🇮🇹-意大利-100-212.102.44.66"
+  - "[12-03]-🇮🇹-意大利-101-212.102.44.66"
+  - "[12-03]-🇺🇸-美国-102-198.147.22.87"
+  - "[12-03]-🇺🇸-美国-103-nlt-1.opensvr.net"
   url: http://www.gstatic.com/generate_204
   interval: '300'
 - name: "\U0001F30D 国外媒体"
@@ -903,495 +922,505 @@ proxy-groups:
   - "\U0001F530 节点选择"
   - "♻️ 自动选择"
   - "\U0001F3AF 全球直连"
-  - "[12-03]-🇺🇸-美国-091-silver-hk06.straycloud.xyz"
-  - "[12-03]-🇺🇸-美国-092-us01.straycloud.icu"
-  - "[12-03]-🇺🇸-美国-093-v.9051246.xyz"
-  - "[12-03]-🇯🇵-日本-094-153.122.102.160"
-  - "[12-03]-🇺🇸-美国-095-174.139.126.233"
-  - "[12-03]-🇰🇷-韩国-096-52.231.176.18"
-  - "[12-03]-🇺🇸-美国-097-kaizen-hk-2.cn0.me"
-  - "[12-03]-🇺🇸-美国-098-t5.ssrsub.com"
-  - "[12-03]-🇺🇸-美国-099-sg-cn-hk-relay-1-767f45.dukou.info"
-  - "[12-03]-🇺🇸-美国-100-sg-cn-hk-relay-2-54bc52.dukou.info"
-  - "[12-03]-🇺🇸-美国-101-sg-cn-hk-relay-3-dd4440.dukou.info"
-  - "[12-03]-🇺🇸-美国-102-sg-cn-hk-relay-4-40e978.dukou.info"
-  - "[12-03]-🇺🇸-美国-103-sg-cn-hk-relay-5-51f087.dukou.info"
-  - "[12-03]-🇺🇸-美国-104-tw-cn-hk-relay-1-97861a.dukou.info"
-  - "[12-03]-🇺🇸-美国-105-tw-cn-hk-relay-2-184a76.dukou.info"
-  - "[12-03]-🇺🇸-美国-106-tw3-5412.dukouplan3.dev"
-  - "[12-03]-🇺🇸-美国-107-tw7-5756.dukouplan3.dev"
-  - "[12-03]-🇷🇴-罗马尼亚-108-185.105.191.92"
-  - "[12-03]-🇷🇴-罗马尼亚-109-185.126.116.235"
-  - "[12-03]-🇺🇦-乌克兰-110-5.183.179.138"
-  - "[12-03]-🇺🇸-美国-111-72.167.45.6"
-  - "[12-03]-🇸🇬-新加坡-112-81.90.189.85"
-  - "[12-03]-🇺🇸-美国-113-t5.ssrsub.com"
-  - "[12-03]-🇺🇸-美国-114-t7.ssrsub.com"
-  - "[12-03]-🇪🇸-欧洲-115-185.44.76.188"
-  - "[12-03]-🇺🇸-美国-062-72.167.45.6"
-  - "[12-03]-🇨🇭-瑞士-064-89.31.127.151"
-  - "[12-03]-🇺🇸-美国-116-jp-server-02.pndnav.cc"
-  - "[12-03]-🇺🇸-美国-117-ned-server-01.selfupay.com"
-  - "[12-03]-🇦🇶-欧盟-118-45.12.221.163"
-  - "[12-03]-🇦🇶-欧盟-119-45.12.221.163"
-  - "[12-03]-🇺🇸-美国-120-gg.piyun.team"
-  - "[12-03]-🇺🇸-美国-121-91.220.202.248"
-  - "[12-03]-🇺🇸-美国-122-jp-aws.proxypoolv2.tk"
-  - "[12-03]-🇺🇸-美国-123-198.147.22.87"
-  - "[12-03]-🇺🇸-美国-124-sg1-trojan.bonds.id"
-  - "[12-03]-🇺🇸-美国-125-2.jp.zz.xxxxx.x-t-fuckword.network"
-  - "[12-03]-🇺🇸-美国-126-3.sg.zz.xxxxx.x-t-fuckword.network"
-  - "[12-03]-🇺🇸-美国-127-gb1.v2.zz.cn.fuckword.club"
-  - "[12-03]-🇺🇸-美国-128-hk1.v3.zz.cn.fuckword.club"
-  - "[12-03]-🇺🇸-美国-129-hkt01.hk.zz.xxxxx.x-t-fuckword.network"
-  - "[12-03]-🇺🇸-美国-130-jpjs6o.zhs.company"
-  - "[12-03]-🇺🇸-美国-131-sglmz9.zhs.company"
-  - "[12-03]-🇺🇸-美国-132-h63956.droplet.today"
-  - "[12-03]-🇺🇸-美国-133-h63956.droplet.today"
-  - "[12-03]-🇺🇸-美国-134-h738106.droplet.today"
-  - "[12-03]-🇺🇸-美国-135-h890361.droplet.today"
-  - "[12-03]-🇺🇸-美国-136-h890361.droplet.today"
-  - "[12-03]-🇺🇸-美国-137-azhk.alink123.com"
-  - "[12-03]-🇺🇸-美国-138-jm.mg-nb.com"
-  - "[12-03]-🇺🇸-美国-139-sg3-trojan.bonds.id"
-  - "[12-03]-🇺🇸-美国-140-www.zx07.top"
-  - "[12-03]-🇺🇸-美国-141-os1-1.sstr-api.xyz"
-  - "[12-03]-🇺🇸-美国-142-os1-2.sstr-api.xyz"
-  - "[12-03]-🇺🇸-美国-143-os1-5.sstr-api.xyz"
-  - "[12-03]-🇺🇸-美国-144-os2-5.sstr-api.xyz"
-  - "[12-03]-🇺🇸-美国-145-198.147.22.87"
-  - "[12-03]-🇺🇸-美国-146-sh-hk-01-tr.cdn.savoy.click"
-  - "[12-03]-🇺🇸-美国-147-198.147.22.87"
-  - "[12-03]-🇮🇹-意大利-148-212.102.44.66"
-  - "[12-03]-🇺🇸-美国-149-143.244.42.76"
-  - "[12-03]-🇺🇸-美国-150-198.147.22.87"
-  - "[12-03]-🇦🇶-欧盟-151-45.12.221.163"
-  - "[12-03]-🇺🇸-美国-152-198.147.22.87"
-  - "[12-03]-🇬🇧-英国-153-185.171.120.144"
-  - "[12-03]-🇬🇧-英国-154-185.171.120.144"
-  - "[12-03]-🇯🇵-日本-155-5.183.177.111"
-  - "[12-03]-🇷🇴-罗马尼亚-156-62.216.92.179"
-  - "[12-03]-🇷🇴-罗马尼亚-157-62.216.92.180"
-  - "[12-03]-🇺🇸-美国-158-72.167.33.106"
-  - "[12-03]-🇺🇸-美国-159-72.167.45.6"
-  - "[12-03]-🇺🇸-美国-160-jp-server-02.selfupay.com"
-  - "[12-03]-🇹🇼-台湾-161-60.249.3.125"
-  - "[12-03]-🇺🇸-美国-162-198.147.22.87"
-  - "[12-03]-🇺🇸-美国-163-198.147.22.87"
-  - "[12-03]-🇺🇸-美国-164-198.147.22.87"
-  - "[12-03]-🇺🇸-美国-165-198.147.22.87"
-  - "[12-03]-🇺🇸-美国-166-198.147.22.87"
-  - "[12-03]-🇮🇹-意大利-167-212.102.44.66"
-  - "[12-03]-🇮🇹-意大利-168-212.102.44.66"
-  - "[12-03]-🇮🇹-意大利-169-212.102.44.66"
-  - "[12-03]-🇺🇸-美国-170-hk-cnrelay-13-138465.dukou.info"
-  - "[12-03]-🇺🇸-美国-171-hk-route-12369-1.dukou.info"
-  - "[12-03]-🇺🇸-美国-172-hk11-5423.dukouplan3.dev"
-  - "[12-03]-🇺🇸-美国-173-sg-cn-hk-relay-4-40e978.dukou.info"
-  - "[12-03]-🇺🇸-美国-174-sg-cn-relay-8-14852.dukou.info"
-  - "[12-03]-🇺🇸-美国-175-shanghai-router2-hk4-5478.dukou.info"
-  - "[12-03]-🇺🇸-美国-176-tw4-5545.dukouplan3.dev"
-  - "[12-03]-🇺🇸-美国-177-agals01.cloudddns.icu"
-  - "[12-03]-🇺🇸-美国-178-sg1.vless.co"
-  - "[12-03]-🇮🇹-意大利-179-212.102.44.66"
-  - "[12-03]-🇮🇹-意大利-180-212.102.44.66"
-  - "[12-03]-🇺🇸-美国-181-198.147.22.87"
-  - "[12-03]-🇺🇸-美国-182-nlt-1.opensvr.net"
+  - "[12-03]-🇺🇸-美国-008-silver-hk06.straycloud.xyz"
+  - "[12-03]-🇺🇸-美国-009-us01.straycloud.icu"
+  - "[12-03]-🇺🇸-美国-010-v.9051246.xyz"
+  - "[12-03]-🇯🇵-日本-011-153.122.102.160"
+  - "[12-03]-🇺🇸-美国-012-174.139.126.233"
+  - "[12-03]-🇰🇷-韩国-013-52.231.176.18"
+  - "[12-03]-🇺🇸-美国-014-kaizen-hk-2.cn0.me"
+  - "[12-03]-🇺🇸-美国-015-t5.ssrsub.com"
+  - "[12-03]-🇺🇸-美国-016-sg-cn-hk-relay-1-767f45.dukou.info"
+  - "[12-03]-🇺🇸-美国-017-sg-cn-hk-relay-2-54bc52.dukou.info"
+  - "[12-03]-🇺🇸-美国-018-sg-cn-hk-relay-3-dd4440.dukou.info"
+  - "[12-03]-🇺🇸-美国-019-sg-cn-hk-relay-4-40e978.dukou.info"
+  - "[12-03]-🇺🇸-美国-020-sg-cn-hk-relay-5-51f087.dukou.info"
+  - "[12-03]-🇺🇸-美国-021-tw-cn-hk-relay-1-97861a.dukou.info"
+  - "[12-03]-🇺🇸-美国-022-tw-cn-hk-relay-2-184a76.dukou.info"
+  - "[12-03]-🇺🇸-美国-023-tw3-5412.dukouplan3.dev"
+  - "[12-03]-🇺🇸-美国-024-tw7-5756.dukouplan3.dev"
+  - "[12-03]-🇷🇴-罗马尼亚-025-185.105.191.92"
+  - "[12-03]-🇷🇴-罗马尼亚-026-185.126.116.235"
+  - "[12-03]-🇺🇦-乌克兰-027-5.183.179.138"
+  - "[12-03]-🇺🇸-美国-028-72.167.45.6"
+  - "[12-03]-🇸🇬-新加坡-029-81.90.189.85"
+  - "[12-03]-🇺🇸-美国-030-t3.ssrsub.com"
+  - "[12-03]-🇺🇸-美国-031-t5.ssrsub.com"
+  - "[12-03]-🇺🇸-美国-032-t7.ssrsub.com"
+  - "[12-03]-🇪🇸-欧洲-033-185.44.76.188"
+  - "[12-03]-🇷🇴-罗马尼亚-034-185.126.116.235"
+  - "[12-03]-🇬🇧-英国-035-185.171.120.144"
+  - "[12-03]-🇺🇸-美国-036-72.167.45.6"
+  - "[12-03]-🇨🇭-瑞士-037-89.31.127.151"
+  - "[12-03]-🇺🇸-美国-038-jp-server-02.pndnav.cc"
+  - "[12-03]-🇺🇸-美国-039-ned-server-01.selfupay.com"
+  - "[12-03]-🇦🇶-欧盟-040-45.12.221.163"
+  - "[12-03]-🇦🇶-欧盟-041-45.12.221.163"
+  - "[12-03]-🇺🇸-美国-042-gg.piyun.team"
+  - "[12-03]-🇺🇸-美国-043-91.220.202.248"
+  - "[12-03]-🇺🇸-美国-044-jp-aws.proxypoolv2.tk"
+  - "[12-03]-🇺🇸-美国-045-198.147.22.87"
+  - "[12-03]-🇺🇸-美国-046-sg1-trojan.bonds.id"
+  - "[12-03]-🇺🇸-美国-047-2.jp.zz.xxxxx.x-t-fuckword.network"
+  - "[12-03]-🇺🇸-美国-048-3.sg.zz.xxxxx.x-t-fuckword.network"
+  - "[12-03]-🇺🇸-美国-049-gb1.v2.zz.cn.fuckword.club"
+  - "[12-03]-🇺🇸-美国-050-hk1.v3.zz.cn.fuckword.club"
+  - "[12-03]-🇺🇸-美国-051-hkt01.hk.zz.xxxxx.x-t-fuckword.network"
+  - "[12-03]-🇺🇸-美国-052-jpjs6o.zhs.company"
+  - "[12-03]-🇺🇸-美国-053-sglmz9.zhs.company"
+  - "[12-03]-🇺🇸-美国-054-h63956.droplet.today"
+  - "[12-03]-🇺🇸-美国-055-h63956.droplet.today"
+  - "[12-03]-🇺🇸-美国-056-h738106.droplet.today"
+  - "[12-03]-🇺🇸-美国-057-h890361.droplet.today"
+  - "[12-03]-🇺🇸-美国-058-h890361.droplet.today"
+  - "[12-03]-🇺🇸-美国-059-azhk.alink123.com"
+  - "[12-03]-🇺🇸-美国-060-jm.mg-nb.com"
+  - "[12-03]-🇺🇸-美国-061-sg3-trojan.bonds.id"
+  - "[12-03]-🇺🇸-美国-062-www.zx07.top"
+  - "[12-03]-🇺🇸-美国-063-os1-1.sstr-api.xyz"
+  - "[12-03]-🇺🇸-美国-064-os1-2.sstr-api.xyz"
+  - "[12-03]-🇺🇸-美国-065-os1-5.sstr-api.xyz"
+  - "[12-03]-🇺🇸-美国-066-os2-5.sstr-api.xyz"
+  - "[12-03]-🇺🇸-美国-067-198.147.22.87"
+  - "[12-03]-🇺🇸-美国-068-sh-hk-01-tr.cdn.savoy.click"
+  - "[12-03]-🇺🇸-美国-069-198.147.22.87"
+  - "[12-03]-🇮🇹-意大利-070-212.102.44.66"
+  - "[12-03]-🇺🇸-美国-071-143.244.42.76"
+  - "[12-03]-🇺🇸-美国-072-198.147.22.87"
+  - "[12-03]-🇦🇶-欧盟-073-45.12.221.163"
+  - "[12-03]-🇺🇸-美国-074-198.147.22.87"
+  - "[12-03]-🇬🇧-英国-075-185.171.120.144"
+  - "[12-03]-🇯🇵-日本-076-5.183.177.111"
+  - "[12-03]-🇷🇴-罗马尼亚-077-62.216.92.179"
+  - "[12-03]-🇷🇴-罗马尼亚-078-62.216.92.180"
+  - "[12-03]-🇺🇸-美国-079-72.167.33.106"
+  - "[12-03]-🇺🇸-美国-080-72.167.45.6"
+  - "[12-03]-🇺🇸-美国-081-jp-server-02.selfupay.com"
+  - "[12-03]-🇹🇼-台湾-082-60.249.3.125"
+  - "[12-03]-🇺🇸-美国-083-198.147.22.87"
+  - "[12-03]-🇺🇸-美国-084-198.147.22.87"
+  - "[12-03]-🇺🇸-美国-085-198.147.22.87"
+  - "[12-03]-🇺🇸-美国-086-198.147.22.87"
+  - "[12-03]-🇺🇸-美国-087-198.147.22.87"
+  - "[12-03]-🇮🇹-意大利-088-212.102.44.66"
+  - "[12-03]-🇮🇹-意大利-089-212.102.44.66"
+  - "[12-03]-🇮🇹-意大利-090-212.102.44.66"
+  - "[12-03]-🇺🇸-美国-091-hk-cnrelay-13-138465.dukou.info"
+  - "[12-03]-🇺🇸-美国-092-hk-route-12369-1.dukou.info"
+  - "[12-03]-🇺🇸-美国-093-hk11-5423.dukouplan3.dev"
+  - "[12-03]-🇺🇸-美国-094-sg-cn-hk-relay-4-40e978.dukou.info"
+  - "[12-03]-🇺🇸-美国-095-sg-cn-relay-8-14852.dukou.info"
+  - "[12-03]-🇺🇸-美国-096-shanghai-router2-hk4-5478.dukou.info"
+  - "[12-03]-🇺🇸-美国-097-tw4-5545.dukouplan3.dev"
+  - "[12-03]-🇺🇸-美国-098-agals01.cloudddns.icu"
+  - "[12-03]-🇺🇸-美国-099-sg1.vless.co"
+  - "[12-03]-🇮🇹-意大利-100-212.102.44.66"
+  - "[12-03]-🇮🇹-意大利-101-212.102.44.66"
+  - "[12-03]-🇺🇸-美国-102-198.147.22.87"
+  - "[12-03]-🇺🇸-美国-103-nlt-1.opensvr.net"
 - name: "\U0001F30F 国内媒体"
   type: select
   proxies:
   - "\U0001F3AF 全球直连"
   - "\U0001F530 节点选择"
-  - "[12-03]-🇺🇸-美国-091-silver-hk06.straycloud.xyz"
-  - "[12-03]-🇺🇸-美国-092-us01.straycloud.icu"
-  - "[12-03]-🇺🇸-美国-093-v.9051246.xyz"
-  - "[12-03]-🇯🇵-日本-094-153.122.102.160"
-  - "[12-03]-🇺🇸-美国-095-174.139.126.233"
-  - "[12-03]-🇰🇷-韩国-096-52.231.176.18"
-  - "[12-03]-🇺🇸-美国-097-kaizen-hk-2.cn0.me"
-  - "[12-03]-🇺🇸-美国-098-t5.ssrsub.com"
-  - "[12-03]-🇺🇸-美国-099-sg-cn-hk-relay-1-767f45.dukou.info"
-  - "[12-03]-🇺🇸-美国-100-sg-cn-hk-relay-2-54bc52.dukou.info"
-  - "[12-03]-🇺🇸-美国-101-sg-cn-hk-relay-3-dd4440.dukou.info"
-  - "[12-03]-🇺🇸-美国-102-sg-cn-hk-relay-4-40e978.dukou.info"
-  - "[12-03]-🇺🇸-美国-103-sg-cn-hk-relay-5-51f087.dukou.info"
-  - "[12-03]-🇺🇸-美国-104-tw-cn-hk-relay-1-97861a.dukou.info"
-  - "[12-03]-🇺🇸-美国-105-tw-cn-hk-relay-2-184a76.dukou.info"
-  - "[12-03]-🇺🇸-美国-106-tw3-5412.dukouplan3.dev"
-  - "[12-03]-🇺🇸-美国-107-tw7-5756.dukouplan3.dev"
-  - "[12-03]-🇷🇴-罗马尼亚-108-185.105.191.92"
-  - "[12-03]-🇷🇴-罗马尼亚-109-185.126.116.235"
-  - "[12-03]-🇺🇦-乌克兰-110-5.183.179.138"
-  - "[12-03]-🇺🇸-美国-111-72.167.45.6"
-  - "[12-03]-🇸🇬-新加坡-112-81.90.189.85"
-  - "[12-03]-🇺🇸-美国-113-t5.ssrsub.com"
-  - "[12-03]-🇺🇸-美国-114-t7.ssrsub.com"
-  - "[12-03]-🇪🇸-欧洲-115-185.44.76.188"
-  - "[12-03]-🇺🇸-美国-062-72.167.45.6"
-  - "[12-03]-🇨🇭-瑞士-064-89.31.127.151"
-  - "[12-03]-🇺🇸-美国-116-jp-server-02.pndnav.cc"
-  - "[12-03]-🇺🇸-美国-117-ned-server-01.selfupay.com"
-  - "[12-03]-🇦🇶-欧盟-118-45.12.221.163"
-  - "[12-03]-🇦🇶-欧盟-119-45.12.221.163"
-  - "[12-03]-🇺🇸-美国-120-gg.piyun.team"
-  - "[12-03]-🇺🇸-美国-121-91.220.202.248"
-  - "[12-03]-🇺🇸-美国-122-jp-aws.proxypoolv2.tk"
-  - "[12-03]-🇺🇸-美国-123-198.147.22.87"
-  - "[12-03]-🇺🇸-美国-124-sg1-trojan.bonds.id"
-  - "[12-03]-🇺🇸-美国-125-2.jp.zz.xxxxx.x-t-fuckword.network"
-  - "[12-03]-🇺🇸-美国-126-3.sg.zz.xxxxx.x-t-fuckword.network"
-  - "[12-03]-🇺🇸-美国-127-gb1.v2.zz.cn.fuckword.club"
-  - "[12-03]-🇺🇸-美国-128-hk1.v3.zz.cn.fuckword.club"
-  - "[12-03]-🇺🇸-美国-129-hkt01.hk.zz.xxxxx.x-t-fuckword.network"
-  - "[12-03]-🇺🇸-美国-130-jpjs6o.zhs.company"
-  - "[12-03]-🇺🇸-美国-131-sglmz9.zhs.company"
-  - "[12-03]-🇺🇸-美国-132-h63956.droplet.today"
-  - "[12-03]-🇺🇸-美国-133-h63956.droplet.today"
-  - "[12-03]-🇺🇸-美国-134-h738106.droplet.today"
-  - "[12-03]-🇺🇸-美国-135-h890361.droplet.today"
-  - "[12-03]-🇺🇸-美国-136-h890361.droplet.today"
-  - "[12-03]-🇺🇸-美国-137-azhk.alink123.com"
-  - "[12-03]-🇺🇸-美国-138-jm.mg-nb.com"
-  - "[12-03]-🇺🇸-美国-139-sg3-trojan.bonds.id"
-  - "[12-03]-🇺🇸-美国-140-www.zx07.top"
-  - "[12-03]-🇺🇸-美国-141-os1-1.sstr-api.xyz"
-  - "[12-03]-🇺🇸-美国-142-os1-2.sstr-api.xyz"
-  - "[12-03]-🇺🇸-美国-143-os1-5.sstr-api.xyz"
-  - "[12-03]-🇺🇸-美国-144-os2-5.sstr-api.xyz"
-  - "[12-03]-🇺🇸-美国-145-198.147.22.87"
-  - "[12-03]-🇺🇸-美国-146-sh-hk-01-tr.cdn.savoy.click"
-  - "[12-03]-🇺🇸-美国-147-198.147.22.87"
-  - "[12-03]-🇮🇹-意大利-148-212.102.44.66"
-  - "[12-03]-🇺🇸-美国-149-143.244.42.76"
-  - "[12-03]-🇺🇸-美国-150-198.147.22.87"
-  - "[12-03]-🇦🇶-欧盟-151-45.12.221.163"
-  - "[12-03]-🇺🇸-美国-152-198.147.22.87"
-  - "[12-03]-🇬🇧-英国-153-185.171.120.144"
-  - "[12-03]-🇬🇧-英国-154-185.171.120.144"
-  - "[12-03]-🇯🇵-日本-155-5.183.177.111"
-  - "[12-03]-🇷🇴-罗马尼亚-156-62.216.92.179"
-  - "[12-03]-🇷🇴-罗马尼亚-157-62.216.92.180"
-  - "[12-03]-🇺🇸-美国-158-72.167.33.106"
-  - "[12-03]-🇺🇸-美国-159-72.167.45.6"
-  - "[12-03]-🇺🇸-美国-160-jp-server-02.selfupay.com"
-  - "[12-03]-🇹🇼-台湾-161-60.249.3.125"
-  - "[12-03]-🇺🇸-美国-162-198.147.22.87"
-  - "[12-03]-🇺🇸-美国-163-198.147.22.87"
-  - "[12-03]-🇺🇸-美国-164-198.147.22.87"
-  - "[12-03]-🇺🇸-美国-165-198.147.22.87"
-  - "[12-03]-🇺🇸-美国-166-198.147.22.87"
-  - "[12-03]-🇮🇹-意大利-167-212.102.44.66"
-  - "[12-03]-🇮🇹-意大利-168-212.102.44.66"
-  - "[12-03]-🇮🇹-意大利-169-212.102.44.66"
-  - "[12-03]-🇺🇸-美国-170-hk-cnrelay-13-138465.dukou.info"
-  - "[12-03]-🇺🇸-美国-171-hk-route-12369-1.dukou.info"
-  - "[12-03]-🇺🇸-美国-172-hk11-5423.dukouplan3.dev"
-  - "[12-03]-🇺🇸-美国-173-sg-cn-hk-relay-4-40e978.dukou.info"
-  - "[12-03]-🇺🇸-美国-174-sg-cn-relay-8-14852.dukou.info"
-  - "[12-03]-🇺🇸-美国-175-shanghai-router2-hk4-5478.dukou.info"
-  - "[12-03]-🇺🇸-美国-176-tw4-5545.dukouplan3.dev"
-  - "[12-03]-🇺🇸-美国-177-agals01.cloudddns.icu"
-  - "[12-03]-🇺🇸-美国-178-sg1.vless.co"
-  - "[12-03]-🇮🇹-意大利-179-212.102.44.66"
-  - "[12-03]-🇮🇹-意大利-180-212.102.44.66"
-  - "[12-03]-🇺🇸-美国-181-198.147.22.87"
-  - "[12-03]-🇺🇸-美国-182-nlt-1.opensvr.net"
+  - "[12-03]-🇺🇸-美国-008-silver-hk06.straycloud.xyz"
+  - "[12-03]-🇺🇸-美国-009-us01.straycloud.icu"
+  - "[12-03]-🇺🇸-美国-010-v.9051246.xyz"
+  - "[12-03]-🇯🇵-日本-011-153.122.102.160"
+  - "[12-03]-🇺🇸-美国-012-174.139.126.233"
+  - "[12-03]-🇰🇷-韩国-013-52.231.176.18"
+  - "[12-03]-🇺🇸-美国-014-kaizen-hk-2.cn0.me"
+  - "[12-03]-🇺🇸-美国-015-t5.ssrsub.com"
+  - "[12-03]-🇺🇸-美国-016-sg-cn-hk-relay-1-767f45.dukou.info"
+  - "[12-03]-🇺🇸-美国-017-sg-cn-hk-relay-2-54bc52.dukou.info"
+  - "[12-03]-🇺🇸-美国-018-sg-cn-hk-relay-3-dd4440.dukou.info"
+  - "[12-03]-🇺🇸-美国-019-sg-cn-hk-relay-4-40e978.dukou.info"
+  - "[12-03]-🇺🇸-美国-020-sg-cn-hk-relay-5-51f087.dukou.info"
+  - "[12-03]-🇺🇸-美国-021-tw-cn-hk-relay-1-97861a.dukou.info"
+  - "[12-03]-🇺🇸-美国-022-tw-cn-hk-relay-2-184a76.dukou.info"
+  - "[12-03]-🇺🇸-美国-023-tw3-5412.dukouplan3.dev"
+  - "[12-03]-🇺🇸-美国-024-tw7-5756.dukouplan3.dev"
+  - "[12-03]-🇷🇴-罗马尼亚-025-185.105.191.92"
+  - "[12-03]-🇷🇴-罗马尼亚-026-185.126.116.235"
+  - "[12-03]-🇺🇦-乌克兰-027-5.183.179.138"
+  - "[12-03]-🇺🇸-美国-028-72.167.45.6"
+  - "[12-03]-🇸🇬-新加坡-029-81.90.189.85"
+  - "[12-03]-🇺🇸-美国-030-t3.ssrsub.com"
+  - "[12-03]-🇺🇸-美国-031-t5.ssrsub.com"
+  - "[12-03]-🇺🇸-美国-032-t7.ssrsub.com"
+  - "[12-03]-🇪🇸-欧洲-033-185.44.76.188"
+  - "[12-03]-🇷🇴-罗马尼亚-034-185.126.116.235"
+  - "[12-03]-🇬🇧-英国-035-185.171.120.144"
+  - "[12-03]-🇺🇸-美国-036-72.167.45.6"
+  - "[12-03]-🇨🇭-瑞士-037-89.31.127.151"
+  - "[12-03]-🇺🇸-美国-038-jp-server-02.pndnav.cc"
+  - "[12-03]-🇺🇸-美国-039-ned-server-01.selfupay.com"
+  - "[12-03]-🇦🇶-欧盟-040-45.12.221.163"
+  - "[12-03]-🇦🇶-欧盟-041-45.12.221.163"
+  - "[12-03]-🇺🇸-美国-042-gg.piyun.team"
+  - "[12-03]-🇺🇸-美国-043-91.220.202.248"
+  - "[12-03]-🇺🇸-美国-044-jp-aws.proxypoolv2.tk"
+  - "[12-03]-🇺🇸-美国-045-198.147.22.87"
+  - "[12-03]-🇺🇸-美国-046-sg1-trojan.bonds.id"
+  - "[12-03]-🇺🇸-美国-047-2.jp.zz.xxxxx.x-t-fuckword.network"
+  - "[12-03]-🇺🇸-美国-048-3.sg.zz.xxxxx.x-t-fuckword.network"
+  - "[12-03]-🇺🇸-美国-049-gb1.v2.zz.cn.fuckword.club"
+  - "[12-03]-🇺🇸-美国-050-hk1.v3.zz.cn.fuckword.club"
+  - "[12-03]-🇺🇸-美国-051-hkt01.hk.zz.xxxxx.x-t-fuckword.network"
+  - "[12-03]-🇺🇸-美国-052-jpjs6o.zhs.company"
+  - "[12-03]-🇺🇸-美国-053-sglmz9.zhs.company"
+  - "[12-03]-🇺🇸-美国-054-h63956.droplet.today"
+  - "[12-03]-🇺🇸-美国-055-h63956.droplet.today"
+  - "[12-03]-🇺🇸-美国-056-h738106.droplet.today"
+  - "[12-03]-🇺🇸-美国-057-h890361.droplet.today"
+  - "[12-03]-🇺🇸-美国-058-h890361.droplet.today"
+  - "[12-03]-🇺🇸-美国-059-azhk.alink123.com"
+  - "[12-03]-🇺🇸-美国-060-jm.mg-nb.com"
+  - "[12-03]-🇺🇸-美国-061-sg3-trojan.bonds.id"
+  - "[12-03]-🇺🇸-美国-062-www.zx07.top"
+  - "[12-03]-🇺🇸-美国-063-os1-1.sstr-api.xyz"
+  - "[12-03]-🇺🇸-美国-064-os1-2.sstr-api.xyz"
+  - "[12-03]-🇺🇸-美国-065-os1-5.sstr-api.xyz"
+  - "[12-03]-🇺🇸-美国-066-os2-5.sstr-api.xyz"
+  - "[12-03]-🇺🇸-美国-067-198.147.22.87"
+  - "[12-03]-🇺🇸-美国-068-sh-hk-01-tr.cdn.savoy.click"
+  - "[12-03]-🇺🇸-美国-069-198.147.22.87"
+  - "[12-03]-🇮🇹-意大利-070-212.102.44.66"
+  - "[12-03]-🇺🇸-美国-071-143.244.42.76"
+  - "[12-03]-🇺🇸-美国-072-198.147.22.87"
+  - "[12-03]-🇦🇶-欧盟-073-45.12.221.163"
+  - "[12-03]-🇺🇸-美国-074-198.147.22.87"
+  - "[12-03]-🇬🇧-英国-075-185.171.120.144"
+  - "[12-03]-🇯🇵-日本-076-5.183.177.111"
+  - "[12-03]-🇷🇴-罗马尼亚-077-62.216.92.179"
+  - "[12-03]-🇷🇴-罗马尼亚-078-62.216.92.180"
+  - "[12-03]-🇺🇸-美国-079-72.167.33.106"
+  - "[12-03]-🇺🇸-美国-080-72.167.45.6"
+  - "[12-03]-🇺🇸-美国-081-jp-server-02.selfupay.com"
+  - "[12-03]-🇹🇼-台湾-082-60.249.3.125"
+  - "[12-03]-🇺🇸-美国-083-198.147.22.87"
+  - "[12-03]-🇺🇸-美国-084-198.147.22.87"
+  - "[12-03]-🇺🇸-美国-085-198.147.22.87"
+  - "[12-03]-🇺🇸-美国-086-198.147.22.87"
+  - "[12-03]-🇺🇸-美国-087-198.147.22.87"
+  - "[12-03]-🇮🇹-意大利-088-212.102.44.66"
+  - "[12-03]-🇮🇹-意大利-089-212.102.44.66"
+  - "[12-03]-🇮🇹-意大利-090-212.102.44.66"
+  - "[12-03]-🇺🇸-美国-091-hk-cnrelay-13-138465.dukou.info"
+  - "[12-03]-🇺🇸-美国-092-hk-route-12369-1.dukou.info"
+  - "[12-03]-🇺🇸-美国-093-hk11-5423.dukouplan3.dev"
+  - "[12-03]-🇺🇸-美国-094-sg-cn-hk-relay-4-40e978.dukou.info"
+  - "[12-03]-🇺🇸-美国-095-sg-cn-relay-8-14852.dukou.info"
+  - "[12-03]-🇺🇸-美国-096-shanghai-router2-hk4-5478.dukou.info"
+  - "[12-03]-🇺🇸-美国-097-tw4-5545.dukouplan3.dev"
+  - "[12-03]-🇺🇸-美国-098-agals01.cloudddns.icu"
+  - "[12-03]-🇺🇸-美国-099-sg1.vless.co"
+  - "[12-03]-🇮🇹-意大利-100-212.102.44.66"
+  - "[12-03]-🇮🇹-意大利-101-212.102.44.66"
+  - "[12-03]-🇺🇸-美国-102-198.147.22.87"
+  - "[12-03]-🇺🇸-美国-103-nlt-1.opensvr.net"
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
-  - "[12-03]-🇺🇸-美国-091-silver-hk06.straycloud.xyz"
-  - "[12-03]-🇺🇸-美国-092-us01.straycloud.icu"
-  - "[12-03]-🇺🇸-美国-093-v.9051246.xyz"
-  - "[12-03]-🇯🇵-日本-094-153.122.102.160"
-  - "[12-03]-🇺🇸-美国-095-174.139.126.233"
-  - "[12-03]-🇰🇷-韩国-096-52.231.176.18"
-  - "[12-03]-🇺🇸-美国-097-kaizen-hk-2.cn0.me"
-  - "[12-03]-🇺🇸-美国-098-t5.ssrsub.com"
-  - "[12-03]-🇺🇸-美国-099-sg-cn-hk-relay-1-767f45.dukou.info"
-  - "[12-03]-🇺🇸-美国-100-sg-cn-hk-relay-2-54bc52.dukou.info"
-  - "[12-03]-🇺🇸-美国-101-sg-cn-hk-relay-3-dd4440.dukou.info"
-  - "[12-03]-🇺🇸-美国-102-sg-cn-hk-relay-4-40e978.dukou.info"
-  - "[12-03]-🇺🇸-美国-103-sg-cn-hk-relay-5-51f087.dukou.info"
-  - "[12-03]-🇺🇸-美国-104-tw-cn-hk-relay-1-97861a.dukou.info"
-  - "[12-03]-🇺🇸-美国-105-tw-cn-hk-relay-2-184a76.dukou.info"
-  - "[12-03]-🇺🇸-美国-106-tw3-5412.dukouplan3.dev"
-  - "[12-03]-🇺🇸-美国-107-tw7-5756.dukouplan3.dev"
-  - "[12-03]-🇷🇴-罗马尼亚-108-185.105.191.92"
-  - "[12-03]-🇷🇴-罗马尼亚-109-185.126.116.235"
-  - "[12-03]-🇺🇦-乌克兰-110-5.183.179.138"
-  - "[12-03]-🇺🇸-美国-111-72.167.45.6"
-  - "[12-03]-🇸🇬-新加坡-112-81.90.189.85"
-  - "[12-03]-🇺🇸-美国-113-t5.ssrsub.com"
-  - "[12-03]-🇺🇸-美国-114-t7.ssrsub.com"
-  - "[12-03]-🇪🇸-欧洲-115-185.44.76.188"
-  - "[12-03]-🇺🇸-美国-062-72.167.45.6"
-  - "[12-03]-🇨🇭-瑞士-064-89.31.127.151"
-  - "[12-03]-🇺🇸-美国-116-jp-server-02.pndnav.cc"
-  - "[12-03]-🇺🇸-美国-117-ned-server-01.selfupay.com"
-  - "[12-03]-🇦🇶-欧盟-118-45.12.221.163"
-  - "[12-03]-🇦🇶-欧盟-119-45.12.221.163"
-  - "[12-03]-🇺🇸-美国-120-gg.piyun.team"
-  - "[12-03]-🇺🇸-美国-121-91.220.202.248"
-  - "[12-03]-🇺🇸-美国-122-jp-aws.proxypoolv2.tk"
-  - "[12-03]-🇺🇸-美国-123-198.147.22.87"
-  - "[12-03]-🇺🇸-美国-124-sg1-trojan.bonds.id"
-  - "[12-03]-🇺🇸-美国-125-2.jp.zz.xxxxx.x-t-fuckword.network"
-  - "[12-03]-🇺🇸-美国-126-3.sg.zz.xxxxx.x-t-fuckword.network"
-  - "[12-03]-🇺🇸-美国-127-gb1.v2.zz.cn.fuckword.club"
-  - "[12-03]-🇺🇸-美国-128-hk1.v3.zz.cn.fuckword.club"
-  - "[12-03]-🇺🇸-美国-129-hkt01.hk.zz.xxxxx.x-t-fuckword.network"
-  - "[12-03]-🇺🇸-美国-130-jpjs6o.zhs.company"
-  - "[12-03]-🇺🇸-美国-131-sglmz9.zhs.company"
-  - "[12-03]-🇺🇸-美国-132-h63956.droplet.today"
-  - "[12-03]-🇺🇸-美国-133-h63956.droplet.today"
-  - "[12-03]-🇺🇸-美国-134-h738106.droplet.today"
-  - "[12-03]-🇺🇸-美国-135-h890361.droplet.today"
-  - "[12-03]-🇺🇸-美国-136-h890361.droplet.today"
-  - "[12-03]-🇺🇸-美国-137-azhk.alink123.com"
-  - "[12-03]-🇺🇸-美国-138-jm.mg-nb.com"
-  - "[12-03]-🇺🇸-美国-139-sg3-trojan.bonds.id"
-  - "[12-03]-🇺🇸-美国-140-www.zx07.top"
-  - "[12-03]-🇺🇸-美国-141-os1-1.sstr-api.xyz"
-  - "[12-03]-🇺🇸-美国-142-os1-2.sstr-api.xyz"
-  - "[12-03]-🇺🇸-美国-143-os1-5.sstr-api.xyz"
-  - "[12-03]-🇺🇸-美国-144-os2-5.sstr-api.xyz"
-  - "[12-03]-🇺🇸-美国-145-198.147.22.87"
-  - "[12-03]-🇺🇸-美国-146-sh-hk-01-tr.cdn.savoy.click"
-  - "[12-03]-🇺🇸-美国-147-198.147.22.87"
-  - "[12-03]-🇮🇹-意大利-148-212.102.44.66"
-  - "[12-03]-🇺🇸-美国-149-143.244.42.76"
-  - "[12-03]-🇺🇸-美国-150-198.147.22.87"
-  - "[12-03]-🇦🇶-欧盟-151-45.12.221.163"
-  - "[12-03]-🇺🇸-美国-152-198.147.22.87"
-  - "[12-03]-🇬🇧-英国-153-185.171.120.144"
-  - "[12-03]-🇬🇧-英国-154-185.171.120.144"
-  - "[12-03]-🇯🇵-日本-155-5.183.177.111"
-  - "[12-03]-🇷🇴-罗马尼亚-156-62.216.92.179"
-  - "[12-03]-🇷🇴-罗马尼亚-157-62.216.92.180"
-  - "[12-03]-🇺🇸-美国-158-72.167.33.106"
-  - "[12-03]-🇺🇸-美国-159-72.167.45.6"
-  - "[12-03]-🇺🇸-美国-160-jp-server-02.selfupay.com"
-  - "[12-03]-🇹🇼-台湾-161-60.249.3.125"
-  - "[12-03]-🇺🇸-美国-162-198.147.22.87"
-  - "[12-03]-🇺🇸-美国-163-198.147.22.87"
-  - "[12-03]-🇺🇸-美国-164-198.147.22.87"
-  - "[12-03]-🇺🇸-美国-165-198.147.22.87"
-  - "[12-03]-🇺🇸-美国-166-198.147.22.87"
-  - "[12-03]-🇮🇹-意大利-167-212.102.44.66"
-  - "[12-03]-🇮🇹-意大利-168-212.102.44.66"
-  - "[12-03]-🇮🇹-意大利-169-212.102.44.66"
-  - "[12-03]-🇺🇸-美国-170-hk-cnrelay-13-138465.dukou.info"
-  - "[12-03]-🇺🇸-美国-171-hk-route-12369-1.dukou.info"
-  - "[12-03]-🇺🇸-美国-172-hk11-5423.dukouplan3.dev"
-  - "[12-03]-🇺🇸-美国-173-sg-cn-hk-relay-4-40e978.dukou.info"
-  - "[12-03]-🇺🇸-美国-174-sg-cn-relay-8-14852.dukou.info"
-  - "[12-03]-🇺🇸-美国-175-shanghai-router2-hk4-5478.dukou.info"
-  - "[12-03]-🇺🇸-美国-176-tw4-5545.dukouplan3.dev"
-  - "[12-03]-🇺🇸-美国-177-agals01.cloudddns.icu"
-  - "[12-03]-🇺🇸-美国-178-sg1.vless.co"
-  - "[12-03]-🇮🇹-意大利-179-212.102.44.66"
-  - "[12-03]-🇮🇹-意大利-180-212.102.44.66"
-  - "[12-03]-🇺🇸-美国-181-198.147.22.87"
-  - "[12-03]-🇺🇸-美国-182-nlt-1.opensvr.net"
+  - "[12-03]-🇺🇸-美国-008-silver-hk06.straycloud.xyz"
+  - "[12-03]-🇺🇸-美国-009-us01.straycloud.icu"
+  - "[12-03]-🇺🇸-美国-010-v.9051246.xyz"
+  - "[12-03]-🇯🇵-日本-011-153.122.102.160"
+  - "[12-03]-🇺🇸-美国-012-174.139.126.233"
+  - "[12-03]-🇰🇷-韩国-013-52.231.176.18"
+  - "[12-03]-🇺🇸-美国-014-kaizen-hk-2.cn0.me"
+  - "[12-03]-🇺🇸-美国-015-t5.ssrsub.com"
+  - "[12-03]-🇺🇸-美国-016-sg-cn-hk-relay-1-767f45.dukou.info"
+  - "[12-03]-🇺🇸-美国-017-sg-cn-hk-relay-2-54bc52.dukou.info"
+  - "[12-03]-🇺🇸-美国-018-sg-cn-hk-relay-3-dd4440.dukou.info"
+  - "[12-03]-🇺🇸-美国-019-sg-cn-hk-relay-4-40e978.dukou.info"
+  - "[12-03]-🇺🇸-美国-020-sg-cn-hk-relay-5-51f087.dukou.info"
+  - "[12-03]-🇺🇸-美国-021-tw-cn-hk-relay-1-97861a.dukou.info"
+  - "[12-03]-🇺🇸-美国-022-tw-cn-hk-relay-2-184a76.dukou.info"
+  - "[12-03]-🇺🇸-美国-023-tw3-5412.dukouplan3.dev"
+  - "[12-03]-🇺🇸-美国-024-tw7-5756.dukouplan3.dev"
+  - "[12-03]-🇷🇴-罗马尼亚-025-185.105.191.92"
+  - "[12-03]-🇷🇴-罗马尼亚-026-185.126.116.235"
+  - "[12-03]-🇺🇦-乌克兰-027-5.183.179.138"
+  - "[12-03]-🇺🇸-美国-028-72.167.45.6"
+  - "[12-03]-🇸🇬-新加坡-029-81.90.189.85"
+  - "[12-03]-🇺🇸-美国-030-t3.ssrsub.com"
+  - "[12-03]-🇺🇸-美国-031-t5.ssrsub.com"
+  - "[12-03]-🇺🇸-美国-032-t7.ssrsub.com"
+  - "[12-03]-🇪🇸-欧洲-033-185.44.76.188"
+  - "[12-03]-🇷🇴-罗马尼亚-034-185.126.116.235"
+  - "[12-03]-🇬🇧-英国-035-185.171.120.144"
+  - "[12-03]-🇺🇸-美国-036-72.167.45.6"
+  - "[12-03]-🇨🇭-瑞士-037-89.31.127.151"
+  - "[12-03]-🇺🇸-美国-038-jp-server-02.pndnav.cc"
+  - "[12-03]-🇺🇸-美国-039-ned-server-01.selfupay.com"
+  - "[12-03]-🇦🇶-欧盟-040-45.12.221.163"
+  - "[12-03]-🇦🇶-欧盟-041-45.12.221.163"
+  - "[12-03]-🇺🇸-美国-042-gg.piyun.team"
+  - "[12-03]-🇺🇸-美国-043-91.220.202.248"
+  - "[12-03]-🇺🇸-美国-044-jp-aws.proxypoolv2.tk"
+  - "[12-03]-🇺🇸-美国-045-198.147.22.87"
+  - "[12-03]-🇺🇸-美国-046-sg1-trojan.bonds.id"
+  - "[12-03]-🇺🇸-美国-047-2.jp.zz.xxxxx.x-t-fuckword.network"
+  - "[12-03]-🇺🇸-美国-048-3.sg.zz.xxxxx.x-t-fuckword.network"
+  - "[12-03]-🇺🇸-美国-049-gb1.v2.zz.cn.fuckword.club"
+  - "[12-03]-🇺🇸-美国-050-hk1.v3.zz.cn.fuckword.club"
+  - "[12-03]-🇺🇸-美国-051-hkt01.hk.zz.xxxxx.x-t-fuckword.network"
+  - "[12-03]-🇺🇸-美国-052-jpjs6o.zhs.company"
+  - "[12-03]-🇺🇸-美国-053-sglmz9.zhs.company"
+  - "[12-03]-🇺🇸-美国-054-h63956.droplet.today"
+  - "[12-03]-🇺🇸-美国-055-h63956.droplet.today"
+  - "[12-03]-🇺🇸-美国-056-h738106.droplet.today"
+  - "[12-03]-🇺🇸-美国-057-h890361.droplet.today"
+  - "[12-03]-🇺🇸-美国-058-h890361.droplet.today"
+  - "[12-03]-🇺🇸-美国-059-azhk.alink123.com"
+  - "[12-03]-🇺🇸-美国-060-jm.mg-nb.com"
+  - "[12-03]-🇺🇸-美国-061-sg3-trojan.bonds.id"
+  - "[12-03]-🇺🇸-美国-062-www.zx07.top"
+  - "[12-03]-🇺🇸-美国-063-os1-1.sstr-api.xyz"
+  - "[12-03]-🇺🇸-美国-064-os1-2.sstr-api.xyz"
+  - "[12-03]-🇺🇸-美国-065-os1-5.sstr-api.xyz"
+  - "[12-03]-🇺🇸-美国-066-os2-5.sstr-api.xyz"
+  - "[12-03]-🇺🇸-美国-067-198.147.22.87"
+  - "[12-03]-🇺🇸-美国-068-sh-hk-01-tr.cdn.savoy.click"
+  - "[12-03]-🇺🇸-美国-069-198.147.22.87"
+  - "[12-03]-🇮🇹-意大利-070-212.102.44.66"
+  - "[12-03]-🇺🇸-美国-071-143.244.42.76"
+  - "[12-03]-🇺🇸-美国-072-198.147.22.87"
+  - "[12-03]-🇦🇶-欧盟-073-45.12.221.163"
+  - "[12-03]-🇺🇸-美国-074-198.147.22.87"
+  - "[12-03]-🇬🇧-英国-075-185.171.120.144"
+  - "[12-03]-🇯🇵-日本-076-5.183.177.111"
+  - "[12-03]-🇷🇴-罗马尼亚-077-62.216.92.179"
+  - "[12-03]-🇷🇴-罗马尼亚-078-62.216.92.180"
+  - "[12-03]-🇺🇸-美国-079-72.167.33.106"
+  - "[12-03]-🇺🇸-美国-080-72.167.45.6"
+  - "[12-03]-🇺🇸-美国-081-jp-server-02.selfupay.com"
+  - "[12-03]-🇹🇼-台湾-082-60.249.3.125"
+  - "[12-03]-🇺🇸-美国-083-198.147.22.87"
+  - "[12-03]-🇺🇸-美国-084-198.147.22.87"
+  - "[12-03]-🇺🇸-美国-085-198.147.22.87"
+  - "[12-03]-🇺🇸-美国-086-198.147.22.87"
+  - "[12-03]-🇺🇸-美国-087-198.147.22.87"
+  - "[12-03]-🇮🇹-意大利-088-212.102.44.66"
+  - "[12-03]-🇮🇹-意大利-089-212.102.44.66"
+  - "[12-03]-🇮🇹-意大利-090-212.102.44.66"
+  - "[12-03]-🇺🇸-美国-091-hk-cnrelay-13-138465.dukou.info"
+  - "[12-03]-🇺🇸-美国-092-hk-route-12369-1.dukou.info"
+  - "[12-03]-🇺🇸-美国-093-hk11-5423.dukouplan3.dev"
+  - "[12-03]-🇺🇸-美国-094-sg-cn-hk-relay-4-40e978.dukou.info"
+  - "[12-03]-🇺🇸-美国-095-sg-cn-relay-8-14852.dukou.info"
+  - "[12-03]-🇺🇸-美国-096-shanghai-router2-hk4-5478.dukou.info"
+  - "[12-03]-🇺🇸-美国-097-tw4-5545.dukouplan3.dev"
+  - "[12-03]-🇺🇸-美国-098-agals01.cloudddns.icu"
+  - "[12-03]-🇺🇸-美国-099-sg1.vless.co"
+  - "[12-03]-🇮🇹-意大利-100-212.102.44.66"
+  - "[12-03]-🇮🇹-意大利-101-212.102.44.66"
+  - "[12-03]-🇺🇸-美国-102-198.147.22.87"
+  - "[12-03]-🇺🇸-美国-103-nlt-1.opensvr.net"
 - name: "\U0001F4F2 电报信息"
   type: select
   proxies:
   - "\U0001F530 节点选择"
   - "\U0001F3AF 全球直连"
-  - "[12-03]-🇺🇸-美国-091-silver-hk06.straycloud.xyz"
-  - "[12-03]-🇺🇸-美国-092-us01.straycloud.icu"
-  - "[12-03]-🇺🇸-美国-093-v.9051246.xyz"
-  - "[12-03]-🇯🇵-日本-094-153.122.102.160"
-  - "[12-03]-🇺🇸-美国-095-174.139.126.233"
-  - "[12-03]-🇰🇷-韩国-096-52.231.176.18"
-  - "[12-03]-🇺🇸-美国-097-kaizen-hk-2.cn0.me"
-  - "[12-03]-🇺🇸-美国-098-t5.ssrsub.com"
-  - "[12-03]-🇺🇸-美国-099-sg-cn-hk-relay-1-767f45.dukou.info"
-  - "[12-03]-🇺🇸-美国-100-sg-cn-hk-relay-2-54bc52.dukou.info"
-  - "[12-03]-🇺🇸-美国-101-sg-cn-hk-relay-3-dd4440.dukou.info"
-  - "[12-03]-🇺🇸-美国-102-sg-cn-hk-relay-4-40e978.dukou.info"
-  - "[12-03]-🇺🇸-美国-103-sg-cn-hk-relay-5-51f087.dukou.info"
-  - "[12-03]-🇺🇸-美国-104-tw-cn-hk-relay-1-97861a.dukou.info"
-  - "[12-03]-🇺🇸-美国-105-tw-cn-hk-relay-2-184a76.dukou.info"
-  - "[12-03]-🇺🇸-美国-106-tw3-5412.dukouplan3.dev"
-  - "[12-03]-🇺🇸-美国-107-tw7-5756.dukouplan3.dev"
-  - "[12-03]-🇷🇴-罗马尼亚-108-185.105.191.92"
-  - "[12-03]-🇷🇴-罗马尼亚-109-185.126.116.235"
-  - "[12-03]-🇺🇦-乌克兰-110-5.183.179.138"
-  - "[12-03]-🇺🇸-美国-111-72.167.45.6"
-  - "[12-03]-🇸🇬-新加坡-112-81.90.189.85"
-  - "[12-03]-🇺🇸-美国-113-t5.ssrsub.com"
-  - "[12-03]-🇺🇸-美国-114-t7.ssrsub.com"
-  - "[12-03]-🇪🇸-欧洲-115-185.44.76.188"
-  - "[12-03]-🇺🇸-美国-062-72.167.45.6"
-  - "[12-03]-🇨🇭-瑞士-064-89.31.127.151"
-  - "[12-03]-🇺🇸-美国-116-jp-server-02.pndnav.cc"
-  - "[12-03]-🇺🇸-美国-117-ned-server-01.selfupay.com"
-  - "[12-03]-🇦🇶-欧盟-118-45.12.221.163"
-  - "[12-03]-🇦🇶-欧盟-119-45.12.221.163"
-  - "[12-03]-🇺🇸-美国-120-gg.piyun.team"
-  - "[12-03]-🇺🇸-美国-121-91.220.202.248"
-  - "[12-03]-🇺🇸-美国-122-jp-aws.proxypoolv2.tk"
-  - "[12-03]-🇺🇸-美国-123-198.147.22.87"
-  - "[12-03]-🇺🇸-美国-124-sg1-trojan.bonds.id"
-  - "[12-03]-🇺🇸-美国-125-2.jp.zz.xxxxx.x-t-fuckword.network"
-  - "[12-03]-🇺🇸-美国-126-3.sg.zz.xxxxx.x-t-fuckword.network"
-  - "[12-03]-🇺🇸-美国-127-gb1.v2.zz.cn.fuckword.club"
-  - "[12-03]-🇺🇸-美国-128-hk1.v3.zz.cn.fuckword.club"
-  - "[12-03]-🇺🇸-美国-129-hkt01.hk.zz.xxxxx.x-t-fuckword.network"
-  - "[12-03]-🇺🇸-美国-130-jpjs6o.zhs.company"
-  - "[12-03]-🇺🇸-美国-131-sglmz9.zhs.company"
-  - "[12-03]-🇺🇸-美国-132-h63956.droplet.today"
-  - "[12-03]-🇺🇸-美国-133-h63956.droplet.today"
-  - "[12-03]-🇺🇸-美国-134-h738106.droplet.today"
-  - "[12-03]-🇺🇸-美国-135-h890361.droplet.today"
-  - "[12-03]-🇺🇸-美国-136-h890361.droplet.today"
-  - "[12-03]-🇺🇸-美国-137-azhk.alink123.com"
-  - "[12-03]-🇺🇸-美国-138-jm.mg-nb.com"
-  - "[12-03]-🇺🇸-美国-139-sg3-trojan.bonds.id"
-  - "[12-03]-🇺🇸-美国-140-www.zx07.top"
-  - "[12-03]-🇺🇸-美国-141-os1-1.sstr-api.xyz"
-  - "[12-03]-🇺🇸-美国-142-os1-2.sstr-api.xyz"
-  - "[12-03]-🇺🇸-美国-143-os1-5.sstr-api.xyz"
-  - "[12-03]-🇺🇸-美国-144-os2-5.sstr-api.xyz"
-  - "[12-03]-🇺🇸-美国-145-198.147.22.87"
-  - "[12-03]-🇺🇸-美国-146-sh-hk-01-tr.cdn.savoy.click"
-  - "[12-03]-🇺🇸-美国-147-198.147.22.87"
-  - "[12-03]-🇮🇹-意大利-148-212.102.44.66"
-  - "[12-03]-🇺🇸-美国-149-143.244.42.76"
-  - "[12-03]-🇺🇸-美国-150-198.147.22.87"
-  - "[12-03]-🇦🇶-欧盟-151-45.12.221.163"
-  - "[12-03]-🇺🇸-美国-152-198.147.22.87"
-  - "[12-03]-🇬🇧-英国-153-185.171.120.144"
-  - "[12-03]-🇬🇧-英国-154-185.171.120.144"
-  - "[12-03]-🇯🇵-日本-155-5.183.177.111"
-  - "[12-03]-🇷🇴-罗马尼亚-156-62.216.92.179"
-  - "[12-03]-🇷🇴-罗马尼亚-157-62.216.92.180"
-  - "[12-03]-🇺🇸-美国-158-72.167.33.106"
-  - "[12-03]-🇺🇸-美国-159-72.167.45.6"
-  - "[12-03]-🇺🇸-美国-160-jp-server-02.selfupay.com"
-  - "[12-03]-🇹🇼-台湾-161-60.249.3.125"
-  - "[12-03]-🇺🇸-美国-162-198.147.22.87"
-  - "[12-03]-🇺🇸-美国-163-198.147.22.87"
-  - "[12-03]-🇺🇸-美国-164-198.147.22.87"
-  - "[12-03]-🇺🇸-美国-165-198.147.22.87"
-  - "[12-03]-🇺🇸-美国-166-198.147.22.87"
-  - "[12-03]-🇮🇹-意大利-167-212.102.44.66"
-  - "[12-03]-🇮🇹-意大利-168-212.102.44.66"
-  - "[12-03]-🇮🇹-意大利-169-212.102.44.66"
-  - "[12-03]-🇺🇸-美国-170-hk-cnrelay-13-138465.dukou.info"
-  - "[12-03]-🇺🇸-美国-171-hk-route-12369-1.dukou.info"
-  - "[12-03]-🇺🇸-美国-172-hk11-5423.dukouplan3.dev"
-  - "[12-03]-🇺🇸-美国-173-sg-cn-hk-relay-4-40e978.dukou.info"
-  - "[12-03]-🇺🇸-美国-174-sg-cn-relay-8-14852.dukou.info"
-  - "[12-03]-🇺🇸-美国-175-shanghai-router2-hk4-5478.dukou.info"
-  - "[12-03]-🇺🇸-美国-176-tw4-5545.dukouplan3.dev"
-  - "[12-03]-🇺🇸-美国-177-agals01.cloudddns.icu"
-  - "[12-03]-🇺🇸-美国-178-sg1.vless.co"
-  - "[12-03]-🇮🇹-意大利-179-212.102.44.66"
-  - "[12-03]-🇮🇹-意大利-180-212.102.44.66"
-  - "[12-03]-🇺🇸-美国-181-198.147.22.87"
-  - "[12-03]-🇺🇸-美国-182-nlt-1.opensvr.net"
+  - "[12-03]-🇺🇸-美国-008-silver-hk06.straycloud.xyz"
+  - "[12-03]-🇺🇸-美国-009-us01.straycloud.icu"
+  - "[12-03]-🇺🇸-美国-010-v.9051246.xyz"
+  - "[12-03]-🇯🇵-日本-011-153.122.102.160"
+  - "[12-03]-🇺🇸-美国-012-174.139.126.233"
+  - "[12-03]-🇰🇷-韩国-013-52.231.176.18"
+  - "[12-03]-🇺🇸-美国-014-kaizen-hk-2.cn0.me"
+  - "[12-03]-🇺🇸-美国-015-t5.ssrsub.com"
+  - "[12-03]-🇺🇸-美国-016-sg-cn-hk-relay-1-767f45.dukou.info"
+  - "[12-03]-🇺🇸-美国-017-sg-cn-hk-relay-2-54bc52.dukou.info"
+  - "[12-03]-🇺🇸-美国-018-sg-cn-hk-relay-3-dd4440.dukou.info"
+  - "[12-03]-🇺🇸-美国-019-sg-cn-hk-relay-4-40e978.dukou.info"
+  - "[12-03]-🇺🇸-美国-020-sg-cn-hk-relay-5-51f087.dukou.info"
+  - "[12-03]-🇺🇸-美国-021-tw-cn-hk-relay-1-97861a.dukou.info"
+  - "[12-03]-🇺🇸-美国-022-tw-cn-hk-relay-2-184a76.dukou.info"
+  - "[12-03]-🇺🇸-美国-023-tw3-5412.dukouplan3.dev"
+  - "[12-03]-🇺🇸-美国-024-tw7-5756.dukouplan3.dev"
+  - "[12-03]-🇷🇴-罗马尼亚-025-185.105.191.92"
+  - "[12-03]-🇷🇴-罗马尼亚-026-185.126.116.235"
+  - "[12-03]-🇺🇦-乌克兰-027-5.183.179.138"
+  - "[12-03]-🇺🇸-美国-028-72.167.45.6"
+  - "[12-03]-🇸🇬-新加坡-029-81.90.189.85"
+  - "[12-03]-🇺🇸-美国-030-t3.ssrsub.com"
+  - "[12-03]-🇺🇸-美国-031-t5.ssrsub.com"
+  - "[12-03]-🇺🇸-美国-032-t7.ssrsub.com"
+  - "[12-03]-🇪🇸-欧洲-033-185.44.76.188"
+  - "[12-03]-🇷🇴-罗马尼亚-034-185.126.116.235"
+  - "[12-03]-🇬🇧-英国-035-185.171.120.144"
+  - "[12-03]-🇺🇸-美国-036-72.167.45.6"
+  - "[12-03]-🇨🇭-瑞士-037-89.31.127.151"
+  - "[12-03]-🇺🇸-美国-038-jp-server-02.pndnav.cc"
+  - "[12-03]-🇺🇸-美国-039-ned-server-01.selfupay.com"
+  - "[12-03]-🇦🇶-欧盟-040-45.12.221.163"
+  - "[12-03]-🇦🇶-欧盟-041-45.12.221.163"
+  - "[12-03]-🇺🇸-美国-042-gg.piyun.team"
+  - "[12-03]-🇺🇸-美国-043-91.220.202.248"
+  - "[12-03]-🇺🇸-美国-044-jp-aws.proxypoolv2.tk"
+  - "[12-03]-🇺🇸-美国-045-198.147.22.87"
+  - "[12-03]-🇺🇸-美国-046-sg1-trojan.bonds.id"
+  - "[12-03]-🇺🇸-美国-047-2.jp.zz.xxxxx.x-t-fuckword.network"
+  - "[12-03]-🇺🇸-美国-048-3.sg.zz.xxxxx.x-t-fuckword.network"
+  - "[12-03]-🇺🇸-美国-049-gb1.v2.zz.cn.fuckword.club"
+  - "[12-03]-🇺🇸-美国-050-hk1.v3.zz.cn.fuckword.club"
+  - "[12-03]-🇺🇸-美国-051-hkt01.hk.zz.xxxxx.x-t-fuckword.network"
+  - "[12-03]-🇺🇸-美国-052-jpjs6o.zhs.company"
+  - "[12-03]-🇺🇸-美国-053-sglmz9.zhs.company"
+  - "[12-03]-🇺🇸-美国-054-h63956.droplet.today"
+  - "[12-03]-🇺🇸-美国-055-h63956.droplet.today"
+  - "[12-03]-🇺🇸-美国-056-h738106.droplet.today"
+  - "[12-03]-🇺🇸-美国-057-h890361.droplet.today"
+  - "[12-03]-🇺🇸-美国-058-h890361.droplet.today"
+  - "[12-03]-🇺🇸-美国-059-azhk.alink123.com"
+  - "[12-03]-🇺🇸-美国-060-jm.mg-nb.com"
+  - "[12-03]-🇺🇸-美国-061-sg3-trojan.bonds.id"
+  - "[12-03]-🇺🇸-美国-062-www.zx07.top"
+  - "[12-03]-🇺🇸-美国-063-os1-1.sstr-api.xyz"
+  - "[12-03]-🇺🇸-美国-064-os1-2.sstr-api.xyz"
+  - "[12-03]-🇺🇸-美国-065-os1-5.sstr-api.xyz"
+  - "[12-03]-🇺🇸-美国-066-os2-5.sstr-api.xyz"
+  - "[12-03]-🇺🇸-美国-067-198.147.22.87"
+  - "[12-03]-🇺🇸-美国-068-sh-hk-01-tr.cdn.savoy.click"
+  - "[12-03]-🇺🇸-美国-069-198.147.22.87"
+  - "[12-03]-🇮🇹-意大利-070-212.102.44.66"
+  - "[12-03]-🇺🇸-美国-071-143.244.42.76"
+  - "[12-03]-🇺🇸-美国-072-198.147.22.87"
+  - "[12-03]-🇦🇶-欧盟-073-45.12.221.163"
+  - "[12-03]-🇺🇸-美国-074-198.147.22.87"
+  - "[12-03]-🇬🇧-英国-075-185.171.120.144"
+  - "[12-03]-🇯🇵-日本-076-5.183.177.111"
+  - "[12-03]-🇷🇴-罗马尼亚-077-62.216.92.179"
+  - "[12-03]-🇷🇴-罗马尼亚-078-62.216.92.180"
+  - "[12-03]-🇺🇸-美国-079-72.167.33.106"
+  - "[12-03]-🇺🇸-美国-080-72.167.45.6"
+  - "[12-03]-🇺🇸-美国-081-jp-server-02.selfupay.com"
+  - "[12-03]-🇹🇼-台湾-082-60.249.3.125"
+  - "[12-03]-🇺🇸-美国-083-198.147.22.87"
+  - "[12-03]-🇺🇸-美国-084-198.147.22.87"
+  - "[12-03]-🇺🇸-美国-085-198.147.22.87"
+  - "[12-03]-🇺🇸-美国-086-198.147.22.87"
+  - "[12-03]-🇺🇸-美国-087-198.147.22.87"
+  - "[12-03]-🇮🇹-意大利-088-212.102.44.66"
+  - "[12-03]-🇮🇹-意大利-089-212.102.44.66"
+  - "[12-03]-🇮🇹-意大利-090-212.102.44.66"
+  - "[12-03]-🇺🇸-美国-091-hk-cnrelay-13-138465.dukou.info"
+  - "[12-03]-🇺🇸-美国-092-hk-route-12369-1.dukou.info"
+  - "[12-03]-🇺🇸-美国-093-hk11-5423.dukouplan3.dev"
+  - "[12-03]-🇺🇸-美国-094-sg-cn-hk-relay-4-40e978.dukou.info"
+  - "[12-03]-🇺🇸-美国-095-sg-cn-relay-8-14852.dukou.info"
+  - "[12-03]-🇺🇸-美国-096-shanghai-router2-hk4-5478.dukou.info"
+  - "[12-03]-🇺🇸-美国-097-tw4-5545.dukouplan3.dev"
+  - "[12-03]-🇺🇸-美国-098-agals01.cloudddns.icu"
+  - "[12-03]-🇺🇸-美国-099-sg1.vless.co"
+  - "[12-03]-🇮🇹-意大利-100-212.102.44.66"
+  - "[12-03]-🇮🇹-意大利-101-212.102.44.66"
+  - "[12-03]-🇺🇸-美国-102-198.147.22.87"
+  - "[12-03]-🇺🇸-美国-103-nlt-1.opensvr.net"
 - name: "\U0001F34E 苹果服务"
   type: select
   proxies:
   - "\U0001F530 节点选择"
   - "\U0001F3AF 全球直连"
   - "♻️ 自动选择"
-  - "[12-03]-🇺🇸-美国-091-silver-hk06.straycloud.xyz"
-  - "[12-03]-🇺🇸-美国-092-us01.straycloud.icu"
-  - "[12-03]-🇺🇸-美国-093-v.9051246.xyz"
-  - "[12-03]-🇯🇵-日本-094-153.122.102.160"
-  - "[12-03]-🇺🇸-美国-095-174.139.126.233"
-  - "[12-03]-🇰🇷-韩国-096-52.231.176.18"
-  - "[12-03]-🇺🇸-美国-097-kaizen-hk-2.cn0.me"
-  - "[12-03]-🇺🇸-美国-098-t5.ssrsub.com"
-  - "[12-03]-🇺🇸-美国-099-sg-cn-hk-relay-1-767f45.dukou.info"
-  - "[12-03]-🇺🇸-美国-100-sg-cn-hk-relay-2-54bc52.dukou.info"
-  - "[12-03]-🇺🇸-美国-101-sg-cn-hk-relay-3-dd4440.dukou.info"
-  - "[12-03]-🇺🇸-美国-102-sg-cn-hk-relay-4-40e978.dukou.info"
-  - "[12-03]-🇺🇸-美国-103-sg-cn-hk-relay-5-51f087.dukou.info"
-  - "[12-03]-🇺🇸-美国-104-tw-cn-hk-relay-1-97861a.dukou.info"
-  - "[12-03]-🇺🇸-美国-105-tw-cn-hk-relay-2-184a76.dukou.info"
-  - "[12-03]-🇺🇸-美国-106-tw3-5412.dukouplan3.dev"
-  - "[12-03]-🇺🇸-美国-107-tw7-5756.dukouplan3.dev"
-  - "[12-03]-🇷🇴-罗马尼亚-108-185.105.191.92"
-  - "[12-03]-🇷🇴-罗马尼亚-109-185.126.116.235"
-  - "[12-03]-🇺🇦-乌克兰-110-5.183.179.138"
-  - "[12-03]-🇺🇸-美国-111-72.167.45.6"
-  - "[12-03]-🇸🇬-新加坡-112-81.90.189.85"
-  - "[12-03]-🇺🇸-美国-113-t5.ssrsub.com"
-  - "[12-03]-🇺🇸-美国-114-t7.ssrsub.com"
-  - "[12-03]-🇪🇸-欧洲-115-185.44.76.188"
-  - "[12-03]-🇺🇸-美国-062-72.167.45.6"
-  - "[12-03]-🇨🇭-瑞士-064-89.31.127.151"
-  - "[12-03]-🇺🇸-美国-116-jp-server-02.pndnav.cc"
-  - "[12-03]-🇺🇸-美国-117-ned-server-01.selfupay.com"
-  - "[12-03]-🇦🇶-欧盟-118-45.12.221.163"
-  - "[12-03]-🇦🇶-欧盟-119-45.12.221.163"
-  - "[12-03]-🇺🇸-美国-120-gg.piyun.team"
-  - "[12-03]-🇺🇸-美国-121-91.220.202.248"
-  - "[12-03]-🇺🇸-美国-122-jp-aws.proxypoolv2.tk"
-  - "[12-03]-🇺🇸-美国-123-198.147.22.87"
-  - "[12-03]-🇺🇸-美国-124-sg1-trojan.bonds.id"
-  - "[12-03]-🇺🇸-美国-125-2.jp.zz.xxxxx.x-t-fuckword.network"
-  - "[12-03]-🇺🇸-美国-126-3.sg.zz.xxxxx.x-t-fuckword.network"
-  - "[12-03]-🇺🇸-美国-127-gb1.v2.zz.cn.fuckword.club"
-  - "[12-03]-🇺🇸-美国-128-hk1.v3.zz.cn.fuckword.club"
-  - "[12-03]-🇺🇸-美国-129-hkt01.hk.zz.xxxxx.x-t-fuckword.network"
-  - "[12-03]-🇺🇸-美国-130-jpjs6o.zhs.company"
-  - "[12-03]-🇺🇸-美国-131-sglmz9.zhs.company"
-  - "[12-03]-🇺🇸-美国-132-h63956.droplet.today"
-  - "[12-03]-🇺🇸-美国-133-h63956.droplet.today"
-  - "[12-03]-🇺🇸-美国-134-h738106.droplet.today"
-  - "[12-03]-🇺🇸-美国-135-h890361.droplet.today"
-  - "[12-03]-🇺🇸-美国-136-h890361.droplet.today"
-  - "[12-03]-🇺🇸-美国-137-azhk.alink123.com"
-  - "[12-03]-🇺🇸-美国-138-jm.mg-nb.com"
-  - "[12-03]-🇺🇸-美国-139-sg3-trojan.bonds.id"
-  - "[12-03]-🇺🇸-美国-140-www.zx07.top"
-  - "[12-03]-🇺🇸-美国-141-os1-1.sstr-api.xyz"
-  - "[12-03]-🇺🇸-美国-142-os1-2.sstr-api.xyz"
-  - "[12-03]-🇺🇸-美国-143-os1-5.sstr-api.xyz"
-  - "[12-03]-🇺🇸-美国-144-os2-5.sstr-api.xyz"
-  - "[12-03]-🇺🇸-美国-145-198.147.22.87"
-  - "[12-03]-🇺🇸-美国-146-sh-hk-01-tr.cdn.savoy.click"
-  - "[12-03]-🇺🇸-美国-147-198.147.22.87"
-  - "[12-03]-🇮🇹-意大利-148-212.102.44.66"
-  - "[12-03]-🇺🇸-美国-149-143.244.42.76"
-  - "[12-03]-🇺🇸-美国-150-198.147.22.87"
-  - "[12-03]-🇦🇶-欧盟-151-45.12.221.163"
-  - "[12-03]-🇺🇸-美国-152-198.147.22.87"
-  - "[12-03]-🇬🇧-英国-153-185.171.120.144"
-  - "[12-03]-🇬🇧-英国-154-185.171.120.144"
-  - "[12-03]-🇯🇵-日本-155-5.183.177.111"
-  - "[12-03]-🇷🇴-罗马尼亚-156-62.216.92.179"
-  - "[12-03]-🇷🇴-罗马尼亚-157-62.216.92.180"
-  - "[12-03]-🇺🇸-美国-158-72.167.33.106"
-  - "[12-03]-🇺🇸-美国-159-72.167.45.6"
-  - "[12-03]-🇺🇸-美国-160-jp-server-02.selfupay.com"
-  - "[12-03]-🇹🇼-台湾-161-60.249.3.125"
-  - "[12-03]-🇺🇸-美国-162-198.147.22.87"
-  - "[12-03]-🇺🇸-美国-163-198.147.22.87"
-  - "[12-03]-🇺🇸-美国-164-198.147.22.87"
-  - "[12-03]-🇺🇸-美国-165-198.147.22.87"
-  - "[12-03]-🇺🇸-美国-166-198.147.22.87"
-  - "[12-03]-🇮🇹-意大利-167-212.102.44.66"
-  - "[12-03]-🇮🇹-意大利-168-212.102.44.66"
-  - "[12-03]-🇮🇹-意大利-169-212.102.44.66"
-  - "[12-03]-🇺🇸-美国-170-hk-cnrelay-13-138465.dukou.info"
-  - "[12-03]-🇺🇸-美国-171-hk-route-12369-1.dukou.info"
-  - "[12-03]-🇺🇸-美国-172-hk11-5423.dukouplan3.dev"
-  - "[12-03]-🇺🇸-美国-173-sg-cn-hk-relay-4-40e978.dukou.info"
-  - "[12-03]-🇺🇸-美国-174-sg-cn-relay-8-14852.dukou.info"
-  - "[12-03]-🇺🇸-美国-175-shanghai-router2-hk4-5478.dukou.info"
-  - "[12-03]-🇺🇸-美国-176-tw4-5545.dukouplan3.dev"
-  - "[12-03]-🇺🇸-美国-177-agals01.cloudddns.icu"
-  - "[12-03]-🇺🇸-美国-178-sg1.vless.co"
-  - "[12-03]-🇮🇹-意大利-179-212.102.44.66"
-  - "[12-03]-🇮🇹-意大利-180-212.102.44.66"
-  - "[12-03]-🇺🇸-美国-181-198.147.22.87"
-  - "[12-03]-🇺🇸-美国-182-nlt-1.opensvr.net"
+  - "[12-03]-🇺🇸-美国-008-silver-hk06.straycloud.xyz"
+  - "[12-03]-🇺🇸-美国-009-us01.straycloud.icu"
+  - "[12-03]-🇺🇸-美国-010-v.9051246.xyz"
+  - "[12-03]-🇯🇵-日本-011-153.122.102.160"
+  - "[12-03]-🇺🇸-美国-012-174.139.126.233"
+  - "[12-03]-🇰🇷-韩国-013-52.231.176.18"
+  - "[12-03]-🇺🇸-美国-014-kaizen-hk-2.cn0.me"
+  - "[12-03]-🇺🇸-美国-015-t5.ssrsub.com"
+  - "[12-03]-🇺🇸-美国-016-sg-cn-hk-relay-1-767f45.dukou.info"
+  - "[12-03]-🇺🇸-美国-017-sg-cn-hk-relay-2-54bc52.dukou.info"
+  - "[12-03]-🇺🇸-美国-018-sg-cn-hk-relay-3-dd4440.dukou.info"
+  - "[12-03]-🇺🇸-美国-019-sg-cn-hk-relay-4-40e978.dukou.info"
+  - "[12-03]-🇺🇸-美国-020-sg-cn-hk-relay-5-51f087.dukou.info"
+  - "[12-03]-🇺🇸-美国-021-tw-cn-hk-relay-1-97861a.dukou.info"
+  - "[12-03]-🇺🇸-美国-022-tw-cn-hk-relay-2-184a76.dukou.info"
+  - "[12-03]-🇺🇸-美国-023-tw3-5412.dukouplan3.dev"
+  - "[12-03]-🇺🇸-美国-024-tw7-5756.dukouplan3.dev"
+  - "[12-03]-🇷🇴-罗马尼亚-025-185.105.191.92"
+  - "[12-03]-🇷🇴-罗马尼亚-026-185.126.116.235"
+  - "[12-03]-🇺🇦-乌克兰-027-5.183.179.138"
+  - "[12-03]-🇺🇸-美国-028-72.167.45.6"
+  - "[12-03]-🇸🇬-新加坡-029-81.90.189.85"
+  - "[12-03]-🇺🇸-美国-030-t3.ssrsub.com"
+  - "[12-03]-🇺🇸-美国-031-t5.ssrsub.com"
+  - "[12-03]-🇺🇸-美国-032-t7.ssrsub.com"
+  - "[12-03]-🇪🇸-欧洲-033-185.44.76.188"
+  - "[12-03]-🇷🇴-罗马尼亚-034-185.126.116.235"
+  - "[12-03]-🇬🇧-英国-035-185.171.120.144"
+  - "[12-03]-🇺🇸-美国-036-72.167.45.6"
+  - "[12-03]-🇨🇭-瑞士-037-89.31.127.151"
+  - "[12-03]-🇺🇸-美国-038-jp-server-02.pndnav.cc"
+  - "[12-03]-🇺🇸-美国-039-ned-server-01.selfupay.com"
+  - "[12-03]-🇦🇶-欧盟-040-45.12.221.163"
+  - "[12-03]-🇦🇶-欧盟-041-45.12.221.163"
+  - "[12-03]-🇺🇸-美国-042-gg.piyun.team"
+  - "[12-03]-🇺🇸-美国-043-91.220.202.248"
+  - "[12-03]-🇺🇸-美国-044-jp-aws.proxypoolv2.tk"
+  - "[12-03]-🇺🇸-美国-045-198.147.22.87"
+  - "[12-03]-🇺🇸-美国-046-sg1-trojan.bonds.id"
+  - "[12-03]-🇺🇸-美国-047-2.jp.zz.xxxxx.x-t-fuckword.network"
+  - "[12-03]-🇺🇸-美国-048-3.sg.zz.xxxxx.x-t-fuckword.network"
+  - "[12-03]-🇺🇸-美国-049-gb1.v2.zz.cn.fuckword.club"
+  - "[12-03]-🇺🇸-美国-050-hk1.v3.zz.cn.fuckword.club"
+  - "[12-03]-🇺🇸-美国-051-hkt01.hk.zz.xxxxx.x-t-fuckword.network"
+  - "[12-03]-🇺🇸-美国-052-jpjs6o.zhs.company"
+  - "[12-03]-🇺🇸-美国-053-sglmz9.zhs.company"
+  - "[12-03]-🇺🇸-美国-054-h63956.droplet.today"
+  - "[12-03]-🇺🇸-美国-055-h63956.droplet.today"
+  - "[12-03]-🇺🇸-美国-056-h738106.droplet.today"
+  - "[12-03]-🇺🇸-美国-057-h890361.droplet.today"
+  - "[12-03]-🇺🇸-美国-058-h890361.droplet.today"
+  - "[12-03]-🇺🇸-美国-059-azhk.alink123.com"
+  - "[12-03]-🇺🇸-美国-060-jm.mg-nb.com"
+  - "[12-03]-🇺🇸-美国-061-sg3-trojan.bonds.id"
+  - "[12-03]-🇺🇸-美国-062-www.zx07.top"
+  - "[12-03]-🇺🇸-美国-063-os1-1.sstr-api.xyz"
+  - "[12-03]-🇺🇸-美国-064-os1-2.sstr-api.xyz"
+  - "[12-03]-🇺🇸-美国-065-os1-5.sstr-api.xyz"
+  - "[12-03]-🇺🇸-美国-066-os2-5.sstr-api.xyz"
+  - "[12-03]-🇺🇸-美国-067-198.147.22.87"
+  - "[12-03]-🇺🇸-美国-068-sh-hk-01-tr.cdn.savoy.click"
+  - "[12-03]-🇺🇸-美国-069-198.147.22.87"
+  - "[12-03]-🇮🇹-意大利-070-212.102.44.66"
+  - "[12-03]-🇺🇸-美国-071-143.244.42.76"
+  - "[12-03]-🇺🇸-美国-072-198.147.22.87"
+  - "[12-03]-🇦🇶-欧盟-073-45.12.221.163"
+  - "[12-03]-🇺🇸-美国-074-198.147.22.87"
+  - "[12-03]-🇬🇧-英国-075-185.171.120.144"
+  - "[12-03]-🇯🇵-日本-076-5.183.177.111"
+  - "[12-03]-🇷🇴-罗马尼亚-077-62.216.92.179"
+  - "[12-03]-🇷🇴-罗马尼亚-078-62.216.92.180"
+  - "[12-03]-🇺🇸-美国-079-72.167.33.106"
+  - "[12-03]-🇺🇸-美国-080-72.167.45.6"
+  - "[12-03]-🇺🇸-美国-081-jp-server-02.selfupay.com"
+  - "[12-03]-🇹🇼-台湾-082-60.249.3.125"
+  - "[12-03]-🇺🇸-美国-083-198.147.22.87"
+  - "[12-03]-🇺🇸-美国-084-198.147.22.87"
+  - "[12-03]-🇺🇸-美国-085-198.147.22.87"
+  - "[12-03]-🇺🇸-美国-086-198.147.22.87"
+  - "[12-03]-🇺🇸-美国-087-198.147.22.87"
+  - "[12-03]-🇮🇹-意大利-088-212.102.44.66"
+  - "[12-03]-🇮🇹-意大利-089-212.102.44.66"
+  - "[12-03]-🇮🇹-意大利-090-212.102.44.66"
+  - "[12-03]-🇺🇸-美国-091-hk-cnrelay-13-138465.dukou.info"
+  - "[12-03]-🇺🇸-美国-092-hk-route-12369-1.dukou.info"
+  - "[12-03]-🇺🇸-美国-093-hk11-5423.dukouplan3.dev"
+  - "[12-03]-🇺🇸-美国-094-sg-cn-hk-relay-4-40e978.dukou.info"
+  - "[12-03]-🇺🇸-美国-095-sg-cn-relay-8-14852.dukou.info"
+  - "[12-03]-🇺🇸-美国-096-shanghai-router2-hk4-5478.dukou.info"
+  - "[12-03]-🇺🇸-美国-097-tw4-5545.dukouplan3.dev"
+  - "[12-03]-🇺🇸-美国-098-agals01.cloudddns.icu"
+  - "[12-03]-🇺🇸-美国-099-sg1.vless.co"
+  - "[12-03]-🇮🇹-意大利-100-212.102.44.66"
+  - "[12-03]-🇮🇹-意大利-101-212.102.44.66"
+  - "[12-03]-🇺🇸-美国-102-198.147.22.87"
+  - "[12-03]-🇺🇸-美国-103-nlt-1.opensvr.net"
 - name: "\U0001F3AF 全球直连"
   type: select
   proxies:
@@ -1407,100 +1436,102 @@ proxy-groups:
   - "\U0001F530 节点选择"
   - "\U0001F3AF 全球直连"
   - "♻️ 自动选择"
-  - "[12-03]-🇺🇸-美国-091-silver-hk06.straycloud.xyz"
-  - "[12-03]-🇺🇸-美国-092-us01.straycloud.icu"
-  - "[12-03]-🇺🇸-美国-093-v.9051246.xyz"
-  - "[12-03]-🇯🇵-日本-094-153.122.102.160"
-  - "[12-03]-🇺🇸-美国-095-174.139.126.233"
-  - "[12-03]-🇰🇷-韩国-096-52.231.176.18"
-  - "[12-03]-🇺🇸-美国-097-kaizen-hk-2.cn0.me"
-  - "[12-03]-🇺🇸-美国-098-t5.ssrsub.com"
-  - "[12-03]-🇺🇸-美国-099-sg-cn-hk-relay-1-767f45.dukou.info"
-  - "[12-03]-🇺🇸-美国-100-sg-cn-hk-relay-2-54bc52.dukou.info"
-  - "[12-03]-🇺🇸-美国-101-sg-cn-hk-relay-3-dd4440.dukou.info"
-  - "[12-03]-🇺🇸-美国-102-sg-cn-hk-relay-4-40e978.dukou.info"
-  - "[12-03]-🇺🇸-美国-103-sg-cn-hk-relay-5-51f087.dukou.info"
-  - "[12-03]-🇺🇸-美国-104-tw-cn-hk-relay-1-97861a.dukou.info"
-  - "[12-03]-🇺🇸-美国-105-tw-cn-hk-relay-2-184a76.dukou.info"
-  - "[12-03]-🇺🇸-美国-106-tw3-5412.dukouplan3.dev"
-  - "[12-03]-🇺🇸-美国-107-tw7-5756.dukouplan3.dev"
-  - "[12-03]-🇷🇴-罗马尼亚-108-185.105.191.92"
-  - "[12-03]-🇷🇴-罗马尼亚-109-185.126.116.235"
-  - "[12-03]-🇺🇦-乌克兰-110-5.183.179.138"
-  - "[12-03]-🇺🇸-美国-111-72.167.45.6"
-  - "[12-03]-🇸🇬-新加坡-112-81.90.189.85"
-  - "[12-03]-🇺🇸-美国-113-t5.ssrsub.com"
-  - "[12-03]-🇺🇸-美国-114-t7.ssrsub.com"
-  - "[12-03]-🇪🇸-欧洲-115-185.44.76.188"
-  - "[12-03]-🇺🇸-美国-062-72.167.45.6"
-  - "[12-03]-🇨🇭-瑞士-064-89.31.127.151"
-  - "[12-03]-🇺🇸-美国-116-jp-server-02.pndnav.cc"
-  - "[12-03]-🇺🇸-美国-117-ned-server-01.selfupay.com"
-  - "[12-03]-🇦🇶-欧盟-118-45.12.221.163"
-  - "[12-03]-🇦🇶-欧盟-119-45.12.221.163"
-  - "[12-03]-🇺🇸-美国-120-gg.piyun.team"
-  - "[12-03]-🇺🇸-美国-121-91.220.202.248"
-  - "[12-03]-🇺🇸-美国-122-jp-aws.proxypoolv2.tk"
-  - "[12-03]-🇺🇸-美国-123-198.147.22.87"
-  - "[12-03]-🇺🇸-美国-124-sg1-trojan.bonds.id"
-  - "[12-03]-🇺🇸-美国-125-2.jp.zz.xxxxx.x-t-fuckword.network"
-  - "[12-03]-🇺🇸-美国-126-3.sg.zz.xxxxx.x-t-fuckword.network"
-  - "[12-03]-🇺🇸-美国-127-gb1.v2.zz.cn.fuckword.club"
-  - "[12-03]-🇺🇸-美国-128-hk1.v3.zz.cn.fuckword.club"
-  - "[12-03]-🇺🇸-美国-129-hkt01.hk.zz.xxxxx.x-t-fuckword.network"
-  - "[12-03]-🇺🇸-美国-130-jpjs6o.zhs.company"
-  - "[12-03]-🇺🇸-美国-131-sglmz9.zhs.company"
-  - "[12-03]-🇺🇸-美国-132-h63956.droplet.today"
-  - "[12-03]-🇺🇸-美国-133-h63956.droplet.today"
-  - "[12-03]-🇺🇸-美国-134-h738106.droplet.today"
-  - "[12-03]-🇺🇸-美国-135-h890361.droplet.today"
-  - "[12-03]-🇺🇸-美国-136-h890361.droplet.today"
-  - "[12-03]-🇺🇸-美国-137-azhk.alink123.com"
-  - "[12-03]-🇺🇸-美国-138-jm.mg-nb.com"
-  - "[12-03]-🇺🇸-美国-139-sg3-trojan.bonds.id"
-  - "[12-03]-🇺🇸-美国-140-www.zx07.top"
-  - "[12-03]-🇺🇸-美国-141-os1-1.sstr-api.xyz"
-  - "[12-03]-🇺🇸-美国-142-os1-2.sstr-api.xyz"
-  - "[12-03]-🇺🇸-美国-143-os1-5.sstr-api.xyz"
-  - "[12-03]-🇺🇸-美国-144-os2-5.sstr-api.xyz"
-  - "[12-03]-🇺🇸-美国-145-198.147.22.87"
-  - "[12-03]-🇺🇸-美国-146-sh-hk-01-tr.cdn.savoy.click"
-  - "[12-03]-🇺🇸-美国-147-198.147.22.87"
-  - "[12-03]-🇮🇹-意大利-148-212.102.44.66"
-  - "[12-03]-🇺🇸-美国-149-143.244.42.76"
-  - "[12-03]-🇺🇸-美国-150-198.147.22.87"
-  - "[12-03]-🇦🇶-欧盟-151-45.12.221.163"
-  - "[12-03]-🇺🇸-美国-152-198.147.22.87"
-  - "[12-03]-🇬🇧-英国-153-185.171.120.144"
-  - "[12-03]-🇬🇧-英国-154-185.171.120.144"
-  - "[12-03]-🇯🇵-日本-155-5.183.177.111"
-  - "[12-03]-🇷🇴-罗马尼亚-156-62.216.92.179"
-  - "[12-03]-🇷🇴-罗马尼亚-157-62.216.92.180"
-  - "[12-03]-🇺🇸-美国-158-72.167.33.106"
-  - "[12-03]-🇺🇸-美国-159-72.167.45.6"
-  - "[12-03]-🇺🇸-美国-160-jp-server-02.selfupay.com"
-  - "[12-03]-🇹🇼-台湾-161-60.249.3.125"
-  - "[12-03]-🇺🇸-美国-162-198.147.22.87"
-  - "[12-03]-🇺🇸-美国-163-198.147.22.87"
-  - "[12-03]-🇺🇸-美国-164-198.147.22.87"
-  - "[12-03]-🇺🇸-美国-165-198.147.22.87"
-  - "[12-03]-🇺🇸-美国-166-198.147.22.87"
-  - "[12-03]-🇮🇹-意大利-167-212.102.44.66"
-  - "[12-03]-🇮🇹-意大利-168-212.102.44.66"
-  - "[12-03]-🇮🇹-意大利-169-212.102.44.66"
-  - "[12-03]-🇺🇸-美国-170-hk-cnrelay-13-138465.dukou.info"
-  - "[12-03]-🇺🇸-美国-171-hk-route-12369-1.dukou.info"
-  - "[12-03]-🇺🇸-美国-172-hk11-5423.dukouplan3.dev"
-  - "[12-03]-🇺🇸-美国-173-sg-cn-hk-relay-4-40e978.dukou.info"
-  - "[12-03]-🇺🇸-美国-174-sg-cn-relay-8-14852.dukou.info"
-  - "[12-03]-🇺🇸-美国-175-shanghai-router2-hk4-5478.dukou.info"
-  - "[12-03]-🇺🇸-美国-176-tw4-5545.dukouplan3.dev"
-  - "[12-03]-🇺🇸-美国-177-agals01.cloudddns.icu"
-  - "[12-03]-🇺🇸-美国-178-sg1.vless.co"
-  - "[12-03]-🇮🇹-意大利-179-212.102.44.66"
-  - "[12-03]-🇮🇹-意大利-180-212.102.44.66"
-  - "[12-03]-🇺🇸-美国-181-198.147.22.87"
-  - "[12-03]-🇺🇸-美国-182-nlt-1.opensvr.net"
+  - "[12-03]-🇺🇸-美国-008-silver-hk06.straycloud.xyz"
+  - "[12-03]-🇺🇸-美国-009-us01.straycloud.icu"
+  - "[12-03]-🇺🇸-美国-010-v.9051246.xyz"
+  - "[12-03]-🇯🇵-日本-011-153.122.102.160"
+  - "[12-03]-🇺🇸-美国-012-174.139.126.233"
+  - "[12-03]-🇰🇷-韩国-013-52.231.176.18"
+  - "[12-03]-🇺🇸-美国-014-kaizen-hk-2.cn0.me"
+  - "[12-03]-🇺🇸-美国-015-t5.ssrsub.com"
+  - "[12-03]-🇺🇸-美国-016-sg-cn-hk-relay-1-767f45.dukou.info"
+  - "[12-03]-🇺🇸-美国-017-sg-cn-hk-relay-2-54bc52.dukou.info"
+  - "[12-03]-🇺🇸-美国-018-sg-cn-hk-relay-3-dd4440.dukou.info"
+  - "[12-03]-🇺🇸-美国-019-sg-cn-hk-relay-4-40e978.dukou.info"
+  - "[12-03]-🇺🇸-美国-020-sg-cn-hk-relay-5-51f087.dukou.info"
+  - "[12-03]-🇺🇸-美国-021-tw-cn-hk-relay-1-97861a.dukou.info"
+  - "[12-03]-🇺🇸-美国-022-tw-cn-hk-relay-2-184a76.dukou.info"
+  - "[12-03]-🇺🇸-美国-023-tw3-5412.dukouplan3.dev"
+  - "[12-03]-🇺🇸-美国-024-tw7-5756.dukouplan3.dev"
+  - "[12-03]-🇷🇴-罗马尼亚-025-185.105.191.92"
+  - "[12-03]-🇷🇴-罗马尼亚-026-185.126.116.235"
+  - "[12-03]-🇺🇦-乌克兰-027-5.183.179.138"
+  - "[12-03]-🇺🇸-美国-028-72.167.45.6"
+  - "[12-03]-🇸🇬-新加坡-029-81.90.189.85"
+  - "[12-03]-🇺🇸-美国-030-t3.ssrsub.com"
+  - "[12-03]-🇺🇸-美国-031-t5.ssrsub.com"
+  - "[12-03]-🇺🇸-美国-032-t7.ssrsub.com"
+  - "[12-03]-🇪🇸-欧洲-033-185.44.76.188"
+  - "[12-03]-🇷🇴-罗马尼亚-034-185.126.116.235"
+  - "[12-03]-🇬🇧-英国-035-185.171.120.144"
+  - "[12-03]-🇺🇸-美国-036-72.167.45.6"
+  - "[12-03]-🇨🇭-瑞士-037-89.31.127.151"
+  - "[12-03]-🇺🇸-美国-038-jp-server-02.pndnav.cc"
+  - "[12-03]-🇺🇸-美国-039-ned-server-01.selfupay.com"
+  - "[12-03]-🇦🇶-欧盟-040-45.12.221.163"
+  - "[12-03]-🇦🇶-欧盟-041-45.12.221.163"
+  - "[12-03]-🇺🇸-美国-042-gg.piyun.team"
+  - "[12-03]-🇺🇸-美国-043-91.220.202.248"
+  - "[12-03]-🇺🇸-美国-044-jp-aws.proxypoolv2.tk"
+  - "[12-03]-🇺🇸-美国-045-198.147.22.87"
+  - "[12-03]-🇺🇸-美国-046-sg1-trojan.bonds.id"
+  - "[12-03]-🇺🇸-美国-047-2.jp.zz.xxxxx.x-t-fuckword.network"
+  - "[12-03]-🇺🇸-美国-048-3.sg.zz.xxxxx.x-t-fuckword.network"
+  - "[12-03]-🇺🇸-美国-049-gb1.v2.zz.cn.fuckword.club"
+  - "[12-03]-🇺🇸-美国-050-hk1.v3.zz.cn.fuckword.club"
+  - "[12-03]-🇺🇸-美国-051-hkt01.hk.zz.xxxxx.x-t-fuckword.network"
+  - "[12-03]-🇺🇸-美国-052-jpjs6o.zhs.company"
+  - "[12-03]-🇺🇸-美国-053-sglmz9.zhs.company"
+  - "[12-03]-🇺🇸-美国-054-h63956.droplet.today"
+  - "[12-03]-🇺🇸-美国-055-h63956.droplet.today"
+  - "[12-03]-🇺🇸-美国-056-h738106.droplet.today"
+  - "[12-03]-🇺🇸-美国-057-h890361.droplet.today"
+  - "[12-03]-🇺🇸-美国-058-h890361.droplet.today"
+  - "[12-03]-🇺🇸-美国-059-azhk.alink123.com"
+  - "[12-03]-🇺🇸-美国-060-jm.mg-nb.com"
+  - "[12-03]-🇺🇸-美国-061-sg3-trojan.bonds.id"
+  - "[12-03]-🇺🇸-美国-062-www.zx07.top"
+  - "[12-03]-🇺🇸-美国-063-os1-1.sstr-api.xyz"
+  - "[12-03]-🇺🇸-美国-064-os1-2.sstr-api.xyz"
+  - "[12-03]-🇺🇸-美国-065-os1-5.sstr-api.xyz"
+  - "[12-03]-🇺🇸-美国-066-os2-5.sstr-api.xyz"
+  - "[12-03]-🇺🇸-美国-067-198.147.22.87"
+  - "[12-03]-🇺🇸-美国-068-sh-hk-01-tr.cdn.savoy.click"
+  - "[12-03]-🇺🇸-美国-069-198.147.22.87"
+  - "[12-03]-🇮🇹-意大利-070-212.102.44.66"
+  - "[12-03]-🇺🇸-美国-071-143.244.42.76"
+  - "[12-03]-🇺🇸-美国-072-198.147.22.87"
+  - "[12-03]-🇦🇶-欧盟-073-45.12.221.163"
+  - "[12-03]-🇺🇸-美国-074-198.147.22.87"
+  - "[12-03]-🇬🇧-英国-075-185.171.120.144"
+  - "[12-03]-🇯🇵-日本-076-5.183.177.111"
+  - "[12-03]-🇷🇴-罗马尼亚-077-62.216.92.179"
+  - "[12-03]-🇷🇴-罗马尼亚-078-62.216.92.180"
+  - "[12-03]-🇺🇸-美国-079-72.167.33.106"
+  - "[12-03]-🇺🇸-美国-080-72.167.45.6"
+  - "[12-03]-🇺🇸-美国-081-jp-server-02.selfupay.com"
+  - "[12-03]-🇹🇼-台湾-082-60.249.3.125"
+  - "[12-03]-🇺🇸-美国-083-198.147.22.87"
+  - "[12-03]-🇺🇸-美国-084-198.147.22.87"
+  - "[12-03]-🇺🇸-美国-085-198.147.22.87"
+  - "[12-03]-🇺🇸-美国-086-198.147.22.87"
+  - "[12-03]-🇺🇸-美国-087-198.147.22.87"
+  - "[12-03]-🇮🇹-意大利-088-212.102.44.66"
+  - "[12-03]-🇮🇹-意大利-089-212.102.44.66"
+  - "[12-03]-🇮🇹-意大利-090-212.102.44.66"
+  - "[12-03]-🇺🇸-美国-091-hk-cnrelay-13-138465.dukou.info"
+  - "[12-03]-🇺🇸-美国-092-hk-route-12369-1.dukou.info"
+  - "[12-03]-🇺🇸-美国-093-hk11-5423.dukouplan3.dev"
+  - "[12-03]-🇺🇸-美国-094-sg-cn-hk-relay-4-40e978.dukou.info"
+  - "[12-03]-🇺🇸-美国-095-sg-cn-relay-8-14852.dukou.info"
+  - "[12-03]-🇺🇸-美国-096-shanghai-router2-hk4-5478.dukou.info"
+  - "[12-03]-🇺🇸-美国-097-tw4-5545.dukouplan3.dev"
+  - "[12-03]-🇺🇸-美国-098-agals01.cloudddns.icu"
+  - "[12-03]-🇺🇸-美国-099-sg1.vless.co"
+  - "[12-03]-🇮🇹-意大利-100-212.102.44.66"
+  - "[12-03]-🇮🇹-意大利-101-212.102.44.66"
+  - "[12-03]-🇺🇸-美国-102-198.147.22.87"
+  - "[12-03]-🇺🇸-美国-103-nlt-1.opensvr.net"
 rules:
 - DOMAIN-SUFFIX,awesome-hd.me,DIRECT
 - DOMAIN-SUFFIX,broadcasthe.net,DIRECT
