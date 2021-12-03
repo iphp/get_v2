@@ -6,18 +6,21 @@ mode: rule
 port: 7890
 socks-port: 7891
 proxies:
-- server: 001.ap.pop.bigairport.net
-  v: 2
-  name: '🇺🇸-美国-001.ap.pop.bigairport.net'
-  port: 80
-  uuid: f944883a-a9fb-4ee8-b08b-aaf920f4c393
-  alterId: 1
-  network: ws
-  type: vmess
-  host: t.me/vpnhat
-  path: /
-  tls: 
-  cipher: auto
+- name: '[12-03]-🇺🇸-美国-062-72.167.45.6'
+  server: 72.167.45.6
+  port: 443
+  type: trojan
+  password: 36ebef7d1b1d6205fd0c55f28800e674
+  sni: t.me%2fvpnhat
+  skip-cert-verify: true
+  udp: true
+- name: '[12-03]-🇨🇭-瑞士-064-89.31.127.151'
+  server: 89.31.127.151
+  port: 443
+  type: trojan
+  password: 36ebef7d1b1d6205fd0c55f28800e674
+  sni: t.me%2fvpnhat
+  skip-cert-verify: true
   udp: true
 proxy-groups:
 - name: "\U0001F530 节点选择"
@@ -25,11 +28,13 @@ proxy-groups:
   proxies:
   - "♻️ 自动选择"
   - "\U0001F3AF 全球直连"
-  - "🇺🇸-美国-www.kernels.bid"
+  - "[12-03]-🇺🇸-美国-062-72.167.45.6"
+  - "[12-03]-🇨🇭-瑞士-064-89.31.127.151"
 - name: "♻️ 自动选择"
   type: url-test
   proxies:
-  - "🇺🇸-美国-www.kernels.bid"
+  - "[12-03]-🇺🇸-美国-062-72.167.45.6"
+  - "[12-03]-🇨🇭-瑞士-064-89.31.127.151"
   url: http://www.gstatic.com/generate_204
   interval: '300'
 - name: "\U0001F30D 国外媒体"
@@ -38,30 +43,35 @@ proxy-groups:
   - "\U0001F530 节点选择"
   - "♻️ 自动选择"
   - "\U0001F3AF 全球直连"
-  - "🇺🇸-美国-www.kernels.bid"
+  - "[12-03]-🇺🇸-美国-062-72.167.45.6"
+  - "[12-03]-🇨🇭-瑞士-064-89.31.127.151"
 - name: "\U0001F30F 国内媒体"
   type: select
   proxies:
   - "\U0001F3AF 全球直连"
   - "\U0001F530 节点选择"
-  - "🇺🇸-美国-www.kernels.bid"
+  - "[12-03]-🇺🇸-美国-062-72.167.45.6"
+  - "[12-03]-🇨🇭-瑞士-064-89.31.127.151"
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
-  - "🇺🇸-美国-www.kernels.bid"
+  - "[12-03]-🇺🇸-美国-062-72.167.45.6"
+  - "[12-03]-🇨🇭-瑞士-064-89.31.127.151"
 - name: "\U0001F4F2 电报信息"
   type: select
   proxies:
   - "\U0001F530 节点选择"
   - "\U0001F3AF 全球直连"
-  - "🇺🇸-美国-www.kernels.bid"
+  - "[12-03]-🇺🇸-美国-062-72.167.45.6"
+  - "[12-03]-🇨🇭-瑞士-064-89.31.127.151"
 - name: "\U0001F34E 苹果服务"
   type: select
   proxies:
   - "\U0001F530 节点选择"
   - "\U0001F3AF 全球直连"
   - "♻️ 自动选择"
-  - "🇺🇸-美国-www.kernels.bid"
+  - "[12-03]-🇺🇸-美国-062-72.167.45.6"
+  - "[12-03]-🇨🇭-瑞士-064-89.31.127.151"
 - name: "\U0001F3AF 全球直连"
   type: select
   proxies:
@@ -77,7 +87,8 @@ proxy-groups:
   - "\U0001F530 节点选择"
   - "\U0001F3AF 全球直连"
   - "♻️ 自动选择"
-  - "🇺🇸-美国-www.kernels.bid"
+  - "[12-03]-🇺🇸-美国-062-72.167.45.6"
+  - "[12-03]-🇨🇭-瑞士-064-89.31.127.151"
 rules:
 - DOMAIN-SUFFIX,awesome-hd.me,DIRECT
 - DOMAIN-SUFFIX,broadcasthe.net,DIRECT
