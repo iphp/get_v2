@@ -169,15 +169,7 @@ jobs:
           sleep 60
 
           # 对发布的文件进行加载, CID从001.out文件获取或直接传递
-          nohup sudo wget http://127.0.0.1:8080/ipfs/$CID/ -O $file1 >$file1 &
-          sleep 2
-          nohup sudo wget http://127.0.0.1:8080/ipfs/$CID/node.txt -O $file1 >$file1 &
-          sleep 2
-          nohup sudo wget http://127.0.0.1:8080/ipfs/$CID/nodecn.txt -O $file1 >$file1 &
-          sleep 2
-          nohup sudo wget http://127.0.0.1:8080/ipfs/$CID/clash.yaml -O $file1 >$file1 &
-          sleep 2
-          nohup sudo wget http://127.0.0.1:8080/ipfs/$CID/openclash.yaml -O $file1 >$file1 &
+          # nohup sudo wget http://127.0.0.1:8080/ipfs/$CID/ -O $file1 >$file1 &
 
           sleep 60
           # 对网络文件进行循环加载
