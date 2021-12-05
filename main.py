@@ -58,16 +58,19 @@ def get_list_sort(s):
     return list
 
 expire = ''
-oldexpire = LocalFile.read_LocalFile("./res/expires.txt") + '\n' + LocalFile.read_LocalFile("./res/expire.txt")
+oldexpire_1 = LocalFile.read_LocalFile("./res/expires.txt")
+oldexpire_2 = LocalFile.read_LocalFile("./res/expire.txt")
+oldexpire = oldexpire_1 + '\n' + oldexpire_2
 ii = 0
 print('Get-oldexpire.txt: \n' + str(len(oldexpire)))
 for i in oldexpire.split('\n'):
     ii += 1
     if(i.find('#') > -1):
         i = i.split('#', 1)[0]
-    if(i != '' and expire.find(i) == -1 and ii > int(len(oldexpire)/1000)):
+    if(i != '' and expire.find(i) == -1 and ii > int(len(oldexpire)/10000)):
         expire = expire + i + '\n'
-LocalFile.write_LocalFile('./res/expires.txt', expire.strip('\n')) 
+if(len(expire) > len(oldexpire_1)):
+    LocalFile.write_LocalFile('./res/expires.txt', expire.strip('\n')) 
 print('Get-expire.txt: \n' + str(len(expire)))
 
 # 下载订阅链接将其合并
