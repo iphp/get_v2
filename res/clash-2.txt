@@ -10090,3 +10090,4 @@
 - "DOMAIN-SUFFIX,www.bdkjcdn.com,\U0001F3AF 全球直连"
 - "DOMAIN-SUFFIX,unpkg.com,\U0001F3AF 全球直连"
 - "DOMAIN-SUFFIX,cdn.jsdelivr.net,\U0001F3AF 全球直连"
+- "DOMAIN-SUFFIX,download.wetransfer.com,\U0001F3AF 全球直连"
