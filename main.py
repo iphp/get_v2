@@ -176,7 +176,10 @@ if(menu == 'update' and len(expire) > 0):
                                 clashnodes = clashnodes.replace('}', '"}')
                                 if(clashnodes.find(': ') > -1):
                                     clashnodes = clashnodes.replace(': ', '": "')
-                                else if(clashnodes.find('://') == -1):
+                                elif(clashnodes.find('://') > -1):
+                                    clashnodes = clashnodes.replace('://', '#//')
+                                    clashnodes = clashnodes.replace(':', '": "')
+                                else:
                                     clashnodes = clashnodes.replace(':', '": "')
                                 clashnodes = clashnodes.replace(',', '", "')
                                 #clashnodes = clashnodes.replace('{"Host": "', '{Host: ')
@@ -189,6 +192,9 @@ if(menu == 'update' and len(expire) > 0):
                                 clashnodes = clashnodes.replace(',- ', '"}\n{"')
                                 if(clashnodes.find(': ') > -1):
                                     clashnodes = clashnodes.replace(': ', '": "')
+                                elif(clashnodes.find('://') > -1):
+                                    clashnodes = clashnodes.replace('://', '#//')
+                                    clashnodes = clashnodes.replace(':', '": "')
                                 else:
                                     clashnodes = clashnodes.replace(':', '": "')
                                 clashnodes = clashnodes.replace(', ', '", "')
@@ -264,7 +270,7 @@ if(menu == 'update' and len(expire) > 0):
 #else:
 #    print('Line-246:过滤名单读取失败，暂停运行。expire-' + expire)
 
-if(menu == 'ipdomain' and len(expire) > 0):
+if(menu == 'ipdomain'):
     # 下载代理节点过滤信息
     if(os.path.exists('./res/vpei-new.txt')):
         allonenode = LocalFile.read_LocalFile("./res/vpei-new.txt")
@@ -272,12 +278,11 @@ if(menu == 'ipdomain' and len(expire) > 0):
         allonenode = LocalFile.read_LocalFile("./res/vpei.txt")
     allonenode = base64.b64decode(allonenode).decode("utf-8")
     print('Get-allonenode.txt: \n' + str(len(allonenode)))
-    #print('Get-expire.txt: \n' + expire)
     # 逐条读取链接，并进行测试
     onenode = ''
     allnode = ''
     cnnode = ''
-    expire = ''
+    newoldnode = ''
     oldname = ''
     newname = ''
     ipdomain = ''
@@ -308,7 +313,7 @@ if(menu == 'ipdomain' and len(expire) > 0):
                         testj = j.split("#", 1)[0]
                     else:
                         testj = j
-                    if (expire.find(testj) == -1):
+                    if (newoldnode.find(testj) == -1):
                         #if (j.find("vmess://") == -1):
                         #    continue
                         print('\nLine-234-j-' + str(ii) + ':\n' + j)
@@ -391,7 +396,7 @@ if(menu == 'ipdomain' and len(expire) > 0):
                                 oldnode = onenode.split('#', 1)[0]
                             else:
                                 oldnode = onenode
-                            if (onenode != '' and IsValid.isIPorDomain(ipdomain) and expire.find(oldnode) == -1 and allnode.find(oldnode) == -1 and (onenode.find("vmess://") == 0 or onenode.find("ss://") == 0 or onenode.find("trojan://") == 0 or onenode.find("vless://") == 0)):
+                            if (onenode != '' and IsValid.isIPorDomain(ipdomain) and newoldnode.find(oldnode) == -1 and allnode.find(oldnode) == -1 and (onenode.find("vmess://") == 0 or onenode.find("ss://") == 0 or onenode.find("trojan://") == 0 or onenode.find("vless://") == 0)):
                                 print('Rename node ' + oldname.strip('\n') + ' to ' + newname)
                                 #if(len(allnode) > 204800):
                                 #    allnode = base64.b64encode(allnode.strip('\n').encode("utf-8")).decode("utf-8")
@@ -404,7 +409,7 @@ if(menu == 'ipdomain' and len(expire) > 0):
                                     else:
                                         allnode = allnode + '\n' + onenode
                                 else:
-                                    expire = expire + ',' + j + ',' + onenode   #新旧节点信息都加入作对比。
+                                    newoldnode = newoldnode + ',' + j + ',' + onenode   #新旧节点信息都加入作对比。
                                     if(iii < 400):
                                         try:
                                             iii += 1
@@ -414,20 +419,23 @@ if(menu == 'ipdomain' and len(expire) > 0):
                                             if(stime <= 0):
                                                 stime = 9999
                                             merged_link_ping.append(Department(stime, onenode, '1'))
-                                            print('Line-398-已添加(' + str(ii)+ '-Expire-Len:' + str(len(expire)) + ')-onenode:\n' + onenode)
+                                            print('Line-398-已添加(' + str(ii)+ '-Newoldnode-Len:' + str(len(newoldnode)) + ')-onenode:\n' + onenode)
                                         except Exception as ex:
                                             print('Line-400:' + str(ex) + '\nipdomain:' + ipdomain + '\nonenode:' + onenode)
                                     else:
                                         allnode = allnode + '\n' + onenode
                                         print('Line-403-已忽略(iii:' + str(iii) + '-ii-' + str(ii) + ')-onenode:\n' + onenode)
                             else:
-                                print('Line-392-已过滤(' + str(ii)+ '-Expire-Len:' + str(len(expire))+ ')-FindIndex:' + str(expire.find(onenode)) ) #+ ' onenode:' + onenode + ' expire.find(onenode):' +  str(expire.find(onenode)) + '\nIsValid.isIP(ipdomain):' +  str(IsValid.isIP(ipdomain)) + ' IsValid.isIPorDomain(ipdomain):' +  str(IsValid.isIPorDomain(ipdomain)) + ' allnode.find(onenode):' +  str(allnode.find(onenode)) + ' allnode:\n' + allnode)
+                                print('Line-392-已过滤(' + str(ii)+ '-Newoldnode-Len:' + str(len(newoldnode))+ ')-FindIndex:' + str(newoldnode.find(onenode)) ) #+ ' onenode:' + onenode + ' newoldnode.find(onenode):' +  str(newoldnode.find(onenode)) + '\nIsValid.isIP(ipdomain):' +  str(IsValid.isIP(ipdomain)) + ' IsValid.isIPorDomain(ipdomain):' +  str(IsValid.isIPorDomain(ipdomain)) + ' allnode.find(onenode):' +  str(allnode.find(onenode)) + ' allnode:\n' + allnode)
                         except Exception as ex:
                             print('Line-524:' + str(ex) + '\nConT:' + j)
                 except Exception as ex:
                     print('Line-396:' + str(ex) + '\nonenode:' + onenode)
             else:
-                allnode = allnode + '\n' + j
+                ii += 1
+                if (newoldnode.find(j) == -1):
+                    newoldnode = newoldnode + ',' + j   #新旧节点信息都加入作对比。
+                    allnode = allnode + '\n' + j
         # 合并整理完成的节点，生成Clash配置文件
         cnnode = base64.b64encode(cnnode.strip('\n').encode("utf-8")).decode("utf-8")
         LocalFile.write_LocalFile('./out/nodecn.txt', cnnode)
@@ -511,7 +519,7 @@ if(menu == 'ipdomain' and len(expire) > 0):
                             if (j.find('uuid:') == -1):
                                 j = j.replace('id:', 'uuid:')
                             #j = j.replace('path:', 'ws-path:')
-                            j = j.replace('\n', '\n  ').replace(':', ': ')
+                            j = j.replace('\n', '\n  ').replace(':', ': ').replace(': //', '://')
 
                             #pdb.set_trace()
                             #if(j.find(newname) > -1):
