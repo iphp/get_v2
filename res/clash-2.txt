@@ -10092,3 +10092,4 @@
 - "DOMAIN-SUFFIX,cdn.jsdelivr.net,\U0001F3AF 全球直连"
 - "DOMAIN-SUFFIX,download.wetransfer.com,\U0001F3AF 全球直连"
 - "DOMAIN-SUFFIX,m.hyshu.net,\U0001F3AF 全球直连"
+- "DOMAIN-SUFFIX,www.ywggzy.com,\U0001F3AF 全球直连"
