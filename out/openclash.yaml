@@ -6,6 +6,14 @@ mode: rule
 port: 7890
 socks-port: 7891
 proxies:
+- name: '[12-07]-🇺🇸-美国-1043-t1.ssrsub.com'
+  server: t1.ssrsub.com
+  port: 8443
+  type: trojan
+  password: 0e13b5a9-cb62-44cd-b28e-47f137624694
+  sni: t1.ssrsub.com
+  skip-cert-verify: true
+  udp: true
 - name: '[12-07]-🇺🇸-美国-001-t2.ssrsub.com'
   server: t2.ssrsub.com
   port: 8443
@@ -14,15 +22,7 @@ proxies:
   sni: t2.ssrsub.com
   skip-cert-verify: true
   udp: true
-- name: '[12-07]-🇺🇸-美国-733-t3.ssrsub.com'
-  server: t3.ssrsub.com
-  port: 8443
-  type: trojan
-  password: 0e13b5a9-cb62-44cd-b28e-47f137624694
-  sni: t3.ssrsub.com
-  skip-cert-verify: true
-  udp: true
-- name: '[12-07]-🇺🇸-美国-737-t4.ssrsub.com'
+- name: '[12-07]-🇺🇸-美国-003-t4.ssrsub.com'
   server: t4.ssrsub.com
   port: 8443
   type: trojan
@@ -30,12 +30,28 @@ proxies:
   sni: t4.ssrsub.com
   skip-cert-verify: true
   udp: true
-- name: '[12-07]-🇺🇸-美国-741-t7.ssrsub.com'
-  server: t7.ssrsub.com
+- name: '[12-07]-🇺🇸-美国-1041-t5.ssrsub.com'
+  server: t5.ssrsub.com
   port: 8443
   type: trojan
   password: 0e13b5a9-cb62-44cd-b28e-47f137624694
-  sni: t7.ssrsub.com
+  sni: t5.ssrsub.com
+  skip-cert-verify: true
+  udp: true
+- name: '[12-07]-🇺🇸-美国-1039-t2.ssrsub.com'
+  server: t2.ssrsub.com
+  port: 8443
+  type: trojan
+  password: 1b89d065-8640-4010-a80e-dc0c46a72aaf
+  sni: t2.ssrsub.com
+  skip-cert-verify: true
+  udp: true
+- name: '[12-07]-🇺🇸-美国-1045-t3.ssrsub.com'
+  server: t3.ssrsub.com
+  port: 8443
+  type: trojan
+  password: 1b89d065-8640-4010-a80e-dc0c46a72aaf
+  sni: t3.ssrsub.com
   skip-cert-verify: true
   udp: true
 - name: '[12-07]-🇺🇸-美国-005-t4.ssrsub.com'
@@ -46,15 +62,15 @@ proxies:
   sni: t4.ssrsub.com
   skip-cert-verify: true
   udp: true
-- name: '[12-07]-🇷🇴-罗马尼亚-3029-185.126.116.235'
-  server: 185.126.116.235
-  port: 443
+- name: '[12-07]-🇺🇸-美国-1037-t5.ssrsub.com'
+  server: t5.ssrsub.com
+  port: 8443
   type: trojan
-  password: 28d98f761aca9d636f44db62544628eb
-  sni: t.me%252Fvpnhat
+  password: 1b89d065-8640-4010-a80e-dc0c46a72aaf
+  sni: t5.ssrsub.com
   skip-cert-verify: true
   udp: true
-- name: '[12-07]-🇬🇧-英国-3017-185.171.120.144'
+- name: '[12-07]-🇬🇧-英国-007-185.171.120.144'
   server: 185.171.120.144
   port: 443
   type: trojan
@@ -62,8 +78,32 @@ proxies:
   sni: t.me%252Fvpnhat
   skip-cert-verify: true
   udp: true
-- name: '[12-07]-🇺🇸-美国-3041-72.167.45.6'
-  server: 72.167.45.6
+- name: '[12-07]-🇯🇵-日本-3181-5.183.177.111'
+  server: 5.183.177.111
+  port: 443
+  type: trojan
+  password: 28d98f761aca9d636f44db62544628eb
+  sni: t.me%252Fvpnhat
+  skip-cert-verify: true
+  udp: true
+- name: '[12-07]-🇺🇦-乌克兰-3177-5.183.179.138'
+  server: 5.183.179.138
+  port: 443
+  type: trojan
+  password: 28d98f761aca9d636f44db62544628eb
+  sni: t.me%252Fvpnhat
+  skip-cert-verify: true
+  udp: true
+- name: '[12-07]-🇷🇴-罗马尼亚-3197-62.216.92.179'
+  server: 62.216.92.179
+  port: 443
+  type: trojan
+  password: 28d98f761aca9d636f44db62544628eb
+  sni: t.me%252Fvpnhat
+  skip-cert-verify: true
+  udp: true
+- name: '[12-07]-🇸🇬-新加坡-3203-81.90.189.85'
+  server: 81.90.189.85
   port: 443
   type: trojan
   password: 28d98f761aca9d636f44db62544628eb
@@ -78,29 +118,78 @@ proxies:
   sni: t.me%252Fvpnhat
   skip-cert-verify: true
   udp: true
-- name: '[12-07]-🇺🇸-美国-409-t3.ssrsub.com'
-  server: t3.ssrsub.com
-  port: 21033
-  type: trojan
-  password: 2b19f253-5da2-4ca2-a950-8b4e7b3ddadb
-  skip-cert-verify: true
-  udp: true
-- name: '[12-07]-🇺🇸-美国-437-t6.ssrsub.com'
+- name: '[12-07]-🇺🇸-美国-011-t6.ssrsub.com'
   server: t6.ssrsub.com
   port: 21033
   type: trojan
   password: 2b19f253-5da2-4ca2-a950-8b4e7b3ddadb
   skip-cert-verify: true
   udp: true
-- name: '[12-07]-🇷🇴-罗马尼亚-013-185.126.116.235'
-  server: 185.126.116.235
+- name: '[12-07]-🇺🇸-美国-3205-184.168.127.50'
+  server: 184.168.127.50
   port: 443
   type: trojan
   password: 36ebef7d1b1d6205fd0c55f28800e674
   sni: t.me%252Fvpnhat
   skip-cert-verify: true
   udp: true
-- name: '[12-07]-🇺🇸-美国-3045-sg-server-01.selfupay.com'
+- name: '[12-07]-🇷🇴-罗马尼亚-3191-62.216.92.180'
+  server: 62.216.92.180
+  port: 443
+  type: trojan
+  password: 36ebef7d1b1d6205fd0c55f28800e674
+  sni: t.me%252Fvpnhat
+  skip-cert-verify: true
+  udp: true
+- name: '[12-07]-🇺🇸-美国-3213-72.167.45.6'
+  server: 72.167.45.6
+  port: 443
+  type: trojan
+  password: 36ebef7d1b1d6205fd0c55f28800e674
+  sni: t.me%252Fvpnhat
+  skip-cert-verify: true
+  udp: true
+- name: '[12-07]-🇨🇭-瑞士-3185-89.31.127.151'
+  server: 89.31.127.151
+  port: 443
+  type: trojan
+  password: 36ebef7d1b1d6205fd0c55f28800e674
+  sni: t.me%252Fvpnhat
+  skip-cert-verify: true
+  udp: true
+- name: '[12-07]-🇺🇸-美国-3201-hk-server-01.selfupay.com'
+  server: hk-server-01.selfupay.com
+  port: 443
+  type: trojan
+  password: 36ebef7d1b1d6205fd0c55f28800e674
+  sni: hk-server-01.selfupay.com
+  skip-cert-verify: true
+  udp: true
+- name: '[12-07]-🇺🇸-美国-3193-hk-server-02.selfupay.com'
+  server: hk-server-02.selfupay.com
+  port: 443
+  type: trojan
+  password: 36ebef7d1b1d6205fd0c55f28800e674
+  sni: hk-server-02.selfupay.com
+  skip-cert-verify: true
+  udp: true
+- name: '[12-07]-🇺🇸-美国-3179-jp-server-02.selfupay.com'
+  server: jp-server-02.selfupay.com
+  port: 443
+  type: trojan
+  password: 36ebef7d1b1d6205fd0c55f28800e674
+  sni: jp-server-02.selfupay.com
+  skip-cert-verify: true
+  udp: true
+- name: '[12-07]-🇺🇸-美国-3189-ned-server-01.selfupay.com'
+  server: ned-server-01.selfupay.com
+  port: 443
+  type: trojan
+  password: 36ebef7d1b1d6205fd0c55f28800e674
+  sni: ned-server-01.selfupay.com
+  skip-cert-verify: true
+  udp: true
+- name: '[12-07]-🇺🇸-美国-013-sg-server-01.selfupay.com'
   server: sg-server-01.selfupay.com
   port: 443
   type: trojan
@@ -108,15 +197,15 @@ proxies:
   sni: sg-server-01.selfupay.com
   skip-cert-verify: true
   udp: true
-- name: '[12-07]-🇦🇶-北美地区-3053-107.174.39.16'
-  server: 107.174.39.16
-  port: 8443
+- name: '[12-07]-🇺🇸-美国-3209-usa-server-02.selfupay.com'
+  server: usa-server-02.selfupay.com
+  port: 443
   type: trojan
-  password: 89d892b1-4f5d-4278-982a-9aee981af088
-  sni: t.me%252Fvpnhat
+  password: 36ebef7d1b1d6205fd0c55f28800e674
+  sni: usa-server-02.selfupay.com
   skip-cert-verify: true
   udp: true
-- name: '[12-07]-🇦🇶-北美地区-017-107.174.67.108'
+- name: '[12-07]-🇦🇶-北美地区-015-107.174.67.108'
   server: 107.174.67.108
   port: 8443
   type: trojan
@@ -124,15 +213,7 @@ proxies:
   sni: t.me%252Fvpnhat
   skip-cert-verify: true
   udp: true
-- name: '[12-07]-🇷🇺-俄罗斯-3037-194.156.120.236'
-  server: 194.156.120.236
-  port: 8443
-  type: trojan
-  password: 89d892b1-4f5d-4278-982a-9aee981af088
-  sni: t.me%252Fvpnhat
-  skip-cert-verify: true
-  udp: true
-- name: '[12-07]-🇺🇸-美国加利福尼亚州洛杉矶-021-23.234.244.175'
+- name: '[12-07]-🇺🇸-美国加利福尼亚州洛杉矶-017-23.234.244.175'
   server: 23.234.244.175
   port: 8443
   type: trojan
@@ -140,15 +221,15 @@ proxies:
   sni: t.me%252Fvpnhat
   skip-cert-verify: true
   udp: true
-- name: '[12-07]-🇳🇱-荷兰-3009-80.78.132.239'
-  server: 80.78.132.239
-  port: 12602
+- name: '[12-07]-🇺🇸-美国-3207-184.168.127.50'
+  server: 184.168.127.50
+  port: 443
   type: trojan
-  password: 89d892b1-4f5d-4278-982a-9aee981af088
+  password: a3fa58b581353bb375d2ddad0f327938
   sni: t.me%252Fvpnhat
   skip-cert-verify: true
   udp: true
-- name: '[12-07]-🇬🇧-英国-025-185.171.120.144'
+- name: '[12-07]-🇬🇧-英国-019-185.171.120.144'
   server: 185.171.120.144
   port: 443
   type: trojan
@@ -156,14 +237,7 @@ proxies:
   sni: t.me%2fvpnhat
   skip-cert-verify: true
   udp: true
-- name: '[12-07]-🇯🇵-日本-1285-5.183.177.111'
-  server: 5.183.177.111
-  port: 443
-  type: trojan
-  password: a3fa58b581353bb375d2ddad0f327938
-  skip-cert-verify: true
-  udp: true
-- name: '[12-07]-🇯🇵-日本-3013-5.183.177.111'
+- name: '[12-07]-🇯🇵-日本-021-5.183.177.111'
   server: 5.183.177.111
   port: 443
   type: trojan
@@ -171,15 +245,7 @@ proxies:
   sni: t.me%252Fvpnhat
   skip-cert-verify: true
   udp: true
-- name: '[12-07]-🇷🇴-罗马尼亚-3025-62.216.92.179'
-  server: 62.216.92.179
-  port: 443
-  type: trojan
-  password: a3fa58b581353bb375d2ddad0f327938
-  sni: t.me%252Fvpnhat
-  skip-cert-verify: true
-  udp: true
-- name: '[12-07]-🇷🇴-罗马尼亚-3033-62.216.92.180'
+- name: '[12-07]-🇷🇴-罗马尼亚-023-62.216.92.180'
   server: 62.216.92.180
   port: 443
   type: trojan
@@ -187,15 +253,7 @@ proxies:
   sni: t.me%252Fvpnhat
   skip-cert-verify: true
   udp: true
-- name: '[12-07]-🇺🇸-美国-3049-72.167.45.6'
-  server: 72.167.45.6
-  port: 443
-  type: trojan
-  password: a3fa58b581353bb375d2ddad0f327938
-  sni: t.me%252Fvpnhat
-  skip-cert-verify: true
-  udp: true
-- name: '[12-07]-🇨🇭-瑞士-3021-89.31.127.151'
+- name: '[12-07]-🇨🇭-瑞士-025-89.31.127.151'
   server: 89.31.127.151
   port: 443
   type: trojan
@@ -203,11 +261,39 @@ proxies:
   sni: t.me%252Fvpnhat
   skip-cert-verify: true
   udp: true
-- name: '[12-07]-🇺🇸-美国-3057-usa-server-02.selfupay.com'
-  server: usa-server-02.selfupay.com
+- name: '[12-07]-🇺🇸-美国-3199-hk-server-01.selfupay.com'
+  server: hk-server-01.selfupay.com
   port: 443
   type: trojan
   password: a3fa58b581353bb375d2ddad0f327938
+  skip-cert-verify: true
+  udp: true
+- name: '[12-07]-🇺🇸-美国-3195-hk-server-02.selfupay.com'
+  server: hk-server-02.selfupay.com
+  port: 443
+  type: trojan
+  password: a3fa58b581353bb375d2ddad0f327938
+  skip-cert-verify: true
+  udp: true
+- name: '[12-07]-🇺🇸-美国-3183-jp-server-02.selfupay.com'
+  server: jp-server-02.selfupay.com
+  port: 443
+  type: trojan
+  password: a3fa58b581353bb375d2ddad0f327938
+  skip-cert-verify: true
+  udp: true
+- name: '[12-07]-🇺🇸-美国-3187-ned-server-01.selfupay.com'
+  server: ned-server-01.selfupay.com
+  port: 443
+  type: trojan
+  password: a3fa58b581353bb375d2ddad0f327938
+  skip-cert-verify: true
+  udp: true
+- name: '[12-07]-🇺🇸-美国-3211-tw.softbank.mjj-home.com'
+  server: tw.softbank.mjj-home.com
+  port: 443
+  type: trojan
+  password: share.mjj-home.com
   skip-cert-verify: true
   udp: true
 - v: 2
@@ -221,20 +307,6 @@ proxies:
   type: vmess
   host: 
   path: 
-  tls: false
-  sni: 
-  udp: true
-- v: 2
-  name: '🇦🇶-亚太地区-103.172.116.94'
-  server: 103.172.116.94
-  port: 80
-  uuid: 7ea3f9bb-2082-3d43-b825-6bf7a052314a
-  alterId: 2
-  cipher: auto
-  network: ws
-  type: vmess
-  host: 
-  path: /v2ray
   tls: false
   sni: 
   udp: true
@@ -253,20 +325,6 @@ proxies:
   sni: 
   udp: true
 - v: 2
-  name: '🇯🇵-日本-146.56.156.227'
-  server: 146.56.156.227
-  port: 2053
-  uuid: fec5fd62-56e7-431a-99b3-c1f76c5cbe8d
-  alterId: 1
-  cipher: aes-128-gcm
-  network: ws
-  type: null
-  host: kr2.futi.online
-  path: /
-  tls: true
-  sni: 
-  udp: true
-- v: 2
   name: '🇯🇵-日本-172.104.98.216'
   server: 172.104.98.216
   port: 80
@@ -277,20 +335,6 @@ proxies:
   type: null
   host: 172.104.98.216
   path: /
-  tls: true
-  sni: 
-  udp: true
-- v: 2
-  name: '🇬🇧-英国-146.70.73.2'
-  server: 146.70.73.2
-  port: 443
-  uuid: aba50dd4-5484-3b05-b14a-4661caf862d5
-  alterId: 4
-  cipher: auto
-  network: ws
-  type: null
-  host: italy-milan.mah3Hoet.com
-  path: /ws
   tls: true
   sni: 
   udp: true
@@ -306,20 +350,6 @@ proxies:
   host: cmhk04.xc188.net
   path: /clientarea
   tls: true
-  sni: 
-  udp: true
-- v: 2
-  name: '🇭🇰-香港-183.179.115.79'
-  server: 183.179.115.79
-  port: 6666
-  uuid: ed6c4f4f-f1a9-4e07-bcd6-c8d1110975a6
-  alterId: 0
-  cipher: auto
-  network: ws
-  type: vmess
-  host: 183.179.115.79
-  path: /
-  tls: false
   sni: 
   udp: true
 - v: 2
@@ -344,22 +374,8 @@ proxies:
   alterId: 64
   cipher: auto
   network: ws
-  type: vmess
+  type: null
   host: 46.182.107.39
-  path: /footers
-  tls: true
-  sni: 
-  udp: true
-- v: 2
-  name: '🇳🇱-荷兰-46.182.107.44'
-  server: 46.182.107.44
-  port: 443
-  uuid: fe5f69e7-e183-439b-950b-8221ef0651f2
-  alterId: 64
-  cipher: auto
-  network: ws
-  type: vmess
-  host: 46.182.107.44
   path: /footers
   tls: true
   sni: 
@@ -379,20 +395,6 @@ proxies:
   sni: 
   udp: true
 - v: 2
-  name: '🇷🇺-俄罗斯-194.5.78.89'
-  server: 194.5.78.89
-  port: 6619
-  uuid: 1fff330e-1645-4580-b331-23bd8b51f7af
-  alterId: 0
-  cipher: auto
-  network: ws
-  type: vmess
-  host: t.me/vpnhat
-  path: 
-  tls: false
-  sni: 
-  udp: true
-- v: 2
   name: '🇸🇬-新加坡-206.189.87.180'
   server: 206.189.87.180
   port: 8888
@@ -404,20 +406,6 @@ proxies:
   host: 206.189.87.180
   path: /
   tls: false
-  sni: 
-  udp: true
-- v: 2
-  name: '🇺🇸-美国加利福尼亚州洛杉矶-45.91.83.111'
-  server: 45.91.83.111
-  port: 13723
-  uuid: a90597c1-bab3-4217-ad6f-0838675c8634
-  alterId: 10
-  cipher: auto
-  network: ws
-  type: vmess
-  host: 
-  path: ray
-  tls: true
   sni: 
   udp: true
 - v: 2
@@ -433,20 +421,6 @@ proxies:
   path: /
   tls: false
   sni: 
-  udp: true
-- v: 2
-  name: '🇺🇸-美国-172.67.69.244'
-  server: 172.67.69.244
-  port: 443
-  uuid: 119013ea-09ad-48f9-930c-c16056ea95ba
-  alterId: 64
-  cipher: aes-128-gcm
-  network: ws
-  type: vmess
-  host: 172.67.69.244
-  path: /sshocean
-  tls: true
-  sni: ru1.v2rayserv.com
   udp: true
 - v: 2
   name: '🇺🇸-美国-172.67.70.171'
@@ -468,10 +442,10 @@ proxies:
   port: 500
   uuid: 764e808a-115e-11ec-a88f-00163c9f4934
   alterId: 0
-  cipher: auto
+  cipher: aes-128-gcm
   network: tcp
   type: vmess
-  host: 
+  host: 192.74.254.167
   path: 
   tls: false
   sni: 
@@ -485,23 +459,9 @@ proxies:
   cipher: auto
   network: ws
   type: vmess
-  host: 192.96.204.250
+  host: usa-washington.lvuft.com
   path: /ws
   tls: true
-  sni: 
-  udp: true
-- v: 2
-  name: '🇺🇸-美国-198.200.51.18'
-  server: 198.200.51.18
-  port: 600
-  uuid: 42f7eabe-0d3f-11ec-859b-00163caf481c
-  alterId: 0
-  cipher: auto
-  network: tcp
-  type: vmess
-  host: 
-  path: /
-  tls: false
   sni: 
   udp: true
 - v: 2
@@ -533,20 +493,6 @@ proxies:
   sni: 
   udp: true
 - v: 2
-  name: '🇺🇸-美国-104.16.166.137'
-  server: 104.16.166.137
-  port: 443
-  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
-  alterId: 64
-  cipher: auto
-  network: ws
-  type: null
-  host: 104.16.166.137
-  path: /
-  tls: true
-  sni: 
-  udp: true
-- v: 2
   name: '🇺🇸-美国-104.18.7.138'
   server: 104.18.7.138
   port: 443
@@ -556,20 +502,6 @@ proxies:
   network: ws
   type: vmess
   host: 104.18.7.138
-  path: /
-  tls: true
-  sni: 
-  udp: true
-- v: 2
-  name: '🇺🇸-美国-104.18.231.232'
-  server: 104.18.231.232
-  port: 443
-  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
-  alterId: 64
-  cipher: auto
-  network: ws
-  type: null
-  host: 104.18.231.232
   path: /
   tls: true
   sni: 
@@ -603,20 +535,6 @@ proxies:
   sni: 
   udp: true
 - v: 2
-  name: '🇺🇸-美国-104.22.44.50'
-  server: 104.22.44.50
-  port: 443
-  uuid: 5f4b2e42-ff2b-4342-86fc-b7ba1b5361e8
-  alterId: 0
-  cipher: auto
-  network: ws
-  type: vmess
-  host: vincent-jackson2021.ga
-  path: /The-Great-Awakening_vws?ed=2048
-  tls: true
-  sni: 
-  udp: true
-- v: 2
   name: '🇺🇸-美国-104.24.180.107'
   server: 104.24.180.107
   port: 443
@@ -636,26 +554,12 @@ proxies:
   port: 13723
   uuid: a90597c1-bab3-4217-ad6f-0838675c8638
   alterId: 10
-  cipher: aes-128-gcm
+  cipher: auto
   network: ws
   type: vmess
   host: en.tgchannels.org/channel/vpnpool
   path: /ray
   tls: true
-  sni: en.tgchannels.org/channel/vpnpool
-  udp: true
-- v: 2
-  name: '🇺🇸-美国-107.148.200.229'
-  server: 107.148.200.229
-  port: 10022
-  uuid: 6e6ce89a-42d5-11ec-ac9d-00163c0ad178
-  alterId: 0
-  cipher: auto
-  network: tcp
-  type: vmess
-  host: 
-  path: /
-  tls: false
   sni: 
   udp: true
 - v: 2
@@ -669,20 +573,6 @@ proxies:
   type: vmess
   host: 
   path: /v2ray
-  tls: false
-  sni: 
-  udp: true
-- v: 2
-  name: '🇺🇸-美国-20.151.113.120'
-  server: 20.151.113.120
-  port: 1426
-  uuid: e0f591b2-69a2-4e92-a0f3-d39a2f70b768
-  alterId: 0
-  cipher: auto
-  network: tcp
-  type: null
-  host: 20.151.113.120
-  path: /
   tls: false
   sni: 
   udp: true
@@ -701,20 +591,6 @@ proxies:
   sni: 
   udp: true
 - v: 2
-  name: '🇺🇸-美国-20.205.35.3'
-  server: 20.205.35.3
-  port: 41435
-  uuid: cff2a52c-1b98-31a0-b508-9255882c45ec
-  alterId: 1
-  cipher: auto
-  network: ws
-  type: vmess
-  host: 20.205.35.3
-  path: /vvv
-  tls: false
-  sni: 
-  udp: true
-- v: 2
   name: '🇺🇸-美国-209.58.139.41'
   server: 209.58.139.41
   port: 443
@@ -729,20 +605,6 @@ proxies:
   sni: 
   udp: true
 - v: 2
-  name: '🇺🇸-美国-3.144.176.174'
-  server: 3.144.176.174
-  port: 443
-  uuid: 739ae3ef-3710-4a33-b0db-5c29a5cec85b
-  alterId: 1
-  cipher: auto
-  network: ws
-  type: null
-  host: 3.144.176.174
-  path: /Net.Hibey.cc
-  tls: false
-  sni: 
-  udp: true
-- v: 2
   name: '🇺🇸-美国-45.142.158.85'
   server: 45.142.158.85
   port: 28582
@@ -752,20 +614,6 @@ proxies:
   network: ws
   type: vmess
   host: 45.142.158.85
-  path: /
-  tls: false
-  sni: 
-  udp: true
-- v: 2
-  name: '🇺🇸-美国-45.79.65.237.ipssh.net'
-  server: 45.79.65.237.ipssh.net
-  port: 16666
-  uuid: ed6c4f4f-f1a9-4e07-bcd6-c8d1110975a6
-  alterId: 0
-  cipher: auto
-  network: ws
-  type: vmess
-  host: 45.79.65.237.ipssh.net
   path: /
   tls: false
   sni: 
@@ -793,7 +641,7 @@ proxies:
   cipher: auto
   network: ws
   type: vmess
-  host: 715hk.fans8.xyz
+  host: 
   path: /v2ray
   tls: false
   sni: 
@@ -806,7 +654,7 @@ proxies:
   alterId: 2
   cipher: auto
   network: ws
-  type: vmess
+  type: null
   host: 915ru1.fans8.xyz
   path: /v2ray
   tls: false
@@ -821,7 +669,7 @@ proxies:
   cipher: auto
   network: ws
   type: vmess
-  host: 930tg.fans8.xyz
+  host: 
   path: /v2ray
   tls: false
   sni: 
@@ -829,28 +677,14 @@ proxies:
 - v: 2
   name: '🇺🇸-美国-ngzyd-1.okex-tradebot.xyz'
   server: ngzyd-1.okex-tradebot.xyz
-  port: 30002
+  port: 30004
   uuid: 16df4803-6b79-41c6-9cfc-cea63030f1fe
   alterId: 1
-  cipher: auto
+  cipher: aes-128-gcm
   network: ws
   type: vmess
   host: ngzyd-1.okex-tradebot.xyz
-  path: /
-  tls: false
-  sni: 
-  udp: true
-- v: 2
-  name: '🇺🇸-美国-niaocloud.niaoyun.online'
-  server: niaocloud.niaoyun.online
-  port: 3108
-  uuid: cff2a52c-1b98-31a0-b508-9255882c45ec
-  alterId: 1
-  cipher: auto
-  network: ws
-  type: vmess
-  host: niaocloud.niaoyun.online
-  path: /vvv
+  path: 
   tls: false
   sni: 
   udp: true
@@ -869,20 +703,6 @@ proxies:
   sni: 
   udp: true
 - v: 2
-  name: '🇺🇸-美国-aicoo6du.com'
-  server: aicoo6du.com
-  port: 443
-  uuid: aba50dd4-5484-3b05-b14a-4661caf862d5
-  alterId: 4
-  cipher: auto
-  network: ws
-  type: null
-  host: aicoo6du.com
-  path: /ws
-  tls: true
-  sni: 
-  udp: true
-- v: 2
   name: '🇺🇸-美国-amu1ahfi.com'
   server: amu1ahfi.com
   port: 443
@@ -893,20 +713,6 @@ proxies:
   type: vmess
   host: amu1ahfi.com
   path: /ws
-  tls: true
-  sni: 
-  udp: true
-- v: 2
-  name: '🇺🇸-美国-armsj2.kozow.com'
-  server: armsj2.kozow.com
-  port: 80
-  uuid: 44e0d410-535a-11ec-968f-02001700aa14
-  alterId: 0
-  cipher: auto
-  network: ws
-  type: null
-  host: armsj2.kozow.com
-  path: None
   tls: true
   sni: 
   udp: true
@@ -932,23 +738,9 @@ proxies:
   alterId: 2
   cipher: auto
   network: ws
-  type: vmess
+  type: null
   host: cu.cheapv2.xyz
   path: /index
-  tls: false
-  sni: 
-  udp: true
-- v: 2
-  name: '🇺🇸-美国-cu.cnhost.top'
-  server: cu.cnhost.top
-  port: 23383
-  uuid: ed6c4f4f-f1a9-4e07-bcd6-c8d1110975a6
-  alterId: 1
-  cipher: auto
-  network: ws
-  type: vmess
-  host: cu.cnhost.top
-  path: /
   tls: false
   sni: 
   udp: true
@@ -964,20 +756,6 @@ proxies:
   host: cdnde.irteyz.today
   path: /
   tls: true
-  sni: 
-  udp: true
-- v: 2
-  name: '🇺🇸-美国-cm2.cheapv2.xyz'
-  server: cm2.cheapv2.xyz
-  port: 28802
-  uuid: 44b7192f-7539-3cde-a0a7-2d4d1361cadf
-  alterId: 2
-  cipher: auto
-  network: ws
-  type: vmess
-  host: cm2.cheapv2.xyz
-  path: /index
-  tls: false
   sni: 
   udp: true
 - v: 2
@@ -1023,20 +801,6 @@ proxies:
   sni: 
   udp: true
 - v: 2
-  name: '🇺🇸-美国-fus1.uuv2.co.uk'
-  server: fus1.uuv2.co.uk
-  port: 2082
-  uuid: 68188cc4-0e87-4da8-cd67-7c6dbcaccf6f
-  alterId: 0
-  cipher: auto
-  network: ws
-  type: null
-  host: download.jianguoyun.com
-  path: /media/
-  tls: false
-  sni: 
-  udp: true
-- v: 2
   name: '🇺🇸-美国-ff5c0fb.re.cloudflare.systems'
   server: ff5c0fb.re.cloudflare.systems
   port: 80
@@ -1048,20 +812,6 @@ proxies:
   host: icloud.com
   path: /s/ff5c0fb.fm.icloud.com:30513
   tls: false
-  sni: 
-  udp: true
-- v: 2
-  name: '🇺🇸-美国-free-russian01-cdn.xiaohouzi.club'
-  server: free-russian01-cdn.xiaohouzi.club
-  port: 443
-  uuid: 6a7f559d-5401-44c0-b737-bb9f8820681f
-  alterId: 233
-  cipher: auto
-  network: ws
-  type: vmess
-  host: free-russian01-cdn.xiaohouzi.club
-  path: /2993fe/
-  tls: true
   sni: 
   udp: true
 - v: 2
@@ -1079,20 +829,6 @@ proxies:
   sni: free-russian02-cdn.xiaohouzi.club
   udp: true
 - v: 2
-  name: '🇺🇸-美国-guangzhou-lw-03.pucdn.me'
-  server: guangzhou-lw-03.pucdn.me
-  port: 21105
-  uuid: 8f19fe80-2493-3c3a-ace9-a6d7c665b3cf
-  alterId: 2
-  cipher: auto
-  network: ws
-  type: vmess
-  host: guangzhou-lw-03.pucdn.me
-  path: /vvv
-  tls: false
-  sni: 
-  udp: true
-- v: 2
   name: '🇺🇸-美国-global-transit-01-hn.pucdn.me'
   server: global-transit-01-hn.pucdn.me
   port: 60001
@@ -1102,20 +838,6 @@ proxies:
   network: ws
   type: vmess
   host: global-transit-01-hn.pucdn.me
-  path: /vvv
-  tls: false
-  sni: 
-  udp: true
-- v: 2
-  name: '🇺🇸-美国-global-transit-02-sg.pucdn.me'
-  server: global-transit-02-sg.pucdn.me
-  port: 61007
-  uuid: 19a605a2-6982-387e-bcd4-8b5bffbe039a
-  alterId: 2
-  cipher: auto
-  network: ws
-  type: vmess
-  host: global-transit-02-sg.pucdn.me
   path: /vvv
   tls: false
   sni: 
@@ -1135,20 +857,6 @@ proxies:
   sni: 
   udp: true
 - v: 2
-  name: '🇺🇸-美国-l1-do-ua-03.pucdn.me'
-  server: l1-do-ua-03.pucdn.me
-  port: 10080
-  uuid: 19a605a2-6982-387e-bcd4-8b5bffbe039a
-  alterId: 2
-  cipher: auto
-  network: ws
-  type: vmess
-  host: l1-do-ua-03.pucdn.me
-  path: /pucloud
-  tls: false
-  sni: 
-  udp: true
-- v: 2
   name: '🇺🇸-美国-switzerland-zurich.mah3Hoet.com'
   server: switzerland-zurich.mah3Hoet.com
   port: 443
@@ -1165,7 +873,7 @@ proxies:
 - v: 2
   name: '🇺🇸-美国-shcn2-06b.iplc188.com'
   server: shcn2-06b.iplc188.com
-  port: 10001
+  port: 10004
   uuid: 65cac56d-4155-43c8-bae0-f368cb21f771
   alterId: 1
   cipher: auto
@@ -1175,20 +883,6 @@ proxies:
   path: /
   tls: false
   sni: 
-  udp: true
-- v: 2
-  name: '🇺🇸-美国-tk.shcn2.tkddns.xyz'
-  server: tk.shcn2.tkddns.xyz
-  port: 22642
-  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
-  alterId: 2
-  cipher: auto
-  network: ws
-  type: vmess
-  host: zxjp-b.tkong.cc
-  path: /
-  tls: true
-  sni: zxjp-b.tkong.cc
   udp: true
 - v: 2
   name: '🇺🇸-美国-usa-sanfrancisco.lvuft.com'
@@ -1205,20 +899,6 @@ proxies:
   sni: 
   udp: true
 - v: 2
-  name: '🇺🇸-美国-v5.ssrsub.com'
-  server: v5.ssrsub.com
-  port: 178
-  uuid: 1b89d065-8640-4010-a80e-dc0c46a72aaf
-  alterId: 0
-  cipher: auto
-  network: ws
-  type: null
-  host: v5.ssrsub.com
-  path: /ssrsub
-  tls: true
-  sni: 
-  udp: true
-- v: 2
   name: '🇺🇸-美国-v1-aws-hk-04.niaoyun.online'
   server: v1-aws-hk-04.niaoyun.online
   port: 666
@@ -1230,20 +910,6 @@ proxies:
   host: v1-aws-hk-04.niaoyun.online
   path: /niaocloud
   tls: false
-  sni: 
-  udp: true
-- v: 2
-  name: '🇺🇸-美国-vpnhat.yhdnwm.workers.dev'
-  server: vpnhat.yhdnwm.workers.dev
-  port: 443
-  uuid: 8f91b6a0-e8ee-11ea-adc1-0242ac120020
-  alterId: 0
-  cipher: auto
-  network: ws
-  type: null
-  host: holy-pond-f89c.yhdnwm.workers.dev
-  path: /8f91b6a0-e8ee-11ea-adc1-0242ac120020-vmess
-  tls: true
   sni: 
   udp: true
 - v: 2
@@ -1263,12 +929,12 @@ proxies:
 - v: 2
   name: '🇺🇸-美国-zz.vip341.xyz'
   server: zz.vip341.xyz
-  port: 40224
+  port: 32857
   uuid: 892db7e4-1e1d-3e24-9f68-55df818e6aa1
   alterId: 2
   cipher: auto
   network: ws
-  type: vmess
+  type: null
   host: zz.vip341.xyz
   path: /ny
   tls: false
@@ -1288,19 +954,6 @@ proxies:
   tls: true
   sni: 
   udp: true
-- server: 1.0.0.0
-  v: 2
-  name: '🇺🇸-美国-1.0.0.0'
-  port: 443
-  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
-  alterId: 64
-  network: ws
-  type: vmess
-  host: cdnde.irteyz.today
-  path: /
-  tls: true
-  cipher: auto
-  udp: true
 - server: 1.0.0.140
   v: 2
   name: '🇺🇸-美国-1.0.0.140'
@@ -1312,19 +965,6 @@ proxies:
   host: sg.moss.network
   path: /s/ff5c0fb.fm.apple.com:30513
   tls: 
-  cipher: auto
-  udp: true
-- server: 104.16.16.255
-  v: 2
-  name: '🇺🇸-美国-104.16.16.255'
-  port: 443
-  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
-  alterId: 64
-  network: ws
-  type: vmess
-  host: cdnde.irteyz.today
-  path: /
-  tls: true
   cipher: auto
   udp: true
 - server: 104.16.182.15
@@ -1340,16 +980,16 @@ proxies:
   tls: true
   cipher: auto
   udp: true
-- server: 104.18.6.138
+- server: 104.17.170.210
   v: 2
-  name: '🇺🇸-美国-104.18.6.138'
+  name: '🇺🇸-美国-104.17.170.210'
   port: 443
-  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
-  alterId: 64
+  uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79
+  alterId: 1
   network: ws
   type: vmess
-  host: cdnde.irteyz.today
-  path: /
+  host: 
+  path: kycc
   tls: true
   cipher: auto
   udp: true
@@ -1366,35 +1006,9 @@ proxies:
   tls: true
   cipher: auto
   udp: true
-- server: 104.19.238.59
-  v: 2
-  name: '🇺🇸-美国-104.19.238.59'
-  port: 443
-  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
-  alterId: 64
-  network: ws
-  type: vmess
-  host: cdnde.irteyz.today
-  path: /
-  tls: true
-  cipher: auto
-  udp: true
 - server: 104.24.0.168
   v: 2
   name: '🇺🇸-美国-104.24.0.168'
-  port: 443
-  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
-  alterId: 64
-  network: ws
-  type: vmess
-  host: cdnde.irteyz.today
-  path: /
-  tls: true
-  cipher: auto
-  udp: true
-- server: 104.24.142.163
-  v: 2
-  name: '🇺🇸-美国-104.24.142.163'
   port: 443
   uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
   alterId: 64
@@ -1418,35 +1032,9 @@ proxies:
   tls: true
   cipher: auto
   udp: true
-- server: 104.24.188.46
-  v: 2
-  name: '🇺🇸-美国-104.24.188.46'
-  port: 443
-  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
-  alterId: 64
-  network: ws
-  type: vmess
-  host: cdnde.irteyz.today
-  path: /
-  tls: true
-  cipher: auto
-  udp: true
 - server: 104.24.191.139
   v: 2
   name: '🇺🇸-美国-104.24.191.139'
-  port: 443
-  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
-  alterId: 64
-  network: ws
-  type: vmess
-  host: cdnde.irteyz.today
-  path: /
-  tls: true
-  cipher: auto
-  udp: true
-- server: 104.24.138.229
-  v: 2
-  name: '🇺🇸-美国-104.24.138.229'
   port: 443
   uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
   alterId: 64
@@ -1470,35 +1058,9 @@ proxies:
   tls: true
   cipher: auto
   udp: true
-- server: 104.24.42.148
-  v: 2
-  name: '🇺🇸-美国-104.24.42.148'
-  port: 443
-  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
-  alterId: 64
-  network: ws
-  type: vmess
-  host: cdnde.irteyz.today
-  path: /
-  tls: true
-  cipher: auto
-  udp: true
 - server: 104.24.64.213
   v: 2
   name: '🇺🇸-美国-104.24.64.213'
-  port: 443
-  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
-  alterId: 64
-  network: ws
-  type: vmess
-  host: cdnde.irteyz.today
-  path: /
-  tls: true
-  cipher: auto
-  udp: true
-- server: 104.24.62.70
-  v: 2
-  name: '🇺🇸-美国-104.24.62.70'
   port: 443
   uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
   alterId: 64
@@ -1522,35 +1084,9 @@ proxies:
   tls: true
   cipher: auto
   udp: true
-- server: 104.24.94.29
-  v: 2
-  name: '🇺🇸-美国-104.24.94.29'
-  port: 443
-  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
-  alterId: 64
-  network: ws
-  type: vmess
-  host: cdnde.irteyz.today
-  path: /
-  tls: true
-  cipher: auto
-  udp: true
 - server: 104.25.143.16
   v: 2
   name: '🇺🇸-美国-104.25.143.16'
-  port: 443
-  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
-  alterId: 64
-  network: ws
-  type: vmess
-  host: cdnde.irteyz.today
-  path: /
-  tls: true
-  cipher: auto
-  udp: true
-- server: 104.25.148.216
-  v: 2
-  name: '🇺🇸-美国-104.25.148.216'
   port: 443
   uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
   alterId: 64
@@ -1574,35 +1110,9 @@ proxies:
   tls: true
   cipher: auto
   udp: true
-- server: 104.25.102.154
-  v: 2
-  name: '🇺🇸-美国-104.25.102.154'
-  port: 443
-  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
-  alterId: 64
-  network: ws
-  type: vmess
-  host: cdnde.irteyz.today
-  path: /
-  tls: true
-  cipher: auto
-  udp: true
 - server: 104.25.246.117
   v: 2
   name: '🇺🇸-美国-104.25.246.117'
-  port: 443
-  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
-  alterId: 64
-  network: ws
-  type: vmess
-  host: cdnde.irteyz.today
-  path: /
-  tls: true
-  cipher: auto
-  udp: true
-- server: 104.25.215.143
-  v: 2
-  name: '🇺🇸-美国-104.25.215.143'
   port: 443
   uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
   alterId: 64
@@ -1626,35 +1136,9 @@ proxies:
   tls: true
   cipher: auto
   udp: true
-- server: 104.25.238.45
-  v: 2
-  name: '🇺🇸-美国-104.25.238.45'
-  port: 443
-  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
-  alterId: 64
-  network: ws
-  type: vmess
-  host: cdnde.irteyz.today
-  path: /
-  tls: true
-  cipher: auto
-  udp: true
 - server: 104.25.44.133
   v: 2
   name: '🇺🇸-美国-104.25.44.133'
-  port: 443
-  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
-  alterId: 64
-  network: ws
-  type: vmess
-  host: cdnde.irteyz.today
-  path: /
-  tls: true
-  cipher: auto
-  udp: true
-- server: 104.25.46.190
-  v: 2
-  name: '🇺🇸-美国-104.25.46.190'
   port: 443
   uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
   alterId: 64
@@ -1678,35 +1162,9 @@ proxies:
   tls: true
   cipher: auto
   udp: true
-- server: 104.26.5.238
-  v: 2
-  name: '🇺🇸-美国-104.26.5.238'
-  port: 443
-  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
-  alterId: 64
-  network: ws
-  type: vmess
-  host: cdnde.irteyz.today
-  path: /
-  tls: true
-  cipher: auto
-  udp: true
 - server: 104.27.194.98
   v: 2
   name: '🇺🇸-美国-104.27.194.98'
-  port: 443
-  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
-  alterId: 64
-  network: ws
-  type: vmess
-  host: cdnde.irteyz.today
-  path: /
-  tls: true
-  cipher: auto
-  udp: true
-- server: 104.27.198.45
-  v: 2
-  name: '🇺🇸-美国-104.27.198.45'
   port: 443
   uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
   alterId: 64
@@ -1730,35 +1188,9 @@ proxies:
   tls: true
   cipher: auto
   udp: true
-- server: 104.27.37.126
-  v: 2
-  name: '🇺🇸-美国-104.27.37.126'
-  port: 443
-  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
-  alterId: 64
-  network: ws
-  type: vmess
-  host: cdnde.irteyz.today
-  path: /
-  tls: true
-  cipher: auto
-  udp: true
 - server: 104.27.84.136
   v: 2
   name: '🇺🇸-美国-104.27.84.136'
-  port: 443
-  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
-  alterId: 64
-  network: ws
-  type: vmess
-  host: cdnde.irteyz.today
-  path: /
-  tls: true
-  cipher: auto
-  udp: true
-- server: 104.27.83.11
-  v: 2
-  name: '🇺🇸-美国-104.27.83.11'
   port: 443
   uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
   alterId: 64
@@ -1782,35 +1214,9 @@ proxies:
   tls: true
   cipher: auto
   udp: true
-- server: 104.21.201.210
-  v: 2
-  name: '🇺🇸-美国-104.21.201.210'
-  port: 443
-  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
-  alterId: 64
-  network: ws
-  type: vmess
-  host: cdnde.irteyz.today
-  path: /
-  tls: true
-  cipher: auto
-  udp: true
 - server: 104.21.201.33
   v: 2
   name: '🇺🇸-美国-104.21.201.33'
-  port: 443
-  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
-  alterId: 64
-  network: ws
-  type: vmess
-  host: cdnde.irteyz.today
-  path: /
-  tls: true
-  cipher: auto
-  udp: true
-- server: 104.21.207.243
-  v: 2
-  name: '🇺🇸-美国-104.21.207.243'
   port: 443
   uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
   alterId: 64
@@ -1834,19 +1240,6 @@ proxies:
   tls: true
   cipher: auto
   udp: true
-- server: 104.21.62.193
-  v: 2
-  name: '🇺🇸-美国-104.21.62.193'
-  port: 443
-  uuid: 6a7f559d-5401-44c0-b737-bb9f8820681f
-  alterId: 233
-  network: ws
-  type: vmess
-  host: free-russian01-cdn.xiaohouzi.club
-  path: /2993fe/
-  tls: true
-  cipher: auto
-  udp: true
 - server: 103.164.81.108
   v: 2
   name: '🇦🇶-亚太地区-103.164.81.108'
@@ -1860,17 +1253,17 @@ proxies:
   tls: 
   cipher: auto
   udp: true
-- server: 103.29.69.119
+- server: 129.227.201.234
   v: 2
-  name: '🇯🇵-日本-103.29.69.119'
-  port: 80
-  uuid: 1fff330e-1645-4580-b331-23bd8b51f7af
-  alterId: 0
+  name: '🇭🇰-香港-129.227.201.234'
+  port: 443
+  uuid: aba50dd4-5484-3b05-b14a-4661caf862d5
+  alterId: 4
   network: ws
   type: vmess
-  host: t.me/vpnhat
-  path: /
-  tls: 
+  host: aicoo6du.com
+  path: /ws
+  tls: true
   cipher: auto
   udp: true
 - server: 137.175.30.251
@@ -1879,22 +1272,61 @@ proxies:
   port: 111
   uuid: 77cd775c-1c0a-11ec-a1a8-00163c1393a8
   alterId: 0
-  network: tcp
+  network: 
   type: vmess
   host: 
-  path: /
+  path: 
   tls: 
   cipher: auto
   udp: true
-- server: 146.70.46.68
+- server: 139.162.51.223
   v: 2
-  name: '🇬🇧-英国-146.70.46.68'
+  name: '🇸🇬-新加坡-139.162.51.223'
+  port: 51939
+  uuid: 4db2a027-17fb-4d27-b8ca-93b548e487a2
+  alterId: 0
+  network: 
+  type: vmess
+  host: 
+  path: 
+  tls: 
+  cipher: auto
+  udp: true
+- server: 13.236.109.118
+  v: 2
+  name: '🇦🇺-澳大利亚-13.236.109.118'
   port: 443
   uuid: aba50dd4-5484-3b05-b14a-4661caf862d5
   alterId: 4
   network: ws
   type: vmess
-  host: uk-manchester.eiw2eemo.com
+  host: 
+  path: /ws
+  tls: true
+  cipher: auto
+  udp: true
+- server: 146.70.71.2
+  v: 2
+  name: '🇬🇧-英国-146.70.71.2'
+  port: 443
+  uuid: aba50dd4-5484-3b05-b14a-4661caf862d5
+  alterId: 4
+  network: ws
+  type: vmess
+  host: switzerland-zurich.mah3Hoet.com
+  path: /ws
+  tls: true
+  cipher: auto
+  udp: true
+- server: 146.70.73.2
+  v: 2
+  name: '🇬🇧-英国-146.70.73.2'
+  port: 443
+  uuid: aba50dd4-5484-3b05-b14a-4661caf862d5
+  alterId: 4
+  network: ws
+  type: vmess
+  host: italy-milan.mah3Hoet.com
   path: /ws
   tls: true
   cipher: auto
@@ -1912,35 +1344,9 @@ proxies:
   tls: 
   cipher: auto
   udp: true
-- server: 154.31.41.10
-  v: 2
-  name: '🇺🇸-美国-154.31.41.10'
-  port: 443
-  uuid: aba50dd4-5484-3b05-b14a-4661caf862d5
-  alterId: 4
-  network: ws
-  type: vmess
-  host: chuch3go.com
-  path: /ws
-  tls: true
-  cipher: auto
-  udp: true
 - server: 162.159.224.228
   v: 2
   name: '🇺🇸-美国-162.159.224.228'
-  port: 443
-  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
-  alterId: 64
-  network: ws
-  type: vmess
-  host: cdnde.irteyz.today
-  path: /
-  tls: true
-  cipher: auto
-  udp: true
-- server: 162.159.238.197
-  v: 2
-  name: '🇺🇸-美国-162.159.238.197'
   port: 443
   uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
   alterId: 64
@@ -1964,35 +1370,9 @@ proxies:
   tls: true
   cipher: auto
   udp: true
-- server: 172.67.112.66
-  v: 2
-  name: '🇺🇸-美国-172.67.112.66'
-  port: 443
-  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
-  alterId: 64
-  network: ws
-  type: vmess
-  host: cdnde.irteyz.today
-  path: /
-  tls: true
-  cipher: auto
-  udp: true
 - server: 172.67.117.187
   v: 2
   name: '🇺🇸-美国-172.67.117.187'
-  port: 443
-  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
-  alterId: 64
-  network: ws
-  type: vmess
-  host: cdnde.irteyz.today
-  path: /
-  tls: true
-  cipher: auto
-  udp: true
-- server: 172.67.126.56
-  v: 2
-  name: '🇺🇸-美国-172.67.126.56'
   port: 443
   uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
   alterId: 64
@@ -2016,19 +1396,6 @@ proxies:
   tls: true
   cipher: auto
   udp: true
-- server: 172.67.222.157
-  v: 2
-  name: '🇺🇸-美国-172.67.222.157'
-  port: 443
-  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
-  alterId: 64
-  network: ws
-  type: vmess
-  host: cdnde.irteyz.today
-  path: /
-  tls: true
-  cipher: auto
-  udp: true
 - server: 172.67.88.37
   v: 2
   name: '🇺🇸-美国-172.67.88.37'
@@ -2042,29 +1409,29 @@ proxies:
   tls: true
   cipher: auto
   udp: true
-- server: 194.135.32.208
+- server: 185.225.69.134
   v: 2
-  name: '🇷🇺-俄罗斯-194.135.32.208'
-  port: 32551
-  uuid: 9d40aefc-54d9-11ec-af2d-f2c157360b1e
-  alterId: 0
-  network: ws
+  name: '🇦🇶-匈牙利-185.225.69.134'
+  port: 45081
+  uuid: 3c3bfd75-dc30-4e76-8940-47e1137e21f9
+  alterId: 64
+  network: tcp
   type: vmess
   host: 
-  path: /W9s28k1i/
+  path: /
   tls: 
   cipher: auto
   udp: true
-- server: 198.200.51.34
+- server: 198.200.51.18
   v: 2
-  name: '🇺🇸-美国-198.200.51.34'
-  port: 10911
-  uuid: 53e483d4-1ea9-11ec-ad60-00163cc87418
+  name: '🇺🇸-美国-198.200.51.18'
+  port: 600
+  uuid: 42f7eabe-0d3f-11ec-859b-00163caf481c
   alterId: 0
-  network: 
+  network: tcp
   type: vmess
   host: 
-  path: 
+  path: /
   tls: 
   cipher: auto
   udp: true
@@ -2094,17 +1461,17 @@ proxies:
   tls: true
   cipher: auto
   udp: true
-- server: 45.35.84.162
+- server: 212.80.205.133
   v: 2
-  name: '🇺🇸-美国-45.35.84.162'
-  port: 443
-  uuid: aba50dd4-5484-3b05-b14a-4661caf862d5
-  alterId: 4
-  network: ws
+  name: '🇦🇶-以色列-212.80.205.133'
+  port: 31262
+  uuid: 00415a68-d5eb-4573-b73e-2b21f6b45c5d
+  alterId: 64
+  network: 
   type: vmess
-  host: usa-dallas.lvuft.com
-  path: /ws
-  tls: true
+  host: 
+  path: /
+  tls: 
   cipher: auto
   udp: true
 - server: 45.63.56.11
@@ -2117,19 +1484,6 @@ proxies:
   type: vmess
   host: 
   path: /anBAWUi4/
-  tls: 
-  cipher: auto
-  udp: true
-- server: 45.8.159.221
-  v: 2
-  name: '🇷🇺-俄罗斯-45.8.159.221'
-  port: 443
-  uuid: e5af0cad-295c-37b2-b601-f35d13f6b1bb
-  alterId: 32
-  network: ws
-  type: vmess
-  host: pull.free.video.10010.com
-  path: /
   tls: 
   cipher: auto
   udp: true
@@ -2146,16 +1500,16 @@ proxies:
   tls: true
   cipher: auto
   udp: true
-- server: 47.242.3.85
+- server: 62.210.90.75
   v: 2
-  name: '🇭🇰-香港-47.242.3.85'
+  name: '🇫🇷-法国-62.210.90.75'
   port: 443
-  uuid: f6769679-3960-33d4-a91e-35a04bc190de
-  alterId: 1
+  uuid: aba50dd4-5484-3b05-b14a-4661caf862d5
+  alterId: 4
   network: ws
   type: vmess
-  host: s224.snode.xyz
-  path: /panel
+  host: ahdaeph8.com
+  path: /ws
   tls: true
   cipher: auto
   udp: true
@@ -2180,7 +1534,7 @@ proxies:
   alterId: 1
   network: ws
   type: vmess
-  host: 8.210.55.79
+  host: 
   path: /
   tls: 
   cipher: auto
@@ -2198,19 +1552,6 @@ proxies:
   tls: 
   cipher: auto
   udp: true
-- server: Eiha7iew.com
-  v: 2
-  name: '🇺🇸-美国-Eiha7iew.com'
-  port: 443
-  uuid: aba50dd4-5484-3b05-b14a-4661caf862d5
-  alterId: 4
-  network: ws
-  type: vmess
-  host: Eiha7iew.com
-  path: /ws
-  tls: true
-  cipher: auto
-  udp: true
 - server: Ze9baeS5.com
   v: 2
   name: '🇺🇸-美国-Ze9baeS5.com'
@@ -2224,17 +1565,30 @@ proxies:
   tls: true
   cipher: auto
   udp: true
-- server: cn.zzv01.infonode.xyz
+- server: cm2.cheapv2.xyz
   v: 2
-  name: '🇺🇸-美国-cn.zzv01.infonode.xyz'
-  port: 17011
-  uuid: ecb2dfcc-d5ec-3bb5-bb03-c22faac98448
-  alterId: 0
+  name: '🇺🇸-美国-cm2.cheapv2.xyz'
+  port: 28802
+  uuid: 44b7192f-7539-3cde-a0a7-2d4d1361cadf
+  alterId: 2
   network: ws
   type: vmess
-  host: cn.zzv01.infonode.xyz
-  path: /v2ray
+  host: cm2.cheapv2.xyz
+  path: /index
   tls: 
+  cipher: auto
+  udp: true
+- server: cmhk04.xc188.net
+  v: 2
+  name: '🇺🇸-美国-cmhk04.xc188.net'
+  port: 443
+  uuid: 65cac56d-4155-43c8-bae0-f368cb21f771
+  alterId: 1
+  network: ws
+  type: vmess
+  host: cmhk04.xc188.net
+  path: /clientarea
+  tls: true
   cipher: auto
   udp: true
 - server: canada-vancouver.mah3Hoet.com
@@ -2276,19 +1630,6 @@ proxies:
   tls: 
   cipher: auto
   udp: true
-- server: a83679f.th.cloudflare.systems
-  v: 2
-  name: '🇺🇸-美国-a83679f.th.cloudflare.systems'
-  port: 80
-  uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0
-  alterId: 32
-  network: ws
-  type: vmess
-  host: 
-  path: /t
-  tls: 
-  cipher: auto
-  udp: true
 - server: a83679f.tt.cloudflare.systems
   v: 2
   name: '🇺🇸-美国-a83679f.tt.cloudflare.systems'
@@ -2302,10 +1643,10 @@ proxies:
   tls: 
   cipher: auto
   udp: true
-- server: a83679f.ha.gladns.com
+- server: a83679f.cw.cloudflare.systems
   v: 2
-  name: '🇺🇸-美国-a83679f.ha.gladns.com'
-  port: 3306
+  name: '🇺🇸-美国-a83679f.cw.cloudflare.systems'
+  port: 80
   uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0
   alterId: 32
   network: ws
@@ -2328,35 +1669,9 @@ proxies:
   tls: 
   cipher: auto
   udp: true
-- server: a83679f.mc.cloudflare.systems
-  v: 2
-  name: '🇺🇸-美国-a83679f.mc.cloudflare.systems'
-  port: 80
-  uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0
-  alterId: 32
-  network: ws
-  type: vmess
-  host: 
-  path: /t
-  tls: 
-  cipher: auto
-  udp: true
 - server: a83679f.md.cloudflare.systems
   v: 2
   name: '🇺🇸-美国-a83679f.md.cloudflare.systems'
-  port: 80
-  uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0
-  alterId: 32
-  network: ws
-  type: vmess
-  host: 
-  path: /t
-  tls: 
-  cipher: auto
-  udp: true
-- server: a83679f.me.cloudflare.systems
-  v: 2
-  name: '🇺🇸-美国-a83679f.me.cloudflare.systems'
   port: 80
   uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0
   alterId: 32
@@ -2380,9 +1695,9 @@ proxies:
   tls: 
   cipher: auto
   udp: true
-- server: a83679f.os.cloudflare.systems
+- server: a83679f.mi.cloudflare.systems
   v: 2
-  name: '🇺🇸-美国-a83679f.os.cloudflare.systems'
+  name: '🇺🇸-美国-a83679f.mi.cloudflare.systems'
   port: 80
   uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0
   alterId: 32
@@ -2406,17 +1721,30 @@ proxies:
   tls: 
   cipher: auto
   udp: true
-- server: ahH4eihu.com
+- server: a83679f.rd.gladns.com
   v: 2
-  name: '🇺🇸-美国-ahH4eihu.com'
-  port: 443
-  uuid: aba50dd4-5484-3b05-b14a-4661caf862d5
-  alterId: 4
+  name: '🇺🇸-美国-a83679f.rd.gladns.com'
+  port: 80
+  uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0
+  alterId: 32
   network: ws
   type: vmess
   host: 
-  path: /ws
-  tls: true
+  path: /t
+  tls: 
+  cipher: auto
+  udp: true
+- server: a83679f.rf.gladns.com
+  v: 2
+  name: '🇺🇸-美国-a83679f.rf.gladns.com'
+  port: 80
+  uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0
+  alterId: 32
+  network: ws
+  type: vmess
+  host: 
+  path: /t
+  tls: 
   cipher: auto
   udp: true
 - server: ahdaeph8.com
@@ -2432,18 +1760,669 @@ proxies:
   tls: true
   cipher: auto
   udp: true
-- server: c27821f.wx.gladns.com
+- server: armsj2.kozow.com
   v: 2
-  name: '🇺🇸-美国-c27821f.wx.gladns.com'
+  name: '🇺🇸-美国-armsj2.kozow.com'
+  port: 80
+  uuid: 44e0d410-535a-11ec-968f-02001700aa14
+  alterId: 0
+  network: ws
+  type: vmess
+  host: 
+  path: /
+  tls: 
+  cipher: auto
+  udp: true
+- server: c27821f.rb.cloudflare.systems
+  v: 2
+  name: '🇺🇸-美国-c27821f.rb.cloudflare.systems'
+  port: 80
+  uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0
+  alterId: 0
+  network: ws
+  type: vmess
+  host: 
+  path: /s/c27821f.fm.icloud.com:16708
+  tls: 
+  cipher: auto
+  udp: true
+- server: d0a8692.t2.gladns.com
+  v: 2
+  name: '🇺🇸-美国-d0a8692.t2.gladns.com'
+  port: 3306
+  uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0
+  alterId: 32
+  network: ws
+  type: vmess
+  host: test.moss.network
+  path: /s/d0a8692.fm.apple.com:32667
+  tls: 
+  cipher: auto
+  udp: true
+- server: d0a8692.ha.gladns.com
+  v: 2
+  name: '🇺🇸-美国-d0a8692.ha.gladns.com'
+  port: 3306
+  uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0
+  alterId: 32
+  network: ws
+  type: vmess
+  host: api.apple.com
+  path: /s/d0a8692.fm.apple.com:32667
+  tls: 
+  cipher: auto
+  udp: true
+- server: d0a8692.hc.gladns.com
+  v: 2
+  name: '🇺🇸-美国-d0a8692.hc.gladns.com'
+  port: 3306
+  uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0
+  alterId: 32
+  network: ws
+  type: vmess
+  host: api.skype.com
+  path: /s/d0a8692.fm.apple.com:32667
+  tls: 
+  cipher: auto
+  udp: true
+- server: d0a8692.hf.gladns.com
+  v: 2
+  name: '🇺🇸-美国-d0a8692.hf.gladns.com'
+  port: 3306
+  uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0
+  alterId: 32
+  network: ws
+  type: vmess
+  host: api.icloud.com
+  path: /s/d0a8692.fm.apple.com:32667
+  tls: 
+  cipher: auto
+  udp: true
+- server: eeh7iewe.com
+  v: 2
+  name: '🇺🇸-美国-eeh7iewe.com'
+  port: 443
+  uuid: aba50dd4-5484-3b05-b14a-4661caf862d5
+  alterId: 4
+  network: ws
+  type: vmess
+  host: 
+  path: /ws
+  tls: true
+  cipher: auto
+  udp: true
+- server: ff5c0fb.hb.gladns.com
+  v: 2
+  name: '🇺🇸-美国-ff5c0fb.hb.gladns.com'
   port: 3306
   uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0
   alterId: 0
   network: ws
   type: vmess
-  host: c27821f.wx.gladns.com
-  path: /s/c27821f.fm.apple.com:16708
+  host: baidu.com
+  path: /s/ff5c0fb.fm.apple.com:30513
   tls: 
   cipher: auto
+  udp: true
+- server: ff5c0fb.rb.cloudflare.systems
+  v: 2
+  name: '🇺🇸-美国-ff5c0fb.rb.cloudflare.systems'
+  port: 80
+  uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0
+  alterId: 0
+  network: ws
+  type: vmess
+  host: 
+  path: /s/ff5c0fb.fm.icloud.com:30513
+  tls: 
+  cipher: auto
+  udp: true
+- server: ff5c0fb.re.gladns.com
+  v: 2
+  name: '🇺🇸-美国-ff5c0fb.re.gladns.com'
+  port: 443
+  uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0
+  alterId: 0
+  network: ws
+  type: vmess
+  host: ff5c0fb.fm.icloud.com:30513
+  path: /s/ff5c0fb.fm.icloud.com:30513
+  tls: true
+  cipher: auto
+  udp: true
+- server: free-russian-cdn.xiaohouzi.club
+  v: 2
+  name: '🇺🇸-美国-free-russian-cdn.xiaohouzi.club'
+  port: 443
+  uuid: e64c6f7c-48eb-4852-9b29-778faef14212
+  alterId: 233
+  network: ws
+  type: vmess
+  host: free-russian-cdn.xiaohouzi.club
+  path: /319285eb2d/
+  tls: true
+  cipher: auto
+  udp: true
+- server: kr3.futi.online
+  v: 2
+  name: '🇺🇸-美国-kr3.futi.online'
+  port: 2053
+  uuid: fec5fd62-56e7-431a-99b3-c1f76c5cbe8d
+  alterId: 1
+  network: ws
+  type: vmess
+  host: kr3.futi.online
+  path: /
+  tls: true
+  cipher: auto
+  udp: true
+- server: hkbn-home-a.zc20200426.club
+  v: 2
+  name: '🇺🇸-美国-hkbn-home-a.zc20200426.club'
+  port: 40000
+  uuid: ab6e388b-3b1b-39b6-8b5c-9074224a9b48
+  alterId: 2
+  network: 
+  type: vmess
+  host: 
+  path: 
+  tls: true
+  cipher: auto
+  udp: true
+- server: sg.idvpn.me
+  v: 2
+  name: '🇺🇸-美国-sg.idvpn.me'
+  port: 8443
+  uuid: c74e2d99-6fbd-4e87-dc25-c05348571ef1
+  alterId: 0
+  network: ws
+  type: vmess
+  host: 
+  path: HTTPS://T.ME/NGE_GASSS•HTTPS://T.ME/DUNIAVPN
+  tls: true
+  cipher: auto
+  udp: true
+- server: www.garmin.com
+  v: 2
+  name: '🇺🇸-美国-www.garmin.com'
+  port: 443
+  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
+  alterId: 64
+  network: ws
+  type: vmess
+  host: cdnde.irteyz.today
+  path: /
+  tls: true
+  cipher: auto
+  udp: true
+- server: tk.shcn2.tkddns.xyz
+  v: 2
+  name: '🇺🇸-美国-tk.shcn2.tkddns.xyz'
+  port: 22642
+  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
+  alterId: 2
+  network: ws
+  type: vmess
+  host: zxjp-b.tkong.cc
+  path: /
+  tls: true
+  cipher: auto
+  udp: true
+- server: tw-tb-f.zc20200426.club
+  v: 2
+  name: '🇺🇸-美国-tw-tb-f.zc20200426.club'
+  port: 40000
+  uuid: ab6e388b-3b1b-39b6-8b5c-9074224a9b48
+  alterId: 2
+  network: 
+  type: vmess
+  host: 
+  path: 
+  tls: true
+  cipher: auto
+  udp: true
+- server: us1nhg-node.aiqiche123.com
+  v: 2
+  name: '🇺🇸-美国-us1nhg-node.aiqiche123.com'
+  port: 13723
+  uuid: a90597c1-bab3-4217-ad6f-0838675c8634
+  alterId: 10
+  network: ws
+  type: vmess
+  host: 
+  path: ray
+  tls: true
+  cipher: auto
+  udp: true
+- server: usa-buffalo.lvuft.com
+  v: 2
+  name: '🇺🇸-美国-usa-buffalo.lvuft.com'
+  port: 443
+  uuid: aba50dd4-5484-3b05-b14a-4661caf862d5
+  alterId: 4
+  network: ws
+  type: vmess
+  host: usa-buffalo.lvuft.com
+  path: /ws
+  tls: true
+  cipher: auto
+  udp: true
+- server: usa-lasvegas.lvuft.com
+  v: 2
+  name: '🇺🇸-美国-usa-lasvegas.lvuft.com'
+  port: 443
+  uuid: aba50dd4-5484-3b05-b14a-4661caf862d5
+  alterId: 4
+  network: ws
+  type: vmess
+  host: usa-lasvegas.lvuft.com
+  path: /ws
+  tls: true
+  cipher: auto
+  udp: true
+- server: usa-washington.lvuft.com
+  v: 2
+  name: '🇺🇸-美国-usa-washington.lvuft.com'
+  port: 443
+  uuid: aba50dd4-5484-3b05-b14a-4661caf862d5
+  alterId: 4
+  network: ws
+  type: vmess
+  host: 
+  path: /ws
+  tls: true
+  cipher: auto
+  udp: true
+- server: v1.ssrsub.com
+  v: 2
+  name: '🇺🇸-美国-v1.ssrsub.com'
+  port: 178
+  uuid: 0e13b5a9-cb62-44cd-b28e-47f137624694
+  alterId: 0
+  network: ws
+  type: vmess
+  host: 
+  path: /ssrsub
+  tls: true
+  cipher: auto
+  udp: true
+- server: v2.ssrsub.com
+  v: 2
+  name: '🇺🇸-美国-v2.ssrsub.com'
+  port: 178
+  uuid: 1b89d065-8640-4010-a80e-dc0c46a72aaf
+  alterId: 0
+  network: ws
+  type: vmess
+  host: 
+  path: /ssrsub
+  tls: true
+  cipher: auto
+  udp: true
+- server: v5.ssrsub.com
+  v: 2
+  name: '🇺🇸-美国-v5.ssrsub.com'
+  port: 178
+  uuid: 1b89d065-8640-4010-a80e-dc0c46a72aaf
+  alterId: 0
+  network: ws
+  type: vmess
+  host: 
+  path: /ssrsub
+  tls: true
+  cipher: auto
+  udp: true
+- server: xe3rayu3.com
+  v: 2
+  name: '🇺🇸-美国-xe3rayu3.com'
+  port: 443
+  uuid: aba50dd4-5484-3b05-b14a-4661caf862d5
+  alterId: 4
+  network: ws
+  type: vmess
+  host: xe3rayu3.com
+  path: /ws
+  tls: true
+  cipher: auto
+  udp: true
+- name: '🇷🇴-罗马尼亚-79.110.54.162'
+  server: 79.110.54.162
+  type: vmess
+  country: 🇷🇴RO
+  port: 443
+  uuid: aba50dd4-5484-3b05-b14a-4661caf862d5
+  alterId: 4
+  cipher: auto
+  network: ws
+  path: /ws
+  servername: usa-lasvegas.lvuft.com
+  ws-headers: HOST:usa-lasvegas.lvuft.com
+  http-opts: 
+  h2-opts: 
+  tls: true
+  skip-cert-verify: true
+  udp: true
+- name: '🇸🇬-新加坡-104.248.148.147'
+  server: 104.248.148.147
+  port: 21888
+  type: vmess
+  uuid: ae7486f9-d7b7-4f26-97a0-dc5b093dfa89
+  alterId: 1
+  cipher: auto
+  skip-cert-vertify: false
+  network: ws
+  path: /
+  tls: false
+  host: 104.248.148.147
+  udp: true
+- name: '🇸🇬-新加坡-103.253.26.134'
+  server: 103.253.26.134
+  type: vmess
+  country: 🇸🇬SG
+  port: 443
+  uuid: aba50dd4-5484-3b05-b14a-4661caf862d5
+  alterId: 4
+  cipher: auto
+  network: ws
+  path: /ws
+  servername: eeh7iewe.com
+  ws-headers: HOST:eeh7iewe.com
+  http-opts: 
+  h2-opts: 
+  tls: true
+  skip-cert-verify: true
+  udp: true
+- name: '🇸🇬-新加坡-103.83.156.89'
+  server: 103.83.156.89
+  port: 8888
+  type: vmess
+  uuid: ae7486f9-d7b7-4f26-97a0-dc5b093dfa89
+  alterId: 1
+  cipher: auto
+  skip-cert-vertify: false
+  network: ws
+  path: /
+  tls: false
+  host: 103.83.156.89
+  udp: true
+- name: '🇸🇬-新加坡-172.105.113.182'
+  server: 172.105.113.182
+  type: vmess
+  country: 🇸🇬SG
+  port: 59633
+  uuid: f0dad28b-c9d3-44e7-9447-6a99fe35abb6
+  alterId: 0
+  cipher: auto
+  network: tcp
+  path: /
+  http-opts: 
+  h2-opts: 
+  skip-cert-verify: true
+  udp: true
+- name: '🇸🇬-新加坡-52.77.238.80'
+  server: 52.77.238.80
+  type: vmess
+  country: 🇸🇬SG
+  port: 54250
+  uuid: cde1071a-5569-11ec-b2df-93fe41846976
+  alterId: 0
+  cipher: auto
+  network: ws
+  path: /gIWQkO7s/
+  http-opts: 
+  h2-opts: 
+  skip-cert-verify: true
+  udp: true
+- name: '🇹🇼-台湾-60.249.3.226'
+  server: 60.249.3.226
+  type: vmess
+  port: 80
+  udp: true
+  uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0
+  alterId: 0
+  cipher: auto
+  network: ws
+  path: /s/ff5c0fb.fm.icloud.com:30513
+  host: icloud.com
+  http-opts: 
+  h2-opts: 
+  udp: true
+- name: '🇺🇸-美国-1.0.0.123'
+  server: 1.0.0.123
+  type: vmess
+  country: 🇦🇺AU
+  port: 80
+  uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0
+  alterId: 0
+  cipher: auto
+  network: ws
+  path: /s/ff5c0fb.fm.apple.com:30513
+  servername: trump.moss.network
+  ws-headers: HOST:trump.moss.network
+  http-opts: 
+  h2-opts: 
+  skip-cert-verify: true
+  udp: true
+- name: '🇺🇸-美国-104.16.149.48'
+  server: 104.16.149.48
+  type: vmess
+  country: 🇺🇸US
+  port: 443
+  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
+  alterId: 64
+  cipher: auto
+  network: ws
+  path: /
+  servername: cdnde.irteyz.today
+  ws-headers: HOST:cdnde.irteyz.today
+  http-opts: 
+  h2-opts: 
+  tls: true
+  skip-cert-verify: true
+  udp: true
+- name: '🇺🇸-美国-104.16.160.209'
+  server: 104.16.160.209
+  type: vmess
+  country: 🇺🇸US
+  port: 443
+  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
+  alterId: 64
+  cipher: auto
+  network: ws
+  path: /
+  servername: cdnde.irteyz.today
+  ws-headers: HOST:cdnde.irteyz.today
+  http-opts: 
+  h2-opts: 
+  tls: true
+  skip-cert-verify: true
+  udp: true
+- name: '🇺🇸-美国-104.16.166.137'
+  server: 104.16.166.137
+  type: vmess
+  country: 🇺🇸US
+  port: 443
+  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
+  alterId: 64
+  cipher: auto
+  network: ws
+  path: /
+  servername: cdnde.irteyz.today
+  ws-headers: HOST:cdnde.irteyz.today
+  http-opts: 
+  h2-opts: 
+  tls: true
+  skip-cert-verify: true
+  udp: true
+- name: '🇺🇸-美国-104.16.172.213'
+  server: 104.16.172.213
+  type: vmess
+  country: 🇺🇸US
+  port: 443
+  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
+  alterId: 64
+  cipher: auto
+  network: ws
+  path: /
+  servername: cdnde.irteyz.today
+  ws-headers: HOST:cdnde.irteyz.today
+  http-opts: 
+  h2-opts: 
+  tls: true
+  skip-cert-verify: true
+  udp: true
+- name: '🇺🇸-美国-104.16.181.15'
+  server: 104.16.181.15
+  type: vmess
+  country: 🇺🇸US
+  port: 443
+  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
+  alterId: 64
+  cipher: auto
+  network: ws
+  path: /
+  servername: cdnde.irteyz.today
+  ws-headers: HOST:cdnde.irteyz.today
+  http-opts: 
+  h2-opts: 
+  tls: true
+  skip-cert-verify: true
+  udp: true
+- name: '🇺🇸-美国-104.16.98.249'
+  server: 104.16.98.249
+  type: vmess
+  country: 🇺🇸US
+  port: 443
+  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
+  alterId: 64
+  cipher: auto
+  network: ws
+  path: /
+  servername: cdnde.irteyz.today
+  ws-headers: HOST:cdnde.irteyz.today
+  http-opts: 
+  h2-opts: 
+  tls: true
+  skip-cert-verify: true
+  udp: true
+- name: '🇺🇸-美国-104.17.188.91'
+  server: 104.17.188.91
+  type: vmess
+  country: 🇺🇸US
+  port: 443
+  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
+  alterId: 64
+  cipher: auto
+  network: ws
+  path: /
+  servername: cdnde.irteyz.today
+  ws-headers: HOST:cdnde.irteyz.today
+  http-opts: 
+  h2-opts: 
+  tls: true
+  skip-cert-verify: true
+  udp: true
+- name: '🇺🇸-美国-104.17.105.81'
+  server: 104.17.105.81
+  type: vmess
+  country: 🇺🇸US
+  port: 443
+  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
+  alterId: 64
+  cipher: auto
+  network: ws
+  path: /
+  servername: cdnde.irteyz.today
+  ws-headers: HOST:cdnde.irteyz.today
+  http-opts: 
+  h2-opts: 
+  tls: true
+  skip-cert-verify: true
+  udp: true
+- name: '🇺🇸-美国-104.17.134.136'
+  server: 104.17.134.136
+  type: vmess
+  country: 🇺🇸US
+  port: 443
+  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
+  alterId: 64
+  cipher: auto
+  network: ws
+  path: /
+  servername: cdnde.irteyz.today
+  ws-headers: HOST:cdnde.irteyz.today
+  http-opts: 
+  h2-opts: 
+  tls: true
+  skip-cert-verify: true
+  udp: true
+- name: '🇺🇸-美国-104.17.36.178'
+  server: 104.17.36.178
+  type: vmess
+  country: 🇺🇸US
+  port: 443
+  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
+  alterId: 64
+  cipher: auto
+  network: ws
+  path: /
+  servername: cdnde.irteyz.today
+  ws-headers: HOST:cdnde.irteyz.today
+  http-opts: 
+  h2-opts: 
+  tls: true
+  skip-cert-verify: true
+  udp: true
+- name: '🇺🇸-美国-104.17.46.56'
+  server: 104.17.46.56
+  type: vmess
+  country: 🇺🇸US
+  port: 443
+  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
+  alterId: 64
+  cipher: auto
+  network: ws
+  path: /
+  servername: cdnde.irteyz.today
+  ws-headers: HOST:cdnde.irteyz.today
+  http-opts: 
+  h2-opts: 
+  tls: true
+  skip-cert-verify: true
+  udp: true
+- name: '🇺🇸-美国-104.17.98.24'
+  server: 104.17.98.24
+  type: vmess
+  country: 🇺🇸US
+  port: 443
+  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
+  alterId: 64
+  cipher: auto
+  network: ws
+  path: /
+  servername: cdnde.irteyz.today
+  ws-headers: HOST:cdnde.irteyz.today
+  http-opts: 
+  h2-opts: 
+  tls: true
+  skip-cert-verify: true
+  udp: true
+- name: '🇺🇸-美国-104.18.1.240'
+  server: 104.18.1.240
+  type: vmess
+  country: 🇺🇸US
+  port: 443
+  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
+  alterId: 64
+  cipher: auto
+  network: ws
+  path: /
+  servername: cdnde.irteyz.today
+  ws-headers: HOST:cdnde.irteyz.today
+  http-opts: 
+  h2-opts: 
+  tls: true
+  skip-cert-verify: true
   udp: true
 proxy-groups:
 - name: "\U0001F530 节点选择"
@@ -2451,393 +2430,393 @@ proxy-groups:
   proxies:
   - "♻️ 自动选择"
   - "\U0001F3AF 全球直连"
+  - "[12-07]-🇺🇸-美国-1043-t1.ssrsub.com"
   - "[12-07]-🇺🇸-美国-001-t2.ssrsub.com"
-  - "[12-07]-🇺🇸-美国-733-t3.ssrsub.com"
-  - "[12-07]-🇺🇸-美国-737-t4.ssrsub.com"
-  - "[12-07]-🇺🇸-美国-741-t7.ssrsub.com"
+  - "[12-07]-🇺🇸-美国-003-t4.ssrsub.com"
+  - "[12-07]-🇺🇸-美国-1041-t5.ssrsub.com"
+  - "[12-07]-🇺🇸-美国-1039-t2.ssrsub.com"
+  - "[12-07]-🇺🇸-美国-1045-t3.ssrsub.com"
   - "[12-07]-🇺🇸-美国-005-t4.ssrsub.com"
-  - "[12-07]-🇷🇴-罗马尼亚-3029-185.126.116.235"
-  - "[12-07]-🇬🇧-英国-3017-185.171.120.144"
-  - "[12-07]-🇺🇸-美国-3041-72.167.45.6"
+  - "[12-07]-🇺🇸-美国-1037-t5.ssrsub.com"
+  - "[12-07]-🇬🇧-英国-007-185.171.120.144"
+  - "[12-07]-🇯🇵-日本-3181-5.183.177.111"
+  - "[12-07]-🇺🇦-乌克兰-3177-5.183.179.138"
+  - "[12-07]-🇷🇴-罗马尼亚-3197-62.216.92.179"
+  - "[12-07]-🇸🇬-新加坡-3203-81.90.189.85"
   - "[12-07]-🇨🇭-瑞士-009-89.31.127.151"
-  - "[12-07]-🇺🇸-美国-409-t3.ssrsub.com"
-  - "[12-07]-🇺🇸-美国-437-t6.ssrsub.com"
-  - "[12-07]-🇷🇴-罗马尼亚-013-185.126.116.235"
-  - "[12-07]-🇺🇸-美国-3045-sg-server-01.selfupay.com"
-  - "[12-07]-🇦🇶-北美地区-3053-107.174.39.16"
-  - "[12-07]-🇦🇶-北美地区-017-107.174.67.108"
-  - "[12-07]-🇷🇺-俄罗斯-3037-194.156.120.236"
-  - "[12-07]-🇺🇸-美国加利福尼亚州洛杉矶-021-23.234.244.175"
-  - "[12-07]-🇳🇱-荷兰-3009-80.78.132.239"
-  - "[12-07]-🇬🇧-英国-025-185.171.120.144"
-  - "[12-07]-🇯🇵-日本-1285-5.183.177.111"
-  - "[12-07]-🇯🇵-日本-3013-5.183.177.111"
-  - "[12-07]-🇷🇴-罗马尼亚-3025-62.216.92.179"
-  - "[12-07]-🇷🇴-罗马尼亚-3033-62.216.92.180"
-  - "[12-07]-🇺🇸-美国-3049-72.167.45.6"
-  - "[12-07]-🇨🇭-瑞士-3021-89.31.127.151"
-  - "[12-07]-🇺🇸-美国-3057-usa-server-02.selfupay.com"
+  - "[12-07]-🇺🇸-美国-011-t6.ssrsub.com"
+  - "[12-07]-🇺🇸-美国-3205-184.168.127.50"
+  - "[12-07]-🇷🇴-罗马尼亚-3191-62.216.92.180"
+  - "[12-07]-🇺🇸-美国-3213-72.167.45.6"
+  - "[12-07]-🇨🇭-瑞士-3185-89.31.127.151"
+  - "[12-07]-🇺🇸-美国-3201-hk-server-01.selfupay.com"
+  - "[12-07]-🇺🇸-美国-3193-hk-server-02.selfupay.com"
+  - "[12-07]-🇺🇸-美国-3179-jp-server-02.selfupay.com"
+  - "[12-07]-🇺🇸-美国-3189-ned-server-01.selfupay.com"
+  - "[12-07]-🇺🇸-美国-013-sg-server-01.selfupay.com"
+  - "[12-07]-🇺🇸-美国-3209-usa-server-02.selfupay.com"
+  - "[12-07]-🇦🇶-北美地区-015-107.174.67.108"
+  - "[12-07]-🇺🇸-美国加利福尼亚州洛杉矶-017-23.234.244.175"
+  - "[12-07]-🇺🇸-美国-3207-184.168.127.50"
+  - "[12-07]-🇬🇧-英国-019-185.171.120.144"
+  - "[12-07]-🇯🇵-日本-021-5.183.177.111"
+  - "[12-07]-🇷🇴-罗马尼亚-023-62.216.92.180"
+  - "[12-07]-🇨🇭-瑞士-025-89.31.127.151"
+  - "[12-07]-🇺🇸-美国-3199-hk-server-01.selfupay.com"
+  - "[12-07]-🇺🇸-美国-3195-hk-server-02.selfupay.com"
+  - "[12-07]-🇺🇸-美国-3183-jp-server-02.selfupay.com"
+  - "[12-07]-🇺🇸-美国-3187-ned-server-01.selfupay.com"
+  - "[12-07]-🇺🇸-美国-3211-tw.softbank.mjj-home.com"
   - "🇦🇶-爱尔兰-52.48.89.93"
-  - "🇦🇶-亚太地区-103.172.116.94"
   - "🇯🇵-日本东京-52.196.144.61"
-  - "🇯🇵-日本-146.56.156.227"
   - "🇯🇵-日本-172.104.98.216"
-  - "🇬🇧-英国-146.70.73.2"
   - "🇭🇰-香港-161.81.195.100"
-  - "🇭🇰-香港-183.179.115.79"
   - "🇭🇰-香港-42.200.190.71"
   - "🇳🇱-荷兰-46.182.107.39"
-  - "🇳🇱-荷兰-46.182.107.44"
   - "🇰🇷-韩国-54.180.96.67"
-  - "🇷🇺-俄罗斯-194.5.78.89"
   - "🇸🇬-新加坡-206.189.87.180"
-  - "🇺🇸-美国加利福尼亚州洛杉矶-45.91.83.111"
   - "🇺🇸-美国-001.us.na.pop.smallairport.net"
-  - "🇺🇸-美国-172.67.69.244"
   - "🇺🇸-美国-172.67.70.171"
   - "🇺🇸-美国-192.74.254.167"
   - "🇺🇸-美国-192.96.204.250"
-  - "🇺🇸-美国-198.200.51.18"
   - "🇺🇸-美国-103.138.75.235"
   - "🇺🇸-美国-104.16.160.114"
-  - "🇺🇸-美国-104.16.166.137"
   - "🇺🇸-美国-104.18.7.138"
-  - "🇺🇸-美国-104.18.231.232"
   - "🇺🇸-美国-104.18.245.127"
   - "🇺🇸-美国-104.21.48.161"
-  - "🇺🇸-美国-104.22.44.50"
   - "🇺🇸-美国-104.24.180.107"
   - "🇺🇸-美国-104.251.233.106"
-  - "🇺🇸-美国-107.148.200.229"
   - "🇺🇸-美国-1116yn.fans8.xyz"
-  - "🇺🇸-美国-20.151.113.120"
   - "🇺🇸-美国-20.205.63.211"
-  - "🇺🇸-美国-20.205.35.3"
   - "🇺🇸-美国-209.58.139.41"
-  - "🇺🇸-美国-3.144.176.174"
   - "🇺🇸-美国-45.142.158.85"
-  - "🇺🇸-美国-45.79.65.237.ipssh.net"
   - "🇺🇸-美国-64.32.13.3"
   - "🇺🇸-美国-715hk.fans8.xyz"
   - "🇺🇸-美国-915ru1.fans8.xyz"
   - "🇺🇸-美国-930tg.fans8.xyz"
   - "🇺🇸-美国-ngzyd-1.okex-tradebot.xyz"
-  - "🇺🇸-美国-niaocloud.niaoyun.online"
   - "🇺🇸-美国-aa.zzzr.ltd"
-  - "🇺🇸-美国-aicoo6du.com"
   - "🇺🇸-美国-amu1ahfi.com"
-  - "🇺🇸-美国-armsj2.kozow.com"
   - "🇺🇸-美国-c23s3.jamjams.net"
   - "🇺🇸-美国-cu.cheapv2.xyz"
-  - "🇺🇸-美国-cu.cnhost.top"
   - "🇺🇸-美国-cdnde.irteyz.today"
-  - "🇺🇸-美国-cm2.cheapv2.xyz"
   - "🇺🇸-美国-euserv18p.ezddns.tk"
   - "🇺🇸-美国-euserv10p.ezddns.tk"
   - "🇺🇸-美国-euserv9p.ezddns.tk"
-  - "🇺🇸-美国-fus1.uuv2.co.uk"
   - "🇺🇸-美国-ff5c0fb.re.cloudflare.systems"
-  - "🇺🇸-美国-free-russian01-cdn.xiaohouzi.club"
   - "🇺🇸-美国-free-russian02-cdn.xiaohouzi.club"
-  - "🇺🇸-美国-guangzhou-lw-03.pucdn.me"
   - "🇺🇸-美国-global-transit-01-hn.pucdn.me"
-  - "🇺🇸-美国-global-transit-02-sg.pucdn.me"
   - "🇺🇸-美国-hk1opuy-node.3366test.com"
-  - "🇺🇸-美国-l1-do-ua-03.pucdn.me"
   - "🇺🇸-美国-switzerland-zurich.mah3Hoet.com"
   - "🇺🇸-美国-shcn2-06b.iplc188.com"
-  - "🇺🇸-美国-tk.shcn2.tkddns.xyz"
   - "🇺🇸-美国-usa-sanfrancisco.lvuft.com"
-  - "🇺🇸-美国-v5.ssrsub.com"
   - "🇺🇸-美国-v1-aws-hk-04.niaoyun.online"
-  - "🇺🇸-美国-vpnhat.yhdnwm.workers.dev"
   - "🇺🇸-美国-www.digitalocean.com"
   - "🇺🇸-美国-zz.vip341.xyz"
   - "🇺🇸-美国-zecjk.com"
-  - "🇺🇸-美国-1.0.0.0"
   - "🇺🇸-美国-1.0.0.140"
-  - "🇺🇸-美国-104.16.16.255"
   - "🇺🇸-美国-104.16.182.15"
-  - "🇺🇸-美国-104.18.6.138"
+  - "🇺🇸-美国-104.17.170.210"
   - "🇺🇸-美国-104.19.101.3"
-  - "🇺🇸-美国-104.19.238.59"
   - "🇺🇸-美国-104.24.0.168"
-  - "🇺🇸-美国-104.24.142.163"
   - "🇺🇸-美国-104.24.158.46"
-  - "🇺🇸-美国-104.24.188.46"
   - "🇺🇸-美国-104.24.191.139"
-  - "🇺🇸-美国-104.24.138.229"
   - "🇺🇸-美国-104.24.209.131"
-  - "🇺🇸-美国-104.24.42.148"
   - "🇺🇸-美国-104.24.64.213"
-  - "🇺🇸-美国-104.24.62.70"
   - "🇺🇸-美国-104.24.75.54"
-  - "🇺🇸-美国-104.24.94.29"
   - "🇺🇸-美国-104.25.143.16"
-  - "🇺🇸-美国-104.25.148.216"
   - "🇺🇸-美国-104.25.151.100"
-  - "🇺🇸-美国-104.25.102.154"
   - "🇺🇸-美国-104.25.246.117"
-  - "🇺🇸-美国-104.25.215.143"
   - "🇺🇸-美国-104.25.230.73"
-  - "🇺🇸-美国-104.25.238.45"
   - "🇺🇸-美国-104.25.44.133"
-  - "🇺🇸-美国-104.25.46.190"
   - "🇺🇸-美国-104.25.63.18"
-  - "🇺🇸-美国-104.26.5.238"
   - "🇺🇸-美国-104.27.194.98"
-  - "🇺🇸-美国-104.27.198.45"
   - "🇺🇸-美国-104.27.102.4"
-  - "🇺🇸-美国-104.27.37.126"
   - "🇺🇸-美国-104.27.84.136"
-  - "🇺🇸-美国-104.27.83.11"
   - "🇺🇸-美国-104.20.81.240"
-  - "🇺🇸-美国-104.21.201.210"
   - "🇺🇸-美国-104.21.201.33"
-  - "🇺🇸-美国-104.21.207.243"
   - "🇺🇸-美国-104.21.221.156"
-  - "🇺🇸-美国-104.21.62.193"
   - "🇦🇶-亚太地区-103.164.81.108"
-  - "🇯🇵-日本-103.29.69.119"
+  - "🇭🇰-香港-129.227.201.234"
   - "🇺🇸-美国-137.175.30.251"
-  - "🇬🇧-英国-146.70.46.68"
+  - "🇸🇬-新加坡-139.162.51.223"
+  - "🇦🇺-澳大利亚-13.236.109.118"
+  - "🇬🇧-英国-146.70.71.2"
+  - "🇬🇧-英国-146.70.73.2"
   - "🇺🇸-美国-142.4.123.249"
-  - "🇺🇸-美国-154.31.41.10"
   - "🇺🇸-美国-162.159.224.228"
-  - "🇺🇸-美国-162.159.238.197"
   - "🇺🇸-美国-172.64.69.76"
-  - "🇺🇸-美国-172.67.112.66"
   - "🇺🇸-美国-172.67.117.187"
-  - "🇺🇸-美国-172.67.126.56"
   - "🇺🇸-美国-172.67.29.249"
-  - "🇺🇸-美国-172.67.222.157"
   - "🇺🇸-美国-172.67.88.37"
-  - "🇷🇺-俄罗斯-194.135.32.208"
-  - "🇺🇸-美国-198.200.51.34"
+  - "🇦🇶-匈牙利-185.225.69.134"
+  - "🇺🇸-美国-198.200.51.18"
   - "🇺🇸-美国-198.41.212.234"
   - "🇯🇵-日本-202.61.141.194"
-  - "🇺🇸-美国-45.35.84.162"
+  - "🇦🇶-以色列-212.80.205.133"
   - "🇺🇸-美国-45.63.56.11"
-  - "🇷🇺-俄罗斯-45.8.159.221"
   - "🇷🇺-俄罗斯-45.89.228.53"
-  - "🇭🇰-香港-47.242.3.85"
+  - "🇫🇷-法国-62.210.90.75"
   - "🇨🇦-加拿大-71.19.252.163"
   - "🇭🇰-香港-8.210.55.79"
   - "🇺🇸-美国-923my.fans8.xyz"
-  - "🇺🇸-美国-Eiha7iew.com"
   - "🇺🇸-美国-Ze9baeS5.com"
-  - "🇺🇸-美国-cn.zzv01.infonode.xyz"
+  - "🇺🇸-美国-cm2.cheapv2.xyz"
+  - "🇺🇸-美国-cmhk04.xc188.net"
   - "🇺🇸-美国-canada-vancouver.mah3Hoet.com"
   - "🇺🇸-美国-cc.hciahciphcie.club"
   - "🇺🇸-美国-a83679f.t3.gladns.com"
-  - "🇺🇸-美国-a83679f.th.cloudflare.systems"
   - "🇺🇸-美国-a83679f.tt.cloudflare.systems"
-  - "🇺🇸-美国-a83679f.ha.gladns.com"
+  - "🇺🇸-美国-a83679f.cw.cloudflare.systems"
   - "🇺🇸-美国-a83679f.hf.gladns.com"
-  - "🇺🇸-美国-a83679f.mc.cloudflare.systems"
   - "🇺🇸-美国-a83679f.md.cloudflare.systems"
-  - "🇺🇸-美国-a83679f.me.cloudflare.systems"
   - "🇺🇸-美国-a83679f.mh.cloudflare.systems"
-  - "🇺🇸-美国-a83679f.os.cloudflare.systems"
+  - "🇺🇸-美国-a83679f.mi.cloudflare.systems"
   - "🇺🇸-美国-a83679f.rc.gladns.com"
-  - "🇺🇸-美国-ahH4eihu.com"
+  - "🇺🇸-美国-a83679f.rd.gladns.com"
+  - "🇺🇸-美国-a83679f.rf.gladns.com"
   - "🇺🇸-美国-ahdaeph8.com"
-  - "🇺🇸-美国-c27821f.wx.gladns.com"
+  - "🇺🇸-美国-armsj2.kozow.com"
+  - "🇺🇸-美国-c27821f.rb.cloudflare.systems"
+  - "🇺🇸-美国-d0a8692.t2.gladns.com"
+  - "🇺🇸-美国-d0a8692.ha.gladns.com"
+  - "🇺🇸-美国-d0a8692.hc.gladns.com"
+  - "🇺🇸-美国-d0a8692.hf.gladns.com"
+  - "🇺🇸-美国-eeh7iewe.com"
+  - "🇺🇸-美国-ff5c0fb.hb.gladns.com"
+  - "🇺🇸-美国-ff5c0fb.rb.cloudflare.systems"
+  - "🇺🇸-美国-ff5c0fb.re.gladns.com"
+  - "🇺🇸-美国-free-russian-cdn.xiaohouzi.club"
+  - "🇺🇸-美国-kr3.futi.online"
+  - "🇺🇸-美国-hkbn-home-a.zc20200426.club"
+  - "🇺🇸-美国-sg.idvpn.me"
+  - "🇺🇸-美国-www.garmin.com"
+  - "🇺🇸-美国-tk.shcn2.tkddns.xyz"
+  - "🇺🇸-美国-tw-tb-f.zc20200426.club"
+  - "🇺🇸-美国-us1nhg-node.aiqiche123.com"
+  - "🇺🇸-美国-usa-buffalo.lvuft.com"
+  - "🇺🇸-美国-usa-lasvegas.lvuft.com"
+  - "🇺🇸-美国-usa-washington.lvuft.com"
+  - "🇺🇸-美国-v1.ssrsub.com"
+  - "🇺🇸-美国-v2.ssrsub.com"
+  - "🇺🇸-美国-v5.ssrsub.com"
+  - "🇺🇸-美国-xe3rayu3.com"
+  - "🇷🇴-罗马尼亚-79.110.54.162"
+  - "🇸🇬-新加坡-104.248.148.147"
+  - "🇸🇬-新加坡-103.253.26.134"
+  - "🇸🇬-新加坡-103.83.156.89"
+  - "🇸🇬-新加坡-172.105.113.182"
+  - "🇸🇬-新加坡-52.77.238.80"
+  - "🇹🇼-台湾-60.249.3.226"
+  - "🇺🇸-美国-1.0.0.123"
+  - "🇺🇸-美国-104.16.149.48"
+  - "🇺🇸-美国-104.16.160.209"
+  - "🇺🇸-美国-104.16.166.137"
+  - "🇺🇸-美国-104.16.172.213"
+  - "🇺🇸-美国-104.16.181.15"
+  - "🇺🇸-美国-104.16.98.249"
+  - "🇺🇸-美国-104.17.188.91"
+  - "🇺🇸-美国-104.17.105.81"
+  - "🇺🇸-美国-104.17.134.136"
+  - "🇺🇸-美国-104.17.36.178"
+  - "🇺🇸-美国-104.17.46.56"
+  - "🇺🇸-美国-104.17.98.24"
+  - "🇺🇸-美国-104.18.1.240"
 - name: "♻️ 自动选择"
   type: url-test
   proxies:
+  - "[12-07]-🇺🇸-美国-1043-t1.ssrsub.com"
   - "[12-07]-🇺🇸-美国-001-t2.ssrsub.com"
-  - "[12-07]-🇺🇸-美国-733-t3.ssrsub.com"
-  - "[12-07]-🇺🇸-美国-737-t4.ssrsub.com"
-  - "[12-07]-🇺🇸-美国-741-t7.ssrsub.com"
+  - "[12-07]-🇺🇸-美国-003-t4.ssrsub.com"
+  - "[12-07]-🇺🇸-美国-1041-t5.ssrsub.com"
+  - "[12-07]-🇺🇸-美国-1039-t2.ssrsub.com"
+  - "[12-07]-🇺🇸-美国-1045-t3.ssrsub.com"
   - "[12-07]-🇺🇸-美国-005-t4.ssrsub.com"
-  - "[12-07]-🇷🇴-罗马尼亚-3029-185.126.116.235"
-  - "[12-07]-🇬🇧-英国-3017-185.171.120.144"
-  - "[12-07]-🇺🇸-美国-3041-72.167.45.6"
+  - "[12-07]-🇺🇸-美国-1037-t5.ssrsub.com"
+  - "[12-07]-🇬🇧-英国-007-185.171.120.144"
+  - "[12-07]-🇯🇵-日本-3181-5.183.177.111"
+  - "[12-07]-🇺🇦-乌克兰-3177-5.183.179.138"
+  - "[12-07]-🇷🇴-罗马尼亚-3197-62.216.92.179"
+  - "[12-07]-🇸🇬-新加坡-3203-81.90.189.85"
   - "[12-07]-🇨🇭-瑞士-009-89.31.127.151"
-  - "[12-07]-🇺🇸-美国-409-t3.ssrsub.com"
-  - "[12-07]-🇺🇸-美国-437-t6.ssrsub.com"
-  - "[12-07]-🇷🇴-罗马尼亚-013-185.126.116.235"
-  - "[12-07]-🇺🇸-美国-3045-sg-server-01.selfupay.com"
-  - "[12-07]-🇦🇶-北美地区-3053-107.174.39.16"
-  - "[12-07]-🇦🇶-北美地区-017-107.174.67.108"
-  - "[12-07]-🇷🇺-俄罗斯-3037-194.156.120.236"
-  - "[12-07]-🇺🇸-美国加利福尼亚州洛杉矶-021-23.234.244.175"
-  - "[12-07]-🇳🇱-荷兰-3009-80.78.132.239"
-  - "[12-07]-🇬🇧-英国-025-185.171.120.144"
-  - "[12-07]-🇯🇵-日本-1285-5.183.177.111"
-  - "[12-07]-🇯🇵-日本-3013-5.183.177.111"
-  - "[12-07]-🇷🇴-罗马尼亚-3025-62.216.92.179"
-  - "[12-07]-🇷🇴-罗马尼亚-3033-62.216.92.180"
-  - "[12-07]-🇺🇸-美国-3049-72.167.45.6"
-  - "[12-07]-🇨🇭-瑞士-3021-89.31.127.151"
-  - "[12-07]-🇺🇸-美国-3057-usa-server-02.selfupay.com"
+  - "[12-07]-🇺🇸-美国-011-t6.ssrsub.com"
+  - "[12-07]-🇺🇸-美国-3205-184.168.127.50"
+  - "[12-07]-🇷🇴-罗马尼亚-3191-62.216.92.180"
+  - "[12-07]-🇺🇸-美国-3213-72.167.45.6"
+  - "[12-07]-🇨🇭-瑞士-3185-89.31.127.151"
+  - "[12-07]-🇺🇸-美国-3201-hk-server-01.selfupay.com"
+  - "[12-07]-🇺🇸-美国-3193-hk-server-02.selfupay.com"
+  - "[12-07]-🇺🇸-美国-3179-jp-server-02.selfupay.com"
+  - "[12-07]-🇺🇸-美国-3189-ned-server-01.selfupay.com"
+  - "[12-07]-🇺🇸-美国-013-sg-server-01.selfupay.com"
+  - "[12-07]-🇺🇸-美国-3209-usa-server-02.selfupay.com"
+  - "[12-07]-🇦🇶-北美地区-015-107.174.67.108"
+  - "[12-07]-🇺🇸-美国加利福尼亚州洛杉矶-017-23.234.244.175"
+  - "[12-07]-🇺🇸-美国-3207-184.168.127.50"
+  - "[12-07]-🇬🇧-英国-019-185.171.120.144"
+  - "[12-07]-🇯🇵-日本-021-5.183.177.111"
+  - "[12-07]-🇷🇴-罗马尼亚-023-62.216.92.180"
+  - "[12-07]-🇨🇭-瑞士-025-89.31.127.151"
+  - "[12-07]-🇺🇸-美国-3199-hk-server-01.selfupay.com"
+  - "[12-07]-🇺🇸-美国-3195-hk-server-02.selfupay.com"
+  - "[12-07]-🇺🇸-美国-3183-jp-server-02.selfupay.com"
+  - "[12-07]-🇺🇸-美国-3187-ned-server-01.selfupay.com"
+  - "[12-07]-🇺🇸-美国-3211-tw.softbank.mjj-home.com"
   - "🇦🇶-爱尔兰-52.48.89.93"
-  - "🇦🇶-亚太地区-103.172.116.94"
   - "🇯🇵-日本东京-52.196.144.61"
-  - "🇯🇵-日本-146.56.156.227"
   - "🇯🇵-日本-172.104.98.216"
-  - "🇬🇧-英国-146.70.73.2"
   - "🇭🇰-香港-161.81.195.100"
-  - "🇭🇰-香港-183.179.115.79"
   - "🇭🇰-香港-42.200.190.71"
   - "🇳🇱-荷兰-46.182.107.39"
-  - "🇳🇱-荷兰-46.182.107.44"
   - "🇰🇷-韩国-54.180.96.67"
-  - "🇷🇺-俄罗斯-194.5.78.89"
   - "🇸🇬-新加坡-206.189.87.180"
-  - "🇺🇸-美国加利福尼亚州洛杉矶-45.91.83.111"
   - "🇺🇸-美国-001.us.na.pop.smallairport.net"
-  - "🇺🇸-美国-172.67.69.244"
   - "🇺🇸-美国-172.67.70.171"
   - "🇺🇸-美国-192.74.254.167"
   - "🇺🇸-美国-192.96.204.250"
-  - "🇺🇸-美国-198.200.51.18"
   - "🇺🇸-美国-103.138.75.235"
   - "🇺🇸-美国-104.16.160.114"
-  - "🇺🇸-美国-104.16.166.137"
   - "🇺🇸-美国-104.18.7.138"
-  - "🇺🇸-美国-104.18.231.232"
   - "🇺🇸-美国-104.18.245.127"
   - "🇺🇸-美国-104.21.48.161"
-  - "🇺🇸-美国-104.22.44.50"
   - "🇺🇸-美国-104.24.180.107"
   - "🇺🇸-美国-104.251.233.106"
-  - "🇺🇸-美国-107.148.200.229"
   - "🇺🇸-美国-1116yn.fans8.xyz"
-  - "🇺🇸-美国-20.151.113.120"
   - "🇺🇸-美国-20.205.63.211"
-  - "🇺🇸-美国-20.205.35.3"
   - "🇺🇸-美国-209.58.139.41"
-  - "🇺🇸-美国-3.144.176.174"
   - "🇺🇸-美国-45.142.158.85"
-  - "🇺🇸-美国-45.79.65.237.ipssh.net"
   - "🇺🇸-美国-64.32.13.3"
   - "🇺🇸-美国-715hk.fans8.xyz"
   - "🇺🇸-美国-915ru1.fans8.xyz"
   - "🇺🇸-美国-930tg.fans8.xyz"
   - "🇺🇸-美国-ngzyd-1.okex-tradebot.xyz"
-  - "🇺🇸-美国-niaocloud.niaoyun.online"
   - "🇺🇸-美国-aa.zzzr.ltd"
-  - "🇺🇸-美国-aicoo6du.com"
   - "🇺🇸-美国-amu1ahfi.com"
-  - "🇺🇸-美国-armsj2.kozow.com"
   - "🇺🇸-美国-c23s3.jamjams.net"
   - "🇺🇸-美国-cu.cheapv2.xyz"
-  - "🇺🇸-美国-cu.cnhost.top"
   - "🇺🇸-美国-cdnde.irteyz.today"
-  - "🇺🇸-美国-cm2.cheapv2.xyz"
   - "🇺🇸-美国-euserv18p.ezddns.tk"
   - "🇺🇸-美国-euserv10p.ezddns.tk"
   - "🇺🇸-美国-euserv9p.ezddns.tk"
-  - "🇺🇸-美国-fus1.uuv2.co.uk"
   - "🇺🇸-美国-ff5c0fb.re.cloudflare.systems"
-  - "🇺🇸-美国-free-russian01-cdn.xiaohouzi.club"
   - "🇺🇸-美国-free-russian02-cdn.xiaohouzi.club"
-  - "🇺🇸-美国-guangzhou-lw-03.pucdn.me"
   - "🇺🇸-美国-global-transit-01-hn.pucdn.me"
-  - "🇺🇸-美国-global-transit-02-sg.pucdn.me"
   - "🇺🇸-美国-hk1opuy-node.3366test.com"
-  - "🇺🇸-美国-l1-do-ua-03.pucdn.me"
   - "🇺🇸-美国-switzerland-zurich.mah3Hoet.com"
   - "🇺🇸-美国-shcn2-06b.iplc188.com"
-  - "🇺🇸-美国-tk.shcn2.tkddns.xyz"
   - "🇺🇸-美国-usa-sanfrancisco.lvuft.com"
-  - "🇺🇸-美国-v5.ssrsub.com"
   - "🇺🇸-美国-v1-aws-hk-04.niaoyun.online"
-  - "🇺🇸-美国-vpnhat.yhdnwm.workers.dev"
   - "🇺🇸-美国-www.digitalocean.com"
   - "🇺🇸-美国-zz.vip341.xyz"
   - "🇺🇸-美国-zecjk.com"
-  - "🇺🇸-美国-1.0.0.0"
   - "🇺🇸-美国-1.0.0.140"
-  - "🇺🇸-美国-104.16.16.255"
   - "🇺🇸-美国-104.16.182.15"
-  - "🇺🇸-美国-104.18.6.138"
+  - "🇺🇸-美国-104.17.170.210"
   - "🇺🇸-美国-104.19.101.3"
-  - "🇺🇸-美国-104.19.238.59"
   - "🇺🇸-美国-104.24.0.168"
-  - "🇺🇸-美国-104.24.142.163"
   - "🇺🇸-美国-104.24.158.46"
-  - "🇺🇸-美国-104.24.188.46"
   - "🇺🇸-美国-104.24.191.139"
-  - "🇺🇸-美国-104.24.138.229"
   - "🇺🇸-美国-104.24.209.131"
-  - "🇺🇸-美国-104.24.42.148"
   - "🇺🇸-美国-104.24.64.213"
-  - "🇺🇸-美国-104.24.62.70"
   - "🇺🇸-美国-104.24.75.54"
-  - "🇺🇸-美国-104.24.94.29"
   - "🇺🇸-美国-104.25.143.16"
-  - "🇺🇸-美国-104.25.148.216"
   - "🇺🇸-美国-104.25.151.100"
-  - "🇺🇸-美国-104.25.102.154"
   - "🇺🇸-美国-104.25.246.117"
-  - "🇺🇸-美国-104.25.215.143"
   - "🇺🇸-美国-104.25.230.73"
-  - "🇺🇸-美国-104.25.238.45"
   - "🇺🇸-美国-104.25.44.133"
-  - "🇺🇸-美国-104.25.46.190"
   - "🇺🇸-美国-104.25.63.18"
-  - "🇺🇸-美国-104.26.5.238"
   - "🇺🇸-美国-104.27.194.98"
-  - "🇺🇸-美国-104.27.198.45"
   - "🇺🇸-美国-104.27.102.4"
-  - "🇺🇸-美国-104.27.37.126"
   - "🇺🇸-美国-104.27.84.136"
-  - "🇺🇸-美国-104.27.83.11"
   - "🇺🇸-美国-104.20.81.240"
-  - "🇺🇸-美国-104.21.201.210"
   - "🇺🇸-美国-104.21.201.33"
-  - "🇺🇸-美国-104.21.207.243"
   - "🇺🇸-美国-104.21.221.156"
-  - "🇺🇸-美国-104.21.62.193"
   - "🇦🇶-亚太地区-103.164.81.108"
-  - "🇯🇵-日本-103.29.69.119"
+  - "🇭🇰-香港-129.227.201.234"
   - "🇺🇸-美国-137.175.30.251"
-  - "🇬🇧-英国-146.70.46.68"
+  - "🇸🇬-新加坡-139.162.51.223"
+  - "🇦🇺-澳大利亚-13.236.109.118"
+  - "🇬🇧-英国-146.70.71.2"
+  - "🇬🇧-英国-146.70.73.2"
   - "🇺🇸-美国-142.4.123.249"
-  - "🇺🇸-美国-154.31.41.10"
   - "🇺🇸-美国-162.159.224.228"
-  - "🇺🇸-美国-162.159.238.197"
   - "🇺🇸-美国-172.64.69.76"
-  - "🇺🇸-美国-172.67.112.66"
   - "🇺🇸-美国-172.67.117.187"
-  - "🇺🇸-美国-172.67.126.56"
   - "🇺🇸-美国-172.67.29.249"
-  - "🇺🇸-美国-172.67.222.157"
   - "🇺🇸-美国-172.67.88.37"
-  - "🇷🇺-俄罗斯-194.135.32.208"
-  - "🇺🇸-美国-198.200.51.34"
+  - "🇦🇶-匈牙利-185.225.69.134"
+  - "🇺🇸-美国-198.200.51.18"
   - "🇺🇸-美国-198.41.212.234"
   - "🇯🇵-日本-202.61.141.194"
-  - "🇺🇸-美国-45.35.84.162"
+  - "🇦🇶-以色列-212.80.205.133"
   - "🇺🇸-美国-45.63.56.11"
-  - "🇷🇺-俄罗斯-45.8.159.221"
   - "🇷🇺-俄罗斯-45.89.228.53"
-  - "🇭🇰-香港-47.242.3.85"
+  - "🇫🇷-法国-62.210.90.75"
   - "🇨🇦-加拿大-71.19.252.163"
   - "🇭🇰-香港-8.210.55.79"
   - "🇺🇸-美国-923my.fans8.xyz"
-  - "🇺🇸-美国-Eiha7iew.com"
   - "🇺🇸-美国-Ze9baeS5.com"
-  - "🇺🇸-美国-cn.zzv01.infonode.xyz"
+  - "🇺🇸-美国-cm2.cheapv2.xyz"
+  - "🇺🇸-美国-cmhk04.xc188.net"
   - "🇺🇸-美国-canada-vancouver.mah3Hoet.com"
   - "🇺🇸-美国-cc.hciahciphcie.club"
   - "🇺🇸-美国-a83679f.t3.gladns.com"
-  - "🇺🇸-美国-a83679f.th.cloudflare.systems"
   - "🇺🇸-美国-a83679f.tt.cloudflare.systems"
-  - "🇺🇸-美国-a83679f.ha.gladns.com"
+  - "🇺🇸-美国-a83679f.cw.cloudflare.systems"
   - "🇺🇸-美国-a83679f.hf.gladns.com"
-  - "🇺🇸-美国-a83679f.mc.cloudflare.systems"
   - "🇺🇸-美国-a83679f.md.cloudflare.systems"
-  - "🇺🇸-美国-a83679f.me.cloudflare.systems"
   - "🇺🇸-美国-a83679f.mh.cloudflare.systems"
-  - "🇺🇸-美国-a83679f.os.cloudflare.systems"
+  - "🇺🇸-美国-a83679f.mi.cloudflare.systems"
   - "🇺🇸-美国-a83679f.rc.gladns.com"
-  - "🇺🇸-美国-ahH4eihu.com"
+  - "🇺🇸-美国-a83679f.rd.gladns.com"
+  - "🇺🇸-美国-a83679f.rf.gladns.com"
   - "🇺🇸-美国-ahdaeph8.com"
-  - "🇺🇸-美国-c27821f.wx.gladns.com"
+  - "🇺🇸-美国-armsj2.kozow.com"
+  - "🇺🇸-美国-c27821f.rb.cloudflare.systems"
+  - "🇺🇸-美国-d0a8692.t2.gladns.com"
+  - "🇺🇸-美国-d0a8692.ha.gladns.com"
+  - "🇺🇸-美国-d0a8692.hc.gladns.com"
+  - "🇺🇸-美国-d0a8692.hf.gladns.com"
+  - "🇺🇸-美国-eeh7iewe.com"
+  - "🇺🇸-美国-ff5c0fb.hb.gladns.com"
+  - "🇺🇸-美国-ff5c0fb.rb.cloudflare.systems"
+  - "🇺🇸-美国-ff5c0fb.re.gladns.com"
+  - "🇺🇸-美国-free-russian-cdn.xiaohouzi.club"
+  - "🇺🇸-美国-kr3.futi.online"
+  - "🇺🇸-美国-hkbn-home-a.zc20200426.club"
+  - "🇺🇸-美国-sg.idvpn.me"
+  - "🇺🇸-美国-www.garmin.com"
+  - "🇺🇸-美国-tk.shcn2.tkddns.xyz"
+  - "🇺🇸-美国-tw-tb-f.zc20200426.club"
+  - "🇺🇸-美国-us1nhg-node.aiqiche123.com"
+  - "🇺🇸-美国-usa-buffalo.lvuft.com"
+  - "🇺🇸-美国-usa-lasvegas.lvuft.com"
+  - "🇺🇸-美国-usa-washington.lvuft.com"
+  - "🇺🇸-美国-v1.ssrsub.com"
+  - "🇺🇸-美国-v2.ssrsub.com"
+  - "🇺🇸-美国-v5.ssrsub.com"
+  - "🇺🇸-美国-xe3rayu3.com"
+  - "🇷🇴-罗马尼亚-79.110.54.162"
+  - "🇸🇬-新加坡-104.248.148.147"
+  - "🇸🇬-新加坡-103.253.26.134"
+  - "🇸🇬-新加坡-103.83.156.89"
+  - "🇸🇬-新加坡-172.105.113.182"
+  - "🇸🇬-新加坡-52.77.238.80"
+  - "🇹🇼-台湾-60.249.3.226"
+  - "🇺🇸-美国-1.0.0.123"
+  - "🇺🇸-美国-104.16.149.48"
+  - "🇺🇸-美国-104.16.160.209"
+  - "🇺🇸-美国-104.16.166.137"
+  - "🇺🇸-美国-104.16.172.213"
+  - "🇺🇸-美国-104.16.181.15"
+  - "🇺🇸-美国-104.16.98.249"
+  - "🇺🇸-美国-104.17.188.91"
+  - "🇺🇸-美国-104.17.105.81"
+  - "🇺🇸-美国-104.17.134.136"
+  - "🇺🇸-美国-104.17.36.178"
+  - "🇺🇸-美国-104.17.46.56"
+  - "🇺🇸-美国-104.17.98.24"
+  - "🇺🇸-美国-104.18.1.240"
   url: http://www.gstatic.com/generate_204
   interval: '300'
 - name: "\U0001F30D 国外媒体"
@@ -2846,985 +2825,985 @@ proxy-groups:
   - "\U0001F530 节点选择"
   - "♻️ 自动选择"
   - "\U0001F3AF 全球直连"
+  - "[12-07]-🇺🇸-美国-1043-t1.ssrsub.com"
   - "[12-07]-🇺🇸-美国-001-t2.ssrsub.com"
-  - "[12-07]-🇺🇸-美国-733-t3.ssrsub.com"
-  - "[12-07]-🇺🇸-美国-737-t4.ssrsub.com"
-  - "[12-07]-🇺🇸-美国-741-t7.ssrsub.com"
+  - "[12-07]-🇺🇸-美国-003-t4.ssrsub.com"
+  - "[12-07]-🇺🇸-美国-1041-t5.ssrsub.com"
+  - "[12-07]-🇺🇸-美国-1039-t2.ssrsub.com"
+  - "[12-07]-🇺🇸-美国-1045-t3.ssrsub.com"
   - "[12-07]-🇺🇸-美国-005-t4.ssrsub.com"
-  - "[12-07]-🇷🇴-罗马尼亚-3029-185.126.116.235"
-  - "[12-07]-🇬🇧-英国-3017-185.171.120.144"
-  - "[12-07]-🇺🇸-美国-3041-72.167.45.6"
+  - "[12-07]-🇺🇸-美国-1037-t5.ssrsub.com"
+  - "[12-07]-🇬🇧-英国-007-185.171.120.144"
+  - "[12-07]-🇯🇵-日本-3181-5.183.177.111"
+  - "[12-07]-🇺🇦-乌克兰-3177-5.183.179.138"
+  - "[12-07]-🇷🇴-罗马尼亚-3197-62.216.92.179"
+  - "[12-07]-🇸🇬-新加坡-3203-81.90.189.85"
   - "[12-07]-🇨🇭-瑞士-009-89.31.127.151"
-  - "[12-07]-🇺🇸-美国-409-t3.ssrsub.com"
-  - "[12-07]-🇺🇸-美国-437-t6.ssrsub.com"
-  - "[12-07]-🇷🇴-罗马尼亚-013-185.126.116.235"
-  - "[12-07]-🇺🇸-美国-3045-sg-server-01.selfupay.com"
-  - "[12-07]-🇦🇶-北美地区-3053-107.174.39.16"
-  - "[12-07]-🇦🇶-北美地区-017-107.174.67.108"
-  - "[12-07]-🇷🇺-俄罗斯-3037-194.156.120.236"
-  - "[12-07]-🇺🇸-美国加利福尼亚州洛杉矶-021-23.234.244.175"
-  - "[12-07]-🇳🇱-荷兰-3009-80.78.132.239"
-  - "[12-07]-🇬🇧-英国-025-185.171.120.144"
-  - "[12-07]-🇯🇵-日本-1285-5.183.177.111"
-  - "[12-07]-🇯🇵-日本-3013-5.183.177.111"
-  - "[12-07]-🇷🇴-罗马尼亚-3025-62.216.92.179"
-  - "[12-07]-🇷🇴-罗马尼亚-3033-62.216.92.180"
-  - "[12-07]-🇺🇸-美国-3049-72.167.45.6"
-  - "[12-07]-🇨🇭-瑞士-3021-89.31.127.151"
-  - "[12-07]-🇺🇸-美国-3057-usa-server-02.selfupay.com"
+  - "[12-07]-🇺🇸-美国-011-t6.ssrsub.com"
+  - "[12-07]-🇺🇸-美国-3205-184.168.127.50"
+  - "[12-07]-🇷🇴-罗马尼亚-3191-62.216.92.180"
+  - "[12-07]-🇺🇸-美国-3213-72.167.45.6"
+  - "[12-07]-🇨🇭-瑞士-3185-89.31.127.151"
+  - "[12-07]-🇺🇸-美国-3201-hk-server-01.selfupay.com"
+  - "[12-07]-🇺🇸-美国-3193-hk-server-02.selfupay.com"
+  - "[12-07]-🇺🇸-美国-3179-jp-server-02.selfupay.com"
+  - "[12-07]-🇺🇸-美国-3189-ned-server-01.selfupay.com"
+  - "[12-07]-🇺🇸-美国-013-sg-server-01.selfupay.com"
+  - "[12-07]-🇺🇸-美国-3209-usa-server-02.selfupay.com"
+  - "[12-07]-🇦🇶-北美地区-015-107.174.67.108"
+  - "[12-07]-🇺🇸-美国加利福尼亚州洛杉矶-017-23.234.244.175"
+  - "[12-07]-🇺🇸-美国-3207-184.168.127.50"
+  - "[12-07]-🇬🇧-英国-019-185.171.120.144"
+  - "[12-07]-🇯🇵-日本-021-5.183.177.111"
+  - "[12-07]-🇷🇴-罗马尼亚-023-62.216.92.180"
+  - "[12-07]-🇨🇭-瑞士-025-89.31.127.151"
+  - "[12-07]-🇺🇸-美国-3199-hk-server-01.selfupay.com"
+  - "[12-07]-🇺🇸-美国-3195-hk-server-02.selfupay.com"
+  - "[12-07]-🇺🇸-美国-3183-jp-server-02.selfupay.com"
+  - "[12-07]-🇺🇸-美国-3187-ned-server-01.selfupay.com"
+  - "[12-07]-🇺🇸-美国-3211-tw.softbank.mjj-home.com"
   - "🇦🇶-爱尔兰-52.48.89.93"
-  - "🇦🇶-亚太地区-103.172.116.94"
   - "🇯🇵-日本东京-52.196.144.61"
-  - "🇯🇵-日本-146.56.156.227"
   - "🇯🇵-日本-172.104.98.216"
-  - "🇬🇧-英国-146.70.73.2"
   - "🇭🇰-香港-161.81.195.100"
-  - "🇭🇰-香港-183.179.115.79"
   - "🇭🇰-香港-42.200.190.71"
   - "🇳🇱-荷兰-46.182.107.39"
-  - "🇳🇱-荷兰-46.182.107.44"
   - "🇰🇷-韩国-54.180.96.67"
-  - "🇷🇺-俄罗斯-194.5.78.89"
   - "🇸🇬-新加坡-206.189.87.180"
-  - "🇺🇸-美国加利福尼亚州洛杉矶-45.91.83.111"
   - "🇺🇸-美国-001.us.na.pop.smallairport.net"
-  - "🇺🇸-美国-172.67.69.244"
   - "🇺🇸-美国-172.67.70.171"
   - "🇺🇸-美国-192.74.254.167"
   - "🇺🇸-美国-192.96.204.250"
-  - "🇺🇸-美国-198.200.51.18"
   - "🇺🇸-美国-103.138.75.235"
   - "🇺🇸-美国-104.16.160.114"
-  - "🇺🇸-美国-104.16.166.137"
   - "🇺🇸-美国-104.18.7.138"
-  - "🇺🇸-美国-104.18.231.232"
   - "🇺🇸-美国-104.18.245.127"
   - "🇺🇸-美国-104.21.48.161"
-  - "🇺🇸-美国-104.22.44.50"
   - "🇺🇸-美国-104.24.180.107"
   - "🇺🇸-美国-104.251.233.106"
-  - "🇺🇸-美国-107.148.200.229"
   - "🇺🇸-美国-1116yn.fans8.xyz"
-  - "🇺🇸-美国-20.151.113.120"
   - "🇺🇸-美国-20.205.63.211"
-  - "🇺🇸-美国-20.205.35.3"
   - "🇺🇸-美国-209.58.139.41"
-  - "🇺🇸-美国-3.144.176.174"
   - "🇺🇸-美国-45.142.158.85"
-  - "🇺🇸-美国-45.79.65.237.ipssh.net"
   - "🇺🇸-美国-64.32.13.3"
   - "🇺🇸-美国-715hk.fans8.xyz"
   - "🇺🇸-美国-915ru1.fans8.xyz"
   - "🇺🇸-美国-930tg.fans8.xyz"
   - "🇺🇸-美国-ngzyd-1.okex-tradebot.xyz"
-  - "🇺🇸-美国-niaocloud.niaoyun.online"
   - "🇺🇸-美国-aa.zzzr.ltd"
-  - "🇺🇸-美国-aicoo6du.com"
   - "🇺🇸-美国-amu1ahfi.com"
-  - "🇺🇸-美国-armsj2.kozow.com"
   - "🇺🇸-美国-c23s3.jamjams.net"
   - "🇺🇸-美国-cu.cheapv2.xyz"
-  - "🇺🇸-美国-cu.cnhost.top"
   - "🇺🇸-美国-cdnde.irteyz.today"
-  - "🇺🇸-美国-cm2.cheapv2.xyz"
   - "🇺🇸-美国-euserv18p.ezddns.tk"
   - "🇺🇸-美国-euserv10p.ezddns.tk"
   - "🇺🇸-美国-euserv9p.ezddns.tk"
-  - "🇺🇸-美国-fus1.uuv2.co.uk"
   - "🇺🇸-美国-ff5c0fb.re.cloudflare.systems"
-  - "🇺🇸-美国-free-russian01-cdn.xiaohouzi.club"
   - "🇺🇸-美国-free-russian02-cdn.xiaohouzi.club"
-  - "🇺🇸-美国-guangzhou-lw-03.pucdn.me"
   - "🇺🇸-美国-global-transit-01-hn.pucdn.me"
-  - "🇺🇸-美国-global-transit-02-sg.pucdn.me"
   - "🇺🇸-美国-hk1opuy-node.3366test.com"
-  - "🇺🇸-美国-l1-do-ua-03.pucdn.me"
   - "🇺🇸-美国-switzerland-zurich.mah3Hoet.com"
   - "🇺🇸-美国-shcn2-06b.iplc188.com"
-  - "🇺🇸-美国-tk.shcn2.tkddns.xyz"
   - "🇺🇸-美国-usa-sanfrancisco.lvuft.com"
-  - "🇺🇸-美国-v5.ssrsub.com"
   - "🇺🇸-美国-v1-aws-hk-04.niaoyun.online"
-  - "🇺🇸-美国-vpnhat.yhdnwm.workers.dev"
   - "🇺🇸-美国-www.digitalocean.com"
   - "🇺🇸-美国-zz.vip341.xyz"
   - "🇺🇸-美国-zecjk.com"
-  - "🇺🇸-美国-1.0.0.0"
   - "🇺🇸-美国-1.0.0.140"
-  - "🇺🇸-美国-104.16.16.255"
   - "🇺🇸-美国-104.16.182.15"
-  - "🇺🇸-美国-104.18.6.138"
+  - "🇺🇸-美国-104.17.170.210"
   - "🇺🇸-美国-104.19.101.3"
-  - "🇺🇸-美国-104.19.238.59"
   - "🇺🇸-美国-104.24.0.168"
-  - "🇺🇸-美国-104.24.142.163"
   - "🇺🇸-美国-104.24.158.46"
-  - "🇺🇸-美国-104.24.188.46"
   - "🇺🇸-美国-104.24.191.139"
-  - "🇺🇸-美国-104.24.138.229"
   - "🇺🇸-美国-104.24.209.131"
-  - "🇺🇸-美国-104.24.42.148"
   - "🇺🇸-美国-104.24.64.213"
-  - "🇺🇸-美国-104.24.62.70"
   - "🇺🇸-美国-104.24.75.54"
-  - "🇺🇸-美国-104.24.94.29"
   - "🇺🇸-美国-104.25.143.16"
-  - "🇺🇸-美国-104.25.148.216"
   - "🇺🇸-美国-104.25.151.100"
-  - "🇺🇸-美国-104.25.102.154"
   - "🇺🇸-美国-104.25.246.117"
-  - "🇺🇸-美国-104.25.215.143"
   - "🇺🇸-美国-104.25.230.73"
-  - "🇺🇸-美国-104.25.238.45"
   - "🇺🇸-美国-104.25.44.133"
-  - "🇺🇸-美国-104.25.46.190"
   - "🇺🇸-美国-104.25.63.18"
-  - "🇺🇸-美国-104.26.5.238"
   - "🇺🇸-美国-104.27.194.98"
-  - "🇺🇸-美国-104.27.198.45"
   - "🇺🇸-美国-104.27.102.4"
-  - "🇺🇸-美国-104.27.37.126"
   - "🇺🇸-美国-104.27.84.136"
-  - "🇺🇸-美国-104.27.83.11"
   - "🇺🇸-美国-104.20.81.240"
-  - "🇺🇸-美国-104.21.201.210"
   - "🇺🇸-美国-104.21.201.33"
-  - "🇺🇸-美国-104.21.207.243"
   - "🇺🇸-美国-104.21.221.156"
-  - "🇺🇸-美国-104.21.62.193"
   - "🇦🇶-亚太地区-103.164.81.108"
-  - "🇯🇵-日本-103.29.69.119"
+  - "🇭🇰-香港-129.227.201.234"
   - "🇺🇸-美国-137.175.30.251"
-  - "🇬🇧-英国-146.70.46.68"
+  - "🇸🇬-新加坡-139.162.51.223"
+  - "🇦🇺-澳大利亚-13.236.109.118"
+  - "🇬🇧-英国-146.70.71.2"
+  - "🇬🇧-英国-146.70.73.2"
   - "🇺🇸-美国-142.4.123.249"
-  - "🇺🇸-美国-154.31.41.10"
   - "🇺🇸-美国-162.159.224.228"
-  - "🇺🇸-美国-162.159.238.197"
   - "🇺🇸-美国-172.64.69.76"
-  - "🇺🇸-美国-172.67.112.66"
   - "🇺🇸-美国-172.67.117.187"
-  - "🇺🇸-美国-172.67.126.56"
   - "🇺🇸-美国-172.67.29.249"
-  - "🇺🇸-美国-172.67.222.157"
   - "🇺🇸-美国-172.67.88.37"
-  - "🇷🇺-俄罗斯-194.135.32.208"
-  - "🇺🇸-美国-198.200.51.34"
+  - "🇦🇶-匈牙利-185.225.69.134"
+  - "🇺🇸-美国-198.200.51.18"
   - "🇺🇸-美国-198.41.212.234"
   - "🇯🇵-日本-202.61.141.194"
-  - "🇺🇸-美国-45.35.84.162"
+  - "🇦🇶-以色列-212.80.205.133"
   - "🇺🇸-美国-45.63.56.11"
-  - "🇷🇺-俄罗斯-45.8.159.221"
   - "🇷🇺-俄罗斯-45.89.228.53"
-  - "🇭🇰-香港-47.242.3.85"
+  - "🇫🇷-法国-62.210.90.75"
   - "🇨🇦-加拿大-71.19.252.163"
   - "🇭🇰-香港-8.210.55.79"
   - "🇺🇸-美国-923my.fans8.xyz"
-  - "🇺🇸-美国-Eiha7iew.com"
   - "🇺🇸-美国-Ze9baeS5.com"
-  - "🇺🇸-美国-cn.zzv01.infonode.xyz"
+  - "🇺🇸-美国-cm2.cheapv2.xyz"
+  - "🇺🇸-美国-cmhk04.xc188.net"
   - "🇺🇸-美国-canada-vancouver.mah3Hoet.com"
   - "🇺🇸-美国-cc.hciahciphcie.club"
   - "🇺🇸-美国-a83679f.t3.gladns.com"
-  - "🇺🇸-美国-a83679f.th.cloudflare.systems"
   - "🇺🇸-美国-a83679f.tt.cloudflare.systems"
-  - "🇺🇸-美国-a83679f.ha.gladns.com"
+  - "🇺🇸-美国-a83679f.cw.cloudflare.systems"
   - "🇺🇸-美国-a83679f.hf.gladns.com"
-  - "🇺🇸-美国-a83679f.mc.cloudflare.systems"
   - "🇺🇸-美国-a83679f.md.cloudflare.systems"
-  - "🇺🇸-美国-a83679f.me.cloudflare.systems"
   - "🇺🇸-美国-a83679f.mh.cloudflare.systems"
-  - "🇺🇸-美国-a83679f.os.cloudflare.systems"
+  - "🇺🇸-美国-a83679f.mi.cloudflare.systems"
   - "🇺🇸-美国-a83679f.rc.gladns.com"
-  - "🇺🇸-美国-ahH4eihu.com"
+  - "🇺🇸-美国-a83679f.rd.gladns.com"
+  - "🇺🇸-美国-a83679f.rf.gladns.com"
   - "🇺🇸-美国-ahdaeph8.com"
-  - "🇺🇸-美国-c27821f.wx.gladns.com"
+  - "🇺🇸-美国-armsj2.kozow.com"
+  - "🇺🇸-美国-c27821f.rb.cloudflare.systems"
+  - "🇺🇸-美国-d0a8692.t2.gladns.com"
+  - "🇺🇸-美国-d0a8692.ha.gladns.com"
+  - "🇺🇸-美国-d0a8692.hc.gladns.com"
+  - "🇺🇸-美国-d0a8692.hf.gladns.com"
+  - "🇺🇸-美国-eeh7iewe.com"
+  - "🇺🇸-美国-ff5c0fb.hb.gladns.com"
+  - "🇺🇸-美国-ff5c0fb.rb.cloudflare.systems"
+  - "🇺🇸-美国-ff5c0fb.re.gladns.com"
+  - "🇺🇸-美国-free-russian-cdn.xiaohouzi.club"
+  - "🇺🇸-美国-kr3.futi.online"
+  - "🇺🇸-美国-hkbn-home-a.zc20200426.club"
+  - "🇺🇸-美国-sg.idvpn.me"
+  - "🇺🇸-美国-www.garmin.com"
+  - "🇺🇸-美国-tk.shcn2.tkddns.xyz"
+  - "🇺🇸-美国-tw-tb-f.zc20200426.club"
+  - "🇺🇸-美国-us1nhg-node.aiqiche123.com"
+  - "🇺🇸-美国-usa-buffalo.lvuft.com"
+  - "🇺🇸-美国-usa-lasvegas.lvuft.com"
+  - "🇺🇸-美国-usa-washington.lvuft.com"
+  - "🇺🇸-美国-v1.ssrsub.com"
+  - "🇺🇸-美国-v2.ssrsub.com"
+  - "🇺🇸-美国-v5.ssrsub.com"
+  - "🇺🇸-美国-xe3rayu3.com"
+  - "🇷🇴-罗马尼亚-79.110.54.162"
+  - "🇸🇬-新加坡-104.248.148.147"
+  - "🇸🇬-新加坡-103.253.26.134"
+  - "🇸🇬-新加坡-103.83.156.89"
+  - "🇸🇬-新加坡-172.105.113.182"
+  - "🇸🇬-新加坡-52.77.238.80"
+  - "🇹🇼-台湾-60.249.3.226"
+  - "🇺🇸-美国-1.0.0.123"
+  - "🇺🇸-美国-104.16.149.48"
+  - "🇺🇸-美国-104.16.160.209"
+  - "🇺🇸-美国-104.16.166.137"
+  - "🇺🇸-美国-104.16.172.213"
+  - "🇺🇸-美国-104.16.181.15"
+  - "🇺🇸-美国-104.16.98.249"
+  - "🇺🇸-美国-104.17.188.91"
+  - "🇺🇸-美国-104.17.105.81"
+  - "🇺🇸-美国-104.17.134.136"
+  - "🇺🇸-美国-104.17.36.178"
+  - "🇺🇸-美国-104.17.46.56"
+  - "🇺🇸-美国-104.17.98.24"
+  - "🇺🇸-美国-104.18.1.240"
 - name: "\U0001F30F 国内媒体"
   type: select
   proxies:
   - "\U0001F3AF 全球直连"
   - "\U0001F530 节点选择"
+  - "[12-07]-🇺🇸-美国-1043-t1.ssrsub.com"
   - "[12-07]-🇺🇸-美国-001-t2.ssrsub.com"
-  - "[12-07]-🇺🇸-美国-733-t3.ssrsub.com"
-  - "[12-07]-🇺🇸-美国-737-t4.ssrsub.com"
-  - "[12-07]-🇺🇸-美国-741-t7.ssrsub.com"
+  - "[12-07]-🇺🇸-美国-003-t4.ssrsub.com"
+  - "[12-07]-🇺🇸-美国-1041-t5.ssrsub.com"
+  - "[12-07]-🇺🇸-美国-1039-t2.ssrsub.com"
+  - "[12-07]-🇺🇸-美国-1045-t3.ssrsub.com"
   - "[12-07]-🇺🇸-美国-005-t4.ssrsub.com"
-  - "[12-07]-🇷🇴-罗马尼亚-3029-185.126.116.235"
-  - "[12-07]-🇬🇧-英国-3017-185.171.120.144"
-  - "[12-07]-🇺🇸-美国-3041-72.167.45.6"
+  - "[12-07]-🇺🇸-美国-1037-t5.ssrsub.com"
+  - "[12-07]-🇬🇧-英国-007-185.171.120.144"
+  - "[12-07]-🇯🇵-日本-3181-5.183.177.111"
+  - "[12-07]-🇺🇦-乌克兰-3177-5.183.179.138"
+  - "[12-07]-🇷🇴-罗马尼亚-3197-62.216.92.179"
+  - "[12-07]-🇸🇬-新加坡-3203-81.90.189.85"
   - "[12-07]-🇨🇭-瑞士-009-89.31.127.151"
-  - "[12-07]-🇺🇸-美国-409-t3.ssrsub.com"
-  - "[12-07]-🇺🇸-美国-437-t6.ssrsub.com"
-  - "[12-07]-🇷🇴-罗马尼亚-013-185.126.116.235"
-  - "[12-07]-🇺🇸-美国-3045-sg-server-01.selfupay.com"
-  - "[12-07]-🇦🇶-北美地区-3053-107.174.39.16"
-  - "[12-07]-🇦🇶-北美地区-017-107.174.67.108"
-  - "[12-07]-🇷🇺-俄罗斯-3037-194.156.120.236"
-  - "[12-07]-🇺🇸-美国加利福尼亚州洛杉矶-021-23.234.244.175"
-  - "[12-07]-🇳🇱-荷兰-3009-80.78.132.239"
-  - "[12-07]-🇬🇧-英国-025-185.171.120.144"
-  - "[12-07]-🇯🇵-日本-1285-5.183.177.111"
-  - "[12-07]-🇯🇵-日本-3013-5.183.177.111"
-  - "[12-07]-🇷🇴-罗马尼亚-3025-62.216.92.179"
-  - "[12-07]-🇷🇴-罗马尼亚-3033-62.216.92.180"
-  - "[12-07]-🇺🇸-美国-3049-72.167.45.6"
-  - "[12-07]-🇨🇭-瑞士-3021-89.31.127.151"
-  - "[12-07]-🇺🇸-美国-3057-usa-server-02.selfupay.com"
+  - "[12-07]-🇺🇸-美国-011-t6.ssrsub.com"
+  - "[12-07]-🇺🇸-美国-3205-184.168.127.50"
+  - "[12-07]-🇷🇴-罗马尼亚-3191-62.216.92.180"
+  - "[12-07]-🇺🇸-美国-3213-72.167.45.6"
+  - "[12-07]-🇨🇭-瑞士-3185-89.31.127.151"
+  - "[12-07]-🇺🇸-美国-3201-hk-server-01.selfupay.com"
+  - "[12-07]-🇺🇸-美国-3193-hk-server-02.selfupay.com"
+  - "[12-07]-🇺🇸-美国-3179-jp-server-02.selfupay.com"
+  - "[12-07]-🇺🇸-美国-3189-ned-server-01.selfupay.com"
+  - "[12-07]-🇺🇸-美国-013-sg-server-01.selfupay.com"
+  - "[12-07]-🇺🇸-美国-3209-usa-server-02.selfupay.com"
+  - "[12-07]-🇦🇶-北美地区-015-107.174.67.108"
+  - "[12-07]-🇺🇸-美国加利福尼亚州洛杉矶-017-23.234.244.175"
+  - "[12-07]-🇺🇸-美国-3207-184.168.127.50"
+  - "[12-07]-🇬🇧-英国-019-185.171.120.144"
+  - "[12-07]-🇯🇵-日本-021-5.183.177.111"
+  - "[12-07]-🇷🇴-罗马尼亚-023-62.216.92.180"
+  - "[12-07]-🇨🇭-瑞士-025-89.31.127.151"
+  - "[12-07]-🇺🇸-美国-3199-hk-server-01.selfupay.com"
+  - "[12-07]-🇺🇸-美国-3195-hk-server-02.selfupay.com"
+  - "[12-07]-🇺🇸-美国-3183-jp-server-02.selfupay.com"
+  - "[12-07]-🇺🇸-美国-3187-ned-server-01.selfupay.com"
+  - "[12-07]-🇺🇸-美国-3211-tw.softbank.mjj-home.com"
   - "🇦🇶-爱尔兰-52.48.89.93"
-  - "🇦🇶-亚太地区-103.172.116.94"
   - "🇯🇵-日本东京-52.196.144.61"
-  - "🇯🇵-日本-146.56.156.227"
   - "🇯🇵-日本-172.104.98.216"
-  - "🇬🇧-英国-146.70.73.2"
   - "🇭🇰-香港-161.81.195.100"
-  - "🇭🇰-香港-183.179.115.79"
   - "🇭🇰-香港-42.200.190.71"
   - "🇳🇱-荷兰-46.182.107.39"
-  - "🇳🇱-荷兰-46.182.107.44"
   - "🇰🇷-韩国-54.180.96.67"
-  - "🇷🇺-俄罗斯-194.5.78.89"
   - "🇸🇬-新加坡-206.189.87.180"
-  - "🇺🇸-美国加利福尼亚州洛杉矶-45.91.83.111"
   - "🇺🇸-美国-001.us.na.pop.smallairport.net"
-  - "🇺🇸-美国-172.67.69.244"
   - "🇺🇸-美国-172.67.70.171"
   - "🇺🇸-美国-192.74.254.167"
   - "🇺🇸-美国-192.96.204.250"
-  - "🇺🇸-美国-198.200.51.18"
   - "🇺🇸-美国-103.138.75.235"
   - "🇺🇸-美国-104.16.160.114"
-  - "🇺🇸-美国-104.16.166.137"
   - "🇺🇸-美国-104.18.7.138"
-  - "🇺🇸-美国-104.18.231.232"
   - "🇺🇸-美国-104.18.245.127"
   - "🇺🇸-美国-104.21.48.161"
-  - "🇺🇸-美国-104.22.44.50"
   - "🇺🇸-美国-104.24.180.107"
   - "🇺🇸-美国-104.251.233.106"
-  - "🇺🇸-美国-107.148.200.229"
   - "🇺🇸-美国-1116yn.fans8.xyz"
-  - "🇺🇸-美国-20.151.113.120"
   - "🇺🇸-美国-20.205.63.211"
-  - "🇺🇸-美国-20.205.35.3"
   - "🇺🇸-美国-209.58.139.41"
-  - "🇺🇸-美国-3.144.176.174"
   - "🇺🇸-美国-45.142.158.85"
-  - "🇺🇸-美国-45.79.65.237.ipssh.net"
   - "🇺🇸-美国-64.32.13.3"
   - "🇺🇸-美国-715hk.fans8.xyz"
   - "🇺🇸-美国-915ru1.fans8.xyz"
   - "🇺🇸-美国-930tg.fans8.xyz"
   - "🇺🇸-美国-ngzyd-1.okex-tradebot.xyz"
-  - "🇺🇸-美国-niaocloud.niaoyun.online"
   - "🇺🇸-美国-aa.zzzr.ltd"
-  - "🇺🇸-美国-aicoo6du.com"
   - "🇺🇸-美国-amu1ahfi.com"
-  - "🇺🇸-美国-armsj2.kozow.com"
   - "🇺🇸-美国-c23s3.jamjams.net"
   - "🇺🇸-美国-cu.cheapv2.xyz"
-  - "🇺🇸-美国-cu.cnhost.top"
   - "🇺🇸-美国-cdnde.irteyz.today"
-  - "🇺🇸-美国-cm2.cheapv2.xyz"
   - "🇺🇸-美国-euserv18p.ezddns.tk"
   - "🇺🇸-美国-euserv10p.ezddns.tk"
   - "🇺🇸-美国-euserv9p.ezddns.tk"
-  - "🇺🇸-美国-fus1.uuv2.co.uk"
   - "🇺🇸-美国-ff5c0fb.re.cloudflare.systems"
-  - "🇺🇸-美国-free-russian01-cdn.xiaohouzi.club"
   - "🇺🇸-美国-free-russian02-cdn.xiaohouzi.club"
-  - "🇺🇸-美国-guangzhou-lw-03.pucdn.me"
   - "🇺🇸-美国-global-transit-01-hn.pucdn.me"
-  - "🇺🇸-美国-global-transit-02-sg.pucdn.me"
   - "🇺🇸-美国-hk1opuy-node.3366test.com"
-  - "🇺🇸-美国-l1-do-ua-03.pucdn.me"
   - "🇺🇸-美国-switzerland-zurich.mah3Hoet.com"
   - "🇺🇸-美国-shcn2-06b.iplc188.com"
-  - "🇺🇸-美国-tk.shcn2.tkddns.xyz"
   - "🇺🇸-美国-usa-sanfrancisco.lvuft.com"
-  - "🇺🇸-美国-v5.ssrsub.com"
   - "🇺🇸-美国-v1-aws-hk-04.niaoyun.online"
-  - "🇺🇸-美国-vpnhat.yhdnwm.workers.dev"
   - "🇺🇸-美国-www.digitalocean.com"
   - "🇺🇸-美国-zz.vip341.xyz"
   - "🇺🇸-美国-zecjk.com"
-  - "🇺🇸-美国-1.0.0.0"
   - "🇺🇸-美国-1.0.0.140"
-  - "🇺🇸-美国-104.16.16.255"
   - "🇺🇸-美国-104.16.182.15"
-  - "🇺🇸-美国-104.18.6.138"
+  - "🇺🇸-美国-104.17.170.210"
   - "🇺🇸-美国-104.19.101.3"
-  - "🇺🇸-美国-104.19.238.59"
   - "🇺🇸-美国-104.24.0.168"
-  - "🇺🇸-美国-104.24.142.163"
   - "🇺🇸-美国-104.24.158.46"
-  - "🇺🇸-美国-104.24.188.46"
   - "🇺🇸-美国-104.24.191.139"
-  - "🇺🇸-美国-104.24.138.229"
   - "🇺🇸-美国-104.24.209.131"
-  - "🇺🇸-美国-104.24.42.148"
   - "🇺🇸-美国-104.24.64.213"
-  - "🇺🇸-美国-104.24.62.70"
   - "🇺🇸-美国-104.24.75.54"
-  - "🇺🇸-美国-104.24.94.29"
   - "🇺🇸-美国-104.25.143.16"
-  - "🇺🇸-美国-104.25.148.216"
   - "🇺🇸-美国-104.25.151.100"
-  - "🇺🇸-美国-104.25.102.154"
   - "🇺🇸-美国-104.25.246.117"
-  - "🇺🇸-美国-104.25.215.143"
   - "🇺🇸-美国-104.25.230.73"
-  - "🇺🇸-美国-104.25.238.45"
   - "🇺🇸-美国-104.25.44.133"
-  - "🇺🇸-美国-104.25.46.190"
   - "🇺🇸-美国-104.25.63.18"
-  - "🇺🇸-美国-104.26.5.238"
   - "🇺🇸-美国-104.27.194.98"
-  - "🇺🇸-美国-104.27.198.45"
   - "🇺🇸-美国-104.27.102.4"
-  - "🇺🇸-美国-104.27.37.126"
   - "🇺🇸-美国-104.27.84.136"
-  - "🇺🇸-美国-104.27.83.11"
   - "🇺🇸-美国-104.20.81.240"
-  - "🇺🇸-美国-104.21.201.210"
   - "🇺🇸-美国-104.21.201.33"
-  - "🇺🇸-美国-104.21.207.243"
   - "🇺🇸-美国-104.21.221.156"
-  - "🇺🇸-美国-104.21.62.193"
   - "🇦🇶-亚太地区-103.164.81.108"
-  - "🇯🇵-日本-103.29.69.119"
+  - "🇭🇰-香港-129.227.201.234"
   - "🇺🇸-美国-137.175.30.251"
-  - "🇬🇧-英国-146.70.46.68"
+  - "🇸🇬-新加坡-139.162.51.223"
+  - "🇦🇺-澳大利亚-13.236.109.118"
+  - "🇬🇧-英国-146.70.71.2"
+  - "🇬🇧-英国-146.70.73.2"
   - "🇺🇸-美国-142.4.123.249"
-  - "🇺🇸-美国-154.31.41.10"
   - "🇺🇸-美国-162.159.224.228"
-  - "🇺🇸-美国-162.159.238.197"
   - "🇺🇸-美国-172.64.69.76"
-  - "🇺🇸-美国-172.67.112.66"
   - "🇺🇸-美国-172.67.117.187"
-  - "🇺🇸-美国-172.67.126.56"
   - "🇺🇸-美国-172.67.29.249"
-  - "🇺🇸-美国-172.67.222.157"
   - "🇺🇸-美国-172.67.88.37"
-  - "🇷🇺-俄罗斯-194.135.32.208"
-  - "🇺🇸-美国-198.200.51.34"
+  - "🇦🇶-匈牙利-185.225.69.134"
+  - "🇺🇸-美国-198.200.51.18"
   - "🇺🇸-美国-198.41.212.234"
   - "🇯🇵-日本-202.61.141.194"
-  - "🇺🇸-美国-45.35.84.162"
+  - "🇦🇶-以色列-212.80.205.133"
   - "🇺🇸-美国-45.63.56.11"
-  - "🇷🇺-俄罗斯-45.8.159.221"
   - "🇷🇺-俄罗斯-45.89.228.53"
-  - "🇭🇰-香港-47.242.3.85"
+  - "🇫🇷-法国-62.210.90.75"
   - "🇨🇦-加拿大-71.19.252.163"
   - "🇭🇰-香港-8.210.55.79"
   - "🇺🇸-美国-923my.fans8.xyz"
-  - "🇺🇸-美国-Eiha7iew.com"
   - "🇺🇸-美国-Ze9baeS5.com"
-  - "🇺🇸-美国-cn.zzv01.infonode.xyz"
+  - "🇺🇸-美国-cm2.cheapv2.xyz"
+  - "🇺🇸-美国-cmhk04.xc188.net"
   - "🇺🇸-美国-canada-vancouver.mah3Hoet.com"
   - "🇺🇸-美国-cc.hciahciphcie.club"
   - "🇺🇸-美国-a83679f.t3.gladns.com"
-  - "🇺🇸-美国-a83679f.th.cloudflare.systems"
   - "🇺🇸-美国-a83679f.tt.cloudflare.systems"
-  - "🇺🇸-美国-a83679f.ha.gladns.com"
+  - "🇺🇸-美国-a83679f.cw.cloudflare.systems"
   - "🇺🇸-美国-a83679f.hf.gladns.com"
-  - "🇺🇸-美国-a83679f.mc.cloudflare.systems"
   - "🇺🇸-美国-a83679f.md.cloudflare.systems"
-  - "🇺🇸-美国-a83679f.me.cloudflare.systems"
   - "🇺🇸-美国-a83679f.mh.cloudflare.systems"
-  - "🇺🇸-美国-a83679f.os.cloudflare.systems"
+  - "🇺🇸-美国-a83679f.mi.cloudflare.systems"
   - "🇺🇸-美国-a83679f.rc.gladns.com"
-  - "🇺🇸-美国-ahH4eihu.com"
+  - "🇺🇸-美国-a83679f.rd.gladns.com"
+  - "🇺🇸-美国-a83679f.rf.gladns.com"
   - "🇺🇸-美国-ahdaeph8.com"
-  - "🇺🇸-美国-c27821f.wx.gladns.com"
+  - "🇺🇸-美国-armsj2.kozow.com"
+  - "🇺🇸-美国-c27821f.rb.cloudflare.systems"
+  - "🇺🇸-美国-d0a8692.t2.gladns.com"
+  - "🇺🇸-美国-d0a8692.ha.gladns.com"
+  - "🇺🇸-美国-d0a8692.hc.gladns.com"
+  - "🇺🇸-美国-d0a8692.hf.gladns.com"
+  - "🇺🇸-美国-eeh7iewe.com"
+  - "🇺🇸-美国-ff5c0fb.hb.gladns.com"
+  - "🇺🇸-美国-ff5c0fb.rb.cloudflare.systems"
+  - "🇺🇸-美国-ff5c0fb.re.gladns.com"
+  - "🇺🇸-美国-free-russian-cdn.xiaohouzi.club"
+  - "🇺🇸-美国-kr3.futi.online"
+  - "🇺🇸-美国-hkbn-home-a.zc20200426.club"
+  - "🇺🇸-美国-sg.idvpn.me"
+  - "🇺🇸-美国-www.garmin.com"
+  - "🇺🇸-美国-tk.shcn2.tkddns.xyz"
+  - "🇺🇸-美国-tw-tb-f.zc20200426.club"
+  - "🇺🇸-美国-us1nhg-node.aiqiche123.com"
+  - "🇺🇸-美国-usa-buffalo.lvuft.com"
+  - "🇺🇸-美国-usa-lasvegas.lvuft.com"
+  - "🇺🇸-美国-usa-washington.lvuft.com"
+  - "🇺🇸-美国-v1.ssrsub.com"
+  - "🇺🇸-美国-v2.ssrsub.com"
+  - "🇺🇸-美国-v5.ssrsub.com"
+  - "🇺🇸-美国-xe3rayu3.com"
+  - "🇷🇴-罗马尼亚-79.110.54.162"
+  - "🇸🇬-新加坡-104.248.148.147"
+  - "🇸🇬-新加坡-103.253.26.134"
+  - "🇸🇬-新加坡-103.83.156.89"
+  - "🇸🇬-新加坡-172.105.113.182"
+  - "🇸🇬-新加坡-52.77.238.80"
+  - "🇹🇼-台湾-60.249.3.226"
+  - "🇺🇸-美国-1.0.0.123"
+  - "🇺🇸-美国-104.16.149.48"
+  - "🇺🇸-美国-104.16.160.209"
+  - "🇺🇸-美国-104.16.166.137"
+  - "🇺🇸-美国-104.16.172.213"
+  - "🇺🇸-美国-104.16.181.15"
+  - "🇺🇸-美国-104.16.98.249"
+  - "🇺🇸-美国-104.17.188.91"
+  - "🇺🇸-美国-104.17.105.81"
+  - "🇺🇸-美国-104.17.134.136"
+  - "🇺🇸-美国-104.17.36.178"
+  - "🇺🇸-美国-104.17.46.56"
+  - "🇺🇸-美国-104.17.98.24"
+  - "🇺🇸-美国-104.18.1.240"
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
+  - "[12-07]-🇺🇸-美国-1043-t1.ssrsub.com"
   - "[12-07]-🇺🇸-美国-001-t2.ssrsub.com"
-  - "[12-07]-🇺🇸-美国-733-t3.ssrsub.com"
-  - "[12-07]-🇺🇸-美国-737-t4.ssrsub.com"
-  - "[12-07]-🇺🇸-美国-741-t7.ssrsub.com"
+  - "[12-07]-🇺🇸-美国-003-t4.ssrsub.com"
+  - "[12-07]-🇺🇸-美国-1041-t5.ssrsub.com"
+  - "[12-07]-🇺🇸-美国-1039-t2.ssrsub.com"
+  - "[12-07]-🇺🇸-美国-1045-t3.ssrsub.com"
   - "[12-07]-🇺🇸-美国-005-t4.ssrsub.com"
-  - "[12-07]-🇷🇴-罗马尼亚-3029-185.126.116.235"
-  - "[12-07]-🇬🇧-英国-3017-185.171.120.144"
-  - "[12-07]-🇺🇸-美国-3041-72.167.45.6"
+  - "[12-07]-🇺🇸-美国-1037-t5.ssrsub.com"
+  - "[12-07]-🇬🇧-英国-007-185.171.120.144"
+  - "[12-07]-🇯🇵-日本-3181-5.183.177.111"
+  - "[12-07]-🇺🇦-乌克兰-3177-5.183.179.138"
+  - "[12-07]-🇷🇴-罗马尼亚-3197-62.216.92.179"
+  - "[12-07]-🇸🇬-新加坡-3203-81.90.189.85"
   - "[12-07]-🇨🇭-瑞士-009-89.31.127.151"
-  - "[12-07]-🇺🇸-美国-409-t3.ssrsub.com"
-  - "[12-07]-🇺🇸-美国-437-t6.ssrsub.com"
-  - "[12-07]-🇷🇴-罗马尼亚-013-185.126.116.235"
-  - "[12-07]-🇺🇸-美国-3045-sg-server-01.selfupay.com"
-  - "[12-07]-🇦🇶-北美地区-3053-107.174.39.16"
-  - "[12-07]-🇦🇶-北美地区-017-107.174.67.108"
-  - "[12-07]-🇷🇺-俄罗斯-3037-194.156.120.236"
-  - "[12-07]-🇺🇸-美国加利福尼亚州洛杉矶-021-23.234.244.175"
-  - "[12-07]-🇳🇱-荷兰-3009-80.78.132.239"
-  - "[12-07]-🇬🇧-英国-025-185.171.120.144"
-  - "[12-07]-🇯🇵-日本-1285-5.183.177.111"
-  - "[12-07]-🇯🇵-日本-3013-5.183.177.111"
-  - "[12-07]-🇷🇴-罗马尼亚-3025-62.216.92.179"
-  - "[12-07]-🇷🇴-罗马尼亚-3033-62.216.92.180"
-  - "[12-07]-🇺🇸-美国-3049-72.167.45.6"
-  - "[12-07]-🇨🇭-瑞士-3021-89.31.127.151"
-  - "[12-07]-🇺🇸-美国-3057-usa-server-02.selfupay.com"
+  - "[12-07]-🇺🇸-美国-011-t6.ssrsub.com"
+  - "[12-07]-🇺🇸-美国-3205-184.168.127.50"
+  - "[12-07]-🇷🇴-罗马尼亚-3191-62.216.92.180"
+  - "[12-07]-🇺🇸-美国-3213-72.167.45.6"
+  - "[12-07]-🇨🇭-瑞士-3185-89.31.127.151"
+  - "[12-07]-🇺🇸-美国-3201-hk-server-01.selfupay.com"
+  - "[12-07]-🇺🇸-美国-3193-hk-server-02.selfupay.com"
+  - "[12-07]-🇺🇸-美国-3179-jp-server-02.selfupay.com"
+  - "[12-07]-🇺🇸-美国-3189-ned-server-01.selfupay.com"
+  - "[12-07]-🇺🇸-美国-013-sg-server-01.selfupay.com"
+  - "[12-07]-🇺🇸-美国-3209-usa-server-02.selfupay.com"
+  - "[12-07]-🇦🇶-北美地区-015-107.174.67.108"
+  - "[12-07]-🇺🇸-美国加利福尼亚州洛杉矶-017-23.234.244.175"
+  - "[12-07]-🇺🇸-美国-3207-184.168.127.50"
+  - "[12-07]-🇬🇧-英国-019-185.171.120.144"
+  - "[12-07]-🇯🇵-日本-021-5.183.177.111"
+  - "[12-07]-🇷🇴-罗马尼亚-023-62.216.92.180"
+  - "[12-07]-🇨🇭-瑞士-025-89.31.127.151"
+  - "[12-07]-🇺🇸-美国-3199-hk-server-01.selfupay.com"
+  - "[12-07]-🇺🇸-美国-3195-hk-server-02.selfupay.com"
+  - "[12-07]-🇺🇸-美国-3183-jp-server-02.selfupay.com"
+  - "[12-07]-🇺🇸-美国-3187-ned-server-01.selfupay.com"
+  - "[12-07]-🇺🇸-美国-3211-tw.softbank.mjj-home.com"
   - "🇦🇶-爱尔兰-52.48.89.93"
-  - "🇦🇶-亚太地区-103.172.116.94"
   - "🇯🇵-日本东京-52.196.144.61"
-  - "🇯🇵-日本-146.56.156.227"
   - "🇯🇵-日本-172.104.98.216"
-  - "🇬🇧-英国-146.70.73.2"
   - "🇭🇰-香港-161.81.195.100"
-  - "🇭🇰-香港-183.179.115.79"
   - "🇭🇰-香港-42.200.190.71"
   - "🇳🇱-荷兰-46.182.107.39"
-  - "🇳🇱-荷兰-46.182.107.44"
   - "🇰🇷-韩国-54.180.96.67"
-  - "🇷🇺-俄罗斯-194.5.78.89"
   - "🇸🇬-新加坡-206.189.87.180"
-  - "🇺🇸-美国加利福尼亚州洛杉矶-45.91.83.111"
   - "🇺🇸-美国-001.us.na.pop.smallairport.net"
-  - "🇺🇸-美国-172.67.69.244"
   - "🇺🇸-美国-172.67.70.171"
   - "🇺🇸-美国-192.74.254.167"
   - "🇺🇸-美国-192.96.204.250"
-  - "🇺🇸-美国-198.200.51.18"
   - "🇺🇸-美国-103.138.75.235"
   - "🇺🇸-美国-104.16.160.114"
-  - "🇺🇸-美国-104.16.166.137"
   - "🇺🇸-美国-104.18.7.138"
-  - "🇺🇸-美国-104.18.231.232"
   - "🇺🇸-美国-104.18.245.127"
   - "🇺🇸-美国-104.21.48.161"
-  - "🇺🇸-美国-104.22.44.50"
   - "🇺🇸-美国-104.24.180.107"
   - "🇺🇸-美国-104.251.233.106"
-  - "🇺🇸-美国-107.148.200.229"
   - "🇺🇸-美国-1116yn.fans8.xyz"
-  - "🇺🇸-美国-20.151.113.120"
   - "🇺🇸-美国-20.205.63.211"
-  - "🇺🇸-美国-20.205.35.3"
   - "🇺🇸-美国-209.58.139.41"
-  - "🇺🇸-美国-3.144.176.174"
   - "🇺🇸-美国-45.142.158.85"
-  - "🇺🇸-美国-45.79.65.237.ipssh.net"
   - "🇺🇸-美国-64.32.13.3"
   - "🇺🇸-美国-715hk.fans8.xyz"
   - "🇺🇸-美国-915ru1.fans8.xyz"
   - "🇺🇸-美国-930tg.fans8.xyz"
   - "🇺🇸-美国-ngzyd-1.okex-tradebot.xyz"
-  - "🇺🇸-美国-niaocloud.niaoyun.online"
   - "🇺🇸-美国-aa.zzzr.ltd"
-  - "🇺🇸-美国-aicoo6du.com"
   - "🇺🇸-美国-amu1ahfi.com"
-  - "🇺🇸-美国-armsj2.kozow.com"
   - "🇺🇸-美国-c23s3.jamjams.net"
   - "🇺🇸-美国-cu.cheapv2.xyz"
-  - "🇺🇸-美国-cu.cnhost.top"
   - "🇺🇸-美国-cdnde.irteyz.today"
-  - "🇺🇸-美国-cm2.cheapv2.xyz"
   - "🇺🇸-美国-euserv18p.ezddns.tk"
   - "🇺🇸-美国-euserv10p.ezddns.tk"
   - "🇺🇸-美国-euserv9p.ezddns.tk"
-  - "🇺🇸-美国-fus1.uuv2.co.uk"
   - "🇺🇸-美国-ff5c0fb.re.cloudflare.systems"
-  - "🇺🇸-美国-free-russian01-cdn.xiaohouzi.club"
   - "🇺🇸-美国-free-russian02-cdn.xiaohouzi.club"
-  - "🇺🇸-美国-guangzhou-lw-03.pucdn.me"
   - "🇺🇸-美国-global-transit-01-hn.pucdn.me"
-  - "🇺🇸-美国-global-transit-02-sg.pucdn.me"
   - "🇺🇸-美国-hk1opuy-node.3366test.com"
-  - "🇺🇸-美国-l1-do-ua-03.pucdn.me"
   - "🇺🇸-美国-switzerland-zurich.mah3Hoet.com"
   - "🇺🇸-美国-shcn2-06b.iplc188.com"
-  - "🇺🇸-美国-tk.shcn2.tkddns.xyz"
   - "🇺🇸-美国-usa-sanfrancisco.lvuft.com"
-  - "🇺🇸-美国-v5.ssrsub.com"
   - "🇺🇸-美国-v1-aws-hk-04.niaoyun.online"
-  - "🇺🇸-美国-vpnhat.yhdnwm.workers.dev"
   - "🇺🇸-美国-www.digitalocean.com"
   - "🇺🇸-美国-zz.vip341.xyz"
   - "🇺🇸-美国-zecjk.com"
-  - "🇺🇸-美国-1.0.0.0"
   - "🇺🇸-美国-1.0.0.140"
-  - "🇺🇸-美国-104.16.16.255"
   - "🇺🇸-美国-104.16.182.15"
-  - "🇺🇸-美国-104.18.6.138"
+  - "🇺🇸-美国-104.17.170.210"
   - "🇺🇸-美国-104.19.101.3"
-  - "🇺🇸-美国-104.19.238.59"
   - "🇺🇸-美国-104.24.0.168"
-  - "🇺🇸-美国-104.24.142.163"
   - "🇺🇸-美国-104.24.158.46"
-  - "🇺🇸-美国-104.24.188.46"
   - "🇺🇸-美国-104.24.191.139"
-  - "🇺🇸-美国-104.24.138.229"
   - "🇺🇸-美国-104.24.209.131"
-  - "🇺🇸-美国-104.24.42.148"
   - "🇺🇸-美国-104.24.64.213"
-  - "🇺🇸-美国-104.24.62.70"
   - "🇺🇸-美国-104.24.75.54"
-  - "🇺🇸-美国-104.24.94.29"
   - "🇺🇸-美国-104.25.143.16"
-  - "🇺🇸-美国-104.25.148.216"
   - "🇺🇸-美国-104.25.151.100"
-  - "🇺🇸-美国-104.25.102.154"
   - "🇺🇸-美国-104.25.246.117"
-  - "🇺🇸-美国-104.25.215.143"
   - "🇺🇸-美国-104.25.230.73"
-  - "🇺🇸-美国-104.25.238.45"
   - "🇺🇸-美国-104.25.44.133"
-  - "🇺🇸-美国-104.25.46.190"
   - "🇺🇸-美国-104.25.63.18"
-  - "🇺🇸-美国-104.26.5.238"
   - "🇺🇸-美国-104.27.194.98"
-  - "🇺🇸-美国-104.27.198.45"
   - "🇺🇸-美国-104.27.102.4"
-  - "🇺🇸-美国-104.27.37.126"
   - "🇺🇸-美国-104.27.84.136"
-  - "🇺🇸-美国-104.27.83.11"
   - "🇺🇸-美国-104.20.81.240"
-  - "🇺🇸-美国-104.21.201.210"
   - "🇺🇸-美国-104.21.201.33"
-  - "🇺🇸-美国-104.21.207.243"
   - "🇺🇸-美国-104.21.221.156"
-  - "🇺🇸-美国-104.21.62.193"
   - "🇦🇶-亚太地区-103.164.81.108"
-  - "🇯🇵-日本-103.29.69.119"
+  - "🇭🇰-香港-129.227.201.234"
   - "🇺🇸-美国-137.175.30.251"
-  - "🇬🇧-英国-146.70.46.68"
+  - "🇸🇬-新加坡-139.162.51.223"
+  - "🇦🇺-澳大利亚-13.236.109.118"
+  - "🇬🇧-英国-146.70.71.2"
+  - "🇬🇧-英国-146.70.73.2"
   - "🇺🇸-美国-142.4.123.249"
-  - "🇺🇸-美国-154.31.41.10"
   - "🇺🇸-美国-162.159.224.228"
-  - "🇺🇸-美国-162.159.238.197"
   - "🇺🇸-美国-172.64.69.76"
-  - "🇺🇸-美国-172.67.112.66"
   - "🇺🇸-美国-172.67.117.187"
-  - "🇺🇸-美国-172.67.126.56"
   - "🇺🇸-美国-172.67.29.249"
-  - "🇺🇸-美国-172.67.222.157"
   - "🇺🇸-美国-172.67.88.37"
-  - "🇷🇺-俄罗斯-194.135.32.208"
-  - "🇺🇸-美国-198.200.51.34"
+  - "🇦🇶-匈牙利-185.225.69.134"
+  - "🇺🇸-美国-198.200.51.18"
   - "🇺🇸-美国-198.41.212.234"
   - "🇯🇵-日本-202.61.141.194"
-  - "🇺🇸-美国-45.35.84.162"
+  - "🇦🇶-以色列-212.80.205.133"
   - "🇺🇸-美国-45.63.56.11"
-  - "🇷🇺-俄罗斯-45.8.159.221"
   - "🇷🇺-俄罗斯-45.89.228.53"
-  - "🇭🇰-香港-47.242.3.85"
+  - "🇫🇷-法国-62.210.90.75"
   - "🇨🇦-加拿大-71.19.252.163"
   - "🇭🇰-香港-8.210.55.79"
   - "🇺🇸-美国-923my.fans8.xyz"
-  - "🇺🇸-美国-Eiha7iew.com"
   - "🇺🇸-美国-Ze9baeS5.com"
-  - "🇺🇸-美国-cn.zzv01.infonode.xyz"
+  - "🇺🇸-美国-cm2.cheapv2.xyz"
+  - "🇺🇸-美国-cmhk04.xc188.net"
   - "🇺🇸-美国-canada-vancouver.mah3Hoet.com"
   - "🇺🇸-美国-cc.hciahciphcie.club"
   - "🇺🇸-美国-a83679f.t3.gladns.com"
-  - "🇺🇸-美国-a83679f.th.cloudflare.systems"
   - "🇺🇸-美国-a83679f.tt.cloudflare.systems"
-  - "🇺🇸-美国-a83679f.ha.gladns.com"
+  - "🇺🇸-美国-a83679f.cw.cloudflare.systems"
   - "🇺🇸-美国-a83679f.hf.gladns.com"
-  - "🇺🇸-美国-a83679f.mc.cloudflare.systems"
   - "🇺🇸-美国-a83679f.md.cloudflare.systems"
-  - "🇺🇸-美国-a83679f.me.cloudflare.systems"
   - "🇺🇸-美国-a83679f.mh.cloudflare.systems"
-  - "🇺🇸-美国-a83679f.os.cloudflare.systems"
+  - "🇺🇸-美国-a83679f.mi.cloudflare.systems"
   - "🇺🇸-美国-a83679f.rc.gladns.com"
-  - "🇺🇸-美国-ahH4eihu.com"
+  - "🇺🇸-美国-a83679f.rd.gladns.com"
+  - "🇺🇸-美国-a83679f.rf.gladns.com"
   - "🇺🇸-美国-ahdaeph8.com"
-  - "🇺🇸-美国-c27821f.wx.gladns.com"
+  - "🇺🇸-美国-armsj2.kozow.com"
+  - "🇺🇸-美国-c27821f.rb.cloudflare.systems"
+  - "🇺🇸-美国-d0a8692.t2.gladns.com"
+  - "🇺🇸-美国-d0a8692.ha.gladns.com"
+  - "🇺🇸-美国-d0a8692.hc.gladns.com"
+  - "🇺🇸-美国-d0a8692.hf.gladns.com"
+  - "🇺🇸-美国-eeh7iewe.com"
+  - "🇺🇸-美国-ff5c0fb.hb.gladns.com"
+  - "🇺🇸-美国-ff5c0fb.rb.cloudflare.systems"
+  - "🇺🇸-美国-ff5c0fb.re.gladns.com"
+  - "🇺🇸-美国-free-russian-cdn.xiaohouzi.club"
+  - "🇺🇸-美国-kr3.futi.online"
+  - "🇺🇸-美国-hkbn-home-a.zc20200426.club"
+  - "🇺🇸-美国-sg.idvpn.me"
+  - "🇺🇸-美国-www.garmin.com"
+  - "🇺🇸-美国-tk.shcn2.tkddns.xyz"
+  - "🇺🇸-美国-tw-tb-f.zc20200426.club"
+  - "🇺🇸-美国-us1nhg-node.aiqiche123.com"
+  - "🇺🇸-美国-usa-buffalo.lvuft.com"
+  - "🇺🇸-美国-usa-lasvegas.lvuft.com"
+  - "🇺🇸-美国-usa-washington.lvuft.com"
+  - "🇺🇸-美国-v1.ssrsub.com"
+  - "🇺🇸-美国-v2.ssrsub.com"
+  - "🇺🇸-美国-v5.ssrsub.com"
+  - "🇺🇸-美国-xe3rayu3.com"
+  - "🇷🇴-罗马尼亚-79.110.54.162"
+  - "🇸🇬-新加坡-104.248.148.147"
+  - "🇸🇬-新加坡-103.253.26.134"
+  - "🇸🇬-新加坡-103.83.156.89"
+  - "🇸🇬-新加坡-172.105.113.182"
+  - "🇸🇬-新加坡-52.77.238.80"
+  - "🇹🇼-台湾-60.249.3.226"
+  - "🇺🇸-美国-1.0.0.123"
+  - "🇺🇸-美国-104.16.149.48"
+  - "🇺🇸-美国-104.16.160.209"
+  - "🇺🇸-美国-104.16.166.137"
+  - "🇺🇸-美国-104.16.172.213"
+  - "🇺🇸-美国-104.16.181.15"
+  - "🇺🇸-美国-104.16.98.249"
+  - "🇺🇸-美国-104.17.188.91"
+  - "🇺🇸-美国-104.17.105.81"
+  - "🇺🇸-美国-104.17.134.136"
+  - "🇺🇸-美国-104.17.36.178"
+  - "🇺🇸-美国-104.17.46.56"
+  - "🇺🇸-美国-104.17.98.24"
+  - "🇺🇸-美国-104.18.1.240"
 - name: "\U0001F4F2 电报信息"
   type: select
   proxies:
   - "\U0001F530 节点选择"
   - "\U0001F3AF 全球直连"
+  - "[12-07]-🇺🇸-美国-1043-t1.ssrsub.com"
   - "[12-07]-🇺🇸-美国-001-t2.ssrsub.com"
-  - "[12-07]-🇺🇸-美国-733-t3.ssrsub.com"
-  - "[12-07]-🇺🇸-美国-737-t4.ssrsub.com"
-  - "[12-07]-🇺🇸-美国-741-t7.ssrsub.com"
+  - "[12-07]-🇺🇸-美国-003-t4.ssrsub.com"
+  - "[12-07]-🇺🇸-美国-1041-t5.ssrsub.com"
+  - "[12-07]-🇺🇸-美国-1039-t2.ssrsub.com"
+  - "[12-07]-🇺🇸-美国-1045-t3.ssrsub.com"
   - "[12-07]-🇺🇸-美国-005-t4.ssrsub.com"
-  - "[12-07]-🇷🇴-罗马尼亚-3029-185.126.116.235"
-  - "[12-07]-🇬🇧-英国-3017-185.171.120.144"
-  - "[12-07]-🇺🇸-美国-3041-72.167.45.6"
+  - "[12-07]-🇺🇸-美国-1037-t5.ssrsub.com"
+  - "[12-07]-🇬🇧-英国-007-185.171.120.144"
+  - "[12-07]-🇯🇵-日本-3181-5.183.177.111"
+  - "[12-07]-🇺🇦-乌克兰-3177-5.183.179.138"
+  - "[12-07]-🇷🇴-罗马尼亚-3197-62.216.92.179"
+  - "[12-07]-🇸🇬-新加坡-3203-81.90.189.85"
   - "[12-07]-🇨🇭-瑞士-009-89.31.127.151"
-  - "[12-07]-🇺🇸-美国-409-t3.ssrsub.com"
-  - "[12-07]-🇺🇸-美国-437-t6.ssrsub.com"
-  - "[12-07]-🇷🇴-罗马尼亚-013-185.126.116.235"
-  - "[12-07]-🇺🇸-美国-3045-sg-server-01.selfupay.com"
-  - "[12-07]-🇦🇶-北美地区-3053-107.174.39.16"
-  - "[12-07]-🇦🇶-北美地区-017-107.174.67.108"
-  - "[12-07]-🇷🇺-俄罗斯-3037-194.156.120.236"
-  - "[12-07]-🇺🇸-美国加利福尼亚州洛杉矶-021-23.234.244.175"
-  - "[12-07]-🇳🇱-荷兰-3009-80.78.132.239"
-  - "[12-07]-🇬🇧-英国-025-185.171.120.144"
-  - "[12-07]-🇯🇵-日本-1285-5.183.177.111"
-  - "[12-07]-🇯🇵-日本-3013-5.183.177.111"
-  - "[12-07]-🇷🇴-罗马尼亚-3025-62.216.92.179"
-  - "[12-07]-🇷🇴-罗马尼亚-3033-62.216.92.180"
-  - "[12-07]-🇺🇸-美国-3049-72.167.45.6"
-  - "[12-07]-🇨🇭-瑞士-3021-89.31.127.151"
-  - "[12-07]-🇺🇸-美国-3057-usa-server-02.selfupay.com"
+  - "[12-07]-🇺🇸-美国-011-t6.ssrsub.com"
+  - "[12-07]-🇺🇸-美国-3205-184.168.127.50"
+  - "[12-07]-🇷🇴-罗马尼亚-3191-62.216.92.180"
+  - "[12-07]-🇺🇸-美国-3213-72.167.45.6"
+  - "[12-07]-🇨🇭-瑞士-3185-89.31.127.151"
+  - "[12-07]-🇺🇸-美国-3201-hk-server-01.selfupay.com"
+  - "[12-07]-🇺🇸-美国-3193-hk-server-02.selfupay.com"
+  - "[12-07]-🇺🇸-美国-3179-jp-server-02.selfupay.com"
+  - "[12-07]-🇺🇸-美国-3189-ned-server-01.selfupay.com"
+  - "[12-07]-🇺🇸-美国-013-sg-server-01.selfupay.com"
+  - "[12-07]-🇺🇸-美国-3209-usa-server-02.selfupay.com"
+  - "[12-07]-🇦🇶-北美地区-015-107.174.67.108"
+  - "[12-07]-🇺🇸-美国加利福尼亚州洛杉矶-017-23.234.244.175"
+  - "[12-07]-🇺🇸-美国-3207-184.168.127.50"
+  - "[12-07]-🇬🇧-英国-019-185.171.120.144"
+  - "[12-07]-🇯🇵-日本-021-5.183.177.111"
+  - "[12-07]-🇷🇴-罗马尼亚-023-62.216.92.180"
+  - "[12-07]-🇨🇭-瑞士-025-89.31.127.151"
+  - "[12-07]-🇺🇸-美国-3199-hk-server-01.selfupay.com"
+  - "[12-07]-🇺🇸-美国-3195-hk-server-02.selfupay.com"
+  - "[12-07]-🇺🇸-美国-3183-jp-server-02.selfupay.com"
+  - "[12-07]-🇺🇸-美国-3187-ned-server-01.selfupay.com"
+  - "[12-07]-🇺🇸-美国-3211-tw.softbank.mjj-home.com"
   - "🇦🇶-爱尔兰-52.48.89.93"
-  - "🇦🇶-亚太地区-103.172.116.94"
   - "🇯🇵-日本东京-52.196.144.61"
-  - "🇯🇵-日本-146.56.156.227"
   - "🇯🇵-日本-172.104.98.216"
-  - "🇬🇧-英国-146.70.73.2"
   - "🇭🇰-香港-161.81.195.100"
-  - "🇭🇰-香港-183.179.115.79"
   - "🇭🇰-香港-42.200.190.71"
   - "🇳🇱-荷兰-46.182.107.39"
-  - "🇳🇱-荷兰-46.182.107.44"
   - "🇰🇷-韩国-54.180.96.67"
-  - "🇷🇺-俄罗斯-194.5.78.89"
   - "🇸🇬-新加坡-206.189.87.180"
-  - "🇺🇸-美国加利福尼亚州洛杉矶-45.91.83.111"
   - "🇺🇸-美国-001.us.na.pop.smallairport.net"
-  - "🇺🇸-美国-172.67.69.244"
   - "🇺🇸-美国-172.67.70.171"
   - "🇺🇸-美国-192.74.254.167"
   - "🇺🇸-美国-192.96.204.250"
-  - "🇺🇸-美国-198.200.51.18"
   - "🇺🇸-美国-103.138.75.235"
   - "🇺🇸-美国-104.16.160.114"
-  - "🇺🇸-美国-104.16.166.137"
   - "🇺🇸-美国-104.18.7.138"
-  - "🇺🇸-美国-104.18.231.232"
   - "🇺🇸-美国-104.18.245.127"
   - "🇺🇸-美国-104.21.48.161"
-  - "🇺🇸-美国-104.22.44.50"
   - "🇺🇸-美国-104.24.180.107"
   - "🇺🇸-美国-104.251.233.106"
-  - "🇺🇸-美国-107.148.200.229"
   - "🇺🇸-美国-1116yn.fans8.xyz"
-  - "🇺🇸-美国-20.151.113.120"
   - "🇺🇸-美国-20.205.63.211"
-  - "🇺🇸-美国-20.205.35.3"
   - "🇺🇸-美国-209.58.139.41"
-  - "🇺🇸-美国-3.144.176.174"
   - "🇺🇸-美国-45.142.158.85"
-  - "🇺🇸-美国-45.79.65.237.ipssh.net"
   - "🇺🇸-美国-64.32.13.3"
   - "🇺🇸-美国-715hk.fans8.xyz"
   - "🇺🇸-美国-915ru1.fans8.xyz"
   - "🇺🇸-美国-930tg.fans8.xyz"
   - "🇺🇸-美国-ngzyd-1.okex-tradebot.xyz"
-  - "🇺🇸-美国-niaocloud.niaoyun.online"
   - "🇺🇸-美国-aa.zzzr.ltd"
-  - "🇺🇸-美国-aicoo6du.com"
   - "🇺🇸-美国-amu1ahfi.com"
-  - "🇺🇸-美国-armsj2.kozow.com"
   - "🇺🇸-美国-c23s3.jamjams.net"
   - "🇺🇸-美国-cu.cheapv2.xyz"
-  - "🇺🇸-美国-cu.cnhost.top"
   - "🇺🇸-美国-cdnde.irteyz.today"
-  - "🇺🇸-美国-cm2.cheapv2.xyz"
   - "🇺🇸-美国-euserv18p.ezddns.tk"
   - "🇺🇸-美国-euserv10p.ezddns.tk"
   - "🇺🇸-美国-euserv9p.ezddns.tk"
-  - "🇺🇸-美国-fus1.uuv2.co.uk"
   - "🇺🇸-美国-ff5c0fb.re.cloudflare.systems"
-  - "🇺🇸-美国-free-russian01-cdn.xiaohouzi.club"
   - "🇺🇸-美国-free-russian02-cdn.xiaohouzi.club"
-  - "🇺🇸-美国-guangzhou-lw-03.pucdn.me"
   - "🇺🇸-美国-global-transit-01-hn.pucdn.me"
-  - "🇺🇸-美国-global-transit-02-sg.pucdn.me"
   - "🇺🇸-美国-hk1opuy-node.3366test.com"
-  - "🇺🇸-美国-l1-do-ua-03.pucdn.me"
   - "🇺🇸-美国-switzerland-zurich.mah3Hoet.com"
   - "🇺🇸-美国-shcn2-06b.iplc188.com"
-  - "🇺🇸-美国-tk.shcn2.tkddns.xyz"
   - "🇺🇸-美国-usa-sanfrancisco.lvuft.com"
-  - "🇺🇸-美国-v5.ssrsub.com"
   - "🇺🇸-美国-v1-aws-hk-04.niaoyun.online"
-  - "🇺🇸-美国-vpnhat.yhdnwm.workers.dev"
   - "🇺🇸-美国-www.digitalocean.com"
   - "🇺🇸-美国-zz.vip341.xyz"
   - "🇺🇸-美国-zecjk.com"
-  - "🇺🇸-美国-1.0.0.0"
   - "🇺🇸-美国-1.0.0.140"
-  - "🇺🇸-美国-104.16.16.255"
   - "🇺🇸-美国-104.16.182.15"
-  - "🇺🇸-美国-104.18.6.138"
+  - "🇺🇸-美国-104.17.170.210"
   - "🇺🇸-美国-104.19.101.3"
-  - "🇺🇸-美国-104.19.238.59"
   - "🇺🇸-美国-104.24.0.168"
-  - "🇺🇸-美国-104.24.142.163"
   - "🇺🇸-美国-104.24.158.46"
-  - "🇺🇸-美国-104.24.188.46"
   - "🇺🇸-美国-104.24.191.139"
-  - "🇺🇸-美国-104.24.138.229"
   - "🇺🇸-美国-104.24.209.131"
-  - "🇺🇸-美国-104.24.42.148"
   - "🇺🇸-美国-104.24.64.213"
-  - "🇺🇸-美国-104.24.62.70"
   - "🇺🇸-美国-104.24.75.54"
-  - "🇺🇸-美国-104.24.94.29"
   - "🇺🇸-美国-104.25.143.16"
-  - "🇺🇸-美国-104.25.148.216"
   - "🇺🇸-美国-104.25.151.100"
-  - "🇺🇸-美国-104.25.102.154"
   - "🇺🇸-美国-104.25.246.117"
-  - "🇺🇸-美国-104.25.215.143"
   - "🇺🇸-美国-104.25.230.73"
-  - "🇺🇸-美国-104.25.238.45"
   - "🇺🇸-美国-104.25.44.133"
-  - "🇺🇸-美国-104.25.46.190"
   - "🇺🇸-美国-104.25.63.18"
-  - "🇺🇸-美国-104.26.5.238"
   - "🇺🇸-美国-104.27.194.98"
-  - "🇺🇸-美国-104.27.198.45"
   - "🇺🇸-美国-104.27.102.4"
-  - "🇺🇸-美国-104.27.37.126"
   - "🇺🇸-美国-104.27.84.136"
-  - "🇺🇸-美国-104.27.83.11"
   - "🇺🇸-美国-104.20.81.240"
-  - "🇺🇸-美国-104.21.201.210"
   - "🇺🇸-美国-104.21.201.33"
-  - "🇺🇸-美国-104.21.207.243"
   - "🇺🇸-美国-104.21.221.156"
-  - "🇺🇸-美国-104.21.62.193"
   - "🇦🇶-亚太地区-103.164.81.108"
-  - "🇯🇵-日本-103.29.69.119"
+  - "🇭🇰-香港-129.227.201.234"
   - "🇺🇸-美国-137.175.30.251"
-  - "🇬🇧-英国-146.70.46.68"
+  - "🇸🇬-新加坡-139.162.51.223"
+  - "🇦🇺-澳大利亚-13.236.109.118"
+  - "🇬🇧-英国-146.70.71.2"
+  - "🇬🇧-英国-146.70.73.2"
   - "🇺🇸-美国-142.4.123.249"
-  - "🇺🇸-美国-154.31.41.10"
   - "🇺🇸-美国-162.159.224.228"
-  - "🇺🇸-美国-162.159.238.197"
   - "🇺🇸-美国-172.64.69.76"
-  - "🇺🇸-美国-172.67.112.66"
   - "🇺🇸-美国-172.67.117.187"
-  - "🇺🇸-美国-172.67.126.56"
   - "🇺🇸-美国-172.67.29.249"
-  - "🇺🇸-美国-172.67.222.157"
   - "🇺🇸-美国-172.67.88.37"
-  - "🇷🇺-俄罗斯-194.135.32.208"
-  - "🇺🇸-美国-198.200.51.34"
+  - "🇦🇶-匈牙利-185.225.69.134"
+  - "🇺🇸-美国-198.200.51.18"
   - "🇺🇸-美国-198.41.212.234"
   - "🇯🇵-日本-202.61.141.194"
-  - "🇺🇸-美国-45.35.84.162"
+  - "🇦🇶-以色列-212.80.205.133"
   - "🇺🇸-美国-45.63.56.11"
-  - "🇷🇺-俄罗斯-45.8.159.221"
   - "🇷🇺-俄罗斯-45.89.228.53"
-  - "🇭🇰-香港-47.242.3.85"
+  - "🇫🇷-法国-62.210.90.75"
   - "🇨🇦-加拿大-71.19.252.163"
   - "🇭🇰-香港-8.210.55.79"
   - "🇺🇸-美国-923my.fans8.xyz"
-  - "🇺🇸-美国-Eiha7iew.com"
   - "🇺🇸-美国-Ze9baeS5.com"
-  - "🇺🇸-美国-cn.zzv01.infonode.xyz"
+  - "🇺🇸-美国-cm2.cheapv2.xyz"
+  - "🇺🇸-美国-cmhk04.xc188.net"
   - "🇺🇸-美国-canada-vancouver.mah3Hoet.com"
   - "🇺🇸-美国-cc.hciahciphcie.club"
   - "🇺🇸-美国-a83679f.t3.gladns.com"
-  - "🇺🇸-美国-a83679f.th.cloudflare.systems"
   - "🇺🇸-美国-a83679f.tt.cloudflare.systems"
-  - "🇺🇸-美国-a83679f.ha.gladns.com"
+  - "🇺🇸-美国-a83679f.cw.cloudflare.systems"
   - "🇺🇸-美国-a83679f.hf.gladns.com"
-  - "🇺🇸-美国-a83679f.mc.cloudflare.systems"
   - "🇺🇸-美国-a83679f.md.cloudflare.systems"
-  - "🇺🇸-美国-a83679f.me.cloudflare.systems"
   - "🇺🇸-美国-a83679f.mh.cloudflare.systems"
-  - "🇺🇸-美国-a83679f.os.cloudflare.systems"
+  - "🇺🇸-美国-a83679f.mi.cloudflare.systems"
   - "🇺🇸-美国-a83679f.rc.gladns.com"
-  - "🇺🇸-美国-ahH4eihu.com"
+  - "🇺🇸-美国-a83679f.rd.gladns.com"
+  - "🇺🇸-美国-a83679f.rf.gladns.com"
   - "🇺🇸-美国-ahdaeph8.com"
-  - "🇺🇸-美国-c27821f.wx.gladns.com"
+  - "🇺🇸-美国-armsj2.kozow.com"
+  - "🇺🇸-美国-c27821f.rb.cloudflare.systems"
+  - "🇺🇸-美国-d0a8692.t2.gladns.com"
+  - "🇺🇸-美国-d0a8692.ha.gladns.com"
+  - "🇺🇸-美国-d0a8692.hc.gladns.com"
+  - "🇺🇸-美国-d0a8692.hf.gladns.com"
+  - "🇺🇸-美国-eeh7iewe.com"
+  - "🇺🇸-美国-ff5c0fb.hb.gladns.com"
+  - "🇺🇸-美国-ff5c0fb.rb.cloudflare.systems"
+  - "🇺🇸-美国-ff5c0fb.re.gladns.com"
+  - "🇺🇸-美国-free-russian-cdn.xiaohouzi.club"
+  - "🇺🇸-美国-kr3.futi.online"
+  - "🇺🇸-美国-hkbn-home-a.zc20200426.club"
+  - "🇺🇸-美国-sg.idvpn.me"
+  - "🇺🇸-美国-www.garmin.com"
+  - "🇺🇸-美国-tk.shcn2.tkddns.xyz"
+  - "🇺🇸-美国-tw-tb-f.zc20200426.club"
+  - "🇺🇸-美国-us1nhg-node.aiqiche123.com"
+  - "🇺🇸-美国-usa-buffalo.lvuft.com"
+  - "🇺🇸-美国-usa-lasvegas.lvuft.com"
+  - "🇺🇸-美国-usa-washington.lvuft.com"
+  - "🇺🇸-美国-v1.ssrsub.com"
+  - "🇺🇸-美国-v2.ssrsub.com"
+  - "🇺🇸-美国-v5.ssrsub.com"
+  - "🇺🇸-美国-xe3rayu3.com"
+  - "🇷🇴-罗马尼亚-79.110.54.162"
+  - "🇸🇬-新加坡-104.248.148.147"
+  - "🇸🇬-新加坡-103.253.26.134"
+  - "🇸🇬-新加坡-103.83.156.89"
+  - "🇸🇬-新加坡-172.105.113.182"
+  - "🇸🇬-新加坡-52.77.238.80"
+  - "🇹🇼-台湾-60.249.3.226"
+  - "🇺🇸-美国-1.0.0.123"
+  - "🇺🇸-美国-104.16.149.48"
+  - "🇺🇸-美国-104.16.160.209"
+  - "🇺🇸-美国-104.16.166.137"
+  - "🇺🇸-美国-104.16.172.213"
+  - "🇺🇸-美国-104.16.181.15"
+  - "🇺🇸-美国-104.16.98.249"
+  - "🇺🇸-美国-104.17.188.91"
+  - "🇺🇸-美国-104.17.105.81"
+  - "🇺🇸-美国-104.17.134.136"
+  - "🇺🇸-美国-104.17.36.178"
+  - "🇺🇸-美国-104.17.46.56"
+  - "🇺🇸-美国-104.17.98.24"
+  - "🇺🇸-美国-104.18.1.240"
 - name: "\U0001F34E 苹果服务"
   type: select
   proxies:
   - "\U0001F530 节点选择"
   - "\U0001F3AF 全球直连"
   - "♻️ 自动选择"
+  - "[12-07]-🇺🇸-美国-1043-t1.ssrsub.com"
   - "[12-07]-🇺🇸-美国-001-t2.ssrsub.com"
-  - "[12-07]-🇺🇸-美国-733-t3.ssrsub.com"
-  - "[12-07]-🇺🇸-美国-737-t4.ssrsub.com"
-  - "[12-07]-🇺🇸-美国-741-t7.ssrsub.com"
+  - "[12-07]-🇺🇸-美国-003-t4.ssrsub.com"
+  - "[12-07]-🇺🇸-美国-1041-t5.ssrsub.com"
+  - "[12-07]-🇺🇸-美国-1039-t2.ssrsub.com"
+  - "[12-07]-🇺🇸-美国-1045-t3.ssrsub.com"
   - "[12-07]-🇺🇸-美国-005-t4.ssrsub.com"
-  - "[12-07]-🇷🇴-罗马尼亚-3029-185.126.116.235"
-  - "[12-07]-🇬🇧-英国-3017-185.171.120.144"
-  - "[12-07]-🇺🇸-美国-3041-72.167.45.6"
+  - "[12-07]-🇺🇸-美国-1037-t5.ssrsub.com"
+  - "[12-07]-🇬🇧-英国-007-185.171.120.144"
+  - "[12-07]-🇯🇵-日本-3181-5.183.177.111"
+  - "[12-07]-🇺🇦-乌克兰-3177-5.183.179.138"
+  - "[12-07]-🇷🇴-罗马尼亚-3197-62.216.92.179"
+  - "[12-07]-🇸🇬-新加坡-3203-81.90.189.85"
   - "[12-07]-🇨🇭-瑞士-009-89.31.127.151"
-  - "[12-07]-🇺🇸-美国-409-t3.ssrsub.com"
-  - "[12-07]-🇺🇸-美国-437-t6.ssrsub.com"
-  - "[12-07]-🇷🇴-罗马尼亚-013-185.126.116.235"
-  - "[12-07]-🇺🇸-美国-3045-sg-server-01.selfupay.com"
-  - "[12-07]-🇦🇶-北美地区-3053-107.174.39.16"
-  - "[12-07]-🇦🇶-北美地区-017-107.174.67.108"
-  - "[12-07]-🇷🇺-俄罗斯-3037-194.156.120.236"
-  - "[12-07]-🇺🇸-美国加利福尼亚州洛杉矶-021-23.234.244.175"
-  - "[12-07]-🇳🇱-荷兰-3009-80.78.132.239"
-  - "[12-07]-🇬🇧-英国-025-185.171.120.144"
-  - "[12-07]-🇯🇵-日本-1285-5.183.177.111"
-  - "[12-07]-🇯🇵-日本-3013-5.183.177.111"
-  - "[12-07]-🇷🇴-罗马尼亚-3025-62.216.92.179"
-  - "[12-07]-🇷🇴-罗马尼亚-3033-62.216.92.180"
-  - "[12-07]-🇺🇸-美国-3049-72.167.45.6"
-  - "[12-07]-🇨🇭-瑞士-3021-89.31.127.151"
-  - "[12-07]-🇺🇸-美国-3057-usa-server-02.selfupay.com"
+  - "[12-07]-🇺🇸-美国-011-t6.ssrsub.com"
+  - "[12-07]-🇺🇸-美国-3205-184.168.127.50"
+  - "[12-07]-🇷🇴-罗马尼亚-3191-62.216.92.180"
+  - "[12-07]-🇺🇸-美国-3213-72.167.45.6"
+  - "[12-07]-🇨🇭-瑞士-3185-89.31.127.151"
+  - "[12-07]-🇺🇸-美国-3201-hk-server-01.selfupay.com"
+  - "[12-07]-🇺🇸-美国-3193-hk-server-02.selfupay.com"
+  - "[12-07]-🇺🇸-美国-3179-jp-server-02.selfupay.com"
+  - "[12-07]-🇺🇸-美国-3189-ned-server-01.selfupay.com"
+  - "[12-07]-🇺🇸-美国-013-sg-server-01.selfupay.com"
+  - "[12-07]-🇺🇸-美国-3209-usa-server-02.selfupay.com"
+  - "[12-07]-🇦🇶-北美地区-015-107.174.67.108"
+  - "[12-07]-🇺🇸-美国加利福尼亚州洛杉矶-017-23.234.244.175"
+  - "[12-07]-🇺🇸-美国-3207-184.168.127.50"
+  - "[12-07]-🇬🇧-英国-019-185.171.120.144"
+  - "[12-07]-🇯🇵-日本-021-5.183.177.111"
+  - "[12-07]-🇷🇴-罗马尼亚-023-62.216.92.180"
+  - "[12-07]-🇨🇭-瑞士-025-89.31.127.151"
+  - "[12-07]-🇺🇸-美国-3199-hk-server-01.selfupay.com"
+  - "[12-07]-🇺🇸-美国-3195-hk-server-02.selfupay.com"
+  - "[12-07]-🇺🇸-美国-3183-jp-server-02.selfupay.com"
+  - "[12-07]-🇺🇸-美国-3187-ned-server-01.selfupay.com"
+  - "[12-07]-🇺🇸-美国-3211-tw.softbank.mjj-home.com"
   - "🇦🇶-爱尔兰-52.48.89.93"
-  - "🇦🇶-亚太地区-103.172.116.94"
   - "🇯🇵-日本东京-52.196.144.61"
-  - "🇯🇵-日本-146.56.156.227"
   - "🇯🇵-日本-172.104.98.216"
-  - "🇬🇧-英国-146.70.73.2"
   - "🇭🇰-香港-161.81.195.100"
-  - "🇭🇰-香港-183.179.115.79"
   - "🇭🇰-香港-42.200.190.71"
   - "🇳🇱-荷兰-46.182.107.39"
-  - "🇳🇱-荷兰-46.182.107.44"
   - "🇰🇷-韩国-54.180.96.67"
-  - "🇷🇺-俄罗斯-194.5.78.89"
   - "🇸🇬-新加坡-206.189.87.180"
-  - "🇺🇸-美国加利福尼亚州洛杉矶-45.91.83.111"
   - "🇺🇸-美国-001.us.na.pop.smallairport.net"
-  - "🇺🇸-美国-172.67.69.244"
   - "🇺🇸-美国-172.67.70.171"
   - "🇺🇸-美国-192.74.254.167"
   - "🇺🇸-美国-192.96.204.250"
-  - "🇺🇸-美国-198.200.51.18"
   - "🇺🇸-美国-103.138.75.235"
   - "🇺🇸-美国-104.16.160.114"
-  - "🇺🇸-美国-104.16.166.137"
   - "🇺🇸-美国-104.18.7.138"
-  - "🇺🇸-美国-104.18.231.232"
   - "🇺🇸-美国-104.18.245.127"
   - "🇺🇸-美国-104.21.48.161"
-  - "🇺🇸-美国-104.22.44.50"
   - "🇺🇸-美国-104.24.180.107"
   - "🇺🇸-美国-104.251.233.106"
-  - "🇺🇸-美国-107.148.200.229"
   - "🇺🇸-美国-1116yn.fans8.xyz"
-  - "🇺🇸-美国-20.151.113.120"
   - "🇺🇸-美国-20.205.63.211"
-  - "🇺🇸-美国-20.205.35.3"
   - "🇺🇸-美国-209.58.139.41"
-  - "🇺🇸-美国-3.144.176.174"
   - "🇺🇸-美国-45.142.158.85"
-  - "🇺🇸-美国-45.79.65.237.ipssh.net"
   - "🇺🇸-美国-64.32.13.3"
   - "🇺🇸-美国-715hk.fans8.xyz"
   - "🇺🇸-美国-915ru1.fans8.xyz"
   - "🇺🇸-美国-930tg.fans8.xyz"
   - "🇺🇸-美国-ngzyd-1.okex-tradebot.xyz"
-  - "🇺🇸-美国-niaocloud.niaoyun.online"
   - "🇺🇸-美国-aa.zzzr.ltd"
-  - "🇺🇸-美国-aicoo6du.com"
   - "🇺🇸-美国-amu1ahfi.com"
-  - "🇺🇸-美国-armsj2.kozow.com"
   - "🇺🇸-美国-c23s3.jamjams.net"
   - "🇺🇸-美国-cu.cheapv2.xyz"
-  - "🇺🇸-美国-cu.cnhost.top"
   - "🇺🇸-美国-cdnde.irteyz.today"
-  - "🇺🇸-美国-cm2.cheapv2.xyz"
   - "🇺🇸-美国-euserv18p.ezddns.tk"
   - "🇺🇸-美国-euserv10p.ezddns.tk"
   - "🇺🇸-美国-euserv9p.ezddns.tk"
-  - "🇺🇸-美国-fus1.uuv2.co.uk"
   - "🇺🇸-美国-ff5c0fb.re.cloudflare.systems"
-  - "🇺🇸-美国-free-russian01-cdn.xiaohouzi.club"
   - "🇺🇸-美国-free-russian02-cdn.xiaohouzi.club"
-  - "🇺🇸-美国-guangzhou-lw-03.pucdn.me"
   - "🇺🇸-美国-global-transit-01-hn.pucdn.me"
-  - "🇺🇸-美国-global-transit-02-sg.pucdn.me"
   - "🇺🇸-美国-hk1opuy-node.3366test.com"
-  - "🇺🇸-美国-l1-do-ua-03.pucdn.me"
   - "🇺🇸-美国-switzerland-zurich.mah3Hoet.com"
   - "🇺🇸-美国-shcn2-06b.iplc188.com"
-  - "🇺🇸-美国-tk.shcn2.tkddns.xyz"
   - "🇺🇸-美国-usa-sanfrancisco.lvuft.com"
-  - "🇺🇸-美国-v5.ssrsub.com"
   - "🇺🇸-美国-v1-aws-hk-04.niaoyun.online"
-  - "🇺🇸-美国-vpnhat.yhdnwm.workers.dev"
   - "🇺🇸-美国-www.digitalocean.com"
   - "🇺🇸-美国-zz.vip341.xyz"
   - "🇺🇸-美国-zecjk.com"
-  - "🇺🇸-美国-1.0.0.0"
   - "🇺🇸-美国-1.0.0.140"
-  - "🇺🇸-美国-104.16.16.255"
   - "🇺🇸-美国-104.16.182.15"
-  - "🇺🇸-美国-104.18.6.138"
+  - "🇺🇸-美国-104.17.170.210"
   - "🇺🇸-美国-104.19.101.3"
-  - "🇺🇸-美国-104.19.238.59"
   - "🇺🇸-美国-104.24.0.168"
-  - "🇺🇸-美国-104.24.142.163"
   - "🇺🇸-美国-104.24.158.46"
-  - "🇺🇸-美国-104.24.188.46"
   - "🇺🇸-美国-104.24.191.139"
-  - "🇺🇸-美国-104.24.138.229"
   - "🇺🇸-美国-104.24.209.131"
-  - "🇺🇸-美国-104.24.42.148"
   - "🇺🇸-美国-104.24.64.213"
-  - "🇺🇸-美国-104.24.62.70"
   - "🇺🇸-美国-104.24.75.54"
-  - "🇺🇸-美国-104.24.94.29"
   - "🇺🇸-美国-104.25.143.16"
-  - "🇺🇸-美国-104.25.148.216"
   - "🇺🇸-美国-104.25.151.100"
-  - "🇺🇸-美国-104.25.102.154"
   - "🇺🇸-美国-104.25.246.117"
-  - "🇺🇸-美国-104.25.215.143"
   - "🇺🇸-美国-104.25.230.73"
-  - "🇺🇸-美国-104.25.238.45"
   - "🇺🇸-美国-104.25.44.133"
-  - "🇺🇸-美国-104.25.46.190"
   - "🇺🇸-美国-104.25.63.18"
-  - "🇺🇸-美国-104.26.5.238"
   - "🇺🇸-美国-104.27.194.98"
-  - "🇺🇸-美国-104.27.198.45"
   - "🇺🇸-美国-104.27.102.4"
-  - "🇺🇸-美国-104.27.37.126"
   - "🇺🇸-美国-104.27.84.136"
-  - "🇺🇸-美国-104.27.83.11"
   - "🇺🇸-美国-104.20.81.240"
-  - "🇺🇸-美国-104.21.201.210"
   - "🇺🇸-美国-104.21.201.33"
-  - "🇺🇸-美国-104.21.207.243"
   - "🇺🇸-美国-104.21.221.156"
-  - "🇺🇸-美国-104.21.62.193"
   - "🇦🇶-亚太地区-103.164.81.108"
-  - "🇯🇵-日本-103.29.69.119"
+  - "🇭🇰-香港-129.227.201.234"
   - "🇺🇸-美国-137.175.30.251"
-  - "🇬🇧-英国-146.70.46.68"
+  - "🇸🇬-新加坡-139.162.51.223"
+  - "🇦🇺-澳大利亚-13.236.109.118"
+  - "🇬🇧-英国-146.70.71.2"
+  - "🇬🇧-英国-146.70.73.2"
   - "🇺🇸-美国-142.4.123.249"
-  - "🇺🇸-美国-154.31.41.10"
   - "🇺🇸-美国-162.159.224.228"
-  - "🇺🇸-美国-162.159.238.197"
   - "🇺🇸-美国-172.64.69.76"
-  - "🇺🇸-美国-172.67.112.66"
   - "🇺🇸-美国-172.67.117.187"
-  - "🇺🇸-美国-172.67.126.56"
   - "🇺🇸-美国-172.67.29.249"
-  - "🇺🇸-美国-172.67.222.157"
   - "🇺🇸-美国-172.67.88.37"
-  - "🇷🇺-俄罗斯-194.135.32.208"
-  - "🇺🇸-美国-198.200.51.34"
+  - "🇦🇶-匈牙利-185.225.69.134"
+  - "🇺🇸-美国-198.200.51.18"
   - "🇺🇸-美国-198.41.212.234"
   - "🇯🇵-日本-202.61.141.194"
-  - "🇺🇸-美国-45.35.84.162"
+  - "🇦🇶-以色列-212.80.205.133"
   - "🇺🇸-美国-45.63.56.11"
-  - "🇷🇺-俄罗斯-45.8.159.221"
   - "🇷🇺-俄罗斯-45.89.228.53"
-  - "🇭🇰-香港-47.242.3.85"
+  - "🇫🇷-法国-62.210.90.75"
   - "🇨🇦-加拿大-71.19.252.163"
   - "🇭🇰-香港-8.210.55.79"
   - "🇺🇸-美国-923my.fans8.xyz"
-  - "🇺🇸-美国-Eiha7iew.com"
   - "🇺🇸-美国-Ze9baeS5.com"
-  - "🇺🇸-美国-cn.zzv01.infonode.xyz"
+  - "🇺🇸-美国-cm2.cheapv2.xyz"
+  - "🇺🇸-美国-cmhk04.xc188.net"
   - "🇺🇸-美国-canada-vancouver.mah3Hoet.com"
   - "🇺🇸-美国-cc.hciahciphcie.club"
   - "🇺🇸-美国-a83679f.t3.gladns.com"
-  - "🇺🇸-美国-a83679f.th.cloudflare.systems"
   - "🇺🇸-美国-a83679f.tt.cloudflare.systems"
-  - "🇺🇸-美国-a83679f.ha.gladns.com"
+  - "🇺🇸-美国-a83679f.cw.cloudflare.systems"
   - "🇺🇸-美国-a83679f.hf.gladns.com"
-  - "🇺🇸-美国-a83679f.mc.cloudflare.systems"
   - "🇺🇸-美国-a83679f.md.cloudflare.systems"
-  - "🇺🇸-美国-a83679f.me.cloudflare.systems"
   - "🇺🇸-美国-a83679f.mh.cloudflare.systems"
-  - "🇺🇸-美国-a83679f.os.cloudflare.systems"
+  - "🇺🇸-美国-a83679f.mi.cloudflare.systems"
   - "🇺🇸-美国-a83679f.rc.gladns.com"
-  - "🇺🇸-美国-ahH4eihu.com"
+  - "🇺🇸-美国-a83679f.rd.gladns.com"
+  - "🇺🇸-美国-a83679f.rf.gladns.com"
   - "🇺🇸-美国-ahdaeph8.com"
-  - "🇺🇸-美国-c27821f.wx.gladns.com"
+  - "🇺🇸-美国-armsj2.kozow.com"
+  - "🇺🇸-美国-c27821f.rb.cloudflare.systems"
+  - "🇺🇸-美国-d0a8692.t2.gladns.com"
+  - "🇺🇸-美国-d0a8692.ha.gladns.com"
+  - "🇺🇸-美国-d0a8692.hc.gladns.com"
+  - "🇺🇸-美国-d0a8692.hf.gladns.com"
+  - "🇺🇸-美国-eeh7iewe.com"
+  - "🇺🇸-美国-ff5c0fb.hb.gladns.com"
+  - "🇺🇸-美国-ff5c0fb.rb.cloudflare.systems"
+  - "🇺🇸-美国-ff5c0fb.re.gladns.com"
+  - "🇺🇸-美国-free-russian-cdn.xiaohouzi.club"
+  - "🇺🇸-美国-kr3.futi.online"
+  - "🇺🇸-美国-hkbn-home-a.zc20200426.club"
+  - "🇺🇸-美国-sg.idvpn.me"
+  - "🇺🇸-美国-www.garmin.com"
+  - "🇺🇸-美国-tk.shcn2.tkddns.xyz"
+  - "🇺🇸-美国-tw-tb-f.zc20200426.club"
+  - "🇺🇸-美国-us1nhg-node.aiqiche123.com"
+  - "🇺🇸-美国-usa-buffalo.lvuft.com"
+  - "🇺🇸-美国-usa-lasvegas.lvuft.com"
+  - "🇺🇸-美国-usa-washington.lvuft.com"
+  - "🇺🇸-美国-v1.ssrsub.com"
+  - "🇺🇸-美国-v2.ssrsub.com"
+  - "🇺🇸-美国-v5.ssrsub.com"
+  - "🇺🇸-美国-xe3rayu3.com"
+  - "🇷🇴-罗马尼亚-79.110.54.162"
+  - "🇸🇬-新加坡-104.248.148.147"
+  - "🇸🇬-新加坡-103.253.26.134"
+  - "🇸🇬-新加坡-103.83.156.89"
+  - "🇸🇬-新加坡-172.105.113.182"
+  - "🇸🇬-新加坡-52.77.238.80"
+  - "🇹🇼-台湾-60.249.3.226"
+  - "🇺🇸-美国-1.0.0.123"
+  - "🇺🇸-美国-104.16.149.48"
+  - "🇺🇸-美国-104.16.160.209"
+  - "🇺🇸-美国-104.16.166.137"
+  - "🇺🇸-美国-104.16.172.213"
+  - "🇺🇸-美国-104.16.181.15"
+  - "🇺🇸-美国-104.16.98.249"
+  - "🇺🇸-美国-104.17.188.91"
+  - "🇺🇸-美国-104.17.105.81"
+  - "🇺🇸-美国-104.17.134.136"
+  - "🇺🇸-美国-104.17.36.178"
+  - "🇺🇸-美国-104.17.46.56"
+  - "🇺🇸-美国-104.17.98.24"
+  - "🇺🇸-美国-104.18.1.240"
 - name: "\U0001F3AF 全球直连"
   type: select
   proxies:
@@ -3840,198 +3819,198 @@ proxy-groups:
   - "\U0001F530 节点选择"
   - "\U0001F3AF 全球直连"
   - "♻️ 自动选择"
+  - "[12-07]-🇺🇸-美国-1043-t1.ssrsub.com"
   - "[12-07]-🇺🇸-美国-001-t2.ssrsub.com"
-  - "[12-07]-🇺🇸-美国-733-t3.ssrsub.com"
-  - "[12-07]-🇺🇸-美国-737-t4.ssrsub.com"
-  - "[12-07]-🇺🇸-美国-741-t7.ssrsub.com"
+  - "[12-07]-🇺🇸-美国-003-t4.ssrsub.com"
+  - "[12-07]-🇺🇸-美国-1041-t5.ssrsub.com"
+  - "[12-07]-🇺🇸-美国-1039-t2.ssrsub.com"
+  - "[12-07]-🇺🇸-美国-1045-t3.ssrsub.com"
   - "[12-07]-🇺🇸-美国-005-t4.ssrsub.com"
-  - "[12-07]-🇷🇴-罗马尼亚-3029-185.126.116.235"
-  - "[12-07]-🇬🇧-英国-3017-185.171.120.144"
-  - "[12-07]-🇺🇸-美国-3041-72.167.45.6"
+  - "[12-07]-🇺🇸-美国-1037-t5.ssrsub.com"
+  - "[12-07]-🇬🇧-英国-007-185.171.120.144"
+  - "[12-07]-🇯🇵-日本-3181-5.183.177.111"
+  - "[12-07]-🇺🇦-乌克兰-3177-5.183.179.138"
+  - "[12-07]-🇷🇴-罗马尼亚-3197-62.216.92.179"
+  - "[12-07]-🇸🇬-新加坡-3203-81.90.189.85"
   - "[12-07]-🇨🇭-瑞士-009-89.31.127.151"
-  - "[12-07]-🇺🇸-美国-409-t3.ssrsub.com"
-  - "[12-07]-🇺🇸-美国-437-t6.ssrsub.com"
-  - "[12-07]-🇷🇴-罗马尼亚-013-185.126.116.235"
-  - "[12-07]-🇺🇸-美国-3045-sg-server-01.selfupay.com"
-  - "[12-07]-🇦🇶-北美地区-3053-107.174.39.16"
-  - "[12-07]-🇦🇶-北美地区-017-107.174.67.108"
-  - "[12-07]-🇷🇺-俄罗斯-3037-194.156.120.236"
-  - "[12-07]-🇺🇸-美国加利福尼亚州洛杉矶-021-23.234.244.175"
-  - "[12-07]-🇳🇱-荷兰-3009-80.78.132.239"
-  - "[12-07]-🇬🇧-英国-025-185.171.120.144"
-  - "[12-07]-🇯🇵-日本-1285-5.183.177.111"
-  - "[12-07]-🇯🇵-日本-3013-5.183.177.111"
-  - "[12-07]-🇷🇴-罗马尼亚-3025-62.216.92.179"
-  - "[12-07]-🇷🇴-罗马尼亚-3033-62.216.92.180"
-  - "[12-07]-🇺🇸-美国-3049-72.167.45.6"
-  - "[12-07]-🇨🇭-瑞士-3021-89.31.127.151"
-  - "[12-07]-🇺🇸-美国-3057-usa-server-02.selfupay.com"
+  - "[12-07]-🇺🇸-美国-011-t6.ssrsub.com"
+  - "[12-07]-🇺🇸-美国-3205-184.168.127.50"
+  - "[12-07]-🇷🇴-罗马尼亚-3191-62.216.92.180"
+  - "[12-07]-🇺🇸-美国-3213-72.167.45.6"
+  - "[12-07]-🇨🇭-瑞士-3185-89.31.127.151"
+  - "[12-07]-🇺🇸-美国-3201-hk-server-01.selfupay.com"
+  - "[12-07]-🇺🇸-美国-3193-hk-server-02.selfupay.com"
+  - "[12-07]-🇺🇸-美国-3179-jp-server-02.selfupay.com"
+  - "[12-07]-🇺🇸-美国-3189-ned-server-01.selfupay.com"
+  - "[12-07]-🇺🇸-美国-013-sg-server-01.selfupay.com"
+  - "[12-07]-🇺🇸-美国-3209-usa-server-02.selfupay.com"
+  - "[12-07]-🇦🇶-北美地区-015-107.174.67.108"
+  - "[12-07]-🇺🇸-美国加利福尼亚州洛杉矶-017-23.234.244.175"
+  - "[12-07]-🇺🇸-美国-3207-184.168.127.50"
+  - "[12-07]-🇬🇧-英国-019-185.171.120.144"
+  - "[12-07]-🇯🇵-日本-021-5.183.177.111"
+  - "[12-07]-🇷🇴-罗马尼亚-023-62.216.92.180"
+  - "[12-07]-🇨🇭-瑞士-025-89.31.127.151"
+  - "[12-07]-🇺🇸-美国-3199-hk-server-01.selfupay.com"
+  - "[12-07]-🇺🇸-美国-3195-hk-server-02.selfupay.com"
+  - "[12-07]-🇺🇸-美国-3183-jp-server-02.selfupay.com"
+  - "[12-07]-🇺🇸-美国-3187-ned-server-01.selfupay.com"
+  - "[12-07]-🇺🇸-美国-3211-tw.softbank.mjj-home.com"
   - "🇦🇶-爱尔兰-52.48.89.93"
-  - "🇦🇶-亚太地区-103.172.116.94"
   - "🇯🇵-日本东京-52.196.144.61"
-  - "🇯🇵-日本-146.56.156.227"
   - "🇯🇵-日本-172.104.98.216"
-  - "🇬🇧-英国-146.70.73.2"
   - "🇭🇰-香港-161.81.195.100"
-  - "🇭🇰-香港-183.179.115.79"
   - "🇭🇰-香港-42.200.190.71"
   - "🇳🇱-荷兰-46.182.107.39"
-  - "🇳🇱-荷兰-46.182.107.44"
   - "🇰🇷-韩国-54.180.96.67"
-  - "🇷🇺-俄罗斯-194.5.78.89"
   - "🇸🇬-新加坡-206.189.87.180"
-  - "🇺🇸-美国加利福尼亚州洛杉矶-45.91.83.111"
   - "🇺🇸-美国-001.us.na.pop.smallairport.net"
-  - "🇺🇸-美国-172.67.69.244"
   - "🇺🇸-美国-172.67.70.171"
   - "🇺🇸-美国-192.74.254.167"
   - "🇺🇸-美国-192.96.204.250"
-  - "🇺🇸-美国-198.200.51.18"
   - "🇺🇸-美国-103.138.75.235"
   - "🇺🇸-美国-104.16.160.114"
-  - "🇺🇸-美国-104.16.166.137"
   - "🇺🇸-美国-104.18.7.138"
-  - "🇺🇸-美国-104.18.231.232"
   - "🇺🇸-美国-104.18.245.127"
   - "🇺🇸-美国-104.21.48.161"
-  - "🇺🇸-美国-104.22.44.50"
   - "🇺🇸-美国-104.24.180.107"
   - "🇺🇸-美国-104.251.233.106"
-  - "🇺🇸-美国-107.148.200.229"
   - "🇺🇸-美国-1116yn.fans8.xyz"
-  - "🇺🇸-美国-20.151.113.120"
   - "🇺🇸-美国-20.205.63.211"
-  - "🇺🇸-美国-20.205.35.3"
   - "🇺🇸-美国-209.58.139.41"
-  - "🇺🇸-美国-3.144.176.174"
   - "🇺🇸-美国-45.142.158.85"
-  - "🇺🇸-美国-45.79.65.237.ipssh.net"
   - "🇺🇸-美国-64.32.13.3"
   - "🇺🇸-美国-715hk.fans8.xyz"
   - "🇺🇸-美国-915ru1.fans8.xyz"
   - "🇺🇸-美国-930tg.fans8.xyz"
   - "🇺🇸-美国-ngzyd-1.okex-tradebot.xyz"
-  - "🇺🇸-美国-niaocloud.niaoyun.online"
   - "🇺🇸-美国-aa.zzzr.ltd"
-  - "🇺🇸-美国-aicoo6du.com"
   - "🇺🇸-美国-amu1ahfi.com"
-  - "🇺🇸-美国-armsj2.kozow.com"
   - "🇺🇸-美国-c23s3.jamjams.net"
   - "🇺🇸-美国-cu.cheapv2.xyz"
-  - "🇺🇸-美国-cu.cnhost.top"
   - "🇺🇸-美国-cdnde.irteyz.today"
-  - "🇺🇸-美国-cm2.cheapv2.xyz"
   - "🇺🇸-美国-euserv18p.ezddns.tk"
   - "🇺🇸-美国-euserv10p.ezddns.tk"
   - "🇺🇸-美国-euserv9p.ezddns.tk"
-  - "🇺🇸-美国-fus1.uuv2.co.uk"
   - "🇺🇸-美国-ff5c0fb.re.cloudflare.systems"
-  - "🇺🇸-美国-free-russian01-cdn.xiaohouzi.club"
   - "🇺🇸-美国-free-russian02-cdn.xiaohouzi.club"
-  - "🇺🇸-美国-guangzhou-lw-03.pucdn.me"
   - "🇺🇸-美国-global-transit-01-hn.pucdn.me"
-  - "🇺🇸-美国-global-transit-02-sg.pucdn.me"
   - "🇺🇸-美国-hk1opuy-node.3366test.com"
-  - "🇺🇸-美国-l1-do-ua-03.pucdn.me"
   - "🇺🇸-美国-switzerland-zurich.mah3Hoet.com"
   - "🇺🇸-美国-shcn2-06b.iplc188.com"
-  - "🇺🇸-美国-tk.shcn2.tkddns.xyz"
   - "🇺🇸-美国-usa-sanfrancisco.lvuft.com"
-  - "🇺🇸-美国-v5.ssrsub.com"
   - "🇺🇸-美国-v1-aws-hk-04.niaoyun.online"
-  - "🇺🇸-美国-vpnhat.yhdnwm.workers.dev"
   - "🇺🇸-美国-www.digitalocean.com"
   - "🇺🇸-美国-zz.vip341.xyz"
   - "🇺🇸-美国-zecjk.com"
-  - "🇺🇸-美国-1.0.0.0"
   - "🇺🇸-美国-1.0.0.140"
-  - "🇺🇸-美国-104.16.16.255"
   - "🇺🇸-美国-104.16.182.15"
-  - "🇺🇸-美国-104.18.6.138"
+  - "🇺🇸-美国-104.17.170.210"
   - "🇺🇸-美国-104.19.101.3"
-  - "🇺🇸-美国-104.19.238.59"
   - "🇺🇸-美国-104.24.0.168"
-  - "🇺🇸-美国-104.24.142.163"
   - "🇺🇸-美国-104.24.158.46"
-  - "🇺🇸-美国-104.24.188.46"
   - "🇺🇸-美国-104.24.191.139"
-  - "🇺🇸-美国-104.24.138.229"
   - "🇺🇸-美国-104.24.209.131"
-  - "🇺🇸-美国-104.24.42.148"
   - "🇺🇸-美国-104.24.64.213"
-  - "🇺🇸-美国-104.24.62.70"
   - "🇺🇸-美国-104.24.75.54"
-  - "🇺🇸-美国-104.24.94.29"
   - "🇺🇸-美国-104.25.143.16"
-  - "🇺🇸-美国-104.25.148.216"
   - "🇺🇸-美国-104.25.151.100"
-  - "🇺🇸-美国-104.25.102.154"
   - "🇺🇸-美国-104.25.246.117"
-  - "🇺🇸-美国-104.25.215.143"
   - "🇺🇸-美国-104.25.230.73"
-  - "🇺🇸-美国-104.25.238.45"
   - "🇺🇸-美国-104.25.44.133"
-  - "🇺🇸-美国-104.25.46.190"
   - "🇺🇸-美国-104.25.63.18"
-  - "🇺🇸-美国-104.26.5.238"
   - "🇺🇸-美国-104.27.194.98"
-  - "🇺🇸-美国-104.27.198.45"
   - "🇺🇸-美国-104.27.102.4"
-  - "🇺🇸-美国-104.27.37.126"
   - "🇺🇸-美国-104.27.84.136"
-  - "🇺🇸-美国-104.27.83.11"
   - "🇺🇸-美国-104.20.81.240"
-  - "🇺🇸-美国-104.21.201.210"
   - "🇺🇸-美国-104.21.201.33"
-  - "🇺🇸-美国-104.21.207.243"
   - "🇺🇸-美国-104.21.221.156"
-  - "🇺🇸-美国-104.21.62.193"
   - "🇦🇶-亚太地区-103.164.81.108"
-  - "🇯🇵-日本-103.29.69.119"
+  - "🇭🇰-香港-129.227.201.234"
   - "🇺🇸-美国-137.175.30.251"
-  - "🇬🇧-英国-146.70.46.68"
+  - "🇸🇬-新加坡-139.162.51.223"
+  - "🇦🇺-澳大利亚-13.236.109.118"
+  - "🇬🇧-英国-146.70.71.2"
+  - "🇬🇧-英国-146.70.73.2"
   - "🇺🇸-美国-142.4.123.249"
-  - "🇺🇸-美国-154.31.41.10"
   - "🇺🇸-美国-162.159.224.228"
-  - "🇺🇸-美国-162.159.238.197"
   - "🇺🇸-美国-172.64.69.76"
-  - "🇺🇸-美国-172.67.112.66"
   - "🇺🇸-美国-172.67.117.187"
-  - "🇺🇸-美国-172.67.126.56"
   - "🇺🇸-美国-172.67.29.249"
-  - "🇺🇸-美国-172.67.222.157"
   - "🇺🇸-美国-172.67.88.37"
-  - "🇷🇺-俄罗斯-194.135.32.208"
-  - "🇺🇸-美国-198.200.51.34"
+  - "🇦🇶-匈牙利-185.225.69.134"
+  - "🇺🇸-美国-198.200.51.18"
   - "🇺🇸-美国-198.41.212.234"
   - "🇯🇵-日本-202.61.141.194"
-  - "🇺🇸-美国-45.35.84.162"
+  - "🇦🇶-以色列-212.80.205.133"
   - "🇺🇸-美国-45.63.56.11"
-  - "🇷🇺-俄罗斯-45.8.159.221"
   - "🇷🇺-俄罗斯-45.89.228.53"
-  - "🇭🇰-香港-47.242.3.85"
+  - "🇫🇷-法国-62.210.90.75"
   - "🇨🇦-加拿大-71.19.252.163"
   - "🇭🇰-香港-8.210.55.79"
   - "🇺🇸-美国-923my.fans8.xyz"
-  - "🇺🇸-美国-Eiha7iew.com"
   - "🇺🇸-美国-Ze9baeS5.com"
-  - "🇺🇸-美国-cn.zzv01.infonode.xyz"
+  - "🇺🇸-美国-cm2.cheapv2.xyz"
+  - "🇺🇸-美国-cmhk04.xc188.net"
   - "🇺🇸-美国-canada-vancouver.mah3Hoet.com"
   - "🇺🇸-美国-cc.hciahciphcie.club"
   - "🇺🇸-美国-a83679f.t3.gladns.com"
-  - "🇺🇸-美国-a83679f.th.cloudflare.systems"
   - "🇺🇸-美国-a83679f.tt.cloudflare.systems"
-  - "🇺🇸-美国-a83679f.ha.gladns.com"
+  - "🇺🇸-美国-a83679f.cw.cloudflare.systems"
   - "🇺🇸-美国-a83679f.hf.gladns.com"
-  - "🇺🇸-美国-a83679f.mc.cloudflare.systems"
   - "🇺🇸-美国-a83679f.md.cloudflare.systems"
-  - "🇺🇸-美国-a83679f.me.cloudflare.systems"
   - "🇺🇸-美国-a83679f.mh.cloudflare.systems"
-  - "🇺🇸-美国-a83679f.os.cloudflare.systems"
+  - "🇺🇸-美国-a83679f.mi.cloudflare.systems"
   - "🇺🇸-美国-a83679f.rc.gladns.com"
-  - "🇺🇸-美国-ahH4eihu.com"
+  - "🇺🇸-美国-a83679f.rd.gladns.com"
+  - "🇺🇸-美国-a83679f.rf.gladns.com"
   - "🇺🇸-美国-ahdaeph8.com"
-  - "🇺🇸-美国-c27821f.wx.gladns.com"
+  - "🇺🇸-美国-armsj2.kozow.com"
+  - "🇺🇸-美国-c27821f.rb.cloudflare.systems"
+  - "🇺🇸-美国-d0a8692.t2.gladns.com"
+  - "🇺🇸-美国-d0a8692.ha.gladns.com"
+  - "🇺🇸-美国-d0a8692.hc.gladns.com"
+  - "🇺🇸-美国-d0a8692.hf.gladns.com"
+  - "🇺🇸-美国-eeh7iewe.com"
+  - "🇺🇸-美国-ff5c0fb.hb.gladns.com"
+  - "🇺🇸-美国-ff5c0fb.rb.cloudflare.systems"
+  - "🇺🇸-美国-ff5c0fb.re.gladns.com"
+  - "🇺🇸-美国-free-russian-cdn.xiaohouzi.club"
+  - "🇺🇸-美国-kr3.futi.online"
+  - "🇺🇸-美国-hkbn-home-a.zc20200426.club"
+  - "🇺🇸-美国-sg.idvpn.me"
+  - "🇺🇸-美国-www.garmin.com"
+  - "🇺🇸-美国-tk.shcn2.tkddns.xyz"
+  - "🇺🇸-美国-tw-tb-f.zc20200426.club"
+  - "🇺🇸-美国-us1nhg-node.aiqiche123.com"
+  - "🇺🇸-美国-usa-buffalo.lvuft.com"
+  - "🇺🇸-美国-usa-lasvegas.lvuft.com"
+  - "🇺🇸-美国-usa-washington.lvuft.com"
+  - "🇺🇸-美国-v1.ssrsub.com"
+  - "🇺🇸-美国-v2.ssrsub.com"
+  - "🇺🇸-美国-v5.ssrsub.com"
+  - "🇺🇸-美国-xe3rayu3.com"
+  - "🇷🇴-罗马尼亚-79.110.54.162"
+  - "🇸🇬-新加坡-104.248.148.147"
+  - "🇸🇬-新加坡-103.253.26.134"
+  - "🇸🇬-新加坡-103.83.156.89"
+  - "🇸🇬-新加坡-172.105.113.182"
+  - "🇸🇬-新加坡-52.77.238.80"
+  - "🇹🇼-台湾-60.249.3.226"
+  - "🇺🇸-美国-1.0.0.123"
+  - "🇺🇸-美国-104.16.149.48"
+  - "🇺🇸-美国-104.16.160.209"
+  - "🇺🇸-美国-104.16.166.137"
+  - "🇺🇸-美国-104.16.172.213"
+  - "🇺🇸-美国-104.16.181.15"
+  - "🇺🇸-美国-104.16.98.249"
+  - "🇺🇸-美国-104.17.188.91"
+  - "🇺🇸-美国-104.17.105.81"
+  - "🇺🇸-美国-104.17.134.136"
+  - "🇺🇸-美国-104.17.36.178"
+  - "🇺🇸-美国-104.17.46.56"
+  - "🇺🇸-美国-104.17.98.24"
+  - "🇺🇸-美国-104.18.1.240"
 rules:
 - DOMAIN-SUFFIX,awesome-hd.me,DIRECT
 - DOMAIN-SUFFIX,broadcasthe.net,DIRECT
