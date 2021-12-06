@@ -1,10 +1,15 @@
 proxies:
-- {"name": "[12-06]-🇺🇸-美国-068-t2.ssrsub.com", "server": "t2.ssrsub.com", "port": "8443", "type": "trojan", "password": "0e13b5a9-cb62-44cd-b28e-47f137624694", "skip-cert-verify": "true"}
-- {"name": "[12-06]-🇺🇸-美国-069-t5.ssrsub.com", "server": "t5.ssrsub.com", "port": "8443", "type": "trojan", "password": "0e13b5a9-cb62-44cd-b28e-47f137624694", "skip-cert-verify": "true"}
-- {"name": "[12-06]-🇺🇸-美国-070-jp04.cnzffw.com", "server": "jp04.cnzffw.com", "port": "12021", "type": "trojan", "password": "20173681-72a9-440f-9cac-d9b773a34f7d", "skip-cert-verify": "true"}
-- {"name": "[12-06]-🇺🇸-美国-071-tw04.cnzffw.com", "server": "tw04.cnzffw.com", "port": "13026", "type": "trojan", "password": "20173681-72a9-440f-9cac-d9b773a34f7d", "skip-cert-verify": "true"}
-- {"name": "[12-06]-🇬🇧-英国-031-185.171.120.144", "server": "185.171.120.144", "port": "443", "type": "trojan", "password": "28d98f761aca9d636f44db62544628eb", "sni": "t.me%252Fvpnhat", "skip-cert-verify": "true"}
-- {"name": "[12-06]-🇺🇸-美国-072-jp11.holiganfan.com", "server": "jp11.holiganfan.com", "port": "10088", "type": "trojan", "password": "8ce38f17-b2be-453a-8d25-deec1a0aabba", "skip-cert-verify": "true"}
-- {"name": "[12-06]-🇷🇴-罗马尼亚-046-185.126.116.235", "server": "185.126.116.235", "port": "443", "type": "trojan", "password": "a3fa58b581353bb375d2ddad0f327938", "sni": "t.me%252Fvpnhat", "skip-cert-verify": "true"}
-- {"name": "[12-06]-🇬🇧-英国-073-185.171.120.144", "server": "185.171.120.144", "port": "443", "type": "trojan", "password": "a3fa58b581353bb375d2ddad0f327938", "skip-cert-verify": "true"}
-- {"name": "[12-06]-🇨🇭-瑞士-074-89.31.127.151", "server": "89.31.127.151", "port": "443", "type": "trojan", "password": "a3fa58b581353bb375d2ddad0f327938", "skip-cert-verify": "true"}
+- {"name": "[12-06]-🇺🇸-美国-053-t2.ssrsub.com", "server": "t2.ssrsub.com", "port": "8443", "type": "trojan", "password": "0e13b5a9-cb62-44cd-b28e-47f137624694", "skip-cert-verify": "true"}
+- {"name": "[12-06]-🇺🇸-美国-054-t5.ssrsub.com", "server": "t5.ssrsub.com", "port": "8443", "type": "trojan", "password": "0e13b5a9-cb62-44cd-b28e-47f137624694", "skip-cert-verify": "true"}
+- {"name": "[12-06]-🇺🇸-美国-055-jp04.cnzffw.com", "server": "jp04.cnzffw.com", "port": "12021", "type": "trojan", "password": "20173681-72a9-440f-9cac-d9b773a34f7d", "skip-cert-verify": "true"}
+- {"name": "[12-06]-🇺🇸-美国-056-tw04.cnzffw.com", "server": "tw04.cnzffw.com", "port": "13026", "type": "trojan", "password": "20173681-72a9-440f-9cac-d9b773a34f7d", "skip-cert-verify": "true"}
+- {"name": "[12-06]-🇬🇧-英国-057-185.171.120.144", "server": "185.171.120.144", "port": "443", "type": "trojan", "password": "28d98f761aca9d636f44db62544628eb", "sni": "t.me%252Fvpnhat", "skip-cert-verify": "true"}
+- {"name": "[12-06]-🇬🇧-英国-012-185.171.120.144", "server": "185.171.120.144", "port": "443", "type": "trojan", "password": "28d98f761aca9d636f44db62544628eb", "sni": "t.me%2fvpnhat", "skip-cert-verify": "true"}
+- {"name": "[12-06]-🇯🇵-日本-025-5.183.177.111", "server": "5.183.177.111", "port": "443", "type": "trojan", "password": "28d98f761aca9d636f44db62544628eb", "sni": "t.me%252Fvpnhat", "skip-cert-verify": "true"}
+- {"name": "[12-06]-🇸🇬-新加坡-014-81.90.189.85", "server": "81.90.189.85", "port": "443", "type": "trojan", "password": "28d98f761aca9d636f44db62544628eb", "sni": "t.me%252Fvpnhat", "skip-cert-verify": "true"}
+- {"name": "[12-06]-🇺🇸-美国-037-72.167.45.6", "server": "72.167.45.6", "port": "443", "type": "trojan", "password": "36ebef7d1b1d6205fd0c55f28800e674", "sni": "t.me%2fvpnhat", "skip-cert-verify": "true"}
+- {"name": "[12-06]-🇨🇭-瑞士-039-89.31.127.151", "server": "89.31.127.151", "port": "443", "type": "trojan", "password": "36ebef7d1b1d6205fd0c55f28800e674", "sni": "t.me%2fvpnhat", "skip-cert-verify": "true"}
+- {"name": "[12-06]-🇺🇸-美国-058-jp11.holiganfan.com", "server": "jp11.holiganfan.com", "port": "10088", "type": "trojan", "password": "8ce38f17-b2be-453a-8d25-deec1a0aabba", "skip-cert-verify": "true"}
+- {"name": "[12-06]-🇷🇴-罗马尼亚-059-185.126.116.235", "server": "185.126.116.235", "port": "443", "type": "trojan", "password": "a3fa58b581353bb375d2ddad0f327938", "sni": "t.me%252Fvpnhat", "skip-cert-verify": "true"}
+- {"name": "[12-06]-🇬🇧-英国-060-185.171.120.144", "server": "185.171.120.144", "port": "443", "type": "trojan", "password": "a3fa58b581353bb375d2ddad0f327938", "skip-cert-verify": "true"}
+- {"name": "[12-06]-🇨🇭-瑞士-026-89.31.127.151", "server": "89.31.127.151", "port": "443", "type": "trojan", "password": "a3fa58b581353bb375d2ddad0f327938", "sni": "t.me%2fvpnhat", "skip-cert-verify": "true"}

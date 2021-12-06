@@ -471,7 +471,7 @@ if(menu == 'ipdomain' and len(expire) > 0):
     telename = ''
     nodecount = 192
     if(len(allnodetxt) > 0):
-        for j in allnodetxt.split():
+        for j in allnodetxt.split('\n'):
             try:
                 #如果已经添加则跳过
                 if (nodecount > 0):
@@ -555,7 +555,6 @@ if(menu == 'ipdomain' and len(expire) > 0):
                         newname = ''
                     if (onenode != '' and newname != '' and clashurl.find(onenode) == -1 and clashname.find(newname) == -1):
                         nodecount = nodecount - 1
-
                         clashurl = clashurl + onenode + '\n'
                         openclashurl = openclashurl + onenode + '\n  udp: true\n'
                         clash_node_url = clash_node_url + '\n' + onenode.replace('- ', '- {"').replace('\'', '').replace(': ', '": "').replace('\n  ', '", "') + '"}'
@@ -570,12 +569,12 @@ if(menu == 'ipdomain' and len(expire) > 0):
                     print('\n[保留192条节点，忽略多余节点]:\n' + j)
             except Exception as ex:
                 print('Line-578:' + str(ex))
-        clashname = clashname.replace('\n\n', '\n').rstrip('\n')
-        telename = telename.replace('\n\n', '\n').rstrip('\n')
+        clashname = clashname.rstrip('\n')
+        telename = telename.rstrip('\n')
 
-        clashurl = clashurl.replace('\n\n', '\n').rstrip('\n')
-        openclashurl = openclashurl.replace('\n\n', '\n').rstrip('\n')
-        clash_node_url = clash_node_url.replace('\n\n', '\n').rstrip('\n')
+        clashurl = clashurl.rstrip('\n')
+        openclashurl = openclashurl.rstrip('\n')
+        clash_node_url = clash_node_url.rstrip('\n')
 
         print('clashname:\n' + clashname)
         print('clashurl:\n' + clashurl)
