@@ -149,8 +149,6 @@ class StrText():
             onenode = onenode.replace('\r', ',').replace('\n', ',')
             onenode = onenode.replace('"', '').replace('\'', '')
             onenode = onenode.replace('{', '').replace('}', '')
-            onenode = onenode.replace(': //', '#//') #处理:后面再还原
-            onenode = onenode.replace('://', '#//')  #处理:后面再还原
 
             for i in onenode.split(','):
                 if(i.find(':') > -1):
@@ -178,8 +176,6 @@ class StrText():
                 onenode = onenode.replace('\n}', ',\n  "ps": "tmp"\n}')
                 print('[ps] is added.')
             #print('newnode-2:\n' + onenode)
-
-            onenode = onenode.replace('#//', '://') #处理:后面再还原
 
             return onenode
         except Exception as ex:

@@ -298,7 +298,7 @@ if(menu == 'ipdomain'):
     iii = 0
     iiii = 0
     if(len(allonenode) > 0):
-        rint = random.randint(1, 3)
+        rint = random.randint(2, 4)
         str1 = allonenode.split('\n')
         #for i in range(0, len(str1), rint):
         for j in allonenode.split('\n'):
@@ -503,7 +503,7 @@ if(menu == 'ipdomain'):
                         j = json.dumps(node, ensure_ascii = False)
                         
                         if(j.find('ps":')>-1 or j.find('"v":') > -1 or j.find('"aid":') > -1):
-                            j = j.replace(' ', '').replace('"', '') #.replace('\'', '')
+                            j = j.replace(' ', '').replace(':"', ': "').replace('"', '')
                             j = j.replace(',', '\n').replace('\n\n', '\n')
                             j = j.replace('{\n', '').replace('\n}', '\n')
                             if (j.find('name:') == -1):
@@ -519,7 +519,7 @@ if(menu == 'ipdomain'):
                             if (j.find('uuid:') == -1):
                                 j = j.replace('id:', 'uuid:')
                             #j = j.replace('path:', 'ws-path:')
-                            j = j.replace('\n', '\n  ').replace(':', ': ').replace(': //', '://')
+                            j = j.replace('\n', '\n  ').replace(': //', '://')
 
                             #pdb.set_trace()
                             #if(j.find(newname) > -1):
