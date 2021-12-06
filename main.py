@@ -292,8 +292,11 @@ if(menu == 'ipdomain' and len(expire) > 0):
     iii = 0
     iiii = 0
     if(len(allonenode) > 0):
-        for j in allonenode.split('\n'):
+        str1 = allonenode.split('\n')
+        for i in range(0, len(str1), 3):
+        #for j in allonenode.split('\n'):
             #print('deal site url id:' + str(ii))
+            j = str1[i]
             oldname = ''
             newname = ''
             ipdomain = ''
