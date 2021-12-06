@@ -10,10 +10,11 @@ import time
 import datetime
 import hashlib
 import pdb
-import socket
 import multiprocessing
-import subprocess
 import operator
+import random
+import socket
+import subprocess
 from cls import IsValid
 from cls import LocalFile
 from cls import NetFile
@@ -175,7 +176,7 @@ if(menu == 'update' and len(expire) > 0):
                                 clashnodes = clashnodes.replace('}', '"}')
                                 if(clashnodes.find(': ') > -1):
                                     clashnodes = clashnodes.replace(': ', '": "')
-                                else:
+                                else if(clashnodes.find('://') == -1):
                                     clashnodes = clashnodes.replace(':', '": "')
                                 clashnodes = clashnodes.replace(',', '", "')
                                 #clashnodes = clashnodes.replace('{"Host": "', '{Host: ')
@@ -292,137 +293,141 @@ if(menu == 'ipdomain' and len(expire) > 0):
     iii = 0
     iiii = 0
     if(len(allonenode) > 0):
+        rint = random.randint(1, 3)
         str1 = allonenode.split('\n')
-        for i in range(0, len(str1), 3):
-        #for j in allonenode.split('\n'):
-            #print('deal site url id:' + str(ii))
-            j = str1[i]
-            oldname = ''
-            newname = ''
-            ipdomain = ''
-            try:
-                if (j.find("#") > -1):
-                    testj = j.split("#", 1)[0]
-                else:
-                    testj = j
-                if (expire.find(testj) == -1):
-                    #if (j.find("vmess://") == -1):
-                    #    continue
-                    print('\nLine-234-j-' + str(ii) + ':\n' + j)
-                    ii += 1
-                    if (j.find("vmess://") == 0):
-                        onenode = base64.b64decode(j[8:]).decode('utf-8')
-                        onenode = StrText.all_to_vmess(onenode)
-                        #print('newnode-1:\n' + onenode)
-                        node = json.loads(onenode.encode("utf-8").decode("utf-8"))
-                        ipdomain = node['add']
-                        newname = StrText.get_country(ipdomain) + '-' + ipdomain
-                        try:
-                            oldname = node['ps']
-                            node['ps'] = newname #.decode("utf-8")
-                            onenode = json.dumps(node, ensure_ascii = False)
-                        except Exception as ex:
-                            newname = oldname
-                            print('Line-436:' + str(ex) + '\n' + onenode)
-                        #vmess标题需要固定
-                        #newname = '[' + datecont + ']-' + StrText.get_country(node['add']) + '-'+ str(ii).zfill(3) + '-' + node['add']
-                        #onenode = node.replace('"ps": "'+StrText.get_str_btw(node, '"ps": "', '"'), '"ps": "'+ newname, 1)
-                        print('newnode-0:\n' + onenode)
-                        if (newname.find('.') > -1):
-                            onenode = "vmess://" + base64.b64encode(onenode.encode("utf-8")).decode("utf-8")
-                        else:
-                            onenode = ''
-                            newname = ''
-                    elif (j.find("ss://") == 0):
-                        onenode = StrText.all_to_ss(j)
-                        if(onenode != ''):
-                            nodes = onenode.split("#", 1) # 第二个参数为 1，返回两个参数列表
+        #for i in range(0, len(str1), rint):
+        for j in allonenode.split('\n'):
+            if(ii % rint == 0):
+                #print('deal site url id:' + str(ii))
+                #j = str1[i]
+                oldname = ''
+                newname = ''
+                ipdomain = ''
+                try:
+                    if (j.find("#") > -1):
+                        testj = j.split("#", 1)[0]
+                    else:
+                        testj = j
+                    if (expire.find(testj) == -1):
+                        #if (j.find("vmess://") == -1):
+                        #    continue
+                        print('\nLine-234-j-' + str(ii) + ':\n' + j)
+                        ii += 1
+                        if (j.find("vmess://") == 0):
+                            onenode = base64.b64decode(j[8:]).decode('utf-8')
+                            onenode = StrText.all_to_vmess(onenode)
+                            #print('newnode-1:\n' + onenode)
+                            node = json.loads(onenode.encode("utf-8").decode("utf-8"))
+                            ipdomain = node['add']
+                            newname = StrText.get_country(ipdomain) + '-' + ipdomain
+                            try:
+                                oldname = node['ps']
+                                node['ps'] = newname #.decode("utf-8")
+                                onenode = json.dumps(node, ensure_ascii = False)
+                            except Exception as ex:
+                                newname = oldname
+                                print('Line-436:' + str(ex) + '\n' + onenode)
+                            #vmess标题需要固定
+                            #newname = '[' + datecont + ']-' + StrText.get_country(node['add']) + '-'+ str(ii).zfill(3) + '-' + node['add']
+                            #onenode = node.replace('"ps": "'+StrText.get_str_btw(node, '"ps": "', '"'), '"ps": "'+ newname, 1)
+                            print('newnode-0:\n' + onenode)
+                            if (newname.find('.') > -1):
+                                onenode = "vmess://" + base64.b64encode(onenode.encode("utf-8")).decode("utf-8")
+                            else:
+                                onenode = ''
+                                newname = ''
+                        elif (j.find("ss://") == 0):
+                            onenode = StrText.all_to_ss(j)
+                            if(onenode != ''):
+                                nodes = onenode.split("#", 1) # 第二个参数为 1，返回两个参数列表
+                                oldname = nodes[1]
+                                #onenode = "ss://"+(base64.b64decode(nodes[0][5:].encode("utf-8")).decode("utf-8")) + "#" + oldname
+                                ipdomain = StrText.get_str_btw(onenode, "@", ":")
+                                ip_country = StrText.get_country(ipdomain)
+                                newname = '[' + datecont + ']-' + ip_country + '-'+ str(ii).zfill(3) + '-' + ipdomain
+                                onenode = nodes[0] + "#" + newname
+                            else:
+                                newname = ''
+                        elif (j.find("trojan://") == 0):
+                            #trojan://28d98f761aca9d636f44db62544628eb@45.66.134.219:443#%f0%9f%87%af%f0%9f%87%b5+%e6%97%a5%e6%9c%ac-45.66.134.219
+                            #trojan://28d98f761aca9d636f44db62544628eb@45.66.134.219:443?sni=123#%f0%9f%87%af%f0%9f%87%b5+%e6%97%a5%e6%9c%ac-45.66.134.219
+                            if (j.find("#") == -1):
+                                j = j + "#0"
+                            onenode = j
+                            nodes = onenode.split("#", 1)
+                            ipdomain = StrText.get_str_btw(j, "@", ":")
+                            ip_country = StrText.get_country(ipdomain)
                             oldname = nodes[1]
-                            #onenode = "ss://"+(base64.b64decode(nodes[0][5:].encode("utf-8")).decode("utf-8")) + "#" + oldname
-                            ipdomain = StrText.get_str_btw(onenode, "@", ":")
+                            newname = '[' + datecont + ']-' + ip_country + '-'+ str(ii).zfill(3) + '-' + ipdomain
+                            onenode = nodes[0] + "#" + newname
+                        elif (j.find("vless://") == 0):
+                            #vless://892ebb75-7055-3007-8d16-356e65c6a49a@45.66.134.219:443?encryption=none&security=tls&sni=45.66.134.219&type=ws&host=45.66.134.219&path=%2fv1t-vless#filename
+                            if (j.find("#") == -1):
+                                j = j + "#0"
+                            onenode = j
+                            nodes = onenode.split("#", 1)
+                            oldname = nodes[1]
+                            ipdomain = StrText.get_str_btw(onenode,"@",":")
                             ip_country = StrText.get_country(ipdomain)
                             newname = '[' + datecont + ']-' + ip_country + '-'+ str(ii).zfill(3) + '-' + ipdomain
                             onenode = nodes[0] + "#" + newname
+                        elif (j.find("ssr://") == 0):
+                            #14.152.92.79:12127:auth_aes128_sha1:aes-256-cfb:http_simple:Njh4ZGd1OWV5aWY=/?obfsparam=MGYwOTk2MDA3NzcudjIzZjduTTA&protoparam=NjAwNzc3OjE1NFQ4Yg&remarks=5pel5pysIFNhcmFwaGluZSAxNw&group=
+                            onenode = base64.b64decode(j[6:]).decode('utf-8')
+                            oldname = StrText.get_str_btw(onenode + '&','remarks=', '&')
+                            ipdomain = onenode.split(':')[0]
+                            ip_country = StrText.get_country(ipdomain)
+                            newname = base64.b64encode((ip_country + '-'+ ipdomain).encode("utf-8")).decode("utf-8")
+                            onenode = onenode.replace(oldname, newname)
+                            onenode = "ssr://" + base64.b64encode(onenode.encode("utf-8")).decode("utf-8")
+                            onenode = ''
+                            ii = ii - 1
                         else:
-                            newname = ''
-                    elif (j.find("trojan://") == 0):
-                        #trojan://28d98f761aca9d636f44db62544628eb@45.66.134.219:443#%f0%9f%87%af%f0%9f%87%b5+%e6%97%a5%e6%9c%ac-45.66.134.219
-                        #trojan://28d98f761aca9d636f44db62544628eb@45.66.134.219:443?sni=123#%f0%9f%87%af%f0%9f%87%b5+%e6%97%a5%e6%9c%ac-45.66.134.219
-                        if (j.find("#") == -1):
-                            j = j + "#0"
-                        onenode = j
-                        nodes = onenode.split("#", 1)
-                        ipdomain = StrText.get_str_btw(j, "@", ":")
-                        ip_country = StrText.get_country(ipdomain)
-                        oldname = nodes[1]
-                        newname = '[' + datecont + ']-' + ip_country + '-'+ str(ii).zfill(3) + '-' + ipdomain
-                        onenode = nodes[0] + "#" + newname
-                    elif (j.find("vless://") == 0):
-                        #vless://892ebb75-7055-3007-8d16-356e65c6a49a@45.66.134.219:443?encryption=none&security=tls&sni=45.66.134.219&type=ws&host=45.66.134.219&path=%2fv1t-vless#filename
-                        if (j.find("#") == -1):
-                            j = j + "#0"
-                        onenode = j
-                        nodes = onenode.split("#", 1)
-                        oldname = nodes[1]
-                        ipdomain = StrText.get_str_btw(onenode,"@",":")
-                        ip_country = StrText.get_country(ipdomain)
-                        newname = '[' + datecont + ']-' + ip_country + '-'+ str(ii).zfill(3) + '-' + ipdomain
-                        onenode = nodes[0] + "#" + newname
-                    elif (j.find("ssr://") == 0):
-                        #14.152.92.79:12127:auth_aes128_sha1:aes-256-cfb:http_simple:Njh4ZGd1OWV5aWY=/?obfsparam=MGYwOTk2MDA3NzcudjIzZjduTTA&protoparam=NjAwNzc3OjE1NFQ4Yg&remarks=5pel5pysIFNhcmFwaGluZSAxNw&group=
-                        onenode = base64.b64decode(j[6:]).decode('utf-8')
-                        oldname = StrText.get_str_btw(onenode + '&','remarks=', '&')
-                        ipdomain = onenode.split(':')[0]
-                        ip_country = StrText.get_country(ipdomain)
-                        newname = base64.b64encode((ip_country + '-'+ ipdomain).encode("utf-8")).decode("utf-8")
-                        onenode = onenode.replace(oldname, newname)
-                        onenode = "ssr://" + base64.b64encode(onenode.encode("utf-8")).decode("utf-8")
-                        onenode = ''
-                        ii = ii - 1
-                    else:
-                        ii = ii - 1
-                        continue
+                            ii = ii - 1
+                            continue
 
-                    try:
-                        if(onenode.find('#') > -1):
-                            oldnode = onenode.split('#', 1)[0]
-                        else:
-                            oldnode = onenode
-                        if (onenode != '' and IsValid.isIPorDomain(ipdomain) and expire.find(oldnode) == -1 and allnode.find(oldnode) == -1 and (onenode.find("vmess://") == 0 or onenode.find("ss://") == 0 or onenode.find("trojan://") == 0 or onenode.find("vless://") == 0)):
-                            print('Rename node ' + oldname.strip('\n') + ' to ' + newname)
-                            #if(len(allnode) > 204800):
-                            #    allnode = base64.b64encode(allnode.strip('\n').encode("utf-8")).decode("utf-8")
-                            #    iiii += 1
-                            #    LocalFile.write_LocalFile('./res/node-' + str(iiii) + '.txt', allnode)
-                            #    allnode = ''
-                            if(newname.find(u'中国') > -1 or newname.find(u'省') > -1 or newname.find(u'上海') > -1 or newname.find(u'北京') > -1 or newname.find(u'重庆') > -1 or newname.find(u'内蒙') > -1):
-                                if(iii < 100):
-                                    cnnode = cnnode + '\n' + onenode
-                                else:
-                                    allnode = allnode + '\n' + onenode
+                        try:
+                            if(onenode.find('#') > -1):
+                                oldnode = onenode.split('#', 1)[0]
                             else:
-                                expire = expire + ',' + j + ',' + onenode   #新旧节点信息都加入作对比。
-                                if(iii < 400):
-                                    try:
-                                        iii += 1
-                                        #print('ipdomain:' + ipdomain + '-ipdomain-ping:' + str(ping(ipdomain, unit='ms')))
-                                        stime = 0
-                                        #stime = int(str(ping(ipdomain, unit='ms')).replace('False', '9999').replace('None', '9999')) #PingIP.get_ping_time(ipdomain)
-                                        if(stime <= 0):
-                                            stime = 9999
-                                        merged_link_ping.append(Department(stime, onenode, '1'))
-                                        print('Line-398-已添加(' + str(ii)+ '-Expire-Len:' + str(len(expire)) + ')-onenode:\n' + onenode)
-                                    except Exception as ex:
-                                        print('Line-400:' + str(ex) + '\nipdomain:' + ipdomain + '\nonenode:' + onenode)
+                                oldnode = onenode
+                            if (onenode != '' and IsValid.isIPorDomain(ipdomain) and expire.find(oldnode) == -1 and allnode.find(oldnode) == -1 and (onenode.find("vmess://") == 0 or onenode.find("ss://") == 0 or onenode.find("trojan://") == 0 or onenode.find("vless://") == 0)):
+                                print('Rename node ' + oldname.strip('\n') + ' to ' + newname)
+                                #if(len(allnode) > 204800):
+                                #    allnode = base64.b64encode(allnode.strip('\n').encode("utf-8")).decode("utf-8")
+                                #    iiii += 1
+                                #    LocalFile.write_LocalFile('./res/node-' + str(iiii) + '.txt', allnode)
+                                #    allnode = ''
+                                if(newname.find(u'中国') > -1 or newname.find(u'省') > -1 or newname.find(u'上海') > -1 or newname.find(u'北京') > -1 or newname.find(u'重庆') > -1 or newname.find(u'内蒙') > -1):
+                                    if(iii < 100):
+                                        cnnode = cnnode + '\n' + onenode
+                                    else:
+                                        allnode = allnode + '\n' + onenode
                                 else:
-                                    allnode = allnode + '\n' + onenode
-                                    print('Line-403-已忽略(iii:' + str(iii) + '-ii-' + str(ii) + ')-onenode:\n' + onenode)
-                        else:
-                            print('Line-392-已过滤(' + str(ii)+ '-Expire-Len:' + str(len(expire))+ ')-FindIndex:' + str(expire.find(onenode)) ) #+ ' onenode:' + onenode + ' expire.find(onenode):' +  str(expire.find(onenode)) + '\nIsValid.isIP(ipdomain):' +  str(IsValid.isIP(ipdomain)) + ' IsValid.isIPorDomain(ipdomain):' +  str(IsValid.isIPorDomain(ipdomain)) + ' allnode.find(onenode):' +  str(allnode.find(onenode)) + ' allnode:\n' + allnode)
-                    except Exception as ex:
-                        print('Line-524:' + str(ex) + '\nConT:' + j)
-            except Exception as ex:
-                print('Line-396:' + str(ex) + '\nonenode:' + onenode)
+                                    expire = expire + ',' + j + ',' + onenode   #新旧节点信息都加入作对比。
+                                    if(iii < 400):
+                                        try:
+                                            iii += 1
+                                            #print('ipdomain:' + ipdomain + '-ipdomain-ping:' + str(ping(ipdomain, unit='ms')))
+                                            stime = 0
+                                            #stime = int(str(ping(ipdomain, unit='ms')).replace('False', '9999').replace('None', '9999')) #PingIP.get_ping_time(ipdomain)
+                                            if(stime <= 0):
+                                                stime = 9999
+                                            merged_link_ping.append(Department(stime, onenode, '1'))
+                                            print('Line-398-已添加(' + str(ii)+ '-Expire-Len:' + str(len(expire)) + ')-onenode:\n' + onenode)
+                                        except Exception as ex:
+                                            print('Line-400:' + str(ex) + '\nipdomain:' + ipdomain + '\nonenode:' + onenode)
+                                    else:
+                                        allnode = allnode + '\n' + onenode
+                                        print('Line-403-已忽略(iii:' + str(iii) + '-ii-' + str(ii) + ')-onenode:\n' + onenode)
+                            else:
+                                print('Line-392-已过滤(' + str(ii)+ '-Expire-Len:' + str(len(expire))+ ')-FindIndex:' + str(expire.find(onenode)) ) #+ ' onenode:' + onenode + ' expire.find(onenode):' +  str(expire.find(onenode)) + '\nIsValid.isIP(ipdomain):' +  str(IsValid.isIP(ipdomain)) + ' IsValid.isIPorDomain(ipdomain):' +  str(IsValid.isIPorDomain(ipdomain)) + ' allnode.find(onenode):' +  str(allnode.find(onenode)) + ' allnode:\n' + allnode)
+                        except Exception as ex:
+                            print('Line-524:' + str(ex) + '\nConT:' + j)
+                except Exception as ex:
+                    print('Line-396:' + str(ex) + '\nonenode:' + onenode)
+            else:
+                allnode = allnode + '\n' + j
         # 合并整理完成的节点，生成Clash配置文件
         cnnode = base64.b64encode(cnnode.strip('\n').encode("utf-8")).decode("utf-8")
         LocalFile.write_LocalFile('./out/nodecn.txt', cnnode)
@@ -485,7 +490,8 @@ if(menu == 'ipdomain' and len(expire) > 0):
                         j = j.replace('\'', '')
                         #newname = StrText.get_str_btw(j, "ps: \"","\"");- server:139.155.22.227
                         node = json.loads(j)
-                        node['ps'] = '\'' + node['ps'] + '\''
+                        newname = node['ps']
+                        node['ps'] = '\'' + newname + '\''
                         j = json.dumps(node, ensure_ascii = False)
                         
                         if(j.find('ps":')>-1 or j.find('"v":') > -1 or j.find('"aid":') > -1):
@@ -512,13 +518,14 @@ if(menu == 'ipdomain' and len(expire) > 0):
                             #    j = j.replace('name: ' + newname + '\n', 'name: \'' + newname + '\'\n')
                             j = j.replace('type: none\n', 'type: vmess\n') #类型tcp?
                             j = j.replace('type: \n', 'type: vmess\n') #类型type为空时，则填入vmess
-                            j = j.replace('tls:tls\n', 'tls: true\n') #类型type为空时，则填入vmess
-                            j = j.replace('tls:none\n', 'tls: false\n') #类型type为空时，则填入vmess
-                            j = j.replace('tls:\n', 'tls: false\n') #类型type为空时，则填入vmess
-                            j = j.replace('tls: tls\n', 'tls: true\n') #类型type为空时，则填入vmess
-                            j = j.replace('tls: none\n', 'tls: false\n') #类型type为空时，则填入vmess
-                            j = j.replace('tls: \n', 'tls: false\n') #类型type为空时，则填入vmess
+                            j = j.replace('tls:tls\n', 'tls: true\n')
+                            j = j.replace('tls:none\n', 'tls: false\n')
+                            j = j.replace('tls:\n', 'tls: false\n')
+                            j = j.replace('tls: tls\n', 'tls: true\n')
+                            j = j.replace('tls: none\n', 'tls: false\n')
+                            j = j.replace('tls: \n', 'tls: false\n')
                             j = j.strip(' ').strip('{').strip('}')
+                            j = j.replace('tls: tls', 'tls: true')
                             if(j.find('cipher') == -1):
                                 j = j + '\n  cipher: auto'
                         #elif(j.find('"v":')>-1):
@@ -556,7 +563,7 @@ if(menu == 'ipdomain' and len(expire) > 0):
                         print('Line-558-已跳过-onenode:\n' + j)
                         onenode = ''
                         newname = ''
-                    if (onenode != '' and newname != '' and clashurl.find(onenode) == -1 and clashname.find(newname) == -1):
+                    if (clashurl.find(onenode) == -1 and clashname.find(newname) == -1):
                         nodecount = nodecount - 1
                         clashurl = clashurl + onenode + '\n'
                         openclashurl = openclashurl + onenode + '\n  udp: true\n'
