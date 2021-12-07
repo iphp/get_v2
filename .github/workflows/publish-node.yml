@@ -181,15 +181,14 @@ jobs:
           sleep 60
           echo 离线发布ipfs name publish /ipfs/$CID --allow-offline=true --lifetime=24h
           ipfs name publish /ipfs/$CID --allow-offline=true --lifetime=24h
-          #ipfs name publish /ipfs/$CID --lifetime=24h
 
           echo 将要打开进程 ipfs #kill ipfs
+          sysctl -w net.core.rmem_max=2500000
           ps -A
           file1=./ipfs/tmp/003.out
           nohup ipfs daemon >$file1 &
-          #sleep 60
+          sleep 30
 
-          sleep 60
           python ./ipfs.py ipns
 
           # sudo rm -rf ./install1 ./install2 ./install3
@@ -200,7 +199,7 @@ jobs:
           echo "::set-output name=status::success"
 
       - name: 'Commit files Second for readMe file'
-        if: steps.publish.outputs.status == 'success' && !cancelled()
+        if: steps.publish.outputs.status == 'success'
         run: |
           rm -rf ./cls/__pycache__
           rm -rf ./ip/__pycache__

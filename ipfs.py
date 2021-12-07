@@ -92,8 +92,8 @@ else:
                 iii += 1
             else:
                 print('hashlib.md5-False-' + resurl)
-            if(ii > 100):
-                break
+            #if(ii > 100):
+            #    break
         except:
             print("Line-98-ipfs.py:" + j)
     #print(tmp)
