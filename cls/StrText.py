@@ -149,6 +149,8 @@ class StrText():
             onenode = onenode.replace('\r', ',').replace('\n', ',')
             onenode = onenode.replace('"', '').replace('\'', '')
             onenode = onenode.replace('{', '').replace('}', '')
+            onenode = onenode.replace('type:none', 'type:vmess')
+            onenode = onenode.replace('type:null', 'type:vmess')
 
             for i in onenode.split(','):
                 if(i.find(':') > -1):

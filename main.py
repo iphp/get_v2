@@ -222,7 +222,7 @@ if(menu == 'update' and len(expire) > 0):
                                         onenode = 'ss://' +  base64.b64encode((wnode['cipher'] + ':' + wnode['password'] + '@' + wnode['server'] + ':' + wnode['port']).encode("utf-8")).decode("utf-8") + '#' + wnode['name']
                                     elif (wnode['type'] == 'trojan'):
                                         onenode = 'trojan://' + wnode['password'] + '@' + wnode['server'] + ':' + wnode['port'] + '#' + wnode['name']
-                                    elif (wnode['type'] == 'vmess'):
+                                    elif (wnode['type'] == 'vmess' and wnode['uuid'] != 'None' and wnode['uuid'] != 'none'):
                                         onenode = 'vmess://' + base64.b64encode((clashnode.replace('type": "vmess"','type": "none"')).encode("utf-8")).decode("utf-8")
                                     else:
                                         # 非以上类型全部忽略
@@ -325,8 +325,10 @@ if(menu == 'ipdomain'):
                             node = json.loads(onenode.encode("utf-8").decode("utf-8"))
                             ipdomain = node['add']
                             newname = StrText.get_country(ipdomain) + '-' + ipdomain
+                            uuid = ''
                             try:
                                 oldname = node['ps']
+                                uuid = node['uuid']
                                 node['ps'] = newname #.decode("utf-8")
                                 onenode = json.dumps(node, ensure_ascii = False)
                             except Exception as ex:
@@ -336,7 +338,7 @@ if(menu == 'ipdomain'):
                             #newname = '[' + datecont + ']-' + StrText.get_country(node['add']) + '-'+ str(ii).zfill(3) + '-' + node['add']
                             #onenode = node.replace('"ps": "'+StrText.get_str_btw(node, '"ps": "', '"'), '"ps": "'+ newname, 1)
                             print('newnode-0:\n' + onenode)
-                            if (newname.find('.') > -1):
+                            if (newname.find('.') > -1 and len(uuid) > 5):
                                 onenode = "vmess://" + base64.b64encode(onenode.encode("utf-8")).decode("utf-8")
                             else:
                                 onenode = ''
@@ -534,6 +536,7 @@ if(menu == 'ipdomain'):
                             j = j.replace('tls: \n', 'tls: false\n')
                             j = j.strip(' ').strip('{').strip('}')
                             j = j.replace('tls: tls', 'tls: true')
+                            j = j.replace('type: null', 'type: vmess')
                             if(j.find('cipher') == -1):
                                 j = j + '\n  cipher: auto'
                         #elif(j.find('"v":')>-1):
@@ -573,11 +576,10 @@ if(menu == 'ipdomain'):
                         newname = ''
                     if (clashurl.find(onenode) == -1 and clashname.find(newname) == -1):
                         nodecount = nodecount - 1
+                        clashname = clashname + '  - "' + newname + '"\n'
                         clashurl = clashurl + onenode + '\n'
                         openclashurl = openclashurl + onenode + '\n  udp: true\n'
                         clash_node_url = clash_node_url + '\n' + onenode.replace('- ', '- {"').replace('\'', '').replace(': ', '": "').replace('\n  ', '", "') + '"}'
-
-                        clashname = clashname + '  - "' + newname + '"\n'
                         if(newname.find('伊朗') == -1):
                             telename = telename + '  - "' + newname + '"\n'
                         print('Line-558-已添加-onenode:\n' + onenode)
