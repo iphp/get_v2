@@ -553,12 +553,19 @@ if(menu == 'ipdomain'):
                         newname = j.split("#", 1)[1]
                         password = StrText.get_str_btw(j, "trojan://", "@")
                         server = StrText.get_str_btw(j,"@",":")
-                        if (j.find("?sni=")>-1):
+                        if (j.find("?") > -1):
                             port = StrText.get_str_btw(StrText.get_str_btw(j,"@","#"),":","?")
-                            onenode = '- name: \'' + newname + '\'\n  server: ' + server + '\n  port: ' + port + '\n  type: trojan\n  password: ' + password + '\n  sni: ' + StrText.get_str_btw(j, "?sni=", "#") + '\n  skip-cert-verify: true'
                         else:
                             port = StrText.get_str_btw(j,"@","#").split(":", 1)[1]
-                            onenode = '- name: \'' + newname + '\'\n  server: ' + server + '\n  port: ' + port + '\n  type: trojan\n  password: ' + password + '\n  skip-cert-verify: true'
+                        onenode = '- name: \'' + newname + '\'\n  server: ' + server + '\n  port: ' + port + '\n  type: trojan\n  password: ' + password + '\n  skip-cert-verify: true'
+                        if(j.find('?') > -1):
+                            tmpstr = StrText.get_str_btw(j, "?", "#") + '&'
+                            if (j.find("sni=") > -1):
+                                onenode = onenode + '\n  sni: ' + StrText.get_str_btw(tmpstr, "sni=", "&")
+                            if (j.find("peer=") > -1):
+                                onenode = onenode + '\n  peer: ' + StrText.get_str_btw(tmpstr, "peer=", "&")
+                            if (j.find("tfo=") > -1):
+                                onenode = onenode + '\n  tfo: ' + StrText.get_str_btw(tmpstr, "tfo=", "&")
                     elif (j.find("ss://") == 0):
                         #j = "ss://aes-256-gcm:n8w4StnbVD9dmXYn4Ajt87EA@212.102.54.163:31572#title"
                         jj = j.split("#", 1)
